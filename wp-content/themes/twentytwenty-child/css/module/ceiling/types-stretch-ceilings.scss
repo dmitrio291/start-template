@@ -54,6 +54,11 @@
         text-transform: uppercase;
     }
 
+    &__title,
+    &__price {
+        color: $black;
+    }
+
     &__image {
         margin-bottom: 0.4rem;
         max-width: 16.5rem;
