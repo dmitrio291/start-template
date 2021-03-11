@@ -618,6 +618,41 @@ if (galleryWorksFilterContainer && galleryWorksItem) {
     }
 }
 
+const galleryWorksSlider = document.querySelector('.gallery-works-popup__slider'),
+    galleryWorksPreviews = document.querySelector('.gallery-works-popup__previews');
+
+if (galleryWorksSlider) {
+    const galleryWorksPreviewsSwiper = new Swiper(galleryWorksPreviews, {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: '.gallery-works-popup__preview-next',
+            prevEl: '.gallery-works-popup__preview-prev'
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 4  
+            }
+        }
+    });
+
+    const galleryWorksSwiper = new Swiper(galleryWorksSlider, {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.gallery-works-popup__next',
+            prevEl: '.gallery-works-popup__prev'
+        },
+        thumbs: {
+            swiper: galleryWorksPreviewsSwiper
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 20
+            }
+        }
+    });
+}
+
 
 
 
