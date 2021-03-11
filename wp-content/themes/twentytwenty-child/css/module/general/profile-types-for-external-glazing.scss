@@ -1,0 +1,212 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.profile-types-for-external-glazing {
+    /* .profile-types-for-external-glazing__title */
+
+    &__title {
+        text-align: center;
+        line-height: 1.2em;
+        margin-bottom: 1.1em;
+
+        @include _768 {
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__inner */
+
+    &__inner {
+        @include _768 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include _1200 {
+            padding: 0 5.1em;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__item */
+
+    &__item {
+        border: 0.1em solid #c9c9c9;
+        border-radius: 0.3em;
+        position: relative;
+        margin-bottom: 0.8em;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.2em;
+        padding-top: 1.5em;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+        @include _768 {
+            max-width: 34.6rem;
+            width: 100%;
+        }
+
+        @include _1200 {
+            max-width: 38.8rem;
+            padding-top: 1.4em;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__item-title */
+
+    &__item-title {
+        font-size: 1.6rem;
+        margin-bottom: 1.05em;
+        text-align: center;
+
+        @include _1200 {
+            margin-bottom: 1.35em;
+            font-size: 1.7rem;
+        }
+    }
+
+    &__item-subtitle,
+    &__item-text {
+        max-width: 10.6em;
+        margin: 0 0.4em 1em 9.6em;
+        z-index: 2;
+
+        @include _1200 {
+            margin-left: 10.45em;
+            font-size: 1.8rem;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__item-subtitle */
+
+    &__item-subtitle {
+        margin-bottom: 0.7em;
+    }
+
+    &__box-img {
+        display: flex;
+        margin-left: 9.6em;
+        margin-bottom: 0.7em;
+        z-index: 2;
+
+        @include _1200 {
+            margin-left: 11.75em;
+            margin-bottom: 0.9em;
+        }
+    }
+
+    &__img-text {
+        @include _1200 {
+            font-size: 1.8rem;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__item-lable */
+
+    &__item-lable {
+        object-fit: contain;
+        max-width: 4.65em;
+        margin-left: 0.5em;
+        max-height: 1.1em;
+
+        @include _1200 {
+            max-width: 5.25em;
+            max-height: 1.2em;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__item-text */
+
+    &__item-text {
+        margin-bottom: 0.15em;
+
+        @include _1200 {
+            margin-bottom: 0.2em;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__item-box-price */
+
+    &__item-price {
+        font-size: 2.4rem;
+        margin-left: 6.5em;
+        margin-bottom: 0.6em;
+
+        @include _1200 {
+            margin-left: 6.3em;
+            font-size: 3rem;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__item-bg */
+
+    &__item-bg {
+        position: absolute;
+        height: 10.7em;
+        left: 1.2em;
+        top: 3.4em;
+        z-index: 1;
+
+        @include _1200 {
+            height: 13.4em;
+            left: 0.8em;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__item-block */
+
+    &__item-block {
+        position: relative;
+        max-width: 16.1rem;
+        width: 100%;
+        border: 0.15rem solid #f26422;
+        border-radius: 0.4em;
+        padding: 0.3em 0.2em 0.2em 0.8em;
+        z-index: 2;
+        margin-left: auto;
+        margin-right: 1.6em;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            background-color: #f26422;
+            border-radius: 50%;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/sprite2.png);
+            background-repeat: no-repeat;
+            background-position: -1.8em 0.4em;
+            background-size: 6.7em;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @include _1200 {
+            margin-right: 2.1em;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__block-cold */
+
+    &__block-cold {
+        font-size: 1rem;
+    }
+
+    /* .profile-types-for-external-glazing__block-temperature */
+
+    &__block-temperature {
+        font-size: 1.4rem;
+        display: block;
+    }
+
+    /* .profile-types-for-external-glazing__block-hot */
+
+    &__block-hot {
+        font-size: 1rem;
+    }
+}

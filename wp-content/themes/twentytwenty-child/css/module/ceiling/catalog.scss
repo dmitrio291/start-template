@@ -1,0 +1,250 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.catalog {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* .catalog__title */
+
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 2.7rem;
+
+        @include _768 {
+            line-height: 1.1;
+            margin-bottom: 5.2rem;
+        }
+
+        @include _1200 {
+            line-height: 1.2;
+            margin-bottom: 4.7rem;
+        }
+    }
+
+    /* .catalog__item */
+
+    &__item {
+        margin-bottom: 2.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .owl-nav {
+            position: absolute;
+            width: 100%;
+            top: 47%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0.8rem;
+            color: $orange;
+            font-size: 2em;
+            pointer-events: none;
+
+            button {
+                pointer-events: visible;
+            }
+        }
+
+        @include _768 {
+            border-top: 0.2rem solid $orange;
+            margin-bottom: 5.4rem;
+
+            .owl-nav {
+                padding: 0;
+                font-size: 2.7em;
+                top: 44%;
+                font-weight: 700;
+            }
+
+            .owl-next,
+            .owl-prev {
+                position: absolute;
+            }
+
+            .owl-next {
+                right: -2rem;
+
+            }
+
+            .owl-prev {
+                left: -2rem;
+            }
+        }
+
+        @include _1200 {
+            margin-bottom: 4.8rem;
+
+            .owl-nav {
+                font-size: 4em;
+                top: 40.8%;
+            }
+
+            .owl-next {
+                right: -3.5rem;
+
+            }
+
+            .owl-prev {
+                left: -3.5rem;
+            }
+        }
+    }
+
+    /* .catalog__item-title */
+
+    &__item-title {
+        max-width: 22.6rem;
+        margin-left: 0;
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            margin-bottom: 0.1rem;
+            transform: translateY(-50%);
+        }
+
+        @include _1200 {
+            max-width: 27.2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    /* .catalog__item-name */
+
+    &__item-name {
+        margin-bottom: 1rem;
+
+        @include _1200 {
+            margin-bottom: 1.3rem;
+        }
+    }
+
+    /* .catalog__item-box-img */
+
+    &__item-box-img {
+        position: relative;
+        width: 100%;
+        max-width: 16.5rem;
+        height: 16.5rem;
+
+        @include _768 {
+            max-width: 22.5rem;
+            height: 22.7rem;
+        }
+    }
+
+    /* .catalog__item-box-price */
+
+    &__item-box-price {
+        position: absolute;
+        top: 1.3rem;
+        padding: 0rem 0.5rem 0.3rem 0.5rem;
+        border-radius: 0.6rem 0 0 0.6rem;
+        min-width: 5.3rem;
+        background-color: #fff;
+        filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(96%);
+            width: 2em;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42.22 94.03'%3E%3Cdefs%3E%3Cstyle%3E .cls-1%7Bfill:%23fff;%7D %3C/style%3E%3C/defs%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cpath class='cls-1' d='M0,0c7.62-.4,13.4,2.74,17.9,8.84,6.51,8.81,13.25,17.46,19.86,26.2,5.94,7.87,5.94,16.11,0,23.81-6.44,8.38-13.16,16.57-19.26,25.19C13.88,90.66,7.68,93.51,0,94ZM20.77,55.49a8,8,0,0,0,8-7.39,7.82,7.82,0,0,0-7.51-7.79,7.54,7.54,0,0,0-7.5,7.17A7.31,7.31,0,0,0,20.77,55.49Z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+        }
+
+        @include _1200 {
+            padding: 0.7rem 0.5rem 0.9rem 0.5rem;
+            min-width: 7.5rem;
+        }
+    }
+
+    /* .catalog__price */
+
+    &__price {
+        position: relative;
+
+        &::after {
+            content: " \20BD/м\00B2";
+        }
+    }
+
+    /* .catalog__price--old */
+
+    &__price--old {
+        font-size: 0.8rem;
+        color: #D0D0D0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.1rem;
+            top: 47%;
+            background-color: #D0D0D0;
+            transform: rotate(10deg);
+        }
+
+        @include _1200 {
+            font-size: 1.4rem;
+        }
+    }
+
+    /* .catalog__price--new */
+
+    &__price--new {
+        display: block;
+        font-size: 1.2rem;
+        line-height: 0.9;
+
+        &::after {
+            font-size: 1rem;
+        }
+
+        @include _1200 {
+            font-size: 2rem;
+
+            &::after {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    /* .catalog__item-slider-foure */
+
+    &__item-slider-foure {
+
+        .catalog__item-box-img {
+            height: 10.5rem;
+
+            @include _768 {
+                height: 14.8rem;
+            }
+        }
+    }
+
+    /* .catalog__item-slider-five */
+
+    &__item-slider-five {
+
+        .catalog__item-box-img {
+            height: 9.2rem;
+
+            @include _1200 {
+                height: 13.8rem;
+            }
+        }
+    }
+}

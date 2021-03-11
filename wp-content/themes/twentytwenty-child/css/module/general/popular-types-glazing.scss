@@ -1,0 +1,671 @@
+@import "../../base/all/var";
+
+.popular-types-glazing {
+    .title {
+        margin-bottom: 0.769em;
+    }
+
+    &__radio {
+        display: none;
+    }
+
+    [id="cold"]:checked {
+        ~ .popular-types-glazing__toggles-box {
+            [for="cold"] {
+                .popular-types-glazing__word {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    [id="warm"]:checked {
+        ~ .popular-types-glazing__toggles-box {
+            [for="warm"] {
+                .popular-types-glazing__word {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    [id="cold"]:checked {
+        ~ .popular-types-glazing__toggles-box {
+            [for="warm"] {
+                .toggle-2 {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    [id="warm"]:checked {
+        ~ .popular-types-glazing__toggles-box {
+            [for="cold"] {
+                .toggle-1 {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    [id="gray"]:checked {
+        ~ .popular-types-glazing__box {
+            .popular-types-glazing__content {
+                .popular-types-glazing__colors {
+                    .popular-types-glazing__list {
+                        .popular-types-glazing__item {
+                            & [for="gray"] {
+                                border: 0.250em solid #FBC035;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    [id="blue"]:checked {
+        ~ .popular-types-glazing__box {
+            .popular-types-glazing__content {
+                .popular-types-glazing__colors {
+                    .popular-types-glazing__list {
+                        .popular-types-glazing__item {
+                            & [for="blue"] {
+                                border: 0.250em solid #FBC035;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    [id="pink"]:checked {
+        ~ .popular-types-glazing__box {
+            .popular-types-glazing__content {
+                .popular-types-glazing__colors {
+                    .popular-types-glazing__list {
+                        .popular-types-glazing__item {
+                            & [for="pink"] {
+                                border: 0.250em solid #FBC035;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    [id="green"]:checked {
+        ~ .popular-types-glazing__box {
+            .popular-types-glazing__content {
+                .popular-types-glazing__colors {
+                    .popular-types-glazing__list {
+                        .popular-types-glazing__item {
+                            & [for="green"] {
+                                border: 0.250em solid #FBC035;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    [id="cold"]:checked {
+        ~ .cold {
+            display: block;
+        }
+    }
+
+    [id="warm"]:checked {
+        ~ .warm {
+            display: block;
+        }
+    }
+
+    &__toggles-box {
+        max-width: 20.7em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5em;
+    }
+
+    &__word {
+        font-size: 1.5em;
+        font-weight: 900;
+        color: #9A9A9A;
+    }
+
+    &__word,
+    &__toggle,
+    &__color {
+        cursor: pointer;
+    }
+
+    &__toggle,
+    &__sliding-sashes,
+    &__info,
+    &__colors,
+    &__list,
+    &__image-box {
+        position: relative;
+    }
+
+    &__toggle:before,
+    &__sliding-sashes:before,
+    &__sliding-sashes:after,
+    &__info:before,
+    &__list,
+    &__list:before,
+    &__temperature-image:before,
+    &__temperature-box {
+        position: absolute;
+    }
+
+    &__toggle:before,
+    &__sliding-sashes:before,
+    &__sliding-sashes:after,
+    &__info:before,
+    &__list:before,
+    &__temperature-image:before {
+        content: '';
+    }   
+
+    &__toggle {
+        display: none;
+        width: 4.188em;
+        height: 2em;
+        margin-left: 0.988em;
+        margin-right: 0.925em;
+        background-color: $yellow;
+        border-radius: 1.250em;
+        box-shadow: inset 0.063em 0.063em 0.125em rgba(0, 0, 0, 0.15);
+        transform: translateY(0.5em);
+
+        &:before {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1.867em;
+            height: 1.867em;
+            border-radius: 50%;
+            background-color: $white;
+            box-shadow: 0.063em 0.063em 0.125em rgba(0, 0, 0, 0.25);
+        }
+
+        &.toggle {
+            &-1 {
+                &:before {
+                    right: 3%;
+                }
+            }
+
+            &-2 {
+                margin-left: 0.988em;
+                margin-right: 0.925em;
+
+                &:before {
+                    left: 2%;
+                }
+            }
+        }
+    }
+
+    &__box {
+        display: none;
+        max-width: 22em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .warm {
+        .popular-types-glazing {
+            &__sliding-sashes {
+                &:before {
+                    left: -18.3%;
+                    width: 2.63em;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/popular-types- glazing-icon4.png');
+                    background-size: 2.5em;
+                    background-position: 0;
+                }
+            }
+
+           &__image {
+               background-image: url("/wp-content/themes/twentytwenty-child/img/popular-types-glazing-big2.webp");
+           }
+        }
+    }
+
+    &__sliding-sashes,
+    &__info,
+    &__temperature {
+        font-weight: 900;
+    }
+
+    &__sliding-sashes,
+    &__info {
+        font-size: 1.125em;
+    }
+
+    &__sliding-sashes {
+        max-width: 15.6em;
+        margin-left: 2em;
+        margin-bottom: 1.327em;
+        background-color: $orange;
+        color: $white;
+        text-transform: uppercase;
+        padding: 0.59em 1.875em;
+        white-space: nowrap;
+
+        &:before {
+            top: 0;
+            left: -1.62em;
+            width: 1.73em;
+            height: 1.9em;            
+            background-image: url('/wp-content/themes/twentytwenty-child/img/sprite2.png');
+            background-repeat: no-repeat;
+            background-size: 6.025em 1.875em;
+            background-position: 0 0;
+            font-size: 1.20em;
+        }
+
+        &:after {
+            top: 0.31em;
+            right: -0.81em;
+            width: 1.6em;
+            height: 1.57em;
+            background-color: #F26422;
+            transform: rotateZ(45deg);  
+        }
+    }
+
+    &__info {
+        max-width: 13.6em;
+        margin-left: 3em;
+        margin-bottom: 1.888em;
+        line-height: 1.2;
+
+        &:before {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -2.9em;
+            width: 2.250em;
+            height: 2.250em;
+            background: $yellow url('/wp-content/themes/twentytwenty-child/img/sprite2.png') 80% -147.8%/8em no-repeat;
+            border-radius: 50%;
+        }
+    }
+
+    &__choose-color,
+    &__temperature-text {
+        font-weight: 700;
+    }
+
+    &__choose-color {
+        margin-bottom: 0.973em;
+    }
+
+    &__list {
+        top: -1.3em;
+        right: 0;
+        padding-top: 1.469em;
+        padding-bottom: 3.008em;
+        min-width: 6.250em;
+        height: 19.977em;
+        border: 0.063em solid #333333;
+        border-radius: 1em;
+        z-index: 1;
+        background-color: $white;
+
+        &:before {
+            top: 1.3em;
+            left: -0.5em;
+            width: 0.934em;
+            height: 0.934em;
+            border-top: 0.063em solid #333333;
+            border-left: 0.063em solid #333333;
+            transform: rotate(-45deg);
+            background-color: $white;            
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 1em;
+        }
+    }
+
+    &__color {
+        display: block;
+        width: 3.125em;
+        height: 3.125em;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+
+    [for="gray"] {
+        background-color: #E2E0DE;
+    }
+
+    [for="blue"] {
+        background-color: #36A6CF;
+    }
+
+    [for="pink"] {
+        background-color: #F8D5B3;
+    }
+
+    [for="green"] {
+        background-color: #67993E;
+    }
+
+    &__image {
+        width: 14.875em;
+        height: 20.508em;
+        background-image: url('/wp-content/themes/twentytwenty-child/img/popular-types-glazing-big.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__temperature {
+        font-size: 1.5em;
+
+        &-box {
+            bottom: 2em;
+            right: 0;
+            min-width: 16.457em;
+            justify-content: space-around;
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+            align-items: center;
+            background-color: $yellow;
+            border-radius: 1.750em;
+            z-index: 1;
+        }
+
+        &-content {
+            text-align: right;
+        }
+
+        &-text {
+            display: block;
+            font-size: 0.750em;
+        }
+
+        &-image {
+            width: 3.896em;
+            height: 3.896em;
+            background-color: $orange;
+            border: 0.250em solid $yellow;
+            border-radius: 50%;
+            transform: scale(1.2);
+
+            &:before {
+                top: 0;
+                left: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                width: 1.45em;
+                height: 2.35em;
+                background: url('/wp-content/themes/twentytwenty-child/img/sprite2.png') 42% 11.111%/6.6em no-repeat;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        [id="cold"]:checked ~ .cold,
+        [id="warm"]:checked ~ .warm {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__toggles-box {
+            margin-bottom: 2.063em;
+            max-width: 25em;
+        }
+
+        &__toggle {
+            width: 5em;
+            transform: translateY(0.3em);
+        }
+
+        &__word,
+        &__sliding-sashes,
+        &__temperature {
+            font-size: 1.875em;
+        }
+
+        &__sliding-sashes {
+            padding: 0.450em 0.475em;
+            text-transform: none;
+
+            &:after {
+                top: 0.34em;
+                right: -6.2%;
+                width: 1.38em;
+                height: 1.36em;
+            }
+
+            &:before {
+                top: 0.2em;
+                left: -12%;
+                width: 1.63em;
+                font-size: 0.9em;
+            }
+        }
+
+        &__info,
+        &__choose-color {
+            font-size: 1.5em;
+        }
+
+        &__info {
+            font-weight: 700;
+            max-width: 13.6em;
+        }
+
+        &__choose-color {
+            margin-bottom: 0.773em;
+            text-align: center;
+        }
+
+        &__box {
+            max-width: 47em;
+        }
+
+        .cold {
+            .popular-types-glazing__sliding-sashes {
+                padding-right: 1.4em;
+            }
+        }
+
+        &__colors {
+            max-width: 23.750em;
+            padding: 1.601em 1.781em 1.678em 1.729em;
+            border: 0.063em solid #9A9A9A;
+            border-radius: 1.875em;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            position: static;
+            min-width: 0;
+            height: auto;
+            border: none;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+
+        &__color {
+            width: 4.131em;
+            height: 4.131em;
+        }
+
+        &__image {
+            width: 19.375em;
+            height: 19em;
+        }
+
+        &__temperature {
+            &-box {
+                min-width: 19.188em;
+                padding-top: 0.45em;
+                padding-bottom: 0.45em;
+                bottom: 0;
+            }
+            
+            &-content {
+                &:first-of-type {
+                    margin-left: 0.7em;
+                }
+
+                &:last-of-type {
+                    margin-left: auto;
+                    margin-right: 0.8em;
+                }
+            }
+
+            &-image {
+                width: 4.321em;
+                height: 4.321em;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%) scale(1.2);
+
+                &:before {
+                    width: 2.828em;
+                    height: 2.828em;
+                    background-size: 8em;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        .title {
+            max-width: 22em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0.469em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        [id="cold"]:checked ~ .cold,
+        [id="warm"]:checked ~ .warm {
+            align-items: flex-start;
+        }
+
+        &__toggles-box {
+            max-width: 27em;
+        }
+
+        &__word {
+            font-size: 2em;
+        }
+
+        &__box {
+            max-width: 57em;
+        }
+
+        .cold {
+            .popular-types-glazing__sliding-sashes {
+                padding-right: 0.9em;
+            }
+        }
+
+        .warm {
+            .popular-types-glazing__sliding-sashes {
+                padding-right: 1.075em;
+
+                &:before {
+                    left: -19.6%;
+                }
+            }
+
+            .popular-types-glazing__image {
+                background-position: 2.5em center;
+            }
+        }
+
+        &__sliding-sashes {
+            font-size: 2.250em;
+            padding-top: 0.299em;
+            padding-bottom: 0.299em;
+
+            &:before {
+                top: 0;
+                left: -12.6%;
+                width: 1.63em;
+                font-size: 0.89em;
+            }
+
+            &:after {
+                top: 0.27em;
+                right: -5.4%;
+                width: 1.20em;
+                height: 1.16em;
+            }
+        }
+
+        &__image {
+            width: 25.909em;
+            height: 21.611em;
+        }
+
+        &__temperature {
+            font-size: 2.250em;
+
+            &-box {
+                min-width: 21.875em;
+                padding-top: 0.463em;
+                padding-bottom: 0.463em;
+                border-radius: 2.125em;
+                bottom: -1.7em;
+            }
+
+            &-content {
+                &:first-of-type {
+                    margin-left: 1em;
+                }
+
+                &:last-of-type {
+                    margin-right: 0.6em;
+
+                    .popular-types-glazing__temperature-text {
+                        margin-right: 1em;
+                    }
+                }
+            }
+
+            &-text {
+                font-size: 0.875em;
+            }
+
+            &-image {
+                width: 4.926em;
+                height: 4.926em;
+            }
+        }
+    }
+}

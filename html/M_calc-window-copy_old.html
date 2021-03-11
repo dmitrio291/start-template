@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap">
+    <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/style.css">
+</head>
+
+<body>
+    <form action="#">
+
+        <section class="calc-window calc-window-one padding pos-fix">
+
+            <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/module/calc/calc-window.css">
+
+            <div class="container">
+
+                <div class="calc-window__wrapper flex-row">
+
+                    <!-- 
+                        Тайтл в мовильной версии есть только в первом окне
+                        title-none этот класс отключит его только для мобильной версии
+                     -->
+
+                    <h2 class="calc-window__title title">РАССЧИТАЙТЕ ТОЧНУЮ СТОИМОСТЬ ОКОН <span
+                            class="calc-window__title-block">ЗА 3 МИНУТЫ</span></h2>
+
+                    <!-- первое окно -->
+
+                    <!-- 
+                        надо будет в первом окне кнопке прописать
+                        margin-left: auto;
+                        чтоб она к правой стороне прижалась
+                        т.к. других кнопок не будет ее не будет без этого свойства прижимать
+                     -->
+
+                    <div class="calc-window__slide-one ">
+
+                        <p class="calc-window__text">Выберите - куда вам нужны окна</p>
+
+
+                        <div class="calc-window__list flex-row">
+                            <div class="calc-window__list-item">
+                                <input type="radio" id="window" name="window">
+                                <label for="window" class="calc-window__list-text calc-window__list-label">
+                                    <span class="calc-window__list-circl">
+                                        <span class="calc-window__list-icon calc-window__list-icon--1"></span>
+                                    </span>
+                                    Квартира
+                                </label>
+                            </div>
+                            <div class="calc-window__list-item">
+                                <input type="radio" id="window1" name="window">
+                                <label for="window1" class="calc-window__list-text calc-window__list-label">
+                                    <span class="calc-window__list-circl">
+                                        <span class="calc-window__list-icon calc-window__list-icon--2"></span>
+                                    </span>
+                                    Частный дом</label>
+                            </div>
+                            <div class="calc-window__list-item">
+                                <input type="radio" id="window2" name="window">
+                                <label for="window2" class="calc-window__list-text calc-window__list-label">
+                                    <span class="calc-window__list-circl">
+                                        <span class="calc-window__list-icon calc-window__list-icon--3"></span>
+                                    </span>
+                                    Офис</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- второе окно -->
+
+                    <div class="calc-window__slide-two none">
+
+                        <h3 class="calc-window-two__subtitle">Выберите количество створок</h3>
+
+                        <p class="calc-window-two__text">На следующем шаге — вы сможете настроить каждую створку.</p>
+
+
+                        <div class="calc-window-two__list flex-row" action="#">
+                            <div class="calc-window-two__list-item">
+                                <input type="radio" id="window-two" name="window-two">
+                                <div class="calc-window-two__box calc-window-two__box--1">
+                                    <div
+                                        class="calc-window-two__box-img calc-window-two__box-img-size--s calc-window-two__box-img--1">
+                                    </div>
+                                </div>
+                                <label class="calc-window-two__label" for="window-two"></label>
+                            </div>
+                            <div class="calc-window-two__list-item">
+                                <input type="radio" id="window-two2" name="window-two">
+                                <div class="calc-window-two__box calc-window-two__box--2">
+                                    <div
+                                        class="calc-window-two__box-img calc-window-two__box-img-size--m calc-window-two__box-img--1">
+                                    </div>
+                                    <div
+                                        class="calc-window-two__box-img calc-window-two__box-img-size--m calc-window-two__box-img--2">
+                                    </div>
+                                </div>
+                                <label class="calc-window-two__label" for="window-two2"></label>
+                            </div>
+                            <div class="calc-window-two__list-item">
+                                <input type="radio" id="window-two3" name="window-two">
+                                <div class="calc-window-two__box calc-window-two__box--3">
+                                    <div
+                                        class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--1">
+                                    </div>
+                                    <div
+                                        class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--3">
+                                    </div>
+                                    <div
+                                        class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--4">
+                                    </div>
+                                </div>
+                                <label class="calc-window-two__label" for="window-two3"></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- третье окно -->
+
+                    <div class="calc-window__slide-tree none">
+
+                        <h3 class="calc-window-two__subtitle">Укажите размеры окна.</h3>
+                        <p class="calc-window-three__text text">Если вам не нужны аксессуары, снимите галочки. Укажите
+                            требуемый
+                            тип
+                            откосов. Вы можете добавить подоконник, откос и отлив. </p>
+
+                        <div class="calc-window-three__inner calc-window__inner">
+                            <div class="calc-window__size">
+                                <div class="calc-window__size-img">
+                                    <div class="calc-window-three__list-item flex-row none">
+                                        <div class="calc-window-three__box calc-window-three__box--1"></div>
+
+                                        <div class="calc-window__form calc-window__form--1" action="#">
+                                            <div class="range-slider">
+                                                <label class="calc-window-three__lable" for="height">Высота:</label>
+                                                <input class="range-slider__range" type="range" id="height" value="1500"
+                                                    min="0" max="2500">
+                                                <span class="range-slider__value">1500</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-window__form calc-window__form--2" action="#">
+                                            <div class="range-slider">
+                                                <label class="calc-window-three__lable" for="width">Ширина:</label>
+                                                <input class="range-slider__range" type="range" id="width" value="1000"
+                                                    min="0" max="2500">
+                                                <span class="range-slider__value">1000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calc-window-three__list-item flex-row none">
+                                        <div class="calc-window-three__box calc-window-three__box--2"></div>
+
+                                        <div class="calc-window__form calc-window__form--1" action="#">
+                                            <div class="range-slider">
+                                                <label class="calc-window-three__lable" for="height-1">Высота:</label>
+                                                <input class="range-slider__range" type="range" id="height-1"
+                                                    value="1500" min="0" max="2500">
+                                                <span class="range-slider__value">1500</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-window__form calc-window__form--2" action="#">
+                                            <div class="range-slider">
+                                                <label class="calc-window-three__lable" for="width-1">Ширина:</label>
+                                                <input class="range-slider__range" type="range" id="width-1"
+                                                    value="1000" min="0" max="2500">
+                                                <span class="range-slider__value">1000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calc-window-three__list-item flex-row">
+                                        <div class="calc-window-three__box calc-window-three__box--3"></div>
+
+                                        <div class="calc-window__form calc-window__form--1" action="#">
+                                            <div class="range-slider">
+                                                <label class="calc-window-three__lable" for="height-2">Высота:</label>
+                                                <input class="range-slider__range" type="range" id="height-2"
+                                                    value="1500" min="0" max="2500">
+                                                <span class="range-slider__value">1500</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-window__form calc-window__form--2" action="#">
+                                            <div class="range-slider">
+                                                <label class="calc-window-three__lable" for="width-2">Ширина:</label>
+                                                <input class="range-slider__range" type="range" id="width-2"
+                                                    value="1000" min="0" max="2500">
+                                                <span class="range-slider__value">1000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc-window__block-form">
+                                <h3 class="calc-window__block-text text bold">Выберите аксессуары</h3>
+                                <span data-modal="#modal" class="calc-window__block-modal open-modal-1">
+                                    <img class="calc-window__block-img"
+                                        src="/wp-content/themes/twentytwenty-child/img/modal-btn.svg" alt="Вопрос">
+                                </span>
+                                <div class="calc-window__block-inner">
+                                    <div>
+                                        <input class="calc-window__block-check" type="checkbox" id="check-1">
+                                        <label class="calc-window__block-check-lable text"
+                                            for="check-1">Подоконник</label>
+                                    </div>
+                                    <span class="line"></span>
+                                    <input class="calc-window__block-check" type="checkbox" id="check-2">
+                                    <label class="calc-window__block-check-lable text" for="check-2">Откосы</label>
+                                    <div class="calc-window__block-add">
+                                        <input class="calc-window__block-radio" type="radio" name="block-add"
+                                            id="radio-1">
+                                        <label class=" calc-window__block-radio-lable text-m" for="radio-1">ПВХ</label>
+                                        <input class="calc-window__block-radio" type="radio" name="block-add"
+                                            id="radio-2">
+                                        <label class=" calc-window__block-radio-lable text-m"
+                                            for="radio-2">Штукатурные</label>
+                                        <input class="calc-window__block-radio" type="radio" name="block-add"
+                                            id="radio-3">
+                                        <label class="calc-window__block-radio-lable text-m"
+                                            for="radio-3">Термооткосы</label>
+                                    </div>
+                                    <span class="line"></span>
+                                    <input class="calc-window__block-check" type="checkbox" id="check-3">
+                                    <label class="calc-window__block-check-lable text" for="check-3">Отливы</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- четвертое окно -->
+
+                    <div class="calc-window__slide-four calc-window-four none">
+
+                        <p class="calc-window-three__text text"> Если необходимо — добавьте на створку москитную сетку и
+                            детский
+                            замок.
+                            Отметьте нужные опции галочками </p>
+
+                        <div class="calc-window-three__inner calc-window__inner">
+                            <div class="calc-window__size">
+                                <div class="calc-window__size-img">
+
+                                    <!-- окно с одной створкой -->
+
+                                    <div class="calc-window-three__list-item flex-row none">
+                                        <div class="calc-window-three__box calc-window-three__box--1">
+                                            <div
+                                                class="calc-window-two__box-img calc-window-two__box-img-size--s calc-window-two__box-img--1">
+                                                <span class="deaf"></span> <!-- глухое окно -->
+                                                <span class="type-open-left"></span> <!-- поворотная левая -->
+                                                <span class="type-open-right"></span> <!-- поворотная правая -->
+                                                <span class="type-open-up"></span> <!-- откидная -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- окно с двумя створками -->
+
+                                    <div class="calc-window-three__list-item flex-row">
+                                        <div class="calc-window-three__box calc-window-three__box--2">
+                                            <div
+                                                class="calc-window-two__box-img calc-window-two__box-img-size--m calc-window-two__box-img--1">
+                                                <span class="deaf"></span> <!-- глухое окно -->
+                                                <span class="type-open-left"></span> <!-- поворотная левая -->
+                                                <span class="type-open-right"></span> <!-- поворотная правая -->
+                                                <span class="type-open-up"></span> <!-- откидная -->
+                                            </div>
+                                            <div
+                                                class="calc-window-two__box-img calc-window-two__box-img-size--m calc-window-two__box-img--2">
+                                                <span class="type-open-up"></span> <!-- откидная -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- окно с тремя створками -->
+
+                                    <div class="calc-window-three__list-item flex-row none">
+                                        <div class="calc-window-three__box calc-window-three__box--3">
+                                            <div
+                                                class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--1">
+                                                <span class="type-open-left"></span> <!-- поворотная левая -->
+                                            </div>
+                                            <div
+                                                class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--3">
+                                                <span class="type-open-right"></span> <!-- поворотная правая -->
+                                                <span class="type-open-up"></span> <!-- откидная -->
+                                            </div>
+                                            <div
+                                                class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--4">
+                                                <span class="deaf"></span> <!-- глухое окно -->
+                                                <span class="type-open-right"></span> <!-- поворотная правая -->
+                                                <span class="type-open-up"></span> <!-- откидная -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="calc-window__block-form">
+                                <h3 class="calc-window__block-text text bold none">Створка</h3>
+                                <h3 class="calc-window__block-text text bold none">Левая створка</h3>
+                                <h3 class="calc-window__block-text text bold none">Центральная створка</h3>
+                                <h3 class="calc-window__block-text text bold">Правая створка</h3>
+                                <span data-modal="#modal-1" class="calc-window__block-modal open-modal-1">
+                                    <img class="calc-window__block-img"
+                                        src="/wp-content/themes/twentytwenty-child/img/modal-btn.svg" alt="Вопрос">
+                                </span>
+                                <div class="calc-window__block-inner">
+                                    <div>
+                                        <input class="calc-window__block-check" type="radio" name="sash-radio"
+                                            id="check-4"><label class="calc-window__block-check-lable text"
+                                            for="check-4">Глухая</label>
+                                    </div>
+                                    <span class="line"></span>
+                                    <input class="calc-window__block-check" type="radio" name="sash-radio" id="check-5">
+                                    <label class="calc-window__block-check-lable text" for="check-5">Поворотная</label>
+                                    <div class="calc-window__block-add">
+                                        <input class="calc-window__block-radio" type="checkbox" id="check-6">
+                                        <label class=" calc-window__block-radio-lable text-m" for="check-6">Москитная
+                                            сетка</label>
+                                        <input class="calc-window__block-radio" type="checkbox" id="check-7">
+                                        <label class=" calc-window__block-radio-lable text-m" for="check-7">Детский
+                                            замок</label>
+                                    </div>
+                                    <span class="line"></span>
+                                    <div>
+                                        <input class="calc-window__block-check" type="radio" name="sash-radio"
+                                            id="check-8">
+                                        <label class="calc-window__block-check-lable text"
+                                            for="check-8">Поворотно-откидная</label>
+                                        <div class="calc-window__block-add">
+                                            <input class="calc-window__block-radio" type="checkbox" id="check-9">
+                                            <label class=" calc-window__block-radio-lable text-m"
+                                                for="check-9">Москитная
+                                                сетка</label>
+                                            <input class="calc-window__block-radio" type="checkbox" id="check-10">
+                                            <label class=" calc-window__block-radio-lable text-m" for="check-10">Детский
+                                                замок</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- пятое окно -->
+
+                    <div class="calc-window__slide-five calc-window-four none">
+
+                        <p class="calc-window-three__text text">Добавьте еще одно пластиковое окно или перейдите к
+                            следующему
+                            шагу.</p>
+
+                        <div class="calc-window-three__inner calc-window__inner">
+                            <div class="calc-window__size">
+                                <div class="calc-window__size-img">
+
+                                    <div class="calc-window-three__list-item flex-row ">
+                                        <div class="calc-window-three__box calc-window-three__box--1">
+
+                                            <!-- сюда вставляем готове окно из предыдущего слайда -->
+
+                                            <!-- если окна нет или удалили все, то можно автоматом выкидывать на первый слайд -->
+
+                                            <div
+                                                class="calc-window-two__box-img calc-window-two__box-img-size--s calc-window-two__box-img--1">
+                                                <span class="type-open-right"></span>
+                                                <span class="type-open-up"></span>
+                                            </div>
+
+                                            <!-- иконки модалки -->
+
+                                            <span data-tooltip="удалить окно"
+                                                class="window-icon window-icon__del open-modal-1" data-modal="#modal-2">
+                                                <svg class="icon icon__del">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#del">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span data-tooltip="скопировать окно"
+                                                class="window-icon window-icon__copy"><svg class="icon icon__copy">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#copy">
+                                                    </use>
+                                                </svg></span>
+                                            <span data-tooltip="изменить окно"
+                                                class="window-icon window-icon__setting"><svg
+                                                    class="icon icon__setting">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#setting">
+                                                    </use>
+                                                </svg></span>
+                                        </div>
+
+                                        <!-- размеры окна -->
+
+                                        <div class="text calc-window-five__text">Окно 1
+                                            <span>1000</span>*<span>1500</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div data-tooltip="добавить окно" class="calc-window__add">
+                                <svg class="icon icon__plus">
+                                    <use xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#plus"></use>
+                                </svg>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- шестое окно -->
+
+                    <div class="calc-window__slide-six none">
+
+                        <h3 class="calc-window-two__subtitle">Выберите дополнительные услуги
+                            <span data-modal="#modal-3"
+                                class="calc-window__block-modal open-modal-1 calc-window-six__modal-768">
+                                <img class="calc-window__block-img"
+                                    src="/wp-content/themes/twentytwenty-child/img/modal-btn.svg" alt="Вопрос">
+                            </span>
+                        </h3>
+                        <p class="calc-window-three__text text">Доставка, подъем на этаж и монтаж.</p>
+                        <span data-modal="#modal-3"
+                            class="calc-window__block-modal open-modal-1 calc-window-six__modal-375">
+                            <img class="calc-window__block-img"
+                                src="/wp-content/themes/twentytwenty-child/img/modal-btn.svg" alt="Вопрос">
+                        </span>
+
+                        <div class="calc-window-three__inner calc-window__inner">
+                            <div class="calc-window__block-form calc-window-six__form">
+                                <h3 class="calc-window__block-text text bold">Доставка</h3>
+                                <div class="calc-window__block-inner calc-window-six__block-inner">
+                                    <input class="calc-window__block-check" type="radio" name="delivery"
+                                        id="check-11"><label class="calc-window__block-check-lable text"
+                                        for="check-11">В
+                                        пределах МКАД </label>
+                                    <span class="line"></span>
+                                    <input class="calc-window__block-check" type="radio" name="delivery" id="check-12">
+                                    <label class="calc-window__block-check-lable text" for="check-12">Московская
+                                        область</label>
+                                    <span class="line"></span>
+                                    <input class="calc-window__block-check" type="radio" name="delivery" id="check-13">
+                                    <label class="calc-window__block-check-lable text" for="check-13">Самовывоз</label>
+                                </div>
+                            </div>
+                            <div class="calc-window__block-form calc-window-six__form calc-window-six__form--mid">
+                                <h3 class="calc-window__block-text text bold">Подъем на лифте</h3>
+                                <div class="calc-window__block-inner calc-window-six__block-inner">
+                                    <input class="calc-window__block-check" type="radio" name="climb"
+                                        id="check-14"><label class="calc-window__block-check-lable text"
+                                        for="check-14">Грузовой лифт</label>
+                                    <span class="line"></span>
+                                    <input class="calc-window__block-check" type="radio" name="climb" id="check-15">
+                                    <label class="calc-window__block-check-lable text" for="check-15">Пассажирский
+                                        лифт</label>
+                                    <span class="line"></span>
+                                    <input class="calc-window__block-check" type="radio" name="climb" id="check-16">
+                                    <label class="calc-window__block-check-lable text" for="check-16">Подъем не
+                                        требуется</label>
+                                    <span class="line"></span>
+                                    <input class="calc-window__block-check" type="radio" name="climb" id="check-17">
+                                    <label class="calc-window__block-check-lable text" for="check-17">Лифта нет</label>
+                                </div>
+                            </div>
+                            <div class="calc-window__block-form calc-window-six__form">
+                                <h3 class="calc-window__block-text text bold">Монтаж</h3>
+                                <div class="calc-window__block-inner calc-window-six__block-inner">
+                                    <input class="calc-window__block-check" type="radio" name="installation"
+                                        id="check-18">
+                                    <label class="calc-window__block-check-lable text" for="check-18">Без
+                                        демонтажа</label>
+                                    <span class="line"></span>
+                                    <input class="calc-window__block-check" type="radio" name="installation"
+                                        id="check-19">
+                                    <label class="calc-window__block-check-lable text" for="check-19">С
+                                        демонтажом</label>
+                                    <span class="line"></span>
+                                    <input class="calc-window__block-check" type="radio" name="installation"
+                                        id="check-20">
+                                    <label class="calc-window__block-check-lable text" for="check-20">Без
+                                        монтажа</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- седьмое окно -->
+
+                    <div class="calc-window__slide-seven none">
+
+                        <h3 class="calc-window-two__subtitle">Поздравляем! Всё готово для расчета.</h3>
+
+                        <div class="calc-window-seven__inner">
+
+                            <div class="calc-window-seven__block-payment">
+                                <h3 class="calc-window-seven__payment">Ваш рассчет:<span>7r56gh8</span></h3>
+                                <p class="calc-window-seven__payment-text text">По вашему запросу возможны несколько
+                                    вариантов.
+                                    Консультант перезвонит для конкретизации расчета.</p>
+
+                                <div class="form-contacts calc-window-seven__payment-form" action="#">
+                                    <div class="form-contacts__box form-contacts__box--phone">
+                                        <input class="form-contacts__input" type="tel" placeholder="000 000-00-00">
+                                    </div>
+                                    <button class="form-contacts__button button" type="submit">Рассчитать
+                                        стоимость</button>
+                                </div>
+
+                                <p class="calc-window-seven__payment-info text-m">Оставляя свои контактные данные, вы
+                                    подтверждаете свое совершеннолетие,
+                                    соглашаетесь на обработку персональных данных в соответствии
+                                    с <a class="calc-window-seven__payment-link" href="#">Правовой информацией</a></p>
+                            </div>
+
+                            <div class="calc-window-seven__block-check">
+                                <div class="calc-window-seven__box">
+
+                                    <!--
+                                         блок общей информации
+                                         для одной створки
+                                    -->
+
+                                    <div class="calc-window-seven__box-info">
+                                        <div class="calc-window-seven__box-img flex-row">
+                                            <div class="calc-window-seven__box-img-window">
+                                                <div class="calc-window-seven__img-1">
+
+                                                    <div class="calc-window-seven__img-1-inner">
+                                                        <span class="deaf"></span>
+                                                        <!-- <span class="type-open-left"></span> -->
+                                                        <!-- <span class="type-open-right"></span> -->
+                                                        <span class="type-open-up"></span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="calc-window-seven__box-img-text flex-row">
+                                                <div class="calc-window-seven__box-img-name text-m">Окно <span>1</span>
+                                                </div>
+                                                <div class="calc-window-seven__box-img-info text-m">
+                                                    <span>1000*</span><span>1500</span>
+                                                    мм.<br><span>1</span> створка</div>
+                                            </div>
+                                        </div>
+                                        <div class="calc-window-seven__box-text">
+                                            <p class="text-m">Доп. опции:
+                                                <span>подоконник</span>,
+                                                <span>откосы ПВХ</span>,
+                                                <span>отлив</span> </p>
+                                            <p class="text-m">Аксессуары: <span>москитная сетка</span></p>
+                                        </div>
+                                    </div>
+
+                                    <!--
+                                         блок общей информации
+                                         для двух створок
+                                    -->
+
+                                    <div class="calc-window-seven__box-info">
+                                        <div class="calc-window-seven__box-img flex-row">
+                                            <div class="calc-window-seven__box-img-window">
+                                                <div class="calc-window-seven__img-2">
+                                                    <div
+                                                        class="calc-window-seven__img-2-inner calc-window-seven__img-2-inner--1">
+                                                        <!-- <span class="deaf"></span> -->
+                                                        <!-- <span class="type-open-left"></span> -->
+                                                        <span class="type-open-right"></span>
+                                                        <span class="type-open-up"></span>
+                                                    </div>
+                                                    <div class="calc-window-seven__img-2-inner">
+                                                        <!-- <span class="deaf"></span> -->
+                                                        <!-- <span class="type-open-left"></span> -->
+                                                        <!-- <span class="type-open-right"></span> -->
+                                                        <!-- <span class="type-open-up"></span> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calc-window-seven__box-img-text flex-row">
+                                                <div class="calc-window-seven__box-img-name text-m">Окно <span>2</span>
+                                                </div>
+                                                <div class="calc-window-seven__box-img-info text-m">
+                                                    <span>1000*</span><span>1500</span>
+                                                    мм.<br><span>2</span> створка</div>
+                                            </div>
+                                        </div>
+                                        <div class="calc-window-seven__box-text">
+                                            <p class="text-m">Доп. опции:
+                                                <span>подоконник</span>,
+                                                <span>откосы ПВХ</span>,
+                                                <span>отлив</span> </p>
+                                            <p class="text-m">Аксессуары: <span>москитная сетка</span></p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 
+                                        блок общей информации
+                                         для трех створок
+                                    -->
+
+                                    <div class="calc-window-seven__box-info none">
+                                        <div class="calc-window-seven__box-img flex-row">
+                                            <div class="calc-window-seven__box-img-window">
+                                                <div class="calc-window-seven__img-3">
+                                                    <div
+                                                        class="calc-window-seven__img-3-inner calc-window-seven__img-3-inner--1">
+                                                        <!-- <span class="deaf"></span> -->
+                                                        <span class="type-open-left"></span>
+                                                        <!-- <span class="type-open-right"></span> -->
+                                                        <!-- <span class="type-open-up"></span> -->
+                                                    </div>
+                                                    <div
+                                                        class="calc-window-seven__img-3-inner calc-window-seven__img-3-inner--2">
+                                                        <!-- <span class="deaf"></span> -->
+                                                        <!-- <span class="type-open-left"></span> -->
+                                                        <span class="type-open-right"></span>
+                                                        <!-- <span class="type-open-up"></span> -->
+                                                    </div>
+                                                    <div
+                                                        class="calc-window-seven__img-3-inner calc-window-seven__img-3-inner--3">
+                                                        <!-- <span class="deaf"></span> -->
+                                                        <span class="type-open-left"></span>
+                                                        <!-- <span class="type-open-right"></span> -->
+                                                        <span class="type-open-up"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calc-window-seven__box-img-text flex-row">
+                                                <div class="calc-window-seven__box-img-name text-m">Окно <span>3</span>
+                                                </div>
+                                                <div class="calc-window-seven__box-img-info text-m">
+                                                    <span>1000*</span><span>1500</span>
+                                                    мм.<br><span>2</span> створка</div>
+                                            </div>
+                                        </div>
+                                        <div class="calc-window-seven__box-text">
+                                            <p class="text-m">Доп. опции:
+                                                <span>подоконник</span>,
+                                                <span>откосы ПВХ</span>,
+                                                <span>отлив</span> </p>
+                                            <p class="text-m">Аксессуары: <span>москитная сетка</span></p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="calc-window-seven__box-services">
+                                        <p class="text-m">Доставка: <span>самовывоз</span></p>
+                                        <p class="text-m">Подъем на этаж: <span>пассажирский лифт</span></p>
+                                        <p class="text-m">Установка: <span>с демонтажем</span></p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="calc-window__buttons flex-row ">
+                        <div class="calc-window__btn calc-window__btn--prew">Назад</div>
+                        <div class="calc-window__btn-box">
+                            <div data-tooltip="отмена" class="calc-window__box-icon">
+                                <svg class="icon icon__box-del">
+                                    <use xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#plus"></use>
+                                </svg>
+                            </div>
+                            <div data-tooltip="применить" class="calc-window__box-icon">
+                                <svg class="icon icon__box-check">
+                                    <use xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="calc-window__btn calc-window__btn--next">Далее</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </form>
+
+
+
+
+    <div class='modal' id='modal'>
+        <div class='content'>
+            <a class='close-modal' data-modal="#modal" href="#"></a>
+            <p class="modal-text text-m"><span class="bold">Подоконник</span> — в дополнение к окну вы можете заказать
+                подоконник ПВХ.</p>
+            <p class="modal-text text-m"><span class="bold">Откосы</span> — обрамляют оконный проем. Препятствует
+                образованию конденсата на окнах,
+                поддерживает оптимальный уровень тепла в помещении.</p>
+            <p class="modal-text text-m"><span class="bold">Тёплые откосы</span> — cэндвич-панели для откосов отличаются
+                слоеной структурой. Между двумя
+                стенками толщиной
+                в 1 мм находится вспененный материал.</p>
+            <p class="modal-text text-m"><span class="bold">Штукатурные откосы</span> — оконная классика. Очень долго
+                это был самый распространённый способ
+                оформления окна.</p>
+            <p class="modal-text text-m"><span class="bold">Гипсокартонные откосы</span> — для утепления гипсокартонных
+                откосов, под плиту кладут
+                утеплительный материал.</p>
+            <p class="modal-text text-m"><span class="bold">Отливы</span> — это «козырек», который устанавливается с
+                внешней стороны окна для того чтобы по
+                нему стекала дождевая вода и тающий снег. Он защищает основание окна от лишней влаги.</p>
+        </div>
+    </div>
+
+    <div class='modal' id='modal-1'>
+        <div class='content'>
+            <a class='close-modal' data-modal="#modal-1" href="#"></a>
+            <p class="modal-text text-m"><span class="bold">Глухая створка</span> — створка не открывается.</p>
+            <p class="modal-text text-m"><span class="bold">Поворотная створка</span> — створка открывается только в
+                горизонтальной плоскости на петлях, как дверь.</p>
+            <p class="modal-text text-m"><span class="bold">Поворотно-откидная створка</span> — створка открывается и в
+                горизонтальной плоскости, и в вертикальной «режим
+                проветривания».</p>
+            <p class="modal-text text-m"><span class="bold">Москитная сетка</span> — в зависимости от вида, защищает
+                окно от попадания с улицы насекомых, пыльцы, пыли.</p>
+            <p class="modal-text text-m"><span class="bold">Детский замок</span> — блокирует поворотное положение
+                створки, оставляя доступным откидной режим проветривания. Ручка с замком в закрытом положении полностью
+                исключает любой вид открывания створки, наглухо запирая окно.</p>
+        </div>
+    </div>
+
+    <div class='modal' id='modal-2'>
+        <div class='content'>
+            <a class='close-modal' data-modal="#modal-2" href="#"></a>
+            <p class="text modal-title">Удалить окно?</p>
+            <a class='modal-btn bold' data-modal="#modal-2" href="#">нет</a>
+            <a class='modal-btn bold' href="#">да</a>
+        </div>
+    </div>
+
+    <div class='modal' id='modal-3'>
+        <div class='content'>
+            <a class='close-modal' data-modal="#modal-3" href="#"></a>
+            <p class="modal-text text-m"><span class="bold">В пределах МКАД</span>— стоимость доставки 3636p</p>
+            <p class="modal-text text-m"><span class="bold">Московская область</span>— доставка за пределы МКАД 30 p/км
+                (прибавляется к основной сумме доставки).</p>
+            <p class="modal-text text-m"><span class="bold">Льготная зона доставки</span>— 40 км. от производства в п.
+                Дорохово.</p>
+            <p class="modal-text text-m"><span class="bold">Самовывоз</span>— вы можете забрать окна из удобного вам
+                офиса.</p>
+        </div>
+    </div>
+
+
+    <script src="/wp-content/themes/twentytwenty-child/libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/wp-content/themes/twentytwenty-child/js/calc.js"></script>
+
+</body>
+
+</html>

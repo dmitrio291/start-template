@@ -1,0 +1,373 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.footer {
+    padding: 3rem 0;
+    /* .footer__top */
+
+    &__top {
+        border-bottom: 0.1rem solid #969693;
+    }
+
+    /* .footer__top-inner */
+
+    &__top-inner {
+        position: relative;
+
+        @include _768 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.4rem;
+        }
+    }
+
+    /* .footer__top-form */
+
+    &__top-form {
+        justify-content: space-between;
+        margin-bottom: 2.6rem;
+        padding: 0 1rem;
+
+        @include _768 {
+            margin-bottom: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 16.6rem;
+        }
+    }
+
+    /* .footer__top-input */
+
+    &__top-input {
+        border-radius: 0.375em;
+        border: 0.1rem solid #d5d5d5;
+        text-align: center;
+        background-color: $lightGray;
+        max-width: 16.3rem;
+
+        &::placeholder {
+            color: #bababa;
+        }
+
+        @include _768 {
+            display: none;
+        }
+    }
+
+    /* .footer__top-btn */
+
+    &__top-btn {
+        max-width: 15rem;
+        font-size: 1.2rem;
+        margin: 0;
+
+        @include _768 {
+            display: none;
+
+        }
+
+        &--modal {
+            display: none;
+
+            @include _768 {
+                display: flex;
+            }
+        }
+    }
+
+    /* .footer__top-list */
+
+    &__top-list {
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            margin-bottom: 0;
+        }
+    }
+
+    /* .footer__top-item */
+
+    &__top-item {
+        @include _768 {
+            &+& {
+                margin-left: 2.5rem;
+
+                @include _1200 {
+                    margin-left: 5.3rem;
+                }
+            }
+        }
+    }
+
+    /* .footer__top-icons */
+
+    &__top-icons {
+        position: absolute;
+        right: 0;
+        bottom: -29.2rem;
+
+        a {
+            text-decoration: none;
+        }
+
+        @include _768 {
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 16.2rem;
+        }
+    }
+
+    /* .footer__top-icon */
+
+    &__top-icon {
+        width: 4.4rem;
+        height: 4.4rem;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.6rem;
+
+        svg {
+            width: 1em;
+            height: 1em;
+            font-size: 1.5em;
+        }
+
+        @include _768 {
+            margin-bottom: 0;
+            width: 3rem;
+            height: 3rem;
+
+            svg {
+                font-size: 1em;
+            }
+        }
+    }
+
+    /* .grid-container */
+
+    .grid-container {
+        flex-direction: column;
+        padding: 2.5rem 0;
+
+        @include _768 {
+            display: grid;
+            padding-bottom: 0;
+            grid-template-columns: 0.95fr 1.1fr 0.7fr;
+            grid-template-rows: 0.7fr 1fr;
+            gap: 0rem 2rem;
+            grid-template-areas:
+                "one two map"
+                "one three map";
+        }
+
+        @include _1200 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    /* .footer__main */
+
+    &__main {
+        border-bottom: 0.1rem solid #969693;
+    }
+
+    /* .footer__main-box--one */
+
+    &__main-box--one {
+        display: none;
+
+        @include _768 {
+            display: block;
+            grid-area: one;
+        }
+    }
+
+    /* .footer__main-box--two */
+
+    &__main-box--two {
+        display: none;
+
+        @include _768 {
+            display: block;
+            grid-area: two;
+        }
+    }
+
+    /* .footer__main-box--four */
+
+    &__main-box--three {
+        order: 2;
+
+        .footer__main-title {
+            display: none;
+        }
+
+        .footer__main-link {
+            color: $orange;
+        }
+
+        @include _768 {
+            grid-area: three;
+
+            & .footer__main-item {
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        @include _1200 {
+            order: 1;
+            .footer__main-title {
+                display: block;
+            }
+
+            & .footer__main-list {
+                display: block;
+            }
+
+            & .footer__main-item {
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+
+    /* .footer__main-box--map */
+
+    &__main-box--map {
+        order: 1;
+        margin-bottom: 3.7rem;
+
+        @include _768 {
+            grid-area: map;
+            text-align: right;
+        }
+    }
+
+    /* .footer__main-title */
+
+    &__main-title {
+        @include _768 {
+            margin-bottom: 1.3rem;
+            color: #969693;
+        }
+    }
+
+    /* .footer__main-item */
+
+    &__main-item {
+        margin-bottom: 1.2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    /* .footer__main-link */
+
+    &__main-link {
+        @include _768 {
+            letter-spacing: 0.03em;
+            color: #000;
+        }
+    }
+
+    /* .footer__main-map */
+
+    &__main-map {
+        width: 26.8rem;
+        height: 10.5rem;
+        margin-bottom: 2rem;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @include _768 {
+            width: 22.4rem;
+        }
+    }
+
+    /* .footer__main-map-link */
+
+    &__main-map-link {
+        text-decoration: none;
+        font-size: 2.2rem;
+        color: #3a3a3a;
+        font-weight: 700;
+        position: relative;
+
+        &::before {
+            content: "Служба контроля качества";
+            position: absolute;
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: #969693;
+            bottom: -1.2rem;
+
+            @include _768 {
+                right: 0;
+            }
+        }
+    }
+
+    /* .footer__bottom */
+
+    &__bottom {
+        padding-top: 2.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.4;
+
+        .dfsb {
+            @include _max768 {
+                display: block;
+            }
+        }
+
+        @include _768 {
+            padding-top: 1.9rem;
+            line-height: 1.5;
+        }
+    }
+
+    /* .footer__bottom-item */
+
+    &__bottom-item {
+        &.text-right {
+            margin-top: 2rem;
+
+            span:last-child {
+                opacity: 0.4;
+            }
+
+            @include _768 {
+                text-align: right;
+                margin-top: 0;
+            }
+        }
+
+        @include _768 {
+            text-align: left;
+        }
+    }
+
+    /* .footer__bottom-mail */
+
+    &__bottom-mail {
+        margin-right: 1.5rem;
+    }
+}

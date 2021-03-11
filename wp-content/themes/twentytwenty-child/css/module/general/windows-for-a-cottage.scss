@@ -1,0 +1,72 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.windows-for-a-cottage {
+    display: none;
+
+    @include _1200 {
+        display: block;
+
+        &__title,
+        &__subtitle {
+            text-transform: uppercase;
+            line-height: 1.25;
+            margin-bottom: 3rem;
+        }
+
+        /* .windows-for-a-cottage__subtitle */
+
+        &__subtitle {
+            font-size: 1.8rem;
+        }
+
+        /* .windows-for-a-cottage__box-img */
+
+        &__box-img {
+            float: right;
+            margin-left: 2rem;
+            width: 100%;
+            max-width: 38.8rem;
+            height: 19.1rem;
+        }
+
+        /* .windows-for-a-cottage__text */
+
+        &__text {
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        /* .windows-for-a-cottage__btn */
+
+        &__btn {
+            max-width: 38.8rem;
+            margin: 3rem auto 3rem 0;
+        }
+
+        /* .windows-for-a-cottage__footer */
+
+        &__footer {
+            padding: 2.2rem;
+            border-radius: 0.6rem;
+            border: 0.1rem solid $orange;
+        }
+
+        /* .windows-for-a-cottage__footer-title */
+
+        &__footer-title {
+            text-transform: uppercase;
+            margin-bottom: 2.2rem;
+        }
+
+        /* .windows-for-a-cottage__footer-text */
+        &__footer-text {
+            line-height: 1.2;
+        }
+    }
+}

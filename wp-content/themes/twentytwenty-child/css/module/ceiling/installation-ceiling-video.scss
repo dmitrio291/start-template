@@ -1,0 +1,61 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.installation-ceiling-video {
+    /* .installation-ceiling-video__title */
+
+    &__title {
+        line-height: 1.2em;
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            margin-bottom: 3rem;
+        }
+
+        @include _1200 {
+        }
+    }
+
+    /* .installation-ceiling-video__block-video */
+
+    &__block-video {
+        height: 19rem;
+        margin-bottom: 2.5rem;
+        position: relative;
+
+        @include _768 {
+            height: 40rem;
+            margin-bottom: 3rem;
+        }
+
+        @include _1200 {
+            height: 54.2rem;
+        }
+    }
+
+    iframe {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /* .installation-ceiling-video__btn */
+
+    &__btn {
+
+        @include _768 {
+            max-width: 30.6rem;
+        }
+
+        @include _1200 {
+        }
+    }
+}

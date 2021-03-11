@@ -1,0 +1,375 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+.text-along {
+    font-size: 1.125em;
+    font-weight: 900;
+
+    span {
+        display: block;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 1.25em;
+        font-weight: 700;
+        text-align: center;
+
+        span {
+            display: inline;
+        }
+    }
+
+    @media (min-width: 960px) {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5em;
+    }
+}
+
+
+.video-reviews-company-text,
+.video-reviews-company-work-text,
+.windows-pine-text,
+.windows-pine-text-2 {
+    .text {
+        .orange {
+            font-weight: 700;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+}
+
+.video-reviews-company-text,
+.video-reviews-company-work-text {
+    .title {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.3em;
+    }
+
+    .text {
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        .text {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.1;
+        }
+
+        .title {
+            margin-bottom: 1em;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .title {
+            font-size: 3rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 0.875em;
+            font-size: 4rem;
+        }
+
+        .text {
+            font-size: 1.125em;
+            line-height: 1.2;
+        }
+    }
+}
+
+.video-reviews-company-text {
+    .container {
+        width: calc(100% - 2.7rem);
+    }
+
+    .title {
+        max-width: 11em;
+    }
+
+    .block {
+        display: block;
+    }
+
+    @media (min-width: 600px) {
+        .title {
+            max-width: 16em;
+        }
+
+        .block {
+            display: inline;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 4.8rem);
+        }
+
+        .text {
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            max-width: none;
+            font-size: 4rem;
+        }
+    }
+}
+
+.video-reviews-company-work-text {
+    .title {
+        max-width: 14em;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 5.6rem);
+        }
+
+        .title {
+            max-width: none;
+        }
+    }
+}
+
+.windows-pine-text {
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 4.9rem);
+        }
+
+        .text {
+            max-width: 39em;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 2.8rem);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .text {
+            line-height: 1.2;
+            max-width: none;
+        }
+    }
+}
+
+.windows-pine-text-2 {
+    .container {
+        width: calc(100% - 2.8rem);
+    }
+
+    .text {
+        margin-bottom: 1.163em;
+
+        &-link {
+            color: inherit;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 6.3rem);
+        }
+
+        .text {
+            margin-bottom: 1.163em;
+
+            &-block {
+                display: block;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: calc(100% - 6rem);
+        }
+
+        .text {
+            text-align: left;
+
+            &-block {
+                display: inline;
+            }
+
+            &-width {
+                max-width: 51em;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.windows-larch-text,
+.windows-pine-text-3,
+.windows-pine-text-4,
+.wide-range-of-colors {
+    & .text-link {
+        color: inherit;
+
+        &:hover {
+            font-weight: 700;
+            color: $orange;
+        }
+    }
+    @media (min-width: 768px) {
+        line-height: 1.25;
+
+        .text {
+            margin-bottom: 1.2em;
+        }
+    }
+}
+
+.windows-larch-text-1 {
+    @media (min-width: 768px) {
+        line-height: 1.25;
+    }
+}
+
+.oak-windows {
+    @media (min-width: 768px) {
+        line-height: 1.25;
+    }
+}
+
+.ceilings-text {
+    .ceilings-text__title {
+        margin-bottom: 2.5rem;
+        @include _1200 {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.ceilings-text-reviews {
+    &__title {
+        margin-bottom: 0.7em;
+        @media (min-width: 768px) {
+            margin-bottom: 1.1em;
+        }
+        @media (min-width: 1200px) {
+            margin-bottom: 0.7em;
+        }
+        span {
+            display: block;
+            @media (min-width: 1200px) {
+                display: inline-block;
+            }
+        }
+    }
+    &__text {
+        line-height: 1.2em;
+        @media (min-width: 768px) {
+            line-height: 1.1em;
+        }
+        @media (min-width: 1200px) {
+            line-height: 1.2em;
+        }
+    }
+}
+
+.ceilings-text-customers {
+    &__title {
+        line-height: 1.2em;
+        margin-bottom: 2.5rem;
+        
+        @media (min-width: 768px) {
+            line-height: 1.1em;
+        }
+        @media (min-width: 1200px) {
+            margin-bottom: 3rem;
+        }
+    }
+    &__text {
+        & > span {
+
+            @media (min-width: 768px) {
+                display: inline;
+
+                & > span {
+                    display: block;
+                    @media (min-width: 1200px) {
+                        display: inline;
+                    }
+                }
+                @media (min-width: 1200px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.ceilings-text-exclusive {
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+
+        @include _768 {
+            line-height: 1.1;
+            margin-bottom: 3rem;
+        }
+        
+        @include _1200 {
+            line-height: 1.2;
+        }
+    }
+    &__text {
+        @include _1200 {
+            line-height: 1.2;
+        }
+    }
+}
+.ceilings-text-sky {
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 1.9rem;
+        @include _768 {
+            line-height: 1.1;
+            margin-bottom: 3rem;
+        }
+        @include _1200 {
+            line-height: 1.2;
+        }
+    }
+    &__text {
+        line-height: 1.13;
+        @include _768 {
+            span {
+                display: block;
+            }
+        }
+        @include _1200 {
+            line-height: 1.21;
+            span {
+                display: inline;
+            }
+        }
+    }
+}
+

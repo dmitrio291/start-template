@@ -1,0 +1,43 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+.product-windows {
+
+    /* .product-windows__title */
+
+    &__title {
+        margin-bottom: 0.4em;
+        line-height: 1.2;
+
+        @include _768 {
+            margin-bottom: 0.834em;
+            line-height: 1.1;
+        }
+
+        @include _1200 {
+            line-height: 1.2;
+            margin-bottom: 0.25em;
+        }
+    }
+
+    /* .product-windows__text */
+
+    &__text {
+        line-height: 1.2;
+        text-align: center;
+
+        span {
+            display: block;
+
+            @include _768 {
+                display: inline-block;
+            }
+            @include _1200 {
+                display: block;
+            }
+        }
+        @include _1200 {
+            line-height: 1.25;
+        }
+    }
+}

@@ -1,0 +1,225 @@
+@import '../../base/all/var';
+
+.call-measurer {
+    background-image: url('/wp-content/themes/twentytwenty-child/img/kitchens/call-measurer-small.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title,
+    &__text {
+        text-transform: uppercase;
+    }
+
+    .title {
+        margin-bottom: 3.1rem;
+        font-size: 2.2rem;
+        text-align: left;
+        line-height: 1.2;
+    }
+
+    &__text {
+        margin-bottom: 2.9rem;
+    }
+
+    &__list {
+        counter-reset: call-measurer;
+        margin-bottom: 2.7rem;
+    }
+
+    &__item {
+        margin-bottom: 1.3rem;
+
+        &::before {
+            counter-increment: call-measurer;
+            content: counters(call-measurer,'.')'.';
+            margin-right: 0.4rem;
+            font-weight: 700;
+            color: $orange;
+        }
+    }
+
+    .form-contacts {
+        min-width: 34.5rem;
+
+        &__box {
+            &::before {
+                display: none;
+            }
+        }
+
+        &__input {
+            min-height: 3.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-radius: 0.6rem 0.6rem 0 0;
+            border: none;
+            border-bottom: 0.3rem solid #C9C9C9;
+            text-align: center;
+            font-size: 1.4rem;
+            color: #C9C9C9;
+        }
+    }
+
+    &__box {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        background-image: url('/wp-content/themes/twentytwenty-child/img/kitchens/call-measurer-middle.webp');
+
+        &__inner {
+            max-width: 71.1rem;
+            margin: 0 auto;
+        }
+
+        &__inner,
+        .form-contacts {
+            position: relative;
+        }
+
+        .title {
+            margin-bottom: 2.7rem;
+            font-size: 3rem;
+        }
+
+        &__text {
+            margin-bottom: 3.3rem;
+            max-width: 49%;
+        }
+
+        &__list {
+            margin-bottom: 3rem;
+        }
+
+        &__item {
+            margin-bottom: 2rem;
+        }
+
+        .form-contacts,
+        .form-contacts__button {
+            margin: 0;
+        }
+
+        .form-contacts {
+            max-width: 46.7rem;
+            z-index: 1;
+
+            &__box {
+                max-width: none;
+            }
+
+            &__input {
+                min-width: 22.6rem;
+                min-height: 4rem;
+                font-size: 1.6rem;
+            }
+
+            &__button {
+                max-width: 22.6rem;
+            }
+        }
+
+        &__box,
+        &__content {
+            position: absolute;
+        }
+
+        &__box,
+        &__image {
+            display: block;
+        }
+
+        &__box {
+            top: 8.9rem;
+            right: -1.9rem;
+        }
+
+        &__content {
+            top: -2.4rem;
+            left: -5.2rem;
+            text-align: center;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 5.4rem;
+                right: 2.4rem;
+                width: 6rem;
+                height: 6.4rem;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='69' height='66' viewBox='0 0 69 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M58.8931 56.8825C43.818 47.2491 17.8342 21.8858 10.4815 0.99999' stroke='black'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.503906' y='0.735596' width='68.1155' height='64.6165' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+            }
+
+            &-name {
+                font-size: 1.8rem;
+            }
+            
+            &-measurer {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    @media (min-width: 960px) {
+        .form-contacts {
+            &__box {
+                min-width: auto;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        background-image: url('/wp-content/themes/twentytwenty-child/img/kitchens/call-measurer-big.webp');
+
+        &__inner {
+            max-width: 92.1rem;
+        }
+
+        .title {
+            margin-bottom: 3.5rem;
+            max-width: 75rem;
+            font-size: 4rem;
+        }
+
+        &__text,
+        &__item {
+            font-size: 1.8rem;
+        }
+
+        &__text {
+            margin-bottom: 3.1rem;
+            line-height: 1.2;
+        }
+
+        &__item {
+            margin-bottom: 1.8rem;
+        }
+
+        &__content {
+            &-measurer {
+                font-size: 1.4rem;
+            }
+        }
+
+        .form-contacts {
+            max-width: 47.1rem;
+        }
+
+        &__box {
+            top: 4.3rem;
+            right: -5.4rem;
+        }
+
+        &__content {
+            top: 8.6rem;
+            left: -12.3rem;
+
+            &:after {
+                width: 9.8rem;
+                height: 7.8rem;
+                top: 2.4rem;
+                right: -7.3rem;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='101' height='90' viewBox='0 0 101 90' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M96.2517 71.1935C79.5279 46.5744 43.1053 20.6436 4.99841 11.4869' stroke='black'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.761719' y='0.47998' width='99.9591' height='89.4474' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+}

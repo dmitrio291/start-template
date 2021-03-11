@@ -1,0 +1,110 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+.window-repair {
+    background-color: #f9f9f9;
+
+    &__title {
+        line-height: 1.2em;
+        margin-bottom: 1.15em;
+        padding: 0 2em;
+
+        @include _768 {
+            margin-bottom: 0.9em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.4em;
+        }
+    }
+
+    /* .window-repair__slider */
+
+    &__slider {
+        margin-bottom: 1.8em; 
+        & .pagination {
+            &.active {
+                background-color: $orange;
+            }
+        }
+        
+        @include _768 {
+            max-width: 40em;
+            margin: 0 auto 1.8em;
+            padding-bottom: 1em;
+        }
+
+        @include _1200 {
+            max-width: 100%;
+            padding-bottom: 0;
+            margin: 0;
+        }
+
+
+    }
+
+    /* .window-repair__item */
+
+    &__item {
+        position: relative;
+        width: 30.6rem;
+        height: 23rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-top: 18.2rem;
+        border-radius: 1rem 1rem 0 0;
+        margin: 0 auto;
+    }
+
+    /* .window-repair__item--1 */
+
+    &__item--1 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/warm-floor.webp);
+    }
+
+    /* .window-repair__item--2 */
+
+    &__item--2 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/balcony-insulation.webp);
+    }
+
+    /* .window-repair__item--3 */
+
+    &__item--3 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/balcony-joining.webp);
+    }
+
+    /* .window-repair__text */
+
+    &__text {
+        display: block;
+        text-align: center;
+        background-color: #fff;
+        border: 0.2rem solid #e6e6e6;
+        border-top: none;
+        border-radius: 0 0 1rem 1rem;
+        font-weight: 700;
+        font-size: 1.8rem;
+        min-height: 4.8rem;
+        padding-top: 0.7em;
+    }
+
+    /* .window-repair__subtext */
+
+    &__subtext {
+        position: absolute;
+        color: #fff;
+        background-color: $orange;
+        font-weight: 900;
+        top: 2.15em;
+        left: 0;
+        padding: 0.6em 0.8em 0.6em 1em;
+        border-radius: 0.5rem;
+        letter-spacing: 0.05em;
+        
+        &--new {
+            top: 0.8em;
+            padding: 0.4em 0.8em 0.4em 1em;
+        }
+    }
+}

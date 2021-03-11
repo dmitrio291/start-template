@@ -1,0 +1,34 @@
+.window-production-5-days {
+    .title {
+        max-width: 14em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.688em;
+    }
+
+    @media(min-width: 768px) {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+
+        .text {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+    }
+
+    @media(min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @media(min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        .title {
+            margin-bottom: 0.588em;
+            max-width: 22em;
+        }
+    }
+}

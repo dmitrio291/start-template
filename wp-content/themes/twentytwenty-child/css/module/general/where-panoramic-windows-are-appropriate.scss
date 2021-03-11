@@ -1,0 +1,121 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.panoramic-windows {
+    background: #f6f6f6;
+
+    /* .panoramic-windows__title */
+
+    &__title {
+        text-align: center;
+        line-height: 1.2em;
+        margin-bottom: 1.1em;
+        padding: 0 1em;
+
+        @include _768 {
+            margin-bottom: 0.9em;
+        }
+        @include _1200 {
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .panoramic-windows__inner */
+
+    &__slider {
+        margin-bottom: 3.8em;
+        
+        @include _768 {
+            max-width: 40em;
+            margin: 0 auto;
+            margin-bottom: 4em;
+        }
+
+        @include _1200 {
+            max-width: 100%;
+            margin-bottom: 2em;
+        }
+    }
+
+    /* .panoramic-windows__item */
+
+    &__item {
+        width: 30.5rem;
+        height: 24rem;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: 100% 77%;
+        background-position-y: top;
+        border-radius: 0.6rem;
+        overflow: hidden;
+        display: flex;
+
+        @include _768 {
+        }
+
+        @include _1200 {
+        }
+    }
+
+    /* .panoramic-windows__item-text */
+
+    &__item-text {
+        background-color: #fff;
+        display: block;
+        line-height: 3.1em;
+        margin-top: auto;
+        width: 100%;
+        border-radius: 0 0 0.6rem 0.6rem;
+        font-size: 1.8rem;
+        border: 0.15rem solid #e6e6e6;
+        border-top: none;
+
+        @include _768 {
+        }
+
+        @include _1200 {
+        }
+    }
+
+    /* .panoramic-windows__item--1 */
+
+    &__item--1 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/panoramic-windows-item-1.webp);
+    }
+
+    /* .panoramic-windows__item--2 */
+
+    &__item--2 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/panoramic-windows-item-2.webp);
+    }
+
+    /* .panoramic-windows__item--3 */
+
+    &__item--3 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/panoramic-windows-item-3.webp);
+    }
+
+    /* .panoramic-windows__text */
+
+    &__text {
+        line-height: 1.15em;
+
+        & + & {
+            margin-top: 1em;
+            @include _768 {
+                margin-top: 1.2em;
+            }
+        }
+
+        @include _768 {
+            line-height: 1.25em;
+        }
+        @include _1200 {
+        }
+    }
+}

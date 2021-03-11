@@ -1,0 +1,809 @@
+@import '../../base/all/var';
+
+.choose-your-own-ceiling {
+    padding-top: 4.5rem;
+
+    .title {
+        margin-bottom: 2.5rem;
+
+        .block {
+            display: block;
+        }
+    }
+
+    &__tabs,
+    &__image,
+    &__colors,
+    &__colors-list,
+    &__price-box {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__tabs,
+    &__colors,
+    &__price-box {
+        max-width: 34.5rem;
+    }
+
+    &__tabs,
+    &__colors-list,
+    &__price-box,
+    &__price-inner {
+        display: flex;
+    }
+
+    &__tabs,
+    &__colors-list,
+    &__price-box {
+        justify-content: space-between;
+    }
+
+    &__tabs-item,
+    &__colors-item,
+    &__price-circle {
+        cursor: pointer;
+    }
+
+    &__tabs {
+        margin-bottom: 2.5rem;
+
+        &-item {
+            color: #9A9A9A;
+
+            &.active {
+                color: $orange;
+                border-bottom: 0.1rem solid $orange;
+            }
+        }
+    }
+
+    &__box {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__image,
+    &__image-bg {
+        background-repeat: no-repeat;
+    }
+
+    &__image {
+        width: 34.5rem;
+        height: 22.5rem;
+        margin-bottom: 2.5rem;
+        background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-image.webp');
+        background-size: cover;
+
+        &-bg {
+            width: 100%;
+            height: 6.5rem;
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-matte-1.webp');
+            background-size: 35.3rem;
+
+            &--glossy {
+                background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-glossy-1.webp');
+            }
+
+            &--photoprint {
+                background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-photoprint-1.webp');
+            }
+        }
+    }
+
+    &__colors-text,
+    &__text,
+    &__price-old,
+    &__price-new {
+        letter-spacing: 0.03em;
+    }
+
+    &__colors {
+        &-text {
+            margin-bottom: 2.1rem;
+        }
+
+        &-list {
+            flex-wrap: wrap;
+            gap: 1.7rem;
+            max-width: 35rem;
+            margin-bottom: 2.7rem;
+        }
+
+        &-item {
+            width: 5.4rem;
+            height: 3.7rem;
+            border-radius: 0.5rem;
+
+            &.active {
+                border: 0.1rem solid $orange;
+            }
+
+            &--mate {
+                &-1 {
+                    background-color: $yellow;
+                }
+
+                &-2 {
+                    background-color: #E77187;
+                }
+
+                &-3 {
+                    border: 0.2rem solid #EFEFEF;
+                }
+
+                &-4 {
+                    background-color: #9FB6E8;
+                }
+
+                &-5 {
+                    background-color: #D9CFB2;
+                }
+
+                &-6 {
+                    background-color: #DACCBB;
+                }
+
+                &-7 {
+                    background-color: #98999D;
+                }
+
+                &-8 {
+                    background-color: #ABCC7A;
+                }
+
+                &-9 {
+                    background-color: #B6E7C2;
+                }
+
+                &-10 {
+                    background-color: #CCCEDB;
+                }
+            }
+
+            &--glossy {
+                &-1 {
+                    background-color: $yellow;
+                }
+
+                &-2 {
+                    background-color: #D72827;
+                }
+
+                &-3 {
+                    border: 0.2rem solid #EFEFEF;
+                }
+
+                &-4 {
+                    background-color: #B4F8F6;
+                }
+
+                &-5 {
+                    background-color: #F2D5F9;
+                }
+
+                &-6 {
+                    background-color: #AEA2A2;
+                }
+
+                &-7 {
+                    background-color:#F6EAC0;
+                }
+
+                &-8 {
+                    background-color:#D2C8A8;
+                }
+
+                &-9 {
+                    background-color: #C6F5A0;
+                }
+
+                &-10 {
+                    background-color: #89C3D8;
+                }
+            }
+
+            &--photoprint {
+                border: 0.1rem solid #EFEFEF;
+
+                &-1 {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-1.webp');
+                }
+
+                &-2 {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-2.webp');
+                }
+
+                &-3 {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-3.webp');
+                }
+
+                &-4 {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-4.webp');
+                }
+
+                &-5 {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-5.webp');
+                }
+
+                &-6 {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-6.webp');
+                }
+
+                &-7 {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-7.webp');
+                }
+
+                &-8 {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-8.webp');
+                }
+
+                &-9 {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-9.webp');
+                }
+
+                &-10 {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-10.webp');
+                }
+            }
+        }
+    }
+
+    &__text {
+        margin-bottom: 4.3rem;
+
+        &-call {
+            display: none;
+        }
+    }
+
+    &__price,
+    &__price-circle,
+    &__price-old {
+        position: relative;
+    }
+
+    &__price:before,
+    &__price-circle--minus:before,
+    &__price-circle--plus:before,
+    &__price-circle--plus:after,
+    &__price-old:before {
+        content: "";
+    }
+
+    &__price:before,
+    &__price-circle--minus:before,
+    &__price-circle--plus:before,
+    &__price-circle--plus:after,
+    &__price-old:before {
+        position: absolute;
+    }
+
+    &__price {
+        padding: 2.3rem 2rem;
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
+        background-color: $orange;
+
+        &:before {
+            top: -1.7rem;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='375' height='24' viewBox='0 0 375 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 12L187.75 0L375 12L187.75 24L0.5 12Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 4.2rem;
+            margin-left: -2rem;
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        &-box,
+        &-inner {
+            align-items: center;
+        }
+
+        &-box {
+            margin-bottom: 3.3rem;
+        }
+
+        &-inner,
+        &-circle--minus:before,
+        &-circle--plus:before,
+        &-circle--plus:after {
+            background-color: $white;
+        }
+
+        &-inner {
+            position: relative;
+            justify-content: space-around;
+            width: 13.5rem;
+            height: 2.8rem;
+            border-radius: 0.8rem;
+        }
+
+        &-circle {
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #0F83C0;
+            border-radius: 50%;
+
+            &--minus {
+                left: 1rem;
+                &:before {
+                    top: 0.6rem;
+                    left: 0.4rem;
+                    width: 0.7rem;
+                    height: 0.2rem;
+                }
+            }
+
+            &--plus {
+                right: 1rem;
+                &:before {
+                    top: 0.6rem;
+                    left: 0.4rem;
+                    width: 0.7rem;
+                    height: 0.2rem;
+                }
+
+                &:after {
+                    top: 0.3rem;
+                    left: 0.6rem;
+                    width: 0.2rem;
+                    height: 0.8rem;
+                }
+            }
+        }
+
+        &-input {
+            height: 100%;
+            width: 100%;
+            border-radius: 0.6rem;
+            border: none;
+            text-align: right;
+            padding-right: 7.5rem;
+        }
+
+        &-square {
+            position: absolute;
+            right: 5rem;
+            pointer-events: none;
+        }
+
+        &-old {
+            font-size: 2rem;
+            color: #FBD0BC;
+            white-space: nowrap;
+            &:before {
+                top: 0.3rem;
+                left: 1.7rem;
+                width: 6.9rem;
+                height: 0.2rem;
+                background-color: $yellow;
+                transform-origin: top left;
+                transform: rotate(10deg);
+            }
+        }
+
+        &-new {
+            font-size: 2.6rem;
+            color: $yellow;
+            white-space: nowrap;
+        }
+    }
+
+    .button {
+        max-width: 33.3rem;
+        background-color: $white;
+        color: $orange;
+    }
+
+    &--sky {
+        .choose-your-own-ceiling {
+            &__image {
+                background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-image.webp");
+
+                &-bg {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-1.webp");
+                    background-position-y: -0.4rem;
+                    background-position-x: -0.6rem;
+                }
+            }
+
+            &__colors {
+                &-list {
+                    gap: 1.7rem;
+                }
+
+                &-item {
+                    width: 7rem;
+                    height: 5.3rem;
+                    background-size: cover;
+
+                    &.active {
+                        border-width: 0.2rem;
+                    }
+
+                    &--sky {
+                        &-1 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-1.webp");
+                        }
+
+                        &-2 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-2.webp");
+                        }
+
+                        &-3 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-3.webp");
+                        }
+
+                        &-4 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-4.webp");
+                        }
+
+                        &-5 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-5.webp");
+                        }
+
+                        &-6 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-6.webp");
+                        }
+
+                        &-7 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-7.webp");
+                        }
+
+                        &-8 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-8.webp");
+                        }
+
+                        &-9 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-9.webp");
+                        }
+
+                        &-10 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-10.webp");
+                        }
+                    }
+                }
+            }
+
+            &__text {
+                text-align: center;
+            }
+        } 
+    }
+
+    @media (min-width: 500px) {
+        &__price {
+            &:before {
+                top: -2.5rem;
+                height: 5.2rem;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+
+        .title {
+            margin-bottom: 2.9rem;
+            letter-spacing: 0.03em;
+
+            .block {
+                display: inline;
+            }
+        }
+
+        &__tabs,
+        &__box,
+        &__price {
+            max-width: 71rem;
+        }
+
+        &__tabs {
+            margin-bottom: 3rem;
+
+            &-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 22.6rem;
+                height: 4rem;
+                border: 0.1rem solid #C4C4C4;
+                border-radius: 0.6rem;
+
+                &.active {
+                    border-bottom: none;
+                    background-color: $orange;
+                    color: $white;
+                    border-color: transparent;
+                }
+            }
+        }
+
+        &__box,
+        &__price {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__box.active,
+        &__price {
+            display: grid;
+        }
+
+        &__box {
+            grid-template: 
+            'choose-your-own-ceiling__colors choose-your-own-ceiling__image' 23.8rem
+            'choose-your-own-ceiling__text choose-your-own-ceiling__text' 5.2rem
+            'choose-your-own-ceiling__content choose-your-own-ceiling__content';
+        }
+
+        &__price-old:before,
+        .button {
+            background-color: $orange;
+        }
+
+        &__image,
+        &__colors,
+        &__text,
+        &__price-box,
+        .button {
+            margin: 0;
+        }
+
+        &__image,
+        .button {
+            margin-left: auto;
+        }
+
+        &__image {
+            grid-area: choose-your-own-ceiling__image;
+            width: 31.8rem;
+            height: 20.6rem;
+
+            &-bg {
+                background-size: 32.6rem;
+            }
+        }
+
+        &__colors {
+            grid-area: choose-your-own-ceiling__colors;
+
+            &-text {
+                margin-bottom: 1.8rem;
+            }
+
+            &-list {
+                gap: 2.1rem;
+                justify-content: flex-start;
+            }
+
+            &-item {
+                width: 5.7rem;
+            }
+        }
+
+        &__colors-text,
+        &__text,
+        &__text-call {
+            font-size: 1.8rem;
+        }
+
+        &__text {
+            grid-area: choose-your-own-ceiling__text;
+
+            &-call {
+                grid-area: choose-your-own-ceiling__text-call;
+                display: block;
+                letter-spacing: 0.03em;
+            }
+        }
+
+        &__content {
+            grid-area: choose-your-own-ceiling__content;
+        }
+
+        &__price {
+            grid-template: 
+            'choose-your-own-ceiling__price-box choose-your-own-ceiling-button' 7rem
+            'choose-your-own-ceiling__text-call choose-your-own-ceiling__text-call';
+            align-items: flex-start;
+            margin-bottom: 1.1rem;
+            padding: 0;
+            background-color: transparent;
+
+            &:before {
+                display: none;
+            }
+
+            &-box {
+                grid-area: choose-your-own-ceiling__price-box;
+                min-width: 35.2rem;
+            }
+
+            &-inner {
+                width: 14.7rem;
+                height: 4rem;
+                border: 0.1rem solid #EFEFEF;
+                font-weight: 900;
+            }
+
+            &-old {
+                color: $black;
+            }
+
+            &-new {
+                color: $orange;
+                font-size: 3rem;
+            }
+        }
+
+        .button {
+            grid-area: choose-your-own-ceiling-button;
+            max-width: 22.4rem;
+            color: $white;
+        }
+
+        &--sky {
+            .choose-your-own-ceiling {
+                &__box {
+                    max-width: 71rem;
+                }
+
+                &__image {
+                    height: 22.1rem;
+                }
+
+                &__text {
+                    text-align: left;
+                }
+
+                &__colors {
+                    max-width: none;
+
+                    &-list {
+                        margin-left: 0;
+                        max-width: none;
+                    }
+
+                    &-item {
+                        width: 7.6rem;
+                        height: 5.8rem;
+                    }
+
+                    &-text {
+                        margin-bottom: 2.8rem;
+                    }
+                }                
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 2.6rem;
+        }
+
+        &__tabs {
+            max-width: none;
+
+            &-item {
+                width: 30.7rem;
+                height: 4rem;
+            }
+        }
+
+        &__box {
+            max-width: none;
+            grid-template: 
+            'choose-your-own-ceiling__colors choose-your-own-ceiling__image' 16rem
+            'choose-your-own-ceiling__text choose-your-own-ceiling__image'
+            'choose-your-own-ceiling__content choose-your-own-ceiling__image';
+            grid-template-columns: 39rem;
+        }
+
+        &__image {
+            width: 55.2rem;
+            height: 38.5rem;
+
+            &-bg {
+                background-size: 61rem;
+                height: 11.5rem;
+            }
+        }
+
+        &__colors {
+            max-width: none;
+
+            &-list {
+                max-width: none;
+                margin: 0;
+                gap: 2rem;
+            }
+
+            &-item {
+                width: 6.1rem;
+            }
+        }
+
+        &__content {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        &__price {
+            margin: 0;
+            grid-template: 
+            'choose-your-own-ceiling__price-box ' 5.5rem
+            'choose-your-own-ceiling__text-call' 6rem
+            'choose-your-own-ceiling-button';
+
+            &-box {
+                margin-top: -1.5rem;
+            }
+        }
+
+        &__text {
+            line-height: 1.2;
+
+            &-call {
+                margin-top: -1.1rem;
+                line-height: 1.2;
+            }
+        }
+
+        .button {
+            max-width: 30.8rem;
+            margin-left: 0;
+        }
+
+        &--sky {
+            .choose-your-own-ceiling {
+                &__box {
+                    max-width: none;
+                    grid-template: 
+                    'choose-your-own-ceiling__colors choose-your-own-ceiling__image' 20.7rem
+                    'choose-your-own-ceiling__text choose-your-own-ceiling__image' 6rem
+                    'choose-your-own-ceiling__content choose-your-own-ceiling__image';
+                    grid-column-gap: 4rem;                   
+                }
+
+                &__image {
+                    height: 41.9rem;
+                }
+
+                &__price {
+                    &-box {
+                        margin-top: -0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+    input[type="number"]:hover,
+    input[type="number"]:focus {
+        -moz-appearance: number-input;
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+}

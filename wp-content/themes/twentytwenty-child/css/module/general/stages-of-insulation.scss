@@ -1,0 +1,160 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.stages-of-insulation {
+    /* .stages-of-insulation__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1.2em;
+
+        @include _768 {
+            margin-bottom: 1em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.8em;
+            line-height: 1.2;
+        }
+    }
+
+    /* .stages-of-insulation__slider */
+
+    &__slider {
+        padding-bottom: 0.4em;
+        margin-bottom: 3.4em;
+
+        .pagination.active {
+            background-color: $blue;
+        }
+
+        @include _768 {
+            margin-bottom: 0;
+        }
+    }
+
+    /* .stages-of-insulation__item */
+
+    &__item {
+        background-color: $lightGray;
+        padding: 1.6em 1.7em;
+        border-radius: 0.3em;
+
+        @include _768 {
+            display: flex;
+            margin-bottom: 1.3em;
+            padding: 0.8em 0.9em 0.95em;
+        }
+
+        @include _1200 {
+            margin-bottom: 2.05em;
+        }
+    }
+
+    /* .stages-of-insulation__box-img */
+
+    &__box-img {
+        position: relative;
+        max-width: 29.2rem;
+        width: 100%;
+        margin-bottom: 1.6em;
+        height: 20.8rem;
+        border: 0.5rem solid #fff;
+        border-radius: 0.6rem;
+        overflow: hidden;
+
+        @include _768 {
+            max-width: 21.1rem;
+            height: 15.1rem;
+            margin-bottom: 0;
+            margin-right: 1em;
+        }
+
+        @include _1200 {
+            max-width: 29.2rem;
+            height: 18.6rem;
+            margin-right: 1.2em;
+        }
+    }
+
+    /* .stages-of-insulation__img */
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .stages-of-insulation__number */
+
+    &__number {
+        position: absolute;
+        display: block;
+        top: 0.6em;
+        left: 0.6em;
+        line-height: 3rem;
+        font-weight: 700;
+        font-size: 1.6rem;
+        width: 3rem;
+        height: 3rem;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+
+        @include _768 {
+            width: 2.1rem;
+            height: 2.1rem;
+            font-size: 1.3rem;
+            line-height: 2.1rem;
+        }
+
+        @include _1200 {
+            font-size: 1.6rem;
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+        }
+    }
+
+    /* .stages-of-insulation__box-info */
+
+    &__box-info {
+        @include _768 {
+            width: 100%;
+            margin-top: 0.4em;
+        }
+
+        @include _1200 {
+            margin-top: 0.2em;
+        }
+    }
+
+    /* .stages-of-insulation__item-title */
+
+    &__item-title {
+        text-transform: uppercase;
+        margin-bottom: 0.6em;
+        display: block;
+    }
+
+    /* .stages-of-insulation__item-text */
+
+    &__item-text {
+        line-height: 1.2;
+
+        @include _1200 {
+            line-height: 1.25;
+        }
+    }
+
+    &__btn {
+        @include _768 {
+            max-width: 30.5rem;
+        }
+    }
+}

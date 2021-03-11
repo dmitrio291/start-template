@@ -1,0 +1,71 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.many-years-of-experience {
+    background-color: $orange;
+
+    @include _1200 {
+        background-color: transparent;
+    }
+
+    /* .many-years-of-experience__wrapper */
+
+    &__wrapper {
+
+        @include _1200 {
+            background-color: $orange;
+            padding: 0 4rem;
+        }
+    }
+
+    /* .many-years-of-experience__inner */
+
+    &__inner {
+        color: #fff;
+    }
+
+    /* .many-years-of-experience__title */
+
+    &__title {
+        font-size: 2.2rem;
+        line-height: 1.35;
+        margin-bottom: 1.5rem;
+
+        @include _768 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__title,
+    &__subtitle {
+        text-transform: uppercase;
+
+        @include _1200 {
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    /* .many-years-of-experience__subtitle */
+
+    &__subtitle {
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .many-years-of-experience__text */
+
+    &__text {
+        line-height: 1.2;
+    }
+}

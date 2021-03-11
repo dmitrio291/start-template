@@ -1,0 +1,120 @@
+@import '../../base/all/var';
+
+.finishing-loggias-advantages {
+
+    .finishing-loggias-list,
+    .finishing-loggias-list__item,
+    .finishing-loggias-list__icon {
+        display: flex;
+    }
+
+    .finishing-loggias-list {
+        max-width: 21em;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+
+        &__item,
+        &__icon {
+            align-items: center;
+        }
+
+        &__icon {
+            justify-content: center;
+            width: 1.875em;
+            height: 1.875em;
+            margin-right: 0.5em;
+            border-radius: 50%;
+            border: 0.125em solid $orange;
+
+            &:before {
+                content: '';
+                width: 1.875em;
+                height: 1.875em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+                background-repeat: no-repeat;
+                background-size: 38.938em 25.375em;
+                font-size: 0.6em;
+            }
+
+            &--1 {
+                &:before {
+                    background-position: 57.815% 71.859%;
+                }
+            }
+
+            &--2 {
+                &:before {
+                    background-position: 51.008% 74.57%;
+                }
+            }
+
+            &--3 {
+                &:before {
+                    background-position: 64.047% 62.983%;
+                }
+            }
+        }
+
+        &__text {
+            max-width: 6em;
+            font-size: 0.625em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .finishing-loggias-list {
+            max-width: 46em;
+
+            &__item {
+                align-items: flex-end;
+            }
+
+            &__icon {
+                width: 3.557em;
+                height: 3.557em;
+                margin-right: 1.250em;
+                border-width: 0.188em;
+
+                &:before {
+                    font-size: 1.2em;
+                }
+            }
+
+            &__text {
+                font-size: 1.250em;
+            }
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .finishing-loggias-list {
+            max-width: 70em;
+
+            &__item {
+                align-items: center;
+            }
+
+            &__icon {
+                width: 5.750em;
+                height: 5.750em;
+                margin-right: 2.063em;
+
+                &:before {
+                    font-size: 1.8em;
+                }
+            }
+
+            &__text {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+}

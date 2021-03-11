@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/style.css">
+</head>
+<body>
+    
+
+    <div class="otzivi-o-kompanii3">
+        <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/elements/otzivi-o-kompanii3/otzivi-o-kompanii3-mobil.css">
+       
+       
+    
+        <!--1-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="_tVT7C9-3gI" ></label>
+                <label class="youtube_mini " id="img1_tVT7C9-3gI" >
+                    <img src="/wp-content/themes/twentytwenty-child/img/youtube-block-vrem.jpg" alt="Остекление балконов"> 
+                </label>
+                <label class="youtube_mini " id="img2_tVT7C9-3gI" >
+                    <img src="/wp-content/themes/twentytwenty-child/img/youtube-block-vrem2.jpg" alt="Отделка балконов"> 
+                </label>
+                
+            </div>
+            
+        </div>
+    
+        <!--2-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="hleKmdqCc78" ></label>
+            </div>
+        </div>
+    
+        <!--3-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="nP4gXEQ5LiA" >
+                </label>
+            </div>
+        </div>
+        <!--4-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="P_DgbZVGoWI" >
+                </label>
+            </div>
+        </div>
+        <!--5-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="6ViV0Rl09Co" >
+                </label>
+            </div>
+        </div>
+        <!--6-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="PTqk4hKR89w" >
+                </label>
+            </div>
+        </div>
+        <!--7-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="Me1LtlccWWY" >
+                </label>
+            </div>
+        </div>
+        <!--8-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="LfcrTTFNgVM" >
+                </label>
+            </div>
+        </div>
+        <!--9-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="B7Ywn1j95AE" >
+                </label>
+            </div>
+        </div>
+        <!--10-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="AULyXhhrCoI" >
+                </label>
+            </div>
+        </div>
+        <!--11-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="30_ZTeW4VDk" >
+                </label>
+            </div>
+        </div>
+        <!--12-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="xBO7lc1pqMk" >
+                </label>
+            </div>
+        </div>
+        <!--13-->
+        <div class="youtube-wrapper">
+            <div class="wrapper-scroll">
+                <label class="youtube_mini active_u" id="HjctMWFT3hs" >
+                </label>
+            </div>
+        </div>
+    
+        <script>
+    
+            let vid_mini = document.getElementsByClassName("youtube_mini");
+            let nb_length = vid_mini.length;
+            for (let i=0; i < nb_length; i++) {
+            
+                if(vid_mini[i].childElementCount > 0){
+                    
+                    let div_local = document.createElement("div");
+                    div_local.setAttribute("id",  "" + vid_mini[i].getAttribute('id'));
+                    div_local.setAttribute("class",  "youtube-img");
+                    div_local.style.backgroundImage = "youtube-img.png";
+                    div_local.setAttribute('style', "background-image:url(" + vid_mini[i].children[0].getAttribute('src')) + ");" ;
+                    vid_mini[i].parentNode.parentNode.prepend(div_local);
+    
+                } else{
+                    // Находим постер для видео, зная ID нашего видео
+                    vid_mini[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + vid_mini[i].id + '/sddefault.jpg)';
+                    
+                    // добавление ютуб видео
+                    let div_local = document.createElement("div");
+                    div_local.setAttribute("id",  "" + vid_mini[i].getAttribute('id'));
+                    div_local.style.backgroundImage = 'url(http://i.ytimg.com/vi/' + vid_mini[i].id + '/sddefault.jpg)';
+                    div_local.setAttribute("class",  "youtube");
+                    vid_mini[i].parentNode.parentNode.prepend(div_local);
+                }
+                    
+                
+    
+                // добавление радио кнопки
+                let input_local = document.createElement("input");
+                input_local.setAttribute("type", "radio");
+                input_local.setAttribute("id", "id_" + vid_mini[i].getAttribute("id"));
+                if( vid_mini[i].classList.contains("active_u")){
+                    id_group = vid_mini[i].getAttribute("id");
+                    input_local.checked = true;
+                }
+                input_local.setAttribute("name", "id_group" + id_group );
+                
+                vid_mini[i].parentNode.parentNode.prepend(input_local);
+    
+                // устанавливаем атрибуты
+                vid_mini[i].setAttribute("for",  "id_" + vid_mini[i].getAttribute('id'));
+                vid_mini[i].removeAttribute("id");
+                vid_mini[i].onclick = function() {
+                    for (var i = 0; i < this.parentNode.parentNode.childNodes.length; i++) {
+                                        
+                        if(this.parentNode.parentNode.childNodes[i].checked == true){
+                            let id_input_checked = this.parentNode.parentNode.childNodes[i].getAttribute('id');
+                            this.parentNode.childNodes.length;
+                            for (var j = 0; j < this.parentNode.childNodes.length; j++) {
+    
+                                if(!(this.parentNode.childNodes[j].nodeName == "#text")){
+                                    if(id_input_checked == this.parentNode.childNodes[j].getAttribute('for')){
+                                        this.parentNode.childNodes[j].classList.remove("active_u");
+                                        this.classList.add("active_u");
+                                    }
+                                } 
+                            }
+    
+                            this.parentNode.parentNode.childNodes[i].classList.remove("active_u");
+                        }
+                    }
+                }
+            }
+            
+            let videos = document.getElementsByClassName("youtube");
+            
+            let nb_videos = videos.length;
+            for (let i=0; i < nb_videos; i++) {
+            
+                videos[i].onclick = function() {
+    
+                    // Создаем iFrame и сразу начинаем проигрывать видео, т.е. атрибут autoplay у видео в значении 1
+                    let iframe = document.createElement("iframe");
+                    let iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
+                    if (this.getAttribute("data-params")) iframe_url+='&'+this.getAttribute("data-params");
+                    iframe.setAttribute("src",iframe_url);
+                    iframe.setAttribute("frameborder",'0');
+                    // Высота и ширина iFrame будет как у элемента-родителя
+                    iframe.style.width  = this.style.width;
+                    iframe.style.height = this.style.height;
+                
+                    this.parentNode.replaceChild(iframe, this);
+                }
+            }
+    
+        </script>
+    
+    </div>
+
+</body>
+</html>

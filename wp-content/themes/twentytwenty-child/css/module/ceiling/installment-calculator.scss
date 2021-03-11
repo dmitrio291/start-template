@@ -1,0 +1,451 @@
+@import '../../base/all/var';
+
+.installment-calculator {
+    .title {
+        margin-bottom: 0.875em;
+    }
+
+    .left {
+        margin-bottom: 2.5rem;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 24.8rem;
+        padding: 0.7em 0.1em 0.551em;
+        letter-spacing: 0.05em;
+    }
+
+    &-list {
+        max-width: 21.833em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.111em;
+        display: flex;
+        justify-content: space-between;
+
+        &__circle {
+            width: 4.063em;
+            height: 4.063em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0.556em;
+            border: 0.125em solid $orange;
+            border-radius: 50%;
+        }
+
+        &__currency {
+            width: 1.423em;
+        }
+
+        &__time {
+            width: 2.123em;
+        }
+
+        &__document {
+            width: 1.993em;
+        }
+
+        &__item {
+            &:first-child,
+            &:nth-child(2) {
+                .installment-calculator-list__circle {
+                    line-height: 5em;
+                }
+            }
+            &:nth-child(3) {
+                .installment-calculator-list__circle {
+                    line-height: 5.7em;
+                }
+            }
+            img{
+                display: inline-block;
+            }
+        }
+
+        &__small,
+        &__big {
+            letter-spacing: 0.03em;
+        }
+
+        &__small {
+            font-size: 0.625em;
+        }
+
+        &__big {
+            font-size: 1em;
+            font-weight: 700;
+        }
+    }
+
+    &-slider {
+        &__top {
+            margin-bottom: 0.222em;
+        }
+
+        &__bottom {
+            .installment-calculator-slider__range {
+                justify-content: flex-end;
+            }
+        }
+        
+        &__content,
+        &__range {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__content {
+            margin-bottom: 0.667em;
+            align-items: center;
+        }
+
+        &__text,
+        &__total {
+            letter-spacing: 0.03em;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        &__total {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        &__box {
+            margin-bottom: 0.375em;
+        }
+
+        &__line,
+        &__line-inner {
+            height: 0.7rem;
+            border-radius: 3px;
+        }
+
+        &__line-circle,
+        &__line-inner span {
+            display: block;
+            position: absolute;
+            right: 0;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+
+        &__line {
+            height: 0.7rem;
+            margin-bottom: 0.411em;
+            background-color: #C4C4C4;
+            position: relative;
+
+            &-circle {
+                width: 0.489em;
+                height: 0.489em;
+                top: 57%;
+                background-color: #C4C4C4;
+            }
+
+            &-inner {
+                max-width: 26%;
+                background-color: #F26422;
+                position: relative;
+
+                span {
+                    width: 0.789em;
+                    height: 0.789em;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: #F26422;
+                }
+            }
+
+        }
+
+        &__value,
+        &__rubble {
+            color: #C9C9C9;
+        }
+
+        &__value {
+            font-size: 1rem;
+            letter-spacing: 0.03em;
+        }
+
+    }
+
+    .partners-banks {
+        margin-bottom: 2.375em;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+
+        span {
+            margin-right: 0.713em;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+    }
+
+    .summ-box {
+        min-height: 37rem;
+
+        &__rectangle {
+            width: 34.4rem;
+            height: 5.6rem;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 6px;
+            border: 20px solid #f2f2f2;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -7px 4px 31px rgba(0, 0, 0, 0.20);
+            position: relative;            
+        }
+
+        &__content {
+            max-width: 26.4rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2.250em 0.425em 1.95em;
+            background: #ffffff;
+            text-align: right;
+            box-shadow: -2px 18px 38px rgba(0, 0, 0, 0.25);
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -1.2em;
+                width: 115%;
+                height: 2rem;
+                background-color: #ffffff;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -1em;
+                left: 0;
+                width: 100%;
+                height: 2rem;
+                background: url('/wp-content/themes/twentytwenty-child/img/rectangle-icon.svg') repeat-x;
+            }
+        }
+
+        &__summ {
+            margin-bottom: 1.9rem;
+        }
+
+        &__text {
+            margin-bottom: 0.6rem;
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            &--mb {
+                margin-bottom: 1.9rem;
+            }
+
+            span {
+                font-size: 2.4rem;
+                margin-left: 0.4em;
+            }
+        }
+
+        &__value {
+            font-size: 3rem;
+        }
+
+        &__installment {
+            margin-bottom: 1.9rem;
+        }
+        
+    }
+
+    .btn-base {
+        &--add {
+            max-width: 24rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &-list {
+            margin-bottom: 2.1875em;
+            max-width: 35.022em;
+
+            &__item {
+                &:first-child,
+                &:nth-child(2) {
+                    .installment-calculator-list__circle {
+                        line-height: 5.5em;
+                    }
+                }
+
+                &:nth-child(3) {
+                    .installment-calculator-list__circle {
+                        line-height: 6em;
+                    }
+                }
+            }
+
+            &__circle {
+                width: 4.375em;
+                height: 4.375em;
+            }
+
+            &__small {
+                font-size: 0.875em;
+                margin-bottom: 0.4em;
+            }
+
+            &__big {
+                font-size: 1.125em;
+            }
+        }
+
+        &-slider {
+            max-width: 35em;
+            margin-left: auto;
+            margin-right: auto;
+
+            &__top {
+                margin-bottom: 1.389em;
+            }
+
+            &__text {
+                font-size: 1.8rem;
+            }
+
+            &__total {
+                font-size: 2.4rem;
+            }
+
+            &__bottom {
+                margin-bottom: 0.833em;
+            }
+
+            &__line {
+                &-inner {
+                    max-width: 35%;
+                }
+            }
+
+            &__value {
+                font-size: 0.875em;
+            }
+        }
+
+        .partners-banks {
+            max-width: 35.3em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1.975em;
+
+            span {
+                font-size: 1.8rem;
+                margin-right: 1.213em;
+            }
+
+            &__img {
+                &-1 {
+                    width: 12.9375em;
+                }
+
+                &-2 {
+                    width: 9.0625em;
+                }
+            }
+        }
+
+        .summ-box {
+            min-height: 35rem;
+
+            &__rectangle {
+                width: 36.8rem;
+            }
+
+            &__content {
+                max-width: 30rem;
+                padding: 1.85em 1.325em;
+            }
+
+            &__summ {
+                margin-bottom: 0.825em;
+            }
+
+            &__text {
+                margin-bottom: 0.5em;
+
+                &--mb {
+                    margin-bottom: 0.825em;
+                }
+            }
+
+            &__installment {
+                margin-bottom: 1.125em;
+            }
+        }
+
+        .button {
+            max-width: 25.8rem;
+            min-height: 3.5rem;
+            font-size: 1.4rem;
+            letter-spacing: 0.04em;
+        }
+
+    }
+
+    @media (min-width: 900px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @media (min-width: 1320px) {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title-section {
+            font-size: 4rem;
+        }
+
+        .left {
+            width: 57.5%;
+        }
+
+        &-list {
+            max-width: 100%;
+            margin-bottom: 3.211em;
+        }
+
+        .partners-banks {
+            span {
+                margin-right: 1.713em;
+            }
+
+            &__img-1 {
+                margin-right: 1.6em;
+            }
+        }
+
+        .summ-box {
+            &__rectangle {
+                height: 6.6rem;
+            }
+
+            &__content {
+
+                &:before {
+                    height: 2.5rem;
+                }
+            }
+        }
+        
+    }
+
+}

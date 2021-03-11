@@ -1,0 +1,165 @@
+@import '../../base/all/var';
+
+.sale-only-7-days {
+    padding-bottom: 8rem;
+    background-image: url('/wp-content/themes/twentytwenty-child/img/yellow-fone.webp');
+
+    .title {
+        margin-bottom: 0.963em;
+        line-height: 1.2;
+    }
+
+    .text {
+        line-height: 1.125;
+        text-align: left;
+    }
+
+    &__slide,
+    &__sizes {
+        background-color: $white;
+    }
+
+    &__slide {
+        max-width: 21.45em;
+        padding: 0.825em 0.825em 2.825em;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.375em;
+        box-shadow: 0.125em 0.125em 0.188em rgba(0, 0, 0, 0.25);
+    }
+
+    &__image,
+    &__sizes {
+        border-radius: 0.313em;
+    }
+
+    &__image {
+        height: 10.7em;
+
+        &-box {
+            position: relative;
+            margin-bottom: 1.084em;
+        }
+    }
+
+    &__sizes {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0.45em 0.85em;
+        font-size: 0.875em;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
+
+    &__price {
+        font-weight: 900;
+    }   
+
+    &__title {
+        max-width: 12em;
+        margin-bottom: 0.8em;
+        font-size: 1.125em;
+        font-weight: 700;
+        line-height: 1.33;
+        color: $brown;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__price {
+        font-size: 2.5em;
+    }
+
+    .button {
+        margin: 0;
+        max-width: 8.525em;
+        min-height: 1.842em;
+        font-size: 1.188em;
+    }
+
+    .pagination {
+        background-color: $white;
+
+        &-box {
+            bottom: -2.1em;
+        }
+
+        &.active {
+            background-color: $blue;
+        }
+    }
+
+    .owl-stage-outer {
+        filter: drop-shadow(0.225em 0.225em 0.188em rgba(0, 0, 0, 0.25));
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 0.963em;
+
+            .orange {
+                display: inline;
+            }
+        }
+
+        .text {
+            margin-bottom: 1.688em;
+            text-align: center;
+        }
+
+        &__slider {
+            max-width: 39em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__slide {
+            max-width: 19.19em;
+            margin: 0;
+            padding-left: 0.625em;
+            padding-right: 0.625em;
+            padding-bottom: 0.925em;
+        }
+
+        &__title {
+            margin-bottom: 0.4em;
+        }
+
+        .pagination {
+            background-color: $gray;
+
+            &-box {
+                bottom: -3em;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-bottom: 6rem;
+
+        .title {
+            margin-bottom: 0.763em;
+        }
+
+        .text {
+            max-width: 47em;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__slider {
+            display: flex;
+            max-width: 59.6em;
+            justify-content: space-between;
+        }
+
+        &__sizes {
+            bottom: 0.3em;
+        }
+    }
+}

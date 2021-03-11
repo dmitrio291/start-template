@@ -1,0 +1,199 @@
+@import '../../base/all/var';
+
+.make-repair-in-15-days {
+    background-color: #F9F9F9;
+
+    .title,
+    .text {
+        line-height: 1.2;
+    }
+
+    .title {
+        max-width: 27rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2.7rem;
+        letter-spacing: 0.03em;
+    }
+
+    .text {
+        margin-bottom: 2.3rem;
+    }
+
+    .swiper {
+        &-container {
+            max-width: 34.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2.1rem;
+            filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.25));
+        }
+
+        &-slide {
+            img {
+                width: 34.5rem;
+                height: 20.2rem;
+                border-radius: 0.6rem;
+            }
+        }
+
+        &-pagination {
+            &-bullets {
+                bottom: 1.5rem;
+
+                .swiper-pagination-bullet {
+                    margin: 0 0.6rem;
+                }
+            }
+
+            &-bullet {
+                width: 1rem;
+                height: 1rem;
+                background: $white;
+                opacity: 1;
+
+                &-active {
+                    background-color: $orange;
+                }
+            }
+        }
+
+        &-button {
+            &-prev,
+            &-next {
+                width: 2.2rem;
+                height: 2.2rem;
+                background-color: rgba(242, 100, 34, 0.35);
+                border: none;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &-prev {
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='13' height='11' viewBox='0 0 13 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.6812 5.78694C6.41584 5.52081 6.41584 5.07727 6.6812 4.78158L10.691 0.76014C10.9859 0.494016 11.4281 0.494016 11.6935 0.76014L12.3716 1.44024C12.637 1.73593 12.637 2.17947 12.3716 2.4456L9.51166 5.31383L12.3716 8.15249C12.637 8.41862 12.637 8.86216 12.3716 9.15785L11.6935 9.80838C11.4281 10.1041 10.9859 10.1041 10.691 9.80838L6.6812 5.78694ZM1.02028 4.78158L5.0301 0.76014C5.32494 0.494016 5.7672 0.494016 6.03255 0.76014L6.71068 1.44024C6.97604 1.70636 6.97604 2.17947 6.71068 2.4456L3.85074 5.28426L6.71068 8.15249C6.97604 8.41862 6.97604 8.86216 6.71068 9.15785L6.03255 9.80838C5.7672 10.1041 5.29545 10.1041 5.0301 9.80838L1.02028 5.78694C0.754927 5.52081 0.754927 5.07727 1.02028 4.78158Z' fill='white'/%3E%3C/svg%3E%0A");
+                background-position-x: 0.4rem;
+            }
+
+            &-next {
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.89703 5.68555L1.92417 9.66992C1.78785 9.80664 1.62231 9.875 1.42756 9.875C1.23281 9.875 1.06728 9.80664 0.930955 9.66992L0.288287 8.99609C0.151963 8.85938 0.0838013 8.69336 0.0838013 8.49805C0.0838013 8.30274 0.151963 8.13672 0.288287 8L3.09266 5.1875L0.288287 2.375C0.151963 2.23828 0.0838013 2.07227 0.0838013 1.87695C0.0838013 1.68164 0.151963 1.51563 0.288287 1.37891L0.930955 0.705078C1.06728 0.568359 1.23281 0.5 1.42756 0.5C1.62231 0.5 1.78785 0.568359 1.92417 0.705078L5.89703 4.68945C6.03335 4.82617 6.10152 4.99219 6.10152 5.1875C6.10152 5.38281 6.03335 5.54883 5.89703 5.68555ZM11.5058 4.68945C11.6421 4.82617 11.7103 4.99219 11.7103 5.1875C11.7103 5.38281 11.6421 5.54883 11.5058 5.68555L7.53291 9.66992C7.39659 9.80664 7.23105 9.875 7.03631 9.875C6.84156 9.875 6.67602 9.80664 6.5397 9.66992L5.89703 8.99609C5.76071 8.85938 5.69254 8.69336 5.69254 8.49805C5.69254 8.30274 5.76071 8.13672 5.89703 8L8.7014 5.1875L5.89703 2.375C5.76071 2.23828 5.69254 2.07227 5.69254 1.87695C5.69254 1.68164 5.76071 1.51563 5.89703 1.37891L6.5397 0.705078C6.6176 0.646484 6.6955 0.597656 6.7734 0.558594C6.87077 0.519531 6.95841 0.5 7.03631 0.5C7.13368 0.5 7.22132 0.519531 7.29922 0.558594C7.39659 0.597656 7.47449 0.646484 7.53291 0.705078L11.5058 4.68945Z' fill='white'/%3E%3C/svg%3E%0A");
+                background-position-x: 0.6rem;
+            }
+
+            &-prev:after,
+            &-next:after {
+                display: none;
+            }
+        }
+    }
+
+    .button {
+        max-width: 34.5rem;
+        font-size: 1.4rem;
+        letter-spacing: 0;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 5rem);
+        }
+
+        .title {
+            margin-bottom: 2rem;
+            max-width: none;
+        }
+
+        .text {
+            max-width: 67rem;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .swiper {
+            &-container {
+                margin-bottom: 2.7rem;
+                max-width: 70.8rem;
+            }
+
+            &-slide {
+                img {
+                    width: 70.8rem;
+                    height: 41.3rem;
+                }
+            }
+
+            &-pagination {
+                &-bullets {
+                    bottom: 2.4rem;
+                }
+            }
+
+            &-button {
+                &-prev {
+                    left: 2rem;
+                }
+
+                &-next {
+                    right: 19px;
+                }
+            }
+        }
+
+        .button {
+            max-width: 30.7rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 13rem 11.8rem 4rem;
+        }
+
+        .title,
+        .swiper-container,
+        .button {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        
+        .title,
+        .text {
+            text-align: left;
+        }
+
+        .title {
+            grid-row: 1 / 2;
+        }
+
+        .text {
+            max-width: none;
+            line-height: 1.23;
+        }
+
+        .swiper {
+            &-container {
+                grid-row: 1 / 4;
+                max-width: 47rem;
+                margin-bottom: 0;
+            }
+
+            &-slide {
+                img {
+                    width: 47rem;
+                    height: 28.8rem;
+                }
+            }
+
+            &-pagination {
+                &-bullets {
+                    bottom: 1.9rem;
+                }
+            }
+        }
+    }
+}

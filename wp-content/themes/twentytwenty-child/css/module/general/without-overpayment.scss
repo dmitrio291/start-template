@@ -1,0 +1,302 @@
+@import "../../base/all/var";
+
+.without-overpayment {
+    background-color: $yellow;
+    background-image: url("data:image/svg+xml,%3Csvg width='375' height='357' viewBox='0 0 375 357' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M375 85.6062V-3.05176e-05H0V357L15.76 357C45.8895 284.761 104.767 180.619 160.156 136.622C229.163 81.8063 330.666 75.2869 375 85.6062Z' fill='%23FFDB00'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 1.2em;
+    }
+
+    &__list,
+    &__box {
+        display: flex;
+    }
+
+    &__list {
+        max-width: 21em;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        flex-basis: 50%;
+        margin-bottom: 1.063em;
+    }
+
+    &__box {
+        margin-bottom: 0.5em;
+        align-items: center;
+    }
+
+    &__image,
+    &__price-box {
+        display: inline-block;
+    }
+
+    &__image {
+        margin-right: 1em;
+        background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+        background-repeat: no-repeat;
+        
+        &--1 {
+            width: 2.750em;
+            height: 3.750em;
+            background-position: -60.750em -20.250em;
+        }
+
+        &--2 {
+            width: 3.563em;
+	        height: 3.750em;
+            background-position: -51.813em -20.313em;
+        }
+
+        &--3 {
+            width: 2.563em;
+	        height: 3.688em;
+            background-position: -42.375em -18.438em;
+        }
+
+        &--4 {
+            width: 3.500em;
+	        height: 3.500em;
+            background-position: -14.625em -28.188em;
+        }
+
+    }
+
+    &__price-box {
+        padding: 0.3em 0.6em;
+        background-color: $orange;
+        border-radius: 0.500em;
+    }
+
+    &__saving,
+    &__text {
+        text-transform: uppercase;
+    }
+
+    &__saving {
+        display: block;
+        margin-bottom: 0.2em;
+        font-size: 0.675em;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+
+    &__price,
+    &__text {
+        font-weight: 900;
+
+    }
+
+    &__price,
+    &__text {
+        letter-spacing: 0.03em;
+    }
+
+    &__text {
+        max-width: 7em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    @media (min-width: 768px) {
+        background-image: url("data:image/svg+xml,%3Csvg width='768' height='437' viewBox='0 0 768 437' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M768 104.79V0H0V437L32.2765 437C93.9816 348.573 214.564 221.094 328 167.237C469.326 100.138 677.203 92.1579 768 104.79Z' fill='%23FFDB00'/%3E%3C/svg%3E");
+
+        &__list {
+            max-width: 26em;
+        }
+
+        &__box {
+            min-height: 5em;
+        }
+
+        &__image {
+
+            &--1 {
+                width: 3.500em;
+                height: 4.788em;
+                background-position: -56.438em -20.213em;
+            }
+
+            &--2 {
+                width: 4.250em;
+                height: 4.250em;
+                background-position: -26.938em -18.313em;
+            }
+
+            &--3 {
+                width: 3.125em;
+                height: 4.688em;
+                background-position: -33.438em -26.375em;
+            }
+
+            &--4 {
+                width: 4.375em;
+                height: 4.375em;
+                background-position: -27.375em -26.313em;
+            }
+
+        }
+
+        &__price-box {
+            padding: 0.5em 1.2em;
+        }
+
+        &__text {
+            font-size: 1.125em;
+        }
+    }
+
+    @media (min-width: 960px) {
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        &__title {
+            font-size: 3.5rem;
+            letter-spacing: 0.03em;
+        }
+
+        &__list {
+            max-width: 31em;
+        }
+
+        &__item {
+            flex-basis: 40%;
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='1920' height='396' viewBox='0 0 1920 396' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1920 94.9582L1920 0H0V396L80.6912 396C234.954 315.869 536.41 200.351 820 151.547C1173.32 90.7432 1693.01 83.5115 1920 94.9582Z' fill='%23FFDB00'/%3E%3C/svg%3E%0A");
+
+        &__list {
+            max-width: 60em;
+        }
+
+        &__item {
+            flex-basis: auto;
+        }
+
+        &__box {
+            min-height: 6em;
+        }
+
+        &__price-box {
+            padding: 0.3em 0.7em 0.2em;
+            font-size: 2rem;
+        }
+    }
+
+    &--ceilings {
+        .without-overpayment {
+            &__title {
+                margin-bottom: 1.1em;
+            }
+
+            &__box {
+                margin-bottom: 0.4em;
+            }
+
+            &__image {
+                background-image: url('/wp-content/themes/twentytwenty-child/img/sprite3.png');
+                background-repeat: no-repeat;
+                background-size: 118.125em 436.813em;
+                font-size: 0.8rem;
+
+                &--1 {
+                    width: 5.938em;
+	                height: 8.250em;
+                    background-position: 3.955% 1.05%;
+                }
+
+                &--2 {
+                    width: 7.688em;
+	                height: 8em;
+                    background-position: 10.526% 1.108%;
+                }
+
+                &--3 {
+                    width: 5.813em;
+	                height: 6.625em;
+                    background-position: 18.308% 1.162%;
+                }
+
+                &--4 {
+                    width: 7.938em;
+	                height: 6.625em;
+                    background-position: 25.071% 1.104%;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            .without-overpayment {
+                &__saving {
+                    font-size: 0.775em;
+                }
+
+                &__image {
+                    font-size: 0.9rem;
+                }
+
+                &__price {
+                    font-size: 1.250em;
+
+                    &-box {
+                        padding: 0.5em 0.9em 0.2em;
+                        text-align: center;
+                    }
+                }
+            }            
+        }
+
+        @media (min-width: 960px) {
+            .without-overpayment {
+                &__list {
+                    max-width: 29em;
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .without-overpayment {
+                &__title {
+                    font-size: 4rem;
+                }
+
+                &__list {
+                    max-width: none;
+                }
+
+                &__box {
+                    margin-bottom: 1.5em;
+                }
+
+                &__image {
+                    font-size: 1.1rem;
+                }
+
+                &__price {
+                    &-box {
+                        padding: 0.8em 0.6em 0.3em;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.without-overpayment__price-box {
+    text-align: center;
+}

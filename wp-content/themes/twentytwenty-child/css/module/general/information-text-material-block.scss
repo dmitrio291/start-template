@@ -1,0 +1,102 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.information-text-material-block {
+    background-color: $lightGray;
+
+    @include _max768 {
+        text-align: center;
+    }
+
+    /* .information-text-material-block__text */
+
+    &__text {
+        margin-bottom: 1.4em;
+        letter-spacing: 0.03em;
+
+        @include _768 {
+            line-height: 1.25;
+            margin-bottom: 1.3em;
+        }
+    }
+
+    /* .information-text-material-block__list */
+
+    &__list {
+        margin-bottom: 0.9em;
+
+        @include _768 {
+            margin-bottom: 0.6em;
+        }
+    }
+
+    /* .information-text-material-block__item */
+
+    &__item {
+        margin-right: 1em;
+    }
+
+    /* .information-text-material-block__box-price */
+
+    &__box-price {
+
+        @include _768 {
+            text-align: left;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+
+    /* .information-text-material-block__price-text */
+
+    &__price-text {
+        margin-right: 0.4em;
+        display: none;
+
+        @include _768 {
+            display: inline-block;
+            font-size: 1.8rem;
+            margin-right: 0.7em;
+            line-height: 1.6em;
+        }
+    }
+
+    /* .information-text-material-block__price */
+
+    &__price {
+        font-size: 3rem;
+        margin-bottom: 1.1em;
+
+        @include _768 {
+            font-size: 4rem;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+
+        @include _1200 {
+            font-size: 4rem;
+        }
+    }
+
+    /* .information-text-material-block__link */
+
+    &__link {
+        margin-top: 1.2em;
+        max-width: 23.7rem;
+
+        @include _768 {
+            max-width: 34.7rem;
+            margin-right: 0;
+            margin-top: 0;
+        }
+
+        @include _1200 {
+            max-width: 38.8rem;
+        }
+    }
+}

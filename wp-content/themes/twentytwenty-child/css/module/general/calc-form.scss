@@ -1,0 +1,240 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+.calc-form {
+    background: linear-gradient(180deg, rgba(233, 233, 233, 0) 0%, #e9e9e9 81.25%) 0 0 / auto 16.3em,
+        url(/wp-content/themes/twentytwenty-child/img/calc-form-bg-s.webp) top right/auto 25.7rem;
+    background-repeat: no-repeat;
+    background-color: #e9e9e9;
+
+    @include _768 {
+        background: url(/wp-content/themes/twentytwenty-child/img/calc-form-bg-m.webp) top right no-repeat;
+        background-color: #e9e9e9;
+    }
+
+    @include _1200 {
+        background: url(/wp-content/themes/twentytwenty-child/img/calc-form-bg-l.webp) top right no-repeat;
+        background-color: #e9e9e9;
+    }
+
+    /* .calc-form__wrapper */
+
+    &__wrapper {
+        padding: 25.7rem 0 5rem;
+        text-align: center;
+
+        @include _768 {
+            padding: 3.5em 0 3.5em 1em;
+            text-align: left;
+        }
+
+        @include _1200 {
+            padding: 3.94em 0 3.7em;
+            max-width: 57rem;
+        }
+    }
+
+    /* .calc-form__title */
+
+    &__title {
+        line-height: 1.25;
+        margin-bottom: 0.6em;
+
+        @include _768 {
+            line-height: 1;
+            margin-bottom: 0.82em;
+        }
+        @include _1200 {
+            line-height: 1.1;
+        }
+
+        span {
+            display: block;
+            font-size: 1.33329em;
+
+            @include _768 {
+                font-size: 3.5rem;
+            }
+            @include _1200 {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    /* .calc-form__subtitle */
+
+    &__subtitle {
+        text-transform: uppercase;
+        margin-bottom: 1em;
+
+        @include _768 {
+        }
+
+        @include _1200 {
+        }
+    }
+
+    /* .calc-form__form */
+
+    &__form {
+        margin-bottom: 0.94em;
+        padding: 0 0.3em;
+
+        @include _768 {
+            text-align: center;
+            background-color: #fff;
+            padding: 1.86em 1.2em;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+            border-radius: 0.38em;
+            margin-bottom: 0;
+            max-width: 30.9rem;
+        }
+
+        @include _1200 {
+            max-width: 38.6rem;
+            padding: 2.16em 1.25em 1.8em;
+        }
+    }
+
+    /* .calc-form__lable */
+
+    &__lable {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin-bottom: 0.65em;
+
+        &::before {
+            content: "";
+            position: absolute;
+            fill: #d0d0d0;
+            left: 1em;
+            bottom: 0.5em;
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 1.25em;
+
+            @include _768 {
+                bottom: 0.6em;
+            }
+        }
+
+        @include _1200 {
+            margin-bottom: 1.05em;
+        }
+    }
+
+    /* .calc-form__lable--name */
+
+    &__lable--name {
+        &::before {
+            width: 1.11em;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.85103 10.8023C11.3061 10.8023 13.3036 8.47727 13.3036 5.61969C13.3036 4.22966 13.3036 0 8.85103 0C4.39846 0 4.39846 4.22966 4.39846 5.61969C4.39846 8.47727 6.39592 10.8023 8.85103 10.8023ZM8.85103 1.31383C11.1095 1.31383 11.9898 2.52124 11.9898 5.61969C11.9898 7.75291 10.5818 9.48848 8.85103 9.48848C7.12027 9.48848 5.71229 7.75291 5.71229 5.61969C5.71229 2.52124 6.59255 1.31383 8.85103 1.31383ZM13.8729 12.597C13.0763 12.2983 12.4036 11.5442 12.2157 11.32C11.9832 11.0423 11.5702 11.0042 11.2908 11.2372C11.0123 11.4697 10.9751 11.884 11.208 12.1626C11.515 12.5296 12.3449 13.4282 13.4131 13.8276C14.1024 14.086 16.2562 15.0863 16.3845 17.5077C14.0153 18.2903 11.4844 18.6862 8.85234 18.6862C6.22074 18.6862 3.68942 18.2903 1.32015 17.5077C1.44803 15.0885 3.59965 14.086 4.28678 13.8281C5.36105 13.426 6.19008 12.5296 6.49664 12.1626C6.72963 11.884 6.6924 11.4697 6.41387 11.2372C6.1349 11.0042 5.72104 11.0423 5.4885 11.32C5.30149 11.5433 4.62925 12.2961 3.82606 12.597C2.88711 12.9495 -0.162287 14.3829 0.00675907 18.0074C0.0190215 18.2745 0.192009 18.5075 0.443827 18.5964C3.07937 19.5279 5.90848 20 8.85234 20C11.7966 20 14.6253 19.5279 17.2604 18.5964C17.5118 18.5075 17.6848 18.2749 17.6975 18.0074C17.8657 14.379 14.8132 12.9482 13.8729 12.597Z' fill='black'/%3E%3C/svg%3E");
+        }
+    }
+
+    /* .calc-form__lable--tel */
+
+    &__lable--tel {
+        &::before {
+            width: 1.19em;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.9599 11.9101C15.8974 11.8457 15.3265 11.2832 14.4777 11.2832C13.9672 11.2832 13.4823 11.4819 13.0066 11.9019C12.3983 12.4386 11.7697 12.9943 11.0821 12.9943C10.6113 12.9943 10.1113 12.738 9.55589 12.2113C9.1881 11.8611 8.51946 11.1721 8.18029 10.7947C6.86944 9.32764 7.44074 8.48753 8.50712 7.20741C9.48453 6.03253 9.0216 4.76465 8.49787 4.22621C8.44325 4.16315 7.15399 2.68071 6.52543 2.0334C6.13077 1.6274 5.57445 1.16108 4.76971 1.16108C4.16362 1.16108 3.53594 1.42826 2.85056 1.97715C2.23831 2.4657 1.5265 3.30671 0.735411 4.47797C0.641149 4.61768 0.601066 4.7887 0.62309 4.95699C1.12567 8.81867 2.70917 12.2177 5.20181 14.7843L5.68105 15.2778C8.17324 17.8444 11.4728 19.4747 15.2243 19.9937C15.253 19.9977 15.2829 20 15.3116 20C15.4463 20 15.5776 19.9578 15.6886 19.8775C16.8259 19.0615 17.6434 18.3289 18.1156 17.7006C19.537 15.8199 18.7653 14.6395 18.0614 13.9147C17.4333 13.2678 15.9943 11.94 15.9599 11.9101ZM17.0721 16.8664C16.7136 17.3431 16.0502 17.9419 15.1446 18.6083C11.79 18.0921 8.84497 16.6119 6.61529 14.3157L6.13606 13.8217C3.90594 11.5254 2.46867 8.49252 1.9683 5.03773C2.61359 4.10645 3.1959 3.42284 3.66015 3.05132C4.09975 2.69977 4.47283 2.52104 4.76971 2.52104C5.02606 2.52104 5.26392 2.65849 5.59075 2.99507C6.19332 3.61563 7.49932 5.11803 7.53103 5.15386C7.67947 5.31671 7.97415 5.75536 7.4773 6.35233C6.56376 7.44919 5.03487 9.28454 7.20817 11.7169C7.57244 12.1233 8.26398 12.835 8.65953 13.2115C9.47132 13.9804 10.2637 14.3547 11.0821 14.3547C12.2586 14.3547 13.1502 13.5676 13.8981 12.9076C14.0989 12.7298 14.2888 12.6441 14.4769 12.6441C14.7856 12.6441 15.0297 12.8768 15.0521 12.8985C15.0667 12.9117 16.5255 14.2567 17.1276 14.8772C17.5271 15.2887 17.9412 15.7155 17.0721 16.8664ZM10.8319 4.50745C11.9115 4.89893 12.8731 5.52402 13.6893 6.36503C14.5064 7.20605 15.1129 8.19585 15.4926 9.30722C15.5882 9.58666 15.8432 9.76175 16.1159 9.76175C16.1885 9.76175 16.2625 9.74905 16.3352 9.7232C16.6788 9.5989 16.8594 9.21015 16.7391 8.85542C16.2934 7.5508 15.5816 6.38907 14.6235 5.4029C13.6659 4.41673 12.5383 3.68367 11.2707 3.2237C10.9258 3.09941 10.5483 3.28539 10.428 3.63967C10.3069 3.99395 10.4884 4.3827 10.8319 4.50745ZM19.8313 7.65604C19.2177 5.89463 18.2517 4.32691 16.9603 2.99689C15.6679 1.66687 14.1461 0.672531 12.4366 0.0401818C12.0908 -0.0868323 11.7138 0.0973382 11.5909 0.45071C11.468 0.804535 11.6468 1.1942 11.9895 1.32121C13.5153 1.88461 14.8728 2.77189 16.0251 3.95857C17.1774 5.14524 18.039 6.54376 18.5856 8.11511C18.6829 8.39272 18.9367 8.56555 19.2075 8.56555C19.2815 8.56555 19.3573 8.5524 19.4322 8.52654C19.7762 8.39953 19.9541 8.00987 19.8313 7.65604Z' fill='black'/%3E%3C/svg%3E%0A");
+        }
+
+        &::after {
+            content: "+7";
+            position: absolute;
+            left: 3.2em;
+            bottom: 0.75em;
+            font-size: 1.4rem;
+
+            @include _768 {
+                left: 3.2em;
+                font-size: 1.6rem;
+                bottom: 0.6em;
+            }            
+            
+            @include _1200 {
+                bottom: 0.65em;
+            }
+
+        }
+    }
+
+    /* .calc-form__input */
+
+    &__input {
+        padding: 0.4em 1em 0.4em 3em;
+        border: 0.05em solid #d0d0d0;
+        font-size: 1.4rem;
+
+        &:focus {
+            border: 0.05em solid $yellow;
+        }
+
+        &::placeholder {
+            font-size: 1.4rem;
+            @include _768 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @include _768 {
+            width: 21.25em;
+            border-width: 0.13em;
+            padding-top: 0.5em;
+            font-size: 1.6rem;
+
+            &:focus {
+                border-width: 0.13em;
+            }
+        }
+
+        @include _1200 {
+            padding-left: 3.2em;
+        }
+    }
+
+    &__input,
+    &__btn {
+        border-radius: 0.38em;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        height: 3.5rem;
+
+        @include _768 {
+            height: 4rem;
+        }
+    }
+
+    /* .calc-form__input--tel */
+
+    &__input--tel {
+        padding-left: 4.7em;
+
+        @include _768 {
+            padding-left: 4.4em;
+        }
+    }
+
+    /* .calc-form__text */
+
+    &__text {
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.2;
+
+        @include _768 {
+            display: none;
+        }
+    }
+
+    /* .calc-form__text-link */
+
+    &__text-link {
+        color: inherit;
+    }
+}

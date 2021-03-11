@@ -1,0 +1,43 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.want-to-calculate-the-cost {
+
+    /* .want-to-calculate-the-cost__title */
+
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 0.8em;
+
+        @include _768 {
+            line-height: 1.1;
+            padding: 0 2em;
+        }
+
+        @include _1200 {
+            line-height: 1.2;
+            padding: 0;
+        }
+    }
+
+    /* .want-to-calculate-the-cost__btn */
+
+    &__btn {
+        max-width: 20rem;
+        background-color: $yellow;
+        color: #000;
+
+        @include _768 {
+            max-width: 22.6rem;
+        }
+
+        @include _1200 {
+            max-width: 27.4rem;
+        }
+    }
+}

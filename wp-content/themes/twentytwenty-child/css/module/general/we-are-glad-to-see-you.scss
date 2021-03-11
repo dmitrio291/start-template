@@ -1,0 +1,201 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.we-are-glad-to-see-you {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/we-are-glad-to-see-you-mob.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.75);
+    }
+
+    @include _768 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/we-are-glad-to-see-you-plan.webp);
+    }
+
+    @include _1200 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/we-are-glad-to-see-you-desc.webp);
+    }
+
+    /* .we-are-glad-to-see-you__wrapper */
+
+    &__wrapper {
+        position: relative;
+    }
+
+    /* .we-are-glad-to-see-you__title */
+
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            text-align: center;
+        }
+
+        @include _1200 {
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    /* .we-are-glad-to-see-you__subtitle */
+
+    &__subtitle {
+        margin-bottom: 2.5rem;
+        line-height: 1.2;
+
+        @include _768 {
+            text-align: center;
+            margin-bottom: 3.1rem;
+        }
+    }
+
+    /* .we-are-glad-to-see-you__form */
+
+    &__form {
+        margin-bottom: 3.5rem;
+
+        @include _768 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 4rem;
+        }
+    }
+
+    /* .we-are-glad-to-see-you__input */
+
+    &__input {
+        margin-bottom: 1rem;
+        width: 100%;
+        border: none;
+        border-bottom: 0.3rem solid #c9c9c9;
+        border-radius: 0.6rem 0.6rem 0 0;
+        min-height: 3.5rem;
+        text-align: center;
+
+        &::placeholder {
+            font-size: 1.4rem;
+            font-weight: 700;
+
+            @include _768 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @include _768 {
+            margin: 0 1rem;
+            max-width: 30.5rem;
+        }
+    }
+
+    /* .we-are-glad-to-see-you__btn */
+
+    &__btn {
+        @include _768 {
+            max-width: 30.5rem;
+            margin: 0 1rem;
+        }
+    }
+
+    /* .we-are-glad-to-see-you__text-info */
+
+    &__text-info {
+        display: flex;
+        margin-bottom: 2.5rem;
+        line-height: 1.2;
+
+        span {
+            width: 100%;
+            max-width: 4.5rem;
+            margin-top: -0.7rem;
+        }
+
+        @include _768 {
+            display: block;
+            text-align: center;
+
+            span {
+                display: inline-block;
+                margin-right: 1.7rem;
+                max-width: fit-content;
+            }
+        }
+
+        @include _1200 {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .we-are-glad-to-see-you__text */
+
+    &__text {
+        margin-bottom: 2.5rem;
+        line-height: 1.2;
+
+        @include _768 {
+            max-width: 41rem;
+            text-align: center;
+            margin: 0 auto 3rem;
+        }
+
+        @include _1200 {
+            max-width: 100%;
+        }
+    }
+
+    /* .we-are-glad-to-see-you__box */
+
+    &__box {
+        justify-content: space-between;
+
+        @include _768 {
+            margin: 0 auto;
+            max-width: 40rem;
+        }
+    }
+
+    /* .we-are-glad-to-see-you__item */
+
+    &__item {
+        align-items: center;
+    }
+
+    /* .we-are-glad-to-see-you__icon */
+
+    &__icon {
+        font-size: 3.3em;
+        line-height: 0;
+        margin-right: 1.1rem;
+
+        .icon {
+            fill: transparent;
+            width: 1em;
+            height: 1em;
+        }
+
+        @include _768 {
+            font-size: 4.5em;
+        }
+    }
+
+    /* .we-are-glad-to-see-you__item-text */
+
+    &__item-text {
+        span {
+            display: block;
+        }
+    }
+}

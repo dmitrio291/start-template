@@ -1,0 +1,143 @@
+@import "mixin";
+
+.otzivi-o-kompanii3{
+    position: relative;
+    background-color: #fff;
+    
+    
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #FFE600 #D0D0D0;
+      }
+    ::-webkit-scrollbar-track {
+        background: #D0D0D0;
+        border-radius: .5em;
+    }
+    ::-webkit-scrollbar {
+        height:  .4rem;
+        background-color: #D0D0D0;
+        border-radius: .5em;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(236.8deg, #FFF854 0.02%, #FFE03E 101.17%);
+        border-radius: .5em;
+    }
+
+    
+    // ютуб отзывы
+    .youtube-wrapper{
+
+        @include DynamicFontSize(18, 30px, 375px, 768px, 18px);
+
+        input{
+            display: none;
+        }
+        .youtube, .youtube_mini{
+          background-position: center;
+          background-repeat: no-repeat;
+          position: relative;
+          display: inline-block;
+          overflow: hidden;
+          transition: all 200ms ease-out;
+          cursor: pointer;
+          
+        }
+        .youtube, iframe, .youtube-img{
+          display: none;
+          width: 16.246em; 
+          height: 9.535em;
+          margin: 0 auto;
+          
+          @media (min-width: 768px){
+              margin-left: 0;
+          }
+        }
+        .youtube-img{
+            background-size: contain;
+        }
+        .wrapper-scroll{
+            overflow: hidden;
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 16.246em;
+            margin: 0 auto;
+            padding: .25em 0 .35em;
+            display: flex;
+            @media (min-width: 768px){
+                margin-left: 0;
+            }
+        }
+        
+        .youtube_mini{
+          flex: 0 0 6.417em;
+          height: 3.758em;
+          &::before{
+            display: none;
+          }
+          &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.52);
+            height: 100%;
+            width: 100%;
+          }
+        }
+        
+        .youtube::before, .youtube_mini::before{
+          content: "";
+            background-repeat: no-repeat; 
+            background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse opacity='0.5' cx='12.3129' cy='12.2143' rx='12.3129' ry='12.2143' fill='%23FFE600'/%3E%3Cpath d='M17.6328 12.2143L9.65109 16.7856L9.65109 7.64298L17.6328 12.2143Z' fill='white'/%3E%3Cpath d='M9.65234 7.64982V7.64307L17.6341 12.2144L16.3077 12.974L9.65234 7.64982Z' fill='%23F3EFC9'/%3E%3C/svg%3E");
+            background-size: cover;
+            position: absolute;
+            height: 1.368em;
+            width: 1.368em;
+            font-size: 1.8rem;
+            position: absolute;
+            transition: none;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+        }
+        .youtube:hover::before ,  .youtube_mini:hover::before {
+            transform: scale(1.1);
+        }
+        
+        .youtube_mini:hover, .youtube_mini.active_u{
+          &::before {
+              display: block;
+          }
+          &::after {
+              display: none;
+          }
+        }
+      
+        :checked + div,
+        :checked + iframe{
+          display: block;
+        } 
+    }
+
+    
+    @media ( min-width: 768px ) {
+
+        .wrap-videos::-webkit-scrollbar {
+            height: .5rem;
+        }
+
+        .youtube-wrapper{
+            font-size: 1.97rem;
+        }
+    }
+    
+    
+    @media ( min-width: 1100px ) {
+        .youtube-wrapper{
+            font-size: 3.319rem;
+        }
+    }
+    
+}

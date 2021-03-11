@@ -1,0 +1,469 @@
+// Стилия для десктопного меню в хедере
+.reset-list-style {
+    list-style: none;
+    margin: 0;
+}
+
+ul.primary-menu {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+
+body.touch-enabled {
+
+    .primary-menu > li.menu-item-has-children > a {
+        padding-right: 0;
+        margin-right: 2rem;
+    }
+
+}
+
+.primary-menu {
+
+    .icon {
+        display: block;
+        height: 0.7rem;
+        position: absolute;
+        pointer-events: none;
+        transform: rotate(-45deg);
+        width: 1.3rem;
+        margin-right: .1em;
+
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            background-color: currentColor;
+            position: absolute;
+            bottom: calc(50% - 0.1rem);
+            left: 0;
+        }
+
+        &:before {
+            height: 0.9rem;
+            width: 0.2rem;
+        }
+
+        &:after {
+            height: 0.2rem;
+            width: 0.9rem;
+        }
+    }
+
+    & > li {
+        width: 16.6666666%;
+
+        li {
+            color: #000;
+        }
+
+        &:last-child:hover > a,
+        &:last-child > a:hover,
+        &:last-child > a {
+            background: transparent !important;
+            box-shadow: none !important;
+            border-left: 0 solid rgba(255, 255, 255, 0.65);
+        }
+
+        &:last-child {
+            position: relative;
+            margin-left: auto;
+            color: #fff !important;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 0 0.2em;
+
+            & > a::before,
+            &::before {
+                content: "";
+            }
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+                outline: 1px dashed #fff;
+                outline-offset: -.3em;
+                transform: scaleY(1.1);
+                background: #F26422;
+            }
+
+            & > a {
+                color: #fff !important;
+                font-size: 2rem;
+                font-weight: bold;
+                letter-spacing: 0;
+                position: relative;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                padding: 0 0.2em;
+
+                &::before {
+                    background-image: url(/wp-content/themes/twentytwenty-child/img/ico_actions.svg);
+                    background-size: contain;
+                    width: 2.4em;
+                    height: 2.4em;
+                    margin-right: .6vw;
+                }
+            }
+        }
+
+        & > a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            border-left: 1px solid rgba(255, 255, 255, 0.65);
+        }
+    }
+
+    ul {
+        background: #000;
+        border-radius: 0.4rem;
+        color: #fff;
+        font-size: 1.7rem;
+        opacity: 0;
+        padding: 1rem 0;
+        position: absolute;
+        right: 9999rem;
+        top: calc(100% + 2rem);
+        transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
+        transform: translateY(0.6rem);
+        width: 20rem;
+        z-index: 1;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 100%;
+        }
+
+        &::before {
+            height: 2rem;
+            left: 0;
+            right: 0;
+        }
+
+        &::after {
+            border: 1rem solid transparent;
+            border-bottom-color: #000;
+            right: 1.8rem;
+        }
+
+        a {
+            background: transparent;
+            border: none;
+            color: inherit;
+            display: block;
+            padding: 1rem 2rem;
+            transition: background-color 0.15s linear;
+            width: 100%;
+        }
+    }
+
+    li {
+        font-size: inherit;
+        line-height: 1.25;
+        position: relative;
+
+        li {
+
+            a {
+                max-width: 19rem;
+            }
+
+        }
+    }
+
+    a {
+        font-weight: 900;
+        line-height: 1.3;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        padding: .5625em .75em;
+        text-align: center;
+        color: inherit;
+        display: block;
+        line-height: 1.2;
+        text-decoration: none;
+    }
+
+    .sub-menu {
+        background: #fff !important;
+        width: 140%;
+        padding: 0;
+        top: 100%;
+        border-radius: 0;
+
+        &::after {
+            display: none;
+        }
+
+        a {
+            max-width: 100%;
+            position: relative;
+            padding: 1.565em .5em 1.565em;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                border-bottom: 2px solid #E9E9E9;
+            }
+        }
+    }
+
+}
+
+// Стили для мобильного меню в хедере
+.toggle {
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    position: relative;
+    text-align: inherit;
+    user-select: none;
+}
+
+button.toggle {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: inherit;
+    font-weight: 400;
+    letter-spacing: inherit;
+    padding: 0;
+    text-transform: none;
+}
+
+.button.sub-menu-toggle {
+    border-left: 0.1rem solid #dedfdf;
+    flex-shrink: 0;
+    margin: 1rem 0;
+    padding: 0 2.5rem;
+}
+
+.fill-children-current-color, 
+.fill-children-current-color * {
+    fill: currentColor;
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    word-break: normal;
+}
+
+button.sub-menu-toggle {
+
+    svg {
+        height: 0.9rem;
+        transition: transform 0.15s linear;
+        width: 1.5rem;
+    }
+
+}
+
+.mobile-menu {
+    display: block;
+}
+
+
+.modal-menu {
+    position: relative;
+
+    ul {
+        display: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    li {
+        border-color: #dedfdf;
+        border-style: solid;
+        border-width: 0.1rem 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1;
+        justify-content: flex-start;
+        margin: 0;
+
+        &:last-child {
+            border-bottom-width: 0.1rem;
+        }
+    }
+
+    .ancestor-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    a {
+        display: block;
+        padding: 2rem 2.5rem;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    & > li > a,
+    & > li > .ancestor-wrapper > a {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+} 
+
+.menu-modal {
+
+    button {
+        outline-width: 0;
+    }
+
+    .modal-menu {
+        left: 0;
+        width: 100%;
+
+        li {
+            border-width: 0 0 0.1rem 0;
+            border-color: rgba(255, 255, 255, 0.65);
+        }
+
+        & > li > .ancestor-wrapper > .button.sub-menu-toggle {
+            padding: 0;
+            border-width: 0;
+            width: 100%;
+            width: 3.3em;
+            border-left: 1px solid #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 2rem;
+            height: 4.9rem;
+        }
+
+        & > li {
+
+            .sub-menu {
+
+                li {
+                    border-color: #E9E9E9;
+                }
+
+                .ancestor-wrapper {
+
+                    a {
+                        padding: 1.8rem 3rem;
+                        background-color: #fff;
+                    }
+
+                }
+
+            }
+
+        }
+
+        ul {
+
+            li {
+                border-left-width: 0;
+            }
+
+        }
+
+        li {
+            border-width: 0 0 0.1rem 0;
+            border-color: rgba(255, 255, 255, 0.65);
+        }
+    }
+
+    & .modal-menu > li .ancestor-wrapper > a,
+    & .modal-menu > li .sub-menu .ancestor-wrapper a {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    & .modal-menu > li > .ancestor-wrapper > a {
+        padding: 1.8rem 2rem;
+    }
+
+}
+
+
+.menu-wrapper {
+
+    .menu-item {
+        position: relative;
+    } 
+
+}
+
+.primary-menu-wrapper {
+    display: none;
+}
+
+@media (min-width: 960px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .primary-menu-wrapper {
+        display: block;
+        width: 100%;
+    }
+
+    .primary-menu {
+
+        & > li {
+
+            & > .icon {
+                bottom: .45em;
+                right: -0.6rem;
+                top: calc(50% - 0.4rem);
+                left: 50%;
+                opacity: 0.5;
+            }
+
+        }
+
+    }
+}
+
+@media (any-pointer: coarse) {
+    .primary-menu > li.menu-item-has-children > a {
+        padding-right: 0;
+        margin-right: 2rem;
+    }
+}

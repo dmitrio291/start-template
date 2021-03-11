@@ -1,0 +1,230 @@
+.choose-color {
+    .container {
+        width: calc(100% - 3.5rem);
+    }
+
+    .title {
+        margin-bottom: 0.825em;
+    }
+
+    .text {
+        margin-bottom: 1.763em;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 19.7em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__item {
+        width: 3.125em;
+        height: 3.125em;
+        margin-bottom: 0.875em;
+        border-radius: 50%;
+
+        &--1,
+        &--2,
+        &--3,
+        &--4,
+        &--6,
+        &--7,
+        &--8,
+        &--9,
+        &--11,
+        &--12,
+        &--13,
+        &--14,
+        &--16,
+        &--17,
+        &--18,
+        &--19 {
+            margin-right: 1em;
+        }
+
+        &--1 {
+            background-color: #D0B58A;
+        }
+
+        &--2 {
+            background-color: #F2AD23;
+        }
+
+        &--3 {
+            background-color: #DE971F;
+        }
+
+        &--4 {
+            background-color: #AE8A5D;
+        }
+
+        &--5 {
+            background-color: #F8CE9A;
+        }
+
+        &--6 {
+            background-color: #FEE9C1;
+        }
+
+        &--7 {
+            background-color: #F7CB3C;
+        }
+
+        &--8 {
+            background-color: #D8772D;
+        }
+
+        &--9 {
+            background-color: #F18042;
+        }
+
+        &--10 {
+            background-color: #DE5F33;
+        }
+
+        &--11 {
+            background-color: #8F000C;
+        }
+
+        &--12 {
+            background-color: #6D001B;
+        }
+
+        &--13 {
+            background-color: #571216;
+        }
+
+        &--14 {
+            background-color: #000064;
+        }
+
+        &--15 {
+            background-color: #3B4A60;
+        }
+
+        &--16 {
+            background-color: #2C5D8E;
+        }
+
+        &--17 {
+            background-color: #507291;
+        }
+
+        &--18 {
+            background-color: #2A5A81;
+        }
+
+        &--19 {
+            background-color: #428FB9;
+        }
+
+        &--20 {
+            background: #03A6A8;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 0.925em;
+        }
+
+        .text {
+            max-width: 39.1em;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        &__list {
+            max-width: 33.7em;
+        }
+        
+        &__item {
+            width: 5.250em;
+            height: 5.250em;
+            margin-bottom: 1.475em;
+
+            &--1,
+            &--2,
+            &--3,
+            &--4,
+            &--6,
+            &--7,
+            &--8,
+            &--9,
+            &--11,
+            &--12,
+            &--13,
+            &--14,
+            &--16,
+            &--17,
+            &--18,
+            &--19 {
+                margin-right: 1.813em;
+            }
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 7rem);
+        }
+
+        .title {
+            margin-bottom: 0.625em;
+        }
+
+        .text {
+            line-height: 1.14;
+        }
+
+        &__list {
+            max-width: 30.2em;
+        }
+
+        &__item {
+            width: 4.5775em;
+            height: 4.5775em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        .text {
+            max-width: 52.7em;
+            margin-bottom: 1.363em;
+        }
+
+        &__list {
+            max-width: 68.9em;
+        }
+
+        &__item {
+            &--1,
+            &--2,
+            &--3,
+            &--4,
+            &--5,
+            &--6,
+            &--7,
+            &--8,
+            &--9,
+            &--11,
+            &--12,
+            &--13,
+            &--14,
+            &--15,
+            &--16,
+            &--17,
+            &--18,
+            &--19 {
+                margin-right: 1.513em;
+            }
+        }
+    }
+}

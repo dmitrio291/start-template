@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/style.css">
+</head>
+
+<body>
+
+    <button data-modal-btn="discount-popup">Модальное окно</button>
+
+    <div data-modal-window="discount-popup" class="discount-popup popup">
+        <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/module/general/popups.css">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <button class="popup__btn-close btn-close"></button>
+                    <div class="discount-popup__box">
+                        <h2 class="discount-popup__title orange center">СКИДКА 10%</h2>
+                        <p class="discount-popup__subtitle fw7 center">ТОЛЬКО СЕГОДНЯ ПРИ ЗАЯВКЕ С САЙТА</p>
+                        <form class="form-contacts" action="#">
+                            <div class="form-contacts__box">
+                                <input class="form-contacts__input fw7 phone-user phone_mask" type="tel" placeholder="мой телефон">
+                            </div>
+                            <button class="form-contacts__button button all-send" type="submit">ПЕРЕЗВОНИТЬ</button>
+                        </form>
+                    </div>
+                    <p class="discount-popup__text center">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a class="discount-popup__link" href="#">Правовой&nbsp;информацией</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/wp-content/themes/twentytwenty-child/js/only-js-without-jquery.js"></script>
+</body>
+
+</html>

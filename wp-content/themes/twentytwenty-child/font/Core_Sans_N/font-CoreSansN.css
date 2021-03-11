@@ -1,0 +1,12 @@
+@font-face {
+    font-display: swap;
+	font-family: "Core Sans N";
+    src: local('Core Sans N Regular'), local('Core-Sans-N-Regular');
+	src: url("Core-Sans-N-Regular.eot");
+	src: url("Core-Sans-N-Regular.eot?#iefix") format("embedded-opentype"),
+        url("Core-Sans-N-Regular.woff2") format("woff2"),
+		url("Core-Sans-N-Regular.woff") format("woff"),
+		url("Core-Sans-N-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}

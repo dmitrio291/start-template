@@ -1,0 +1,245 @@
+@import '../../base/all/var';
+
+.prices-without-intermediaries {
+    .container {
+        width: calc(100% - 4.8rem);
+    }
+
+    .title {
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    &__slider {
+        max-width: 31rem;
+    }
+
+    &__pagination {
+        margin-top: -7.2rem;
+        text-align: center;
+
+        .swiper-pagination-bullet {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    &__info {
+        margin-bottom: 2.8rem;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.13;
+    }
+
+    .text {
+        line-height: 1.2;
+    }
+
+    &__title {
+        margin-bottom: 2.3rem;
+        text-align: center;
+    }
+
+    &__image {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+
+        &-box {
+            position: relative;
+        }
+    }
+
+    &__window-text {
+        display: block;
+        letter-spacing: -0.02em;
+    }
+
+    &__circle,
+    &__circle:before {
+        border-radius: 50%;
+    }
+
+    &__circle {
+        position: absolute;
+        top: 1.3rem;
+        left: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 6rem;
+        height: 6rem;
+        border: 0.05rem solid $orange;
+        background-color: $white;
+        font-size: 1.2rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 5.4rem;
+            height: 5.4rem;
+            border: 0.05rem dashed $orange;
+        }
+
+        &.position {
+            &-1 {
+                left: 2rem;
+            }
+
+            &-2 {
+                left: 1.5rem;
+            }
+        }
+    }
+
+    &__prices {
+        display: flex;
+        align-items: center;
+        max-width: 26rem;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        transform: translateY(2.5rem);
+
+        &.helper {
+            transform: translateY(-9.1rem);
+        }
+    }
+
+    &__price-competitors,
+    &__price {
+        color: #3A3A3A;
+    }
+
+    &__price {
+        position: relative;
+        letter-spacing: 0.1em;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0.8rem;
+            left: 2rem;
+            width: 6.3rem;
+            background-color: $black;
+            height: 0.1rem;
+        }
+
+        &-left {
+            padding: 1.25rem 0.55rem;
+            background-color: $white;
+            border-top-left-radius: 0.6rem;
+            border-bottom-left-radius: 0.6rem;
+            border: 0.1rem solid $orange;
+            border-right: none;
+        }
+
+        &-right {
+            padding: 0.6rem 1.6rem;
+            min-width: 13.2rem;
+            min-height: 7.2rem;
+            background-color: $orange;
+            color: $white;
+            border-radius: 0.6rem;
+        }
+
+        &-competitors {
+            margin-bottom: 0.9rem;
+            font-size: 1.2rem;
+        }
+
+        &-we,
+        &-hurry-up {
+            font-size: 1.2rem;
+        }
+
+        &-we {
+            text-transform: uppercase;
+        }
+
+        &-our {
+            margin-bottom: 0.6rem;
+            font-size: 2.4rem;
+            border-bottom: 0.2rem solid $white;
+            letter-spacing: 0.03em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 1.2rem;
+        }
+
+        &__slider {
+            max-width: 66rem;
+        }
+
+        .text {
+            max-width: 70rem;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 3.1rem;
+            text-align: center;
+            line-height: 1.23;
+        }
+
+        &__info {
+            margin-bottom: 3.2rem;
+            font-size: 1.8rem;
+        }
+
+        &__circle {
+            top: 1.3rem;
+            left: 6.5rem;
+
+            &.position {
+                &-1 {
+                    left: 4.1rem;
+                }
+            }
+        }
+
+        &__pagination {
+            margin-top: -6.6rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .text {
+            max-width: 92.5rem;
+        }
+
+        &__prices {
+            &.helper {
+                margin-left: 0;
+            }
+        }
+
+        &__slider {
+            max-width: 96rem;
+        }
+
+        &__slide {
+            &:nth-child(2) {
+                .prices-without-intermediaries__image {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__prices {
+            &.helper {
+                position: absolute;
+            }
+        }
+
+        &__pagination {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,163 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.prices-for-wooden-pine-windows {
+    /* .prices-for-wooden-pine-windows__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 0.75em;
+        line-height: 1.2em;
+        padding: 0 1em;
+
+        @include _768 {
+            margin-bottom: 0.85em;
+            padding: 0;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .prices-for-wooden-pine-windows__slider */
+
+    &__slider {
+        padding-bottom: 0.5em;
+        margin-bottom: 1.8em;
+
+        .pagination.active {
+            background-color: $orange;
+        }
+
+        @include _1200 {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    /* .prices-for-wooden-pine-windows__item */
+
+    &__item {
+        text-align: center;
+
+        @include _768 {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    /* .prices-for-wooden-pine-windows__img */
+
+    &__img {
+        height: 24.9rem;
+        object-fit: contain;
+        margin-bottom: 1.4em;
+
+        @include _768 {
+            height: 24rem;
+            margin-bottom: 1.4em;
+        }
+    }
+
+    /* .prices-for-wooden-pine-windows__name */
+
+    &__name {
+        font-weight: 400;
+        font-size: 1.6rem;
+        margin-bottom: 0.9em;
+
+        @include _768 {
+            font-size: 1.4rem;
+        }
+    }
+
+    /* .prices-for-wooden-pine-windows__old-price */
+
+    &__old-price {
+        font-weight: 700;
+        font-size: 1.6rem;
+        margin-right: 1.6em;
+        display: inline-block;
+        margin-bottom: 0.9em;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 0.1em;
+            width: 110%;
+            background-color: $orange;
+            left: -0.3em;
+            right: 0;
+            top: 0.5em;
+            transform: rotate(10deg);
+        }
+
+        @include _768 {
+            margin: 0;
+            margin-bottom: 0.35em;
+        }
+    }
+
+    /* .prices-for-wooden-pine-windows__new-price */
+
+    &__new-price {
+        font-weight: 900;
+        font-size: 2.4rem;
+
+        @include _768 {
+            display: block;
+            margin-bottom: 0.15em;
+        }
+    }
+
+    /* .prices-for-wooden-pine-windows__text */
+
+    &__text {
+        font-size: 1.6rem;
+        margin-bottom: 0.9em;
+
+        @include _768 {
+            min-height: 2.2em;
+            display: flex;
+            align-items: center;
+            max-width: 13em;
+            margin: 0 auto;
+            font-size: 1.4rem;
+            margin-bottom: 0.6em;
+        }
+    }
+
+    /* .prices-for-wooden-pine-windows__installment-plan */
+
+    &__installment-plan {
+        font-size: 1.4rem;
+        display: inline-block;
+        background-color: #f6f6f6;
+        padding: 0.5em;
+        border-radius: 0.3em;
+
+        @include _768 {
+            margin-top: auto;
+        }
+    }
+
+    /* .prices-for-wooden-pine-windows__link */
+
+    &__link {
+        max-width: 27.4rem;
+        margin-top: 1.5em;
+
+        @include _768 {
+            margin-top: 0.9em;
+        }
+    }
+}

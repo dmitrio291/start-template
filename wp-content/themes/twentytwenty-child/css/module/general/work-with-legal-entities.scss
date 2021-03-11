@@ -1,0 +1,187 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.legal-entities {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/legal-entities-s.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include _768 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/legal-entities-m.webp);
+        background-size: cover;
+        background-position: center;
+    }
+
+    @include _1200 {
+        background-size: contain;
+        background-position: left;
+        background: linear-gradient(-45deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%) 0 0/ 100% 100%,
+            url(/wp-content/themes/twentytwenty-child/img/legal-entities-l.webp) left/contain no-repeat;
+    }
+
+    @media (min-width: 1920px) {
+        background: none;
+        position: relative;
+        &:before {
+            content: "";
+            width: 45%;
+            height: 100%;
+            background: linear-gradient(-45deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%) 0 0/100% 100%,
+                url(/wp-content/themes/twentytwenty-child/img/legal-entities-l.webp) left/cover no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    /* .legal-entities__wrapper */
+
+    &__wrapper {
+        padding: 29.5rem 0 4.8rem;
+
+        @include _768 {
+            padding: 5.5rem 0;
+        }
+
+        @include _1200 {
+            padding: 6rem 0;
+        }
+    }
+
+    /* .legal-entities__inner */
+
+    &__inner {
+        @include _768 {
+            background-color: rgba($color: #fff, $alpha: 0.8);
+            max-width: 58.8rem;
+            margin: 0 auto;
+            padding: 1.8em 1em 2em 4em;
+        }
+
+        @include _1200 {
+            background-color: transparent;
+            padding: 0;
+            margin-left: 20.5em;
+            max-width: 100%;
+        }
+    }
+
+    /* .legal-entities__title */
+
+    &__title {
+        text-align: center;
+        max-width: 13em;
+        margin: 0 auto 1em;
+        line-height: 1.2em;
+
+        @include _768 {
+            max-width: 100%;
+            text-align: left;
+            line-height: 1.1em;
+            margin-bottom: 0.95em;
+        }
+
+        @include _1200 {
+            line-height: 1.2em;
+            margin-bottom: 0.95em;
+        }
+    }
+
+    /* .legal-entities__list */
+
+    &__list {
+        margin-left: 1.2em;
+        margin-bottom: 2.2em;
+
+        @include _768 {
+            margin-left: 0;
+            margin-bottom: 1.7em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.8em;
+            margin-left: 0.6em;
+        }
+    }
+
+    /* .legal-entities__item */
+
+    &__item {
+        padding-left: 1.8em;
+        margin-bottom: 1.55em;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/legal-entities-before.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            left: -0.3em;
+            bottom: -0.4em;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+
+            @include _768 {
+                left: -0.65em;
+                bottom: -0.55em;
+                width: 3.8rem;
+                height: 4rem;
+            }
+        }
+
+        @include _768 {
+            margin-bottom: 1.25em;
+            padding-left: 1.7em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.2em;
+            padding-left: 1.8em;
+        }
+    }
+
+    /* .legal-entities__text */
+
+    &__text {
+        text-align: center;
+        letter-spacing: -0.02em;
+        margin-bottom: 1.5em;
+        line-height: 1.2;
+
+        @include _768 {
+            text-align: left;
+            letter-spacing: 0;
+            line-height: 1.2em;
+            margin-bottom: 1.7em;
+            margin-left: -0.6em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.7em;
+            margin-left: 0;
+        }
+    }
+
+    /* .legal-entities__btn */
+
+    &__btn {
+        max-width: 30rem;
+
+        @include _768 {
+            max-width: 37.8rem;
+            margin-left: 2.7em;
+        }
+
+        @include _1200 {
+            margin-left: 0;
+        }
+    }
+}

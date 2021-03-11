@@ -1,0 +1,214 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.balcony-with-take-out {
+    /* .balcony-with-take-out__wrapper */
+
+    &__wrapper {
+        padding-top: 3rem;
+
+        @include _768 {
+            padding-top: 5.5rem;
+        }
+
+        @include _1200 {
+            padding-top: 6rem;
+            display: flex;
+        }
+    }
+
+    /* .balcony-with-take-out__box-img */
+
+    &__box-img {
+        text-align: center;
+        margin-bottom: 1.5em;
+
+        @include _768 {
+            margin-bottom: 1.8em;
+        }
+
+        @include _1200 {
+            width: 65%;
+            padding-right: 4.1em;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+    }
+
+    /* .balcony-with-take-out__img-item */
+
+    &__img-item {
+        text-align: center;
+        position: relative;
+    }
+
+    /* .balcony-with-take-out__img */
+
+    &__img {
+        height: 18.6rem;
+        margin-bottom: 0.4em;
+
+        @include _768 {
+            height: 30rem;
+            margin-bottom: 0.7em;
+        }
+    }
+
+    /* .balcony-with-take-out__subtitle */
+
+    &__subtitle {
+        display: block;
+        max-width: 13.4rem;
+        margin: 0 auto;
+        font-weight: 400;
+        padding: 0 0.9em;
+        line-height: 1.6em;
+        border-radius: 0.5em;
+        font-size: 1.2rem;
+        position: relative;
+        border: 0.1rem solid $orange;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.8rem;
+            height: 0.8rem;
+            border-left: 0.1rem solid $orange;
+            border-top: 0.1rem solid $orange;
+            background-color: #fff;
+            transform: rotate(45deg);
+            left: 0;
+            right: 0;
+            top: -0.45em;
+            margin: 0 auto;
+
+            @include _768 {
+                top: -0.6rem;
+                border-width: 0.2rem;
+            }
+        }
+
+        @include _768 {
+            font-size: 1.6rem;
+            max-width: 21.7rem;
+            padding: 0.2em 2em;
+            border-width: 0.2rem;
+        }
+    }
+
+    /* .balcony-with-take-out__bonus */
+
+    &__bonus {
+        font-size: 0.6rem;
+        position: absolute;
+        right: -0.5em;
+        top: 9em;
+        width: 6.2rem;
+        height: 6.2rem;
+        background-color: #e8e8e8;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        @include _768 {
+            font-size: 1rem;
+            width: 10.7rem;
+            height: 10.7rem;
+            right: -0.9em;
+            top: 8.3em;
+            padding: 0 0.3em;
+            margin-top: 0.5em;
+        }
+    }
+
+    /* .balcony-with-take-out__bonus-add */
+
+    &__bonus-add {
+        font-size: 1.4rem;
+        display: block;
+
+        @include _768 {
+            font-size: 2.2rem;
+            line-height: 1.6em;
+        }
+    }
+
+    /* .balcony-with-take-out__box-list */
+
+    &__box-list {
+        @include _1200 {
+            width: 35%;
+        }
+    }
+
+    /* .balcony-with-take-out__list */
+
+    &__list {
+        margin-bottom: 1.5em;
+
+        @include _768 {
+            margin-bottom: 2.1em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.85em;
+        }
+    }
+
+    /* .balcony-with-take-out__list-item */
+
+    &__list-item {
+        padding-left: 2em;
+        margin-bottom: 1.1em;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 1.2rem;
+            width: 1.2rem;
+            border-radius: 50%;
+            border: 0.1rem solid $orange;
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.91057 7.30247L1.00588 4.30618C0.831373 4.12616 0.831373 3.8343 1.00588 3.65427L1.63784 3.00235C1.81235 2.82232 2.09531 2.82232 2.26982 3.00235L4.22656 5.02079L8.41768 0.697509C8.59219 0.517497 8.87515 0.517497 9.04966 0.697509L9.68162 1.34942C9.85613 1.52943 9.85613 1.8213 9.68162 2.00133L4.54255 7.30249C4.36803 7.4825 4.08508 7.4825 3.91057 7.30247Z' fill='black'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 0.4em 0.4em;
+            left: 0.1em;
+
+            @include _1200 {
+                left: -0.1em;
+            }
+        }
+
+        @include _768 {
+            padding-left: 2em;
+            margin-bottom: 1.02em;
+        }
+
+        @include _1200 {
+            line-height: 1.2;
+            padding-left: 1.8em;
+            margin-bottom: 0.82em;
+        }
+    }
+
+    /* .balcony-with-take-out__btn */
+
+    &__btn {
+        @include _768 {
+            max-width: 36.4rem;
+        }
+
+        @include _1200 {
+            max-width: 30.6rem;
+            margin-left: 1.8em;
+        }
+    }
+}

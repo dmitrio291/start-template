@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap">
+    <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/style.css">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/module/calc/calc-balcony.css">
+
+    <form class="form" action="#">
+
+        <section class="calc-balcony">
+
+            <div class="container">
+                <div class="balcony__wrapper indent">
+
+                    <div class="balcony__inner balcony-home">
+
+                        <h2 class="balcony__title">РАССЧИТАЙТЕ ТОЧНУЮ СТОИМОСТЬ <span>ЗА 3 МИНУТЫ</span></h2>
+
+                        <label class="choice" for="choice">
+                            <input type="checkbox" id="choice" name="choice">
+                            <span class="choice__window">окна</span>
+                            <span class="choice__swipe"></span>
+                            <span class="choice__balkony">балконы</span>
+                        </label>
+                        
+                        <div class="balcony-text balcony-home__text">Выберите тип остекления</div>
+                        <p class="balcony-text"><span class="orange fw7">Холодное остекление</span> — идеальный вариант,
+                            когда
+                            хочется недорого, но качественно.</p>
+                        <p class="balcony-text"><span class="orange fw7">Теплое остекление</span> выбирают, когда хотят
+                            превратить
+                            балкон в полноценную комнату отдыха с видом на город или сад.</p>
+
+                        <div class="balcony-home__list df">
+                            <input class="balcony-home__radio" type="radio" name="temperature" id="temperature-cold">
+                            <label for="temperature-cold"
+                                class="balcony-home__label balcony-home__label--hot balcony-text df">
+                                <div class="lable-icon">
+                                    <svg class="lable-hot">
+                                        <use xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#cold">
+                                        </use>
+                                    </svg>
+                                </div>
+                                Теплое
+                            </label>
+                            <input class="balcony-home__radio" type="radio" name="temperature" id="temperature-hot">
+                            <label for="temperature-hot"
+                                class="balcony-home__label balcony-home__label--cold balcony-text df">
+                                <div class="lable-icon">
+                                    <svg class="lable-cold">
+                                        <use xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#hot">
+                                        </use>
+                                    </svg>
+                                </div>
+                                Холодное
+                            </label>
+                        </div>
+
+                        <div class="calc-balcony__buttons df">
+                            <div class="calc-balcony__btn calc-balcony__btn--next">Далее</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- <section class="calc-balcony">
+
+            <div class="container">
+                <div class="balcony__wrapper">
+
+                    <div class="balcony__inner balcony-leaflets">
+
+                        <h2 class="balcony__title">РАССЧИТАЙТЕ ТОЧНУЮ СТОИМОСТЬ <span>ЗА 3 МИНУТЫ</span></h2>
+                        <h3 class="balcony-text">Выберите количество открывающихся створок.</h3>
+
+                        <div class="balcony-leaflets__list df">
+
+                            <input class="balcony-leaflets__radio" type="radio" name="sash" id="sash-one">
+                            <label class="balcony-leaflets__label dfsb" for="sash-one">
+                                <span class="balcony-leaflets__img balcony-leaflets__img--1 dfsb">
+                                    <span class="balcony-leaflets__bg balcony-leaflets__bg--1"></span>
+                                </span>
+                            </label>
+
+                            <input class="balcony-leaflets__radio" type="radio" name="sash" id="sash-two">
+                            <label class="balcony-leaflets__label dfsb" for="sash-two">
+                                <span class="balcony-leaflets__img balcony-leaflets__img--2 dfsb">
+                                    <span class="balcony-leaflets__bg balcony-leaflets__bg--1"></span>
+                                    <span class="balcony-leaflets__bg balcony-leaflets__bg--2"></span>
+                                </span>
+                            </label>
+
+                            <input class="balcony-leaflets__radio" type="radio" name="sash" id="sash-free">
+                            <label class="balcony-leaflets__label dfsb" for="sash-free">
+                                <span class="balcony-leaflets__img balcony-leaflets__img--3 dfsb">
+                                    <span class="balcony-leaflets__bg balcony-leaflets__bg--1"></span>
+                                    <span class="balcony-leaflets__bg balcony-leaflets__bg--3"></span>
+                                    <span class="balcony-leaflets__bg balcony-leaflets__bg--4"></span>
+                                </span>
+                            </label>
+
+                        </div>
+
+                        <div class="calc-balcony__buttons df">
+                            <div class="calc-balcony__btn calc-balcony__btn--prew">Назад</div>
+                            <div class="calc-balcony__btn calc-balcony__btn--next">Далее</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section> -->
+
+        <!-- <section class="calc-balcony">
+
+            <div class="container">
+                <div class="balcony__wrapper">
+
+                    <div class="balcony__inner balcony-size">
+
+                        <h2 class="balcony__title">РАССЧИТАЙТЕ ТОЧНУЮ СТОИМОСТЬ <span>ЗА 3 МИНУТЫ</span></h2>
+                        <h3 class="balcony-text">Укажите размеры и материал окна</h3>
+                        <p class="balcony-text">Если вам не нужна отделка балкона, снимите галочку. Если у вас балкон
+                            прямой
+                            формы (без изгибов), снимите галочку.
+                        </p>
+
+                        <div class="balcony-size__wrapper">
+
+                            <div class="balcony-size__box-img">
+
+                                <div class="balcony-img"></div>
+
+                                <div class="range-slider range-slider--vertical">
+                                    <label class="balcony-size__lable balcony-text__m" for="height">Высота:</label>
+                                    <input class="range-slider__range" type="range" id="height" value="1500" min="0"
+                                        max="2500">
+                                    <span class="range-slider__value">1500</span>
+                                </div>
+
+                                <div class="range-slider">
+                                    <label class="balcony-size__lable balcony-text__m" for="width">Ширина:</label>
+                                    <input class="range-slider__range" type="range" id="width" value="1000" min="0"
+                                        max="2500">
+                                    <span class="range-slider__value">1000</span>
+                                </div>
+
+                            </div>
+
+                            <div class="balcony-size__box-form">
+                                <div class="balcony-form">
+                                    <h3 class="balcony-form__title balcony-text">Выберете материал</h3>
+
+                                    <input class="balcony-form__input-check" type="checkbox" name="complex-form"
+                                        id="complex-form">
+                                    <label class="balcony-form__check balcony-text" for="complex-form">Сложная
+                                        форма</label>
+                                    <span class="line"></span>
+                                    <input class="balcony-form__input-check balcony-form__input-check-add"
+                                        type="checkbox" name="material" id="material">
+                                    <label class="balcony-form__check balcony-text" for="material">Материал</label>
+
+                                    <div class="balcony-form__add">
+                                        <input class="balcony-form__input-radio" type="radio" name="material-name"
+                                            id="pvc">
+                                        <label class="balcony-form__radio balcony-text__m" for="pvc">ПВХ</label>
+                                        <input class="balcony-form__input-radio" type="radio" name="material-name"
+                                            id="wood">
+                                        <label class="balcony-form__radio balcony-text__m" for="wood">Дерево</label>
+                                        <input class="balcony-form__input-radio" type="radio" name="material-name"
+                                            id="aluminum">
+                                        <label class="balcony-form__radio balcony-text__m"
+                                            for="aluminum">Алюминий</label>
+                                    </div>
+                                    <span class="line"></span>
+                                    <input class="balcony-form__input-check" type="checkbox" name="finishing"
+                                        id="finishing">
+                                    <label class="balcony-form__check balcony-text" for="finishing">Отделка
+                                        (-20%)</label>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc-balcony__buttons df">
+                            <div class="calc-balcony__btn calc-balcony__btn--prew">Назад</div>
+                            <div class="calc-balcony__btn calc-balcony__btn--next">Далее</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
+
+        <!-- <section class="calc-balcony">
+
+            <div class="container">
+                <div class="balcony__wrapper">
+
+                    <div class="balcony__inner balcony-add">
+
+                        <h2 class="balcony__title">РАССЧИТАЙТЕ ТОЧНУЮ СТОИМОСТЬ <span>ЗА 3 МИНУТЫ</span></h2>
+                        <h3 class="balcony-text">Отлично! Окно добавлено к расчету.</h3>
+                        <p class="balcony-text">Добавьте еще одно пластиковое окно или перейдите к следующему шагу.</p>
+
+                        <div class="balcony-add__inner">
+
+                            <div class="balcony-add__img">
+                                <div class="balcony-img__box">
+                                    <div class="balcony-img">
+                                        <span data-tooltip="удалить окно"
+                                            class="balcony-icon balcony-icon__del open-modal-1" data-modal="#modal-2">
+                                            <svg class="icon icon__del">
+                                                <use
+                                                    xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#del">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span data-tooltip="скопировать окно" class="balcony-icon balcony-icon__copy">
+                                            <svg class="icon icon__copy">
+                                                <use
+                                                    xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#copy">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span data-tooltip="изменить окно" class="balcony-icon balcony-icon__setting">
+                                            <svg class="icon icon__setting">
+                                                <use
+                                                    xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#setting">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="balcony-text">Остекление 1 1000*1500</div>
+                                </div>
+                                <div class="balcony-img__box">
+                                    <div class="balcony-img">
+                                        <span data-tooltip="удалить окно"
+                                            class="balcony-icon balcony-icon__del open-modal-1" data-modal="#modal-2">
+                                            <svg class="icon icon__del">
+                                                <use
+                                                    xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#del">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span data-tooltip="скопировать окно" class="balcony-icon balcony-icon__copy">
+                                            <svg class="icon icon__copy">
+                                                <use
+                                                    xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#copy">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span data-tooltip="изменить окно" class="balcony-icon balcony-icon__setting">
+                                            <svg class="icon icon__setting">
+                                                <use
+                                                    xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#setting">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="balcony-text">Остекление 1 1000*1500</div>
+                                </div>
+                            </div>
+
+                            <div data-tooltip="добавить окно" class="calc-balcony__add">
+                                <svg class="icon icon__plus">
+                                    <use xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#plus"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+
+                        <div class="calc-balcony__buttons df">
+                            <div class="calc-balcony__btn calc-balcony__btn--prew">Назад</div>
+                            <div class="calc-balcony__btn-box df">
+                                <div data-tooltip="отмена" class="calc-balcony__box-icon">
+                                    <svg class="icon icon__box-del">
+                                        <use xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#plus">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div data-tooltip="применить" class="calc-balcony__box-icon">
+                                    <svg class="icon icon__box-check">
+                                        <use xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#check">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="calc-balcony__btn calc-balcony__btn--next">Далее</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section> -->
+
+        <!-- <section class="calc-balcony">
+
+            <div class="container">
+                <div class="balcony__wrapper">
+                    <div class="balcony__inner balcony-services">
+
+                        <h2 class="balcony__title">РАССЧИТАЙТЕ ТОЧНУЮ СТОИМОСТЬ <span>ЗА 3 МИНУТЫ</span></h2>
+                        <h3 class="balcony-text balcony-text__question">Выберите дополнительные услуги<span
+                                class="question question__768 open-modal-1" data-modal="#modal-3"></span></h3>
+                        <p class="balcony-text">Доставка, подъем на этаж и монтаж.</p>
+                        <span class="question open-modal-1" data-modal="#modal-3"></span>
+
+                        <div class="balcony-services__block-form dfsa">
+                            <div class="balcony-form">
+                                <h3 class="balcony-form__title balcony-text">Доставка</h3>
+
+                                <input class="balcony-form__input-check" type="radio" name="delivery" id="delivery-mrr">
+                                <label class="balcony-form__check balcony-text" for="delivery-mrr">В пределах
+                                    МКАД</label>
+
+                                <span class="line"></span>
+
+                                <input class="balcony-form__input-check balcony-form__input-check-add" type="radio"
+                                    name="delivery" id="delivery-msk">
+                                <label class="balcony-form__check balcony-text" for="delivery-msk">Московская
+                                    область</label>
+
+                                <span class="line"></span>
+
+                                <input class="balcony-form__input-check" type="radio" name="delivery"
+                                    id="delivery-pickup">
+                                <label class="balcony-form__check balcony-text" for="delivery-pickup">Самовывоз</label>
+
+                            </div>
+
+
+                            <div class="balcony-form">
+                                <h3 class="balcony-form__title balcony-text">Подъем на лифте</h3>
+
+                                <input class="balcony-form__input-check" type="radio" name="elevator"
+                                    id="elevator-service">
+                                <label class="balcony-form__check balcony-text" for="elevator-service">Грузовой
+                                    лифт</label>
+
+                                <span class="line"></span>
+
+                                <input class="balcony-form__input-check balcony-form__input-check-add" type="radio"
+                                    name="elevator" id="elevator-passenger">
+                                <label class="balcony-form__check balcony-text" for="elevator-passenger">Пассажирский
+                                    лифт</label>
+
+                                <span class="line"></span>
+
+                                <input class="balcony-form__input-check" type="radio" name="elevator"
+                                    id="elevator-no-required">
+                                <label class="balcony-form__check balcony-text" for="elevator-no-required">Подъем не
+                                    требуется</label>
+
+                                <span class="line"></span>
+
+                                <input class="balcony-form__input-check" type="radio" name="elevator" id="elevator-no">
+                                <label class="balcony-form__check balcony-text" for="elevator-no">Лифта нет</label>
+
+                            </div>
+
+
+                            <div class="balcony-form">
+                                <h3 class="balcony-form__title balcony-text">Монтаж</h3>
+
+                                <input class="balcony-form__input-check" type="radio" name="Installation"
+                                    id="Installation-without-dismantling">
+                                <label class="balcony-form__check balcony-text"
+                                    for="Installation-without-dismantling">Без демонтажа</label>
+
+                                <span class="line"></span>
+
+                                <input class="balcony-form__input-check balcony-form__input-check-add" type="radio"
+                                    name="Installation" id="Installation-with-dismantling">
+                                <label class="balcony-form__check balcony-text" for="Installation-with-dismantling">С
+                                    демонтажом</label>
+
+                                <span class="line"></span>
+
+                                <input class="balcony-form__input-check" type="radio" name="Installation"
+                                    id="Installation-without-mounting">
+                                <label class="balcony-form__check balcony-text" for="Installation-without-mounting">Без
+                                    монтажа</label>
+
+                            </div>
+                        </div>
+
+                        <div class="calc-balcony__buttons df">
+                            <div class="calc-balcony__btn calc-balcony__btn--prew">Назад</div>
+                            <div class="calc-balcony__btn calc-balcony__btn--next">Далее</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section> -->
+
+        <!-- <section class="calc-balcony">
+
+            <div class="container">
+                <div class="balcony__wrapper">
+
+                    <div class="balcony__inner balcony-payment">
+
+                        <h2 class="balcony__title">РАССЧИТАЙТЕ ТОЧНУЮ СТОИМОСТЬ <span>ЗА 3 МИНУТЫ</span></h2>
+                        <h3 class="balcony-text">Поздравляем! Всё готово для расчета.</h3>
+
+                        <div class="balcony-payment__inner">
+
+                            <div class="balcony-payment__info">
+
+                                <h3 class="balcony-payment__title">Ваш рассчет:<span>7r56gh8</span></h3>
+                                <p class="balcony-payment__subtitle balcony-text">По вашему запросу возможны несколько
+                                    вариантов.
+                                    Консультант перезвонит для конкретизации расчета.</p>
+
+                                <div class="form-contacts balcony-payment__form">
+                                    <div class="balcony-payment__box form-contacts__box form-contacts__box--phone">
+                                        <input class="balcony-payment__input form-contacts__input" type="tel"
+                                            placeholder="000 000-00-00">
+                                    </div>
+                                    <button class="balcony-payment__button form-contacts__button button"
+                                        type="submit">рассчитать стоимость</button>
+                                </div>
+
+                                <p class="balcony-payment balcony-text__m">Оставляя свои контактные данные, вы
+                                    подтверждаете свое совершеннолетие,
+                                    соглашаетесь на обработку персональных данных в соответствии
+                                    с <a class="balcony-payment__link" href="#">Правовой информацией</a>
+                                </p>
+                            </div>
+
+
+                            <div class="balcony-payment__check">
+
+                                    <div class="balcony-payment__check-item">
+                                        <div class="balcony-payment__check-window dfsb">
+                                            <div class="balcony-payment__check-img"></div>
+                                            <div class="balcony-payment__check-info">
+                                                <div class="balcony-payment__check-img-name balcony-text__m">Остекление
+                                                    <span>1</span></div>
+                                                <div class="balcony-payment__check-img-info balcony-text__m">
+                                                    <span>1000*</span><span>1500</span>
+                                                    мм.<br><span>1</span> створка</div>
+                                            </div>
+                                        </div>
+                                        <div class="balcony-payment__box-text">
+                                            <p class="balcony-text__m">Доп. опции:
+                                                <span>ПВХ</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="balcony-payment__box-services">
+                                        <p class="balcony-text__m">Доставка: <span>самовывоз</span></p>
+                                        <p class="balcony-text__m">Подъем на этаж: <span>пассажирский лифт</span></p>
+                                        <p class="balcony-text__m">Установка: <span>с демонтажем</span></p>
+                                    </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="calc-balcony__buttons df">
+                            <div class="calc-balcony__btn calc-balcony__btn--prew">Назад</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section> -->
+
+    </form>
+
+    <div class="modal" id="modal-2">
+        <div class="content">
+            <a class="close-modal close" data-modal="#modal-2" href="#"></a>
+            <p class="balcony-text modal-title">Удалить окно?</p>
+            <a class="modal-btn close-modal bold" data-modal="#modal-2" href="#">нет</a>
+            <a class="modal-btn bold" href="#">да</a>
+        </div>
+    </div>
+
+    <div class='modal' id='modal-3'>
+        <div class='content'>
+            <a class='close-modal close' data-modal="#modal-3" href="#"></a>
+            <p class="modal-text text-m"><span class="bold">В пределах МКАД</span>— стоимость доставки 3636p</p>
+            <p class="modal-text text-m"><span class="bold">Московская область</span>— доставка за пределы МКАД 30 p/км
+                (прибавляется к основной сумме доставки).</p>
+            <p class="modal-text text-m"><span class="bold">Льготная зона доставки</span>— 40 км. от производства в п.
+                Дорохово.</p>
+            <p class="modal-text text-m"><span class="bold">Самовывоз</span>— вы можете забрать окна из удобного вам
+                офиса.</p>
+        </div>
+    </div>
+
+    <script src="/wp-content/themes/twentytwenty-child/libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/wp-content/themes/twentytwenty-child/js/calc.js"></script>
+
+</body>
+
+</html>

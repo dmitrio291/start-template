@@ -1,0 +1,403 @@
+@import "../../base/all/var";
+
+.plastic-entrance-doors {
+    background-color: #F6F6F6;
+
+    .title {
+        margin-bottom: 0.825em;
+
+        .orange {
+            display: block;
+        }
+    }
+
+    .text {
+        margin-bottom: 1.663em;
+    }
+
+    &__image,
+    &__price-box,
+    &__brands {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__price-box,
+    &__brands-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__image {
+        display: block;
+        max-width: 21.188em;
+        margin-bottom: 1.488em;
+        border: 0.313em solid $white;
+        border-radius: 0.313em;
+        box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+    }
+
+    &__price {
+        font-weight: 900;
+
+        &-box {
+            margin-bottom: 1.713em;
+            max-width: 21em;
+        }
+
+        &-margin {
+            margin-right: 0.7em;
+            text-transform: uppercase;
+        }
+
+        .orange {
+            font-size: 1.875em;
+            margin-right: 0.1em;
+        }
+    }
+
+    .button {
+        padding-left: 1.5em;
+        padding-right: 1.4em;
+        max-width: 11.8005em;
+        margin: 0;
+        font-size: 0.875em;
+        line-height: 1.5;
+    }
+
+    &__brands {
+        max-width: 21em;
+        margin-bottom: 1.575em;
+
+        &-text {
+            margin-bottom: 0.438em;
+        }
+
+        &-item {
+            &:first-child {
+                width: 6.5em;
+                height: 1.313em;                
+                background-position: 11.646% 0.014%;
+                font-size: 1.3rem;
+            }
+
+            &:nth-child(2) {
+                width: 3.875em;
+                height: 1.688em;
+                background-position: 18.162% 0;
+                font-size: 1.2rem;
+            }
+
+            &:nth-child(3) {
+                width: 5.688em;
+                height: 1.938em;
+                background-position: 23.026% 0;
+                font-size: 1.2rem;
+            }
+
+            &:nth-child(4) {
+                width: 8.250em;
+                height: 1em;
+                background-position: 29.92% 0.014%;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    &__equipment {
+        &-text {
+            margin-bottom: 0.65em;
+        }
+
+        &-item {
+            position: relative;
+            margin-bottom: 0.475em;
+            padding-left: 1.4em;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0.938em;
+                height: 0.938em;
+                background-color: $white;
+                border: 0.1rem solid $orange;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='7' height='5' viewBox='0 0 7 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.75721 4.75169L0.776737 2.70876C0.657754 2.58602 0.657754 2.38702 0.776737 2.26427L1.20762 1.81979C1.3266 1.69704 1.51953 1.69704 1.63852 1.81979L2.97266 3.19599L5.83023 0.248302C5.94922 0.125566 6.14215 0.125566 6.26113 0.248302L6.69201 0.692786C6.811 0.815522 6.811 1.01452 6.69201 1.13727L3.1881 4.7517C3.06911 4.87444 2.87619 4.87444 2.75721 4.75169Z' fill='black'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    @media (min-width: 500px) {
+        &__price {
+            &-box {
+                max-width: 24em;
+            }
+        }
+
+        &__brands {
+            max-width: 37em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 74rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .title {
+            margin-bottom: 0.925em;
+            grid-column: span 2;
+
+            .orange {
+                display: inline;
+            }
+        }
+
+        &__image {
+            grid-column: span 1;
+            margin-bottom: 2.188em;
+            border-width: 0.425em;
+            border-radius: 0.625em;
+        }
+
+        .text {
+            grid-column: span 1;
+            margin-bottom: 2.013em;
+            max-width: 20em;
+            letter-spacing: 0.01em;
+            font-size: 1.8rem;
+            line-height: 1.23;
+        }
+
+        &__price {
+            &-margin,
+            &-square-meter {
+                font-size: 1.2em;
+            }
+
+            &-box {
+                grid-column: span 2;
+                width: 100%;
+                max-width: 34em;
+                margin-bottom: 1.913em;
+            }
+
+            .orange {
+                font-size: 2.475em;
+            }
+        }
+
+        .button {
+            max-width: 17.875em;
+            font-size: 1em;
+        }
+
+        &__brands {
+            grid-column: span 2;
+            display: flex;
+            justify-content: space-between;
+            max-width: 35em;
+            margin-bottom: 1.875em;
+            margin-left: 0;
+            margin-right: 0;
+
+            &-text {
+                font-size: 1.125em;
+                margin-bottom: 0;
+            }
+
+            &-item {
+                &:first-child {
+                    margin-right: 1.4em;
+                    font-size: 1.1rem;
+                }
+
+                &:nth-child(2) {
+                    margin-right: 0.9em;
+                }
+
+                &:nth-child(3) {
+                    margin-right: 1.1em;
+                }
+            }
+        }
+
+        &__equipment-text {
+            font-size: 1.250em;
+        }
+
+        &__text {
+            font-size: 1.125em;
+        }
+
+        &__equipment {
+            grid-column: span 2;
+            &-list {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &-item {
+                padding-left: 2.2em;
+                margin-bottom: 1.275em;
+
+                &:first-child {
+                    margin-right: 7.8em
+                }
+
+                &:nth-child(3) {
+                    margin-right: 3.7em;
+                }
+
+                &:last-child {
+                    &:before {
+                        top: 0;
+                        transform: translateY(0);
+                    }
+                }
+
+                &:before {
+                    width: 1.375em;
+                    height: 1.375em;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.91057 7.30247L1.00588 4.30618C0.831373 4.12616 0.831373 3.8343 1.00588 3.65427L1.63784 3.00235C1.81235 2.82232 2.09531 2.82232 2.26982 3.00235L4.22656 5.02079L8.41768 0.697509C8.59219 0.517497 8.87515 0.517497 9.04966 0.697509L9.68162 1.34942C9.85613 1.52943 9.85613 1.8213 9.68162 2.00133L4.54255 7.30249C4.36803 7.4825 4.08508 7.4825 3.91057 7.30247Z' fill='black'/%3E%3C/svg%3E%0A");
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        .container {
+            max-width: 96rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: 4.113em 9.625em 5.563em 3.263em;
+            grid-template-columns: 23.938em 34.15em;
+            grid-column-gap: 1.7em;
+        }
+
+        .title {
+            margin-bottom: 0;
+        }
+
+        .title,
+        &__equipment {
+            grid-column: span 2;
+        }
+
+        .text {
+            max-width: 30em;
+            text-align: left;
+            line-height: 1.26;
+        }
+
+        &__image,
+        &__equipment,
+        &__price-box,
+        &__brands {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        &__image,
+        &__brands {
+            margin-bottom: 0;
+        }
+
+        &__image {
+            max-width: 24.253em;
+        }
+
+        &__brands,
+        &__equipment,
+        &__equipment-list {
+            max-width: none;
+        }
+
+        &__price-box,
+        &__brands {
+            grid-column: 2 /2;
+        }
+
+        &__price {
+            &-box {
+                max-width: 39em;
+            }
+        }
+
+        &__brands {
+            align-items: flex-start;
+
+            &-item {
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    font-size: 1rem;
+                }
+
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(3) {
+                    margin-right: 2em;
+                }
+            }
+        }
+
+        &__equipment {
+            &-text {
+                margin-left: 0;
+                margin-bottom: 1.05em;
+            }
+
+            &-list {
+                margin-left: 0;
+                justify-content: space-between;
+            }
+
+            &-item {
+                padding-left: 1.9em;
+
+                &:nth-child(odd) {
+                    margin-right: 0;
+                }
+
+                &:last-child {
+                    &:before {
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    .plastic-entrance-doors__text {
+                        max-width: 8em;
+                    }
+                }
+            }
+        }
+
+        &__text {
+            max-width: 11.2em;
+            line-height: 1.2;
+        }
+
+        .button {
+            max-width: 19.175em;
+        }
+    }
+}

@@ -1,0 +1,268 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.cold-frameless-glazing {
+    background-color: $lightGray;
+    /* .cold-frameless-glazing__wrapper */
+
+    &__wrapper {
+        text-align: center;
+        padding-top: 3.5rem;
+
+        @include _768 {
+            padding-top: 5.5rem;
+        }
+
+        @include _1200 {
+            padding-top: 7.5rem;
+        }
+    }
+
+    /* .cold-frameless-glazing__slider */
+
+    &__slider {
+        margin-bottom: 1.1em;
+
+        .navigation {
+            span {
+                display: none;
+            }
+        }
+
+        .navigation-left,
+        .navigation-right {
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            border: none;
+            width: 0.875em;
+            height: 0.813em;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @include _768 {
+                width: 1.5em;
+                height: 1.5em;
+            }
+        }
+
+        .navigation-left {
+            left: 0.625em;
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.53125C6.71875 5.25 6.71875 4.78125 7 4.46875L11.25 0.21875C11.5625 -0.0625 12.0312 -0.0625 12.3125 0.21875L13.0312 0.9375C13.3125 1.25 13.3125 1.71875 13.0312 2L10 5.03125L13.0312 8.03125C13.3125 8.3125 13.3125 8.78125 13.0312 9.09375L12.3125 9.78125C12.0312 10.0938 11.5625 10.0938 11.25 9.78125L7 5.53125ZM1 4.46875L5.25 0.21875C5.5625 -0.0625 6.03125 -0.0625 6.3125 0.21875L7.03125 0.9375C7.3125 1.21875 7.3125 1.71875 7.03125 2L4 5L7.03125 8.03125C7.3125 8.3125 7.3125 8.78125 7.03125 9.09375L6.3125 9.78125C6.03125 10.0938 5.53125 10.0938 5.25 9.78125L1 5.53125C0.71875 5.25 0.71875 4.78125 1 4.46875Z' fill='%23C9C9C9'/%3E%3C/svg%3E%0A");
+
+            @include _768 {
+                background-size: contain;
+            }
+        }
+
+        .navigation-right {
+            right: 0.625em;
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.53125C7.28125 5.25 7.28125 4.78125 7 4.46875L2.75 0.21875C2.4375 -0.0625 1.96875 -0.0625 1.6875 0.21875L0.96875 0.9375C0.6875 1.25 0.6875 1.71875 0.96875 2L4 5.03125L0.96875 8.03125C0.6875 8.3125 0.6875 8.78125 0.96875 9.09375L1.6875 9.78125C1.96875 10.0938 2.4375 10.0938 2.75 9.78125L7 5.53125ZM13 4.46875L8.75 0.21875C8.4375 -0.0625 7.96875 -0.0625 7.6875 0.21875L6.96875 0.9375C6.6875 1.21875 6.6875 1.71875 6.96875 2L10 5L6.96875 8.03125C6.6875 8.3125 6.6875 8.78125 6.96875 9.09375L7.6875 9.78125C7.96875 10.0938 8.46875 10.0938 8.75 9.78125L13 5.53125C13.2812 5.25 13.2812 4.78125 13 4.46875Z' fill='%23F6F6F6'/%3E%3C/svg%3E%0A");
+
+            @include _768 {
+                background-size: contain;
+            }
+        }
+
+        @include _768 {
+            margin-bottom: 2em;
+        }
+    }
+
+    /* .cold-frameless-glazing__item */
+
+    &__item {
+        background-color: #fff;
+        max-width: 19.3em;
+        margin: 0 auto;
+        border-radius: 1em;
+        padding: 1.6em 0.75em;
+
+        @include _768 {
+            max-width: 29.38em;
+            padding: 2.9em 1.75em;
+        }
+    }
+
+    /* .cold-frameless-glazing__item-title */
+
+    &__item-title {
+        @include _768 {
+            font-size: 1.8rem;
+            line-height: 1.2em;
+        }
+    }
+
+    /* .cold-frameless-glazing__item-subtitle */
+
+    &__item-subtitle {
+        margin-bottom: 1.2em;
+
+        @include _768 {
+            font-size: 1.8rem;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.4em;
+        }
+    }
+
+    /* .cold-frameless-glazing__text */
+
+    &__text {
+        margin-bottom: 1.7em;
+
+        @include _768 {
+            font-size: 1.8rem;
+            margin: 0 -1em 1.9375em;
+            max-width: 24em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include _1200 {
+            line-height: 1.2em;
+            margin: 0 -0.5em 1.8em;
+            min-height: 7em;
+        }
+    }
+
+    /* .cold-frameless-glazing__box-img */
+
+    &__box-img {
+        position: relative;
+        margin-bottom: 2.15em;
+
+        .pagination {
+            background-color: $white;
+
+            &.active {
+                background-color: $orange;
+            }
+
+            &-box {
+                bottom: 1.1em;
+            }
+        }
+
+        @include _768 {
+            margin-bottom: 1.5625em;
+        }
+    }
+
+    /* .cold-frameless-glazing__modal */
+
+    &__modal {
+        position: absolute;
+        background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 2.89062C0 3.02734 0.0976562 3.125 0.234375 3.125H1.01562C1.13281 3.125 1.25 3.02734 1.25 2.89062V1.25H2.89062C3.00781 1.25 3.125 1.15234 3.125 1.01562V0.234375C3.125 0.117188 3.00781 0 2.89062 0H0.46875C0.195312 0 0 0.214844 0 0.46875V2.89062ZM5.625 0.234375V1.01562C5.625 1.15234 5.72266 1.25 5.85938 1.25H7.5V2.89062C7.5 3.02734 7.59766 3.125 7.73438 3.125H8.51562C8.63281 3.125 8.75 3.02734 8.75 2.89062V0.46875C8.75 0.214844 8.53516 0 8.28125 0H5.85938C5.72266 0 5.625 0.117188 5.625 0.234375ZM8.51562 5.625H7.73438C7.59766 5.625 7.5 5.74219 7.5 5.85938V7.5H5.85938C5.72266 7.5 5.625 7.61719 5.625 7.73438V8.51562C5.625 8.65234 5.72266 8.75 5.85938 8.75H8.28125C8.53516 8.75 8.75 8.55469 8.75 8.28125V5.85938C8.75 5.74219 8.63281 5.625 8.51562 5.625ZM3.125 8.51562V7.73438C3.125 7.61719 3.00781 7.5 2.89062 7.5H1.25V5.85938C1.25 5.74219 1.13281 5.625 1.01562 5.625H0.234375C0.0976562 5.625 0 5.74219 0 5.85938V8.28125C0 8.55469 0.195312 8.75 0.46875 8.75H2.89062C3.00781 8.75 3.125 8.65234 3.125 8.51562Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1.9rem;
+        width: 1.9rem;
+        top: 0.6em;
+        right: 0.6em;
+        border-radius: 50%;
+        background-color: $lightGray;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    /* .cold-frameless-glazing__material */
+
+    &__material {
+        text-align: left;
+        margin-bottom: 0.3em;
+
+        span {
+            word-spacing: 0.7em;
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 0.925em;
+            font-size: 1.8rem;
+        }
+    }
+
+    /* .cold-frameless-glazing__price */
+
+    &__price {
+        text-align: left;
+        margin-bottom: 0.8em;
+
+        @media (min-width: 768px) {
+            font-size: 1.6rem;
+        }
+
+        span {
+            font-size: 2rem;
+
+            @include _768 {
+                font-size: 3rem;
+                margin-left: 0.225em;
+            }
+
+            @include _1200 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @include _768 {
+            margin-bottom: 1.8em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.7em;
+        }
+    }
+
+    /* .cold-frameless-glazing__btn */
+
+    &__btn {
+        display: flex;
+        text-decoration: none;
+        font-size: 1.4rem;
+        max-width: 25.8rem;
+        margin: 0 auto;
+
+        span {
+            display: none;
+
+            @include _768 {
+                display: inline-block;
+            }
+        }
+
+        @include _768 {
+            max-width: 44.5rem;
+            font-size: 1.6rem;
+            line-height: 1.5em;
+        }
+    }
+
+    // popup
+    .popup {
+        background-color: $white;
+
+        @media (min-width: 1200px) {
+            background-color: rgba(0, 0, 0, 0.5);
+
+            &__content {
+                width: 90%;
+            }
+        }
+
+        &__inner {
+            vertical-align: middle;
+        }
+
+        &__content {
+            position: static;
+        }
+    }
+}

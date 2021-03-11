@@ -1,0 +1,316 @@
+@import '../../base/all/var';
+
+.repair-before-and-after {
+    .title {
+        margin-bottom: 2.8rem;
+    }
+
+    &__box,
+    &__images {
+        position: relative;
+    }
+
+    &__box {
+        width: 34.5rem;
+        height: 17rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2.5rem;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+    &__images,
+    &__img {
+        width: 100%;
+    }
+
+    &__images,
+    &__img,
+    &__img--1,
+    &__img--2,
+    &__img--4,
+    &__img--6 {
+        height: 100%;
+    }
+
+    &__images {
+        display: flex;
+    }
+
+    &__img--2,
+    &__img--4,
+    &__img--6,
+    &__img--8,
+    &__img--10,
+    &__img--12,
+    &__slider,
+    &__item.before,
+    &__item.after,
+    &__drag,
+    &__drag:before,
+    &__drag:after,
+    &__drag-line,
+    &__drag-line:before,
+    &__drag-line:after {
+        position: absolute;
+    }
+
+    &__img {
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &--1 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-2.webp');
+        }
+
+        &--2,
+        &--4,
+        &--6 {
+            width: 50%;
+        }
+
+        &--2 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-1.webp');
+        }
+
+        &--3 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-3.webp');
+        }
+
+        &--4 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-4.webp');
+        }
+
+        &--5 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-5.webp');
+        }
+
+        &--6 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-6.webp');
+        }
+
+        &--8 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-7.webp');
+        }
+
+        &--8,
+        &--10,
+        &--12 {
+            width: 50%;
+        }
+
+        &--7 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-8.webp');
+        }
+
+        &--10 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-9.webp');
+        }
+
+        &--9 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-10.webp');
+        }
+
+        &--12 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-11.webp');
+        }
+
+        &--11 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-12.webp');
+        }
+    }
+
+    &__slider {
+        top: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    &__item {
+        width: 9.7rem;
+        height: 2.7rem;
+        line-height: 2.7rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+        background-color: $white;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        &.before,
+        &.after {
+            bottom: 1rem;
+        }
+
+        &.after {
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+            margin-left: auto;
+            right: 0;
+        }
+
+        &.before {
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+            left: 0;
+        }
+    }
+
+    &__drag:before,
+    &__drag:after,
+    &__drag-line:before,
+    &__drag-line:after {
+        content: '';
+    }
+
+    &__drag-line,
+    &__range::-webkit-slider-thumb {
+        width: 0.1rem;
+        height: 17rem;
+    }
+
+    &__drag {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1.8rem;
+        height: 1.8rem;
+        border: 0.1rem solid $white;
+        border-radius: 50%;
+
+        &:before,
+        &:after {
+            width: 0.4rem;
+            height: 0.4rem;
+            top: 50%;
+            border-radius: 0.1rem;
+            border-top: 0.1rem solid $white;
+        }
+
+        &:before {
+            border-left: 0.1rem solid $white;
+            transform: translateY(-50%) rotate(-45deg);
+            left: 20%;
+        }
+
+        &:after {
+            border-right: 0.1rem solid $white;
+            transform: translateY(-50%) rotate(45deg);
+            right: 20%;
+        }
+
+        &-line {
+            left: 49.85%;
+            pointer-events: none;
+
+            &:before,
+            &:after {
+                width: 100%;
+                height: 7.6rem;
+                background: #ffffff;
+            }
+
+            &:before {
+                top: 0;
+            }
+
+            &:after {
+                bottom: 0;
+            }
+        }
+
+    }
+    &__btn {
+        max-width: 30.6rem;
+    }
+
+    &__range {
+        width: 100%;
+        outline: none;
+        background: none;
+        -webkit-appearance: none;
+
+        &::-webkit-slider-thumb {
+            background: none;
+            -webkit-appearance: none;
+            cursor: col-resize;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__box {
+            width: 70.8rem;
+            height: 34.9rem;
+            margin-bottom: 3.1rem;
+        }
+        
+        &__drag-line,
+        &__range::-webkit-slider-thumb {
+            height: 34.9rem;
+            width: 0.2rem;
+        }
+
+        &__drag {
+            width: 3.7rem;
+            height: 3.7rem;
+            border-width: 0.2rem;
+
+            &:before,
+            &:after {
+                width: 1rem;
+                height: 1rem;
+                border-width: 0.2rem;
+            }
+
+            &-line {
+                &:before,
+                &:after {
+                    height: 15.6rem;
+                }
+            }
+        }
+
+        &__item {
+            &.before,
+            &.after {
+                bottom: 3rem;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 3.1rem;
+        }
+
+        &__box {
+            width: 96rem;
+            height: 47.3rem;
+        }
+
+        &__drag-line,
+        &__range::-webkit-slider-thumb {
+            height: 47.3rem;
+        }
+
+        &__drag {
+            width: 5rem;
+            height: 5rem;
+
+            &:before,
+            &:after {
+                width: 1.2rem;
+                height: 1.2rem;
+                border-width: 0.3rem;
+            }
+
+            &-line {
+                &:before,
+                &:after {
+                    height: 21.2rem;
+                }
+            }
+        }
+    }
+
+
+}

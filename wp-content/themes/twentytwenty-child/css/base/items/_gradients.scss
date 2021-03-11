@@ -1,0 +1,19 @@
+.part-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    transform: translateX(-10rem);
+
+    &__gradient {
+        position: absolute;
+        top: 0vw;
+        right: 0;
+        width: 130rem;
+        height: 130rem;
+        border-radius: 0 100% 0 0 / 0 100% 0 0;
+        background: repeating-linear-gradient(-36deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 2px, transparent 0, transparent 11px), repeating-linear-gradient(180deg, #379DCB, #379DCB 100%);
+        transform: translate(0, -44%);
+    }
+}

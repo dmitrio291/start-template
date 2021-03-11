@@ -1,0 +1,155 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.how-are-we-different {
+    /* .how-are-we-different__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1.2em;
+
+        @include _768 {
+            margin-bottom: 1.05em;
+            line-height: 1.15;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.9em;
+        }
+    }
+
+    /* .how-are-we-different__text */
+
+    &__text {
+        text-align: center;
+        margin-bottom: 1em;
+        span {
+            display: block;
+        }
+
+        @include _768 {
+            margin-bottom: 1.55em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.45em;
+            span {
+                display: inline-block;
+            }
+        }
+    }
+
+    /* .how-are-we-different__item-box */
+
+    &__item-box {
+        flex-wrap: wrap;
+
+        @include _768 {
+        }
+
+        @include _1200 {
+            padding: 0 5.2em;
+        }
+    }
+
+    /* .how-are-we-different__item */
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 19.5rem;
+        margin-bottom: 0.9em;
+        border-radius: 0.6rem;
+        color: #fff;
+        padding: 1.1em 0.7em 1em 0.7em;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        line-height: 1.2;
+
+        @include _768 {
+            max-width: 34.7rem;
+        }
+
+        @include _1200 {
+            max-width: 38.8rem;
+            height: 21.9rem;
+            margin-bottom: 1.2em;
+            padding-right: 0.5em;
+        }
+
+        &--1 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/how-are-we-different-bg-1.webp);
+        }
+
+        &--2 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/how-are-we-different-bg-2.webp);
+        }
+
+        &--3 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/how-are-we-different-bg-3.webp);
+        }
+
+        &--4 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/how-are-we-different-bg-4.webp);
+        }
+    }
+
+    /* .how-are-we-different__item-title */
+
+    &__item-title {
+        font-size: 1.6rem;
+        margin-bottom: 0.6em;
+        display: block;
+
+        @include _768 {
+        }
+
+        @include _1200 {
+        }
+    }
+
+    /* .how-are-we-different__item-number */
+
+    &__item-number {
+        font-size: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+        line-height: 2.5rem;
+        position: absolute;
+        left: 0.75em;
+        top: 0.75em;
+
+        @include _768 {
+        }
+
+        @include _1200 {
+        }
+    }
+
+    /* .how-are-we-different__item-text */
+
+    &__item-text {
+        font-size: 1.6rem;
+
+        @include _768 {
+        }
+
+        @include _1200 {
+            min-height: 7.6rem;
+        }
+    }
+}

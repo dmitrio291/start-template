@@ -1,0 +1,186 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.renovation-windows {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/yellow-fone.webp);
+
+    /* .renovation-windows__title */
+
+    &__title {
+        text-align: center;
+        line-height: 1.2em;
+        margin-bottom: 0.7em;
+
+        @include _768 {
+            line-height: 1.1;
+            margin-bottom: 0.95em;
+        }
+
+        @include _1200 {
+            line-height: 1.2;
+            margin-bottom: 0.85em;
+        }
+    }
+
+    /* .renovation-windows__slider */
+
+    &__slider {
+        margin-bottom: 1.6em;
+
+        .pagination-box {
+            position: absolute;
+            width: 100%;
+            bottom: -1.2em;
+            text-align: center;
+
+            @include _768 {
+                bottom: -2.5em;
+            }
+        }
+
+        .owl-stage-outer {
+            filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.25));
+        }
+
+        .pagination {
+
+            &.active {
+                background-color: #17a1e3;
+            }
+        }
+
+        @include _768 {
+            max-width: 63rem;
+            margin: 0 auto 3.5em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1em;
+            max-width: 100%;
+        }
+    }
+
+    /* .renovation-windows__item */
+
+    &__item {
+        max-width: 30rem;
+        height: 26.8rem;
+        margin: 0 auto 1em;
+        background-color: #fff;
+        border-radius: 0.6rem;
+        padding: 0.6em;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20rem;
+            height: 9.3rem;
+            bottom: -2.1em;
+            left: 9.7em;
+            background: linear-gradient(267.73deg, #fe5769 10.58%, #ca3d90 82.47%);
+            border-radius: 15em/7em;
+
+            @include _768 {
+                transform: rotate(-4.3deg);
+                bottom: -1.5em;
+                left: 8.7em;
+            }
+        }
+
+        @include _768 {
+            width: 30.4rem;
+            height: 30.9rem;
+        }
+
+        @include _1200 {
+            max-width: 35rem;
+        }
+    }
+
+    /* .renovation-windows__img */
+
+    &__img {
+        display: block;
+        max-width: 28rem;
+        width: 100%;
+        height: 15rem;
+        margin: 0 auto 0.8em;
+        border-radius: 0.6rem;
+        object-fit: cover;
+
+        @include _768 {
+            max-width: 30.7rem;
+            height: 17.1rem;
+            margin-bottom: 1.5em;
+        }
+
+        @include _1200 {
+            max-width: 33rem;
+        }
+    }
+
+    /* .renovation-windows__item-text */
+
+    &__item-text {
+        line-height: 1.2em;
+        margin-left: 0.2em;
+
+        @include _768 {
+            max-width: 13em;
+            line-height: 1.1em;
+        }
+
+        @include _1200 {
+            margin-left: 0.4em;
+        }
+    }
+
+    /* .renovation-windows__item-price */
+
+    &__item-price {
+        font-size: 4rem;
+        color: #fff;
+        display: block;
+        position: absolute;
+        bottom: 0.1em;
+        right: 0.3em;
+        z-index: 1;
+
+        @include _768 {
+            bottom: 0.2em;
+            right: 0.4em;
+        }
+    }
+
+    /* .renovation-windows__footer */
+
+    &__footer {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.4em;
+
+        @include _768 {
+            font-size: 1.8rem;
+            text-align: center;
+            line-height: 1.1em;
+        }
+    }
+
+    /* .renovation-windows__footer-text */
+
+    &__footer-text {
+        font-size: 1.8rem;
+        display: block;
+
+        @include _768 {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.send-request-right-now {
+    .block,
+    .title .orange,
+    &__info {
+        display: block;
+    }
+
+    .title {
+        margin-bottom: 1.15em;
+        line-height: 1.19;
+    }
+
+    .text,
+    .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text {
+        max-width: 20.2em;
+        margin-bottom: 0.663em;
+        line-height: 1.25;
+    }
+
+    &__info {
+        margin-top: 0.4em;
+        margin-bottom: 1.413em;
+        font-size: 1.125em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .before {
+        &:before {
+            content: 'Действует';
+        }
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        max-width: 19.215em;
+    }
+
+    @media (min-width: 600px) {
+        .block,
+        .title .orange {
+            display: inline;
+        }
+
+        .text {
+            max-width: none;
+            font-size: 1.125em;
+        }
+        
+        .button {
+            max-width: 21.625em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            max-width: 20.2em;
+            margin-bottom: 0.95em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .text {
+            max-width: 38em;
+            margin-bottom: 1.663em;
+            text-align: center;
+            font-weight: 400;
+            line-height: 1.24;
+        }
+
+        &__info {
+            display: inline;
+            font-weight: 700;
+        }
+
+        .before {
+            &:before {
+                content: 'Срок действия';
+            }
+        }
+
+        .button {
+            max-width: 21.625em;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .text {
+            max-width: 48em;
+        }
+
+        .button {
+            max-width: 23.063em;
+        }
+    }
+}   

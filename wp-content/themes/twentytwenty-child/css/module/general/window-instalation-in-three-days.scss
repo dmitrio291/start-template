@@ -1,0 +1,237 @@
+@import '../../base/all/var';
+
+.window-installation-in-three-days {
+
+    background: repeating-linear-gradient(-35deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 2px, transparent 0, transparent 11px), repeating-linear-gradient(196deg, #0AA0CC, #1188c5 100%);
+    color: $white;
+
+    &__left {
+        padding-top: 2.500em;
+        padding-bottom: 2.500em;
+    }
+
+    .title,
+    .window-installation-list {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .window-installation-list{
+        &__text {
+            word-break: normal;
+            word-wrap: normal;
+        }
+    }
+    
+
+    .title {
+        max-width: 15em;
+        margin-bottom: 0.963em;
+        line-height: 1.3;
+    }
+
+    &__nowrap {
+        white-space: nowrap;
+    }
+
+    .window-installation {
+        &-list {
+            max-width: 32rem;
+            margin-bottom: 1.063em;
+
+            &__item {
+                margin-bottom: 0.938em;
+            }
+
+            &__icon {
+                &--1 {
+                    &:before {
+                        width: 3.1rem;
+                        height: 3.2rem;
+                        background-position: -97.3rem -49.8rem;
+                    }
+                }
+
+                &--2 {
+                    &:before {
+                        width: 2.5rem;
+                        height: 3.1rem;
+                        background-position: -97.4rem -53.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__button-box {
+        text-align: center;
+    }
+
+    .button {
+        min-width: 30.1rem;
+        min-height: 4rem;
+    }
+
+    &__right {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+
+        overflow: hidden;
+
+        .container {
+            display: flex;
+        }
+
+        .title,
+        &__button-box {
+            text-align: left;
+        }
+
+        .title,
+        .window-installation-list {
+            margin-left: 0;
+        }
+
+        &__left {
+            min-width: 52%;
+            padding-left: 1em;
+        }
+
+        &__image {
+            display: block;
+        }
+
+        &__right {
+            min-width: calc(48% + ((100vw - 100%) / 2));
+            display: block;
+            display: flex;
+            justify-content: flex-end;
+
+            &-box {
+                width: 100%;
+                max-width: 29.3em;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -4em;
+                    left: -6em;
+                    width: 128.7rem;
+                    height: 148.3rem;
+                    border-radius: 50%;
+                    background: url('/wp-content/themes/twentytwenty-child/img/window-installation-in-three-days-small.jpg') no-repeat;
+                    background-size: 53%;
+                    background-position-x: -7em;
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 960px) {
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        .title {
+            font-size: 3rem;
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+
+        &__left {
+            min-width: 57%;
+            padding-left: 0;
+            padding-top: 3.5em;
+            padding-bottom: 3.5em;
+        }
+
+        &__right {
+            min-width: calc(43% + ((100vw - 100%) / 2));
+
+            &-box {
+                &:before {
+                    left: -12em;
+                    background-position-x: -10em;
+                    background-size: 81.4%;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/window-installation-in-three-days-big.jpg');
+                }
+            }
+        }
+
+        .title {
+            font-size: 4rem;
+        }
+
+        &__list {
+            
+            &-text {
+                font-size: 3.2rem;
+            }
+        }
+
+        .window-installation-tape {
+            top: 2.8em;
+            left: -2em;
+        }
+
+        .window-installation-list {
+            margin-bottom: 3.063em;
+            max-width: 70rem;
+
+            &__icon {
+                &--1 {
+                    &:before {
+                        width: 4.9rem;
+                        height: 4.9rem;
+                        background-position: -91.5rem -51.9rem;
+                    }
+                }
+
+                &--2 {
+                    &:before {
+                        width: 4.1rem;
+                        height: 4.9rem;
+                        background-position: -83.6rem -54.3rem;
+                    }
+                }
+            }
+
+            &__text {
+                font-size: 3.2rem;
+                font-weight: 900;
+                line-height: 1;
+            }
+        }
+
+        .button {
+            min-width: 36.8rem;
+            min-height: 5rem;
+        }
+
+    }
+
+    @media (min-width: 1800px) {
+
+        &__right {
+            &-box {
+                &:before {
+                    left: -27em;
+                    background-position-x: -7em;
+                }
+            }
+        }
+        
+        .window-installation-tape {
+            top: 3.8em;
+            left: -18em;
+        }
+
+    }
+
+}

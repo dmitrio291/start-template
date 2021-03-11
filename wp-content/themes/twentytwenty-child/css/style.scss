@@ -1,0 +1,47 @@
+/*НУЖНО ПРОРАБОТАТЬ СТРУКТУРУ*/
+
+// сбросс стилей
+@import "base/normalize";
+@import url('/wp-content/themes/twentytwenty-child/font/ALS_Schlange_Sans/stylesheet.css');
+@import url('/wp-content/themes/twentytwenty-child/font/Gotham/font-gotham.css');
+@import url('/wp-content/themes/twentytwenty-child/font/Core_Sans_N/font-CoreSansN.css');
+
+// общие стили
+@import "base/all/var";
+@import "base/all/all";
+
+// стили для логотипа
+@import "base/items/logo";
+
+// стили для ссылок
+@import "base/items/links";
+
+// стили для кнопок
+@import "base/items/buttons";
+
+// стили для градиентов
+@import "base/items/gradients";
+
+// стили меню хедера
+@import "base/items/menu";
+
+// стили для информативных элементов
+@import "base/items/info";
+
+// стили форм
+@import "base/items/forms";
+
+// стили для списка с преимуществами секции установка окон
+@import "base/items/window-installation-list";
+
+// стили для ленточки секции установка окон
+@import "base/items/tape";
+
+// стили для списков
+@import "base/items/lists";
+
+// стили для элементов слайдера
+@import "base/items/slider-items";
+
+// стили для текста
+@import "base/items/text";

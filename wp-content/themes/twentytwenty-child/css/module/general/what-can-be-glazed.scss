@@ -1,0 +1,31 @@
+.what-can-be-glazed {
+    .container {
+        width: calc(100% - 7rem);
+    }
+
+    .title {
+        margin-bottom: 1.238em;
+    }
+
+    .text {
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 1.138em;
+        }
+
+        .text {
+            text-align: center;
+            line-height: 1.1;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .title {
+            margin-bottom: 2rem;
+        }
+    }
+}

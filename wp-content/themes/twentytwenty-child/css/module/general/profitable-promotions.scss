@@ -1,0 +1,125 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+@import "../../base/all/my-style";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.profitable-promotions {
+    /* .profitable-promotions__wrapper */
+
+    &__wrapper {
+        padding: 4.5rem 0;
+
+        @include _768 {
+            padding: 5.5rem 0;
+        }
+
+        @include _1200 {
+            padding: 9.5rem 0 5.4rem;
+        }
+    }
+
+    /* .profitable-promotions__title */
+
+    &__title {
+        text-align: center;
+        line-height: 1.2em;
+        margin-bottom: 0.88em;
+
+        @include _768 {
+            margin-bottom: 0.68em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.98em;
+        }
+    }
+
+    /* .profitable-promotions__item */
+
+    &__item {
+        flex-direction: column;
+        margin-bottom: 3.5em;
+        img{
+            max-width: inherit;
+        }
+
+        picture {
+            margin-bottom: 1em;
+
+            @include _768 {
+                margin-bottom: 0;
+            }
+        }
+
+        &:nth-child(even) {
+            picture {
+                margin-left: auto;
+            }
+
+            @include _768 {
+                flex-direction: row-reverse;
+
+                .profitable-promotions__info {
+                    padding-left: 0.7em;
+                }
+            }
+        }
+
+        @include _768 {
+            flex-direction: row;
+            margin-bottom: 2.3em;
+        }
+
+        @include _1200 {
+            margin-bottom: 2.9em;
+        }
+    }
+
+    /* .profitable-promotions__info */
+
+    &__info {
+        @include _768 {
+            padding-left: 1.7em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @include _1200 {
+            padding-left: 3.4em;
+        }
+    }
+
+    /* .profitable-promotions__info-title */
+
+    &__info-title {
+        font-size: 2.4rem;
+        margin-bottom: 0.3em;
+
+        @include _768 {
+            font-size: 2.5rem;
+            margin-bottom: 0.7em;
+        }
+
+        @include _1200 {
+            font-size: 4rem;
+        }
+    }
+
+    /* .profitable-promotions__text */
+
+    &__text {
+        font-weight: 700;
+        line-height: 1.4em;
+
+        @include _768 {
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 1.1em;
+        }
+    }
+}

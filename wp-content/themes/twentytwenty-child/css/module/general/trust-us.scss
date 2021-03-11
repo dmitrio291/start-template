@@ -1,0 +1,111 @@
+.trust-us {
+    min-height: 28rem;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 30%, #FFFFFF 80%), url('/wp-content/themes/twentytwenty-child/img/trust-us-small.jpg') no-repeat top right / cover;
+
+    .title,
+    .text {
+        text-align: left;
+    }
+
+    .text:nth-of-type(2) {
+        margin-bottom: 0;
+    }
+
+    .title {
+        margin-bottom: 1.263em;
+    }
+
+    &__box {
+        max-width: 10em;
+    }
+
+    @media (min-width: 500px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 30%, #FFFFFF 80%), url('/wp-content/themes/twentytwenty-child/img/trust-us-small.jpg') no-repeat top right / 95%;
+    }
+
+    @media (min-width: 600px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 30%, #FFFFFF 87%), url('/wp-content/themes/twentytwenty-child/img/trust-us-middle.jpg') no-repeat top right / cover;
+
+        &__box {
+            max-width: 14.1em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__box {
+            margin-top: 0.438em;
+            margin-left: 3.625em;
+            max-width: 18em;
+        }
+
+        .text {
+            font-size: 1.8rem;
+            margin-bottom: 1.125em;
+        }
+    }
+
+    @media (min-width: 900px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 30%, #FFFFFF 87%), url("/wp-content/themes/twentytwenty-child/img/trust-us-middle.jpg") no-repeat top right / 90%;
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        .title {
+            font-size: 3rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        position: relative;
+        min-height: 43rem;
+        padding-bottom: 0;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(450deg, rgba(255, 255, 255, 0) 4%, #FFFFFF 27%);
+        }
+
+        &__box {
+            margin-top: 2em;
+            max-width: 21em;
+        }
+
+        .title {
+            font-size: 4rem;
+            margin-bottom: 1.438em;
+        }
+
+        .text {
+            font-weight: 700;
+
+            &:nth-of-type(1) {
+                margin-bottom: 2.188em;
+            }
+        }
+    }
+
+
+    @media (min-width: 1900px) {
+        background: linear-gradient(92.8deg, #FFFFFF 17.02%, rgba(255, 255, 255, 0) 50.34%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 12em 0/90%;
+
+        &:after {
+            background: linear-gradient(450deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 80%);
+            right: 0;
+            width: 37%;
+        }
+
+        &__box {
+            .text {
+                font-weight: 700;
+            }
+        }
+    }
+
+}

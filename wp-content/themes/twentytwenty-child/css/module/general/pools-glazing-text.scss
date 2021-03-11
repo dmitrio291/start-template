@@ -1,0 +1,20 @@
+.pools-glazing-text {
+    .container {
+        width: calc(100% - 4rem);
+    }
+
+    .text-along {
+        line-height: 1.2;
+
+        span {
+            margin-bottom: 1em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .text-along {
+            line-height: 1.15;
+            font-size: 1.8rem;
+        }
+    }
+}

@@ -1,0 +1,231 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.ceilings-table {
+    /* .ceilings-table__wrapper */
+
+    *::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #e8e8e8;
+        border-radius: 2em;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #ffe600;
+        border-radius: 2em;
+        border: 0 solid #e8e8e8;
+    }
+
+    .container {
+        @include _max768 {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    &__wrapper {
+        @include _max768 {
+            max-width: 100%;
+            margin-left: 1em;
+        }
+    }
+
+    /* .ceilings-table__title */
+
+    &__title {
+        padding: 0 2em;
+        line-height: 1.2;
+        margin-bottom: 1.35em;
+
+        @include _768 {
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+            margin-bottom: 0.95em;
+        }
+
+        @include _1200 {
+            line-height: 1.2;
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .ceilings-table__inner */
+
+    &__inner {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 3em;
+            right: 0;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+            pointer-events: none;
+
+            @include _768 {
+                background: linear-gradient(90deg, rgba(246, 246, 246, 0) 0%, #f6f6f6 100%);
+            }
+
+            @include _1200 {
+                content: none;
+            }
+        }
+    }
+
+    /* .ceilings-table__first-column */
+
+    &__first-column {
+        background-color: #fff;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0.5em;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__first-text-title,
+    &__first-text,
+    &__item-title,
+    &__item-text {
+        width: 15.2rem;
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include _768 {
+            height: 4.3rem;
+            width: 22.6rem;
+        }
+    }
+
+    &__item-title,
+    &__item-text {
+        @include _max768 {
+            width: 10.2rem;
+        }
+
+        @include _768 {
+            width: auto;
+            white-space: nowrap;
+        }
+    }
+
+    &__first-text-title,
+    &__item-title {
+        font-weight: 700;
+        height: 3.7rem;
+
+        @include _768 {
+            font-weight: 900;
+            height: 5rem;
+        }
+    }
+
+    &__first-text,
+    &__item-text {
+        border-bottom: 1px solid #e8e8e8;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    /* .ceilings-table__first-text-title */
+
+    &__first-text-title {
+        background-color: $yellow;
+        border-radius: 0.5em 0.5em 0 0;
+        letter-spacing: 0.03em;
+    }
+
+    /* .ceilings-table__first-text */
+
+    &__first-text {
+        span {
+            font-size: 1rem;
+
+            @include _768 {
+                font-size: 1.6rem;
+                text-transform: initial;
+            }
+        }
+
+        @include _768 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+    }
+
+    /* .ceilings-table__column */
+
+    &__column {
+        margin-left: 15.2rem;
+        position: relative;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #ffe600 #ccc;
+
+        @include _768 {
+            margin-left: 22rem;
+        }
+
+        @include _1200 {
+            overflow-x: visible;
+        }
+    }
+
+    /* .ceilings-table__item */
+
+    &__item {
+        border-right: 1px solid #e8e8e8;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    /* .ceilings-table__item-title */
+
+    &__item-title {
+        background: #9a9a9a;
+        color: #fff;
+        font-size: 1rem;
+        padding: 0 2.4rem;
+        letter-spacing: 0.03em;
+
+        @include _768 {
+            font-size: 1.6rem;
+        }
+    }
+
+    /* .ceilings-table__item-text */
+
+    &__item-text {
+        &:last-child {
+            height: 3.6rem;
+
+            @include _768 {
+                height: 3.9rem;
+            }
+
+            @include _1200 {
+                height: 5rem;
+            }
+        }
+
+        @include _768 {
+            font-size: 1.8rem;
+        }
+    }
+}

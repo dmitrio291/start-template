@@ -1,0 +1,113 @@
+@import "../../base/all/var";
+
+.glazing-free {
+    background-image: url('/wp-content/themes/twentytwenty-child/img/glazing-free-bg-middle.jpg');
+    position: relative;
+    
+    &__image {
+        margin-top: -3.4em;
+
+        &-box {
+            margin-bottom: 1.563em;
+            text-align: center;
+        }
+    }
+
+    .title,
+    .text {
+        text-align: left;
+    }
+
+    .title {
+        margin-bottom: 0.938em;
+        color: $yellow;
+    }
+
+    .text {
+        line-height: 1.3125;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        max-width: 21.500em;
+        min-height: 2.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 768px) {
+        background-size: cover;
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__image {
+            margin-top: 0;
+
+            &-box {
+                margin-right: 1em;
+            }
+        }
+
+        .text {
+            margin-bottom: 1.625em;
+            max-width: 14.8em;
+        }
+
+        .button {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 15.47em;
+            min-height: 2.43em;
+            font-size: 1.063em;
+        }
+    }
+
+    @media (min-width: 960px) {
+        background-image: url('/wp-content/themes/twentytwenty-child/img/glazing-free-bg-big.jpg');
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .container {
+            align-items: center;
+        }
+
+        &__image {
+            &-box {
+                width: 34.8em;
+                height: 26em;
+                margin-top: -1.5em;
+                margin-bottom: -1.9em;
+                margin-right: 3em;
+            }
+        }
+
+        .text {
+            margin-bottom: 2.375em;
+        }
+
+        .button {
+            max-width: 13.84em;
+            min-height: 2.304em;
+            font-size: 1.188em;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        &__image {
+            &-box {
+                margin-right: 4em;
+            }
+        }
+    }
+}

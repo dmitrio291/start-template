@@ -1,0 +1,95 @@
+@import '../../base/all/var';
+
+.advantages-stretch-ceilings {
+    background-color: $lightGray;
+
+    .title,
+    &__list {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        max-width: 14em;
+        margin-bottom: 1.088em;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 21.6em;
+    }
+
+    &__item {
+        max-width: 10em;
+        margin-bottom: 0.813em;
+    }
+
+    &__image {
+        display: block;
+        width: 8.750em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.238em;
+        border-radius: 50%;
+        border: 0.188em solid $white;
+    }
+
+    &__text {
+        position: relative;
+        max-width: 13.7em;
+        padding: 0.9em 0;
+        text-align: center;
+        font-size: 0.875em;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 2.25em;
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            max-width: none;
+            margin-bottom: 0.988em;
+        }
+        
+        &__list {
+            max-width: 28.8em;
+        }
+
+        &__item {
+            max-width: 13.6em;
+        }
+
+        &__image {
+            width: 13.125em;
+            height: 13.125em;
+            margin-bottom: 1.038em;
+            border-width: 0.313em;
+            filter: drop-shadow(0 0 0.625em rgba(0, 0, 0, 0.25));
+        }
+
+        &__text {
+            font-size: 1.125em;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 0.788em;
+        }
+
+        &__list {
+            max-width: none;
+        }
+
+        &__image {
+            margin-bottom: 1.1em;
+        }
+
+        &__text {
+            line-height: 1.2;
+        }
+    }
+}

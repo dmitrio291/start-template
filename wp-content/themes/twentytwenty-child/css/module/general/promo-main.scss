@@ -1,0 +1,4799 @@
+@import '../../base/all/var';
+
+.promo {
+    &-main,
+    &-plastic-windows,
+    &-ready-windows,
+    &-panoramic-windows,
+    &-panoramic-windows .container,
+    &-front-doors,
+    &-warm-aluminum,
+    &-windows-to-house,
+    &-veranda-glazing,
+    &-windows-in-wooden-house,
+    &-wooden-windows .container,
+    &-glazing-balconies .container,
+    &-finishing-balconies .container,
+    &-pine-wood-windows .container,
+    &-larch-windows .container,
+    &-oak-wood-windows .container,
+    &-warm-glazing .container,
+    &-cold-glazing .container,
+    &-frameless-glazing .container,
+    &-glazing-balconies-with-removal .container,
+    &-combining-balcony .container,
+    &-insulation-balconies-loggias .container {
+        position: relative;
+    }
+
+    &-main .exact-calculation-button,
+    &-plastic-windows .free-check-out,
+    &-plastic-windows .info-price {
+        display: none;
+    }
+
+    &-content__text,
+    &-description {
+        text-align: center;
+    }
+
+    &-content {
+        &__text {
+            margin-bottom: 1.375em;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.3;
+            font-weight: 500;
+        }
+
+
+        &__info-box {
+            margin-bottom: 2.250em;
+        }
+
+        &__subtitle {
+            color: #333333;
+            font-size: 1.125em;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+        }
+
+    }
+
+    &-description {
+        max-width: 33rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-image {
+        &__quality-icon {
+            position: absolute;
+            bottom: -2em;
+            right: 3em;
+            z-index: 1;
+            width: 5.813em;
+            height: 5.063em;
+            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -21.938em -5.313em;
+        }
+    }
+
+    &-image:after,
+    &-content__list-icon:before {
+        content: '';
+        position: absolute;
+    }
+
+    &-image {
+        margin-left: -6%;
+        margin-right: -6%;
+        padding-top: 1em;
+        background: url('/wp-content/themes/twentytwenty-child/img/promo-bg1-small.jpg') no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &:after {
+            bottom: -0.2em;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+        }
+
+        &__box {
+            max-width: 22em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__brands {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &__rehau,
+        &__kbe {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+            background-repeat: no-repeat;
+        }
+
+        &__rehau {
+            margin-right: 1em;
+            width: 4.250em;
+            height: 4.563em;                
+            background-position: -7.125em -0.500em;
+        }
+
+        &__kbe {
+            width: 7.250em;
+            height: 4.913em;
+            background-position: -21.688em -0.6em
+
+        }
+
+        &__image {
+            display: block;
+            margin-left: auto;
+        }
+    }
+
+    &-content__title,
+    &-content__list,
+    &-content__list-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-content {
+        padding-top: 3em;
+        padding-bottom: 3em;
+
+        &__title,
+        &__list-link {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        &__title {
+            max-width: 10em;
+            margin-bottom: 1.563em;
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            color: #3A3A3A;
+        }
+
+        &__list {
+
+            max-width: 21em;
+            margin-bottom: 2em;
+            justify-content: space-between;
+            @media (max-width: 500px) {
+                max-width: 18em;
+            }
+
+            &-icon {
+                width: 4.375em;
+                height: 4.375em;
+                margin-bottom: 0.625em;
+                background-color: $yellow;
+                border-radius: 50%;
+                position: relative;
+
+                &:before {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+                    background-repeat: no-repeat;
+                }
+                
+
+                &--1 {
+                    &:before {
+                        width: 2.500em;
+                        height: 2.750em;
+                        background-position: -47.250em -15.000em;
+                    }
+                }
+
+                &--2 {
+                    &:before {
+                        width: 2.750em;
+                        height: 2.813em;
+                        background-position: -52.250em -25.875em;
+                    }
+                }
+
+                &--3 {
+                    &:before {
+                        width: 2.750em;
+                        height: 2.313em;
+                        background-position: -55.625em -26.188em;
+                    }
+                }
+            }
+
+            &-title {
+                line-height: 0.9;
+            }
+
+            &-link {
+                color: $black;
+                font-size: 0.563em;
+                font-weight: 500;
+            }
+
+            &-item {
+                max-width: 4.8em;
+                text-align: center;
+            }
+
+        }
+
+        &__price {
+
+            &-box {
+                max-width: 19.375em;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 0.313em;
+                transform: skewX(-3deg)
+            }
+
+            &-one,
+            &-two {
+                align-items: center;
+            }
+
+            &-one {
+                padding: 1.063em 2.125em;
+                background-color: #3A3A3A;
+                color: white;
+                border-top-left-radius: 0.313em;
+                border-top-right-radius: 0.313em;
+                white-space: nowrap;
+            }
+
+            &-two {
+                background-color: $yellow;
+                padding: 1.288em 1.250em;
+                border-bottom-left-radius: 0.313em;
+                border-bottom-right-radius: 0.313em;
+            }
+
+        }
+
+        &__all-text,
+        &__us-text {
+            font-size: 1.125em;
+            font-weight: 700;
+        }
+
+        &__all-price,
+        &__us-price {
+            font-weight: 900;
+        }
+
+        &__all {
+
+            &-text {
+                margin-right: 1.313em;
+            }
+
+            &-price {
+                font-size: 2.188em;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    width: 100%;
+                    height: 0.088em;
+                    position: absolute;
+                    top: 5%;
+                    left: 0;
+                    background-color: $orange;
+                    transform-origin: 0 0;
+                    transform: rotate(12deg);
+                }
+            }
+
+        }
+
+        &__us {
+            &-text,
+            &-price {
+                color: #3A3A3A;
+            }
+
+            &-text {
+                margin-right: 0.413em;
+            }
+
+            &-price {
+                font-size: 2.500em;
+            }
+            
+        }
+
+    }
+
+    &-advantages {
+        max-width: 21em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.4em;
+
+        &__item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.563em;
+
+            &:before,
+            &:after {
+                content: '';
+            }
+
+            &:before {
+                width: 2.188em;
+                height: 2.188em;
+                margin-right: 1.063em;
+                border-radius: 50%;
+                background-color: $yellow;
+            }
+
+            &:after {
+                position: absolute;                
+            }
+        }
+
+        &__text {
+            .orange {
+                font-weight: 700;
+            }
+        }
+    }
+
+    @media(min-width: 768px) {
+        &-advantages {
+            margin-bottom: 0.7em;
+    
+            &__item {
+                margin-bottom: 0.463em;
+    
+                &:before {
+                    width: 1.250em;
+                    height: 1.250em;
+                    margin-right: 0.763em;
+                }
+            }
+    
+            &__text {
+                font-size: 0.750em;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &-advantages {
+            max-width: 23em;
+            margin-bottom: 2.6em;
+
+            &__item {
+                margin-bottom: 0.763em;
+
+                &:before {
+                    width: 2.938em;
+                    height: 2.938em;
+                    margin-right: 0.863em;
+                }
+            }
+
+            &__text {
+                font-size: 1.5em;
+                letter-spacing: 0.03em;
+            }
+        }
+    }
+
+    &-plastic-windows {
+
+        padding-bottom: 1.688em;
+        background-color: #fff;
+
+        .promo {
+
+            &-content {
+
+                &__title {
+                    max-width: 11em;
+                    text-align: center;
+                }
+
+            }
+
+            &-image {
+                background: url('/wp-content/themes/twentytwenty-child/img/promo-bg2-small.jpg') no-repeat;
+                background-size: cover;
+
+                &:after {
+                    height: 60%;
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+                }
+            }
+
+        }
+
+    }
+
+    &-ready-windows {
+
+        .promo {
+
+            &-image {
+                min-height: 14em;
+                background: url("/wp-content/themes/twentytwenty-child/img/promo-bg3-small.jpg") no-repeat;
+                background-size: cover;
+
+                &__brands {
+                    right: 0;
+                    top: 40%;
+                }
+            }
+
+            &-content {
+
+                &__title {
+                    max-width: 9em;
+                    text-align: center;
+                }
+
+                &__text,
+                &__text span {
+                    display: block;
+                }
+
+                &__text {
+                    max-width: 25em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1.125em;
+                    font-size: 0.750em;
+                    line-height: 1.2;
+                }
+
+            }
+
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+
+    }
+
+    &-windows-repairs {
+        background-color: #fff;
+        .promo {
+
+            &-content {
+                padding-top: 1em;
+
+                &__title {
+                    max-width: 12em;
+                    margin-bottom: 0.588em;
+                    text-align: center;
+                }
+
+                &__text {
+                    max-width: 24em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1.563em;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    line-height: 1.2;
+
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                &__list {
+
+                    &-item {
+                        max-width: none;
+                        margin-bottom: 0.938em;
+                        text-align: left;                        
+                    }
+
+                    &-content {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        position: relative;
+
+                        &:before {
+                            content: '';
+                            display: inline-block;
+                            width: 2.563em;
+                            height: 2.563em;
+                            margin-right: 0.813em;
+                            background-color: $yellow;
+                            border-radius: 50%;
+                        }
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0.6em;
+                            left: 0.6em;
+                            width: 1.375em;
+	                        height: 1.375em;
+                            background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+                        }
+
+                        &--icon-1 {
+
+                            &:after {
+                                background-position: -17.250em -14.563em;
+                            }
+
+                        }
+
+                        &--icon-2 {
+
+                            &:after {
+                                background-position: -15.375em -14.625em;
+                            }
+
+                        }
+
+                        &--icon-3 {
+
+                            &:after {
+                                background-position: -24.438em -12.250em;
+                            }
+
+                        }
+
+                        &--icon-4 {
+
+                            &:after {
+                                left: 0.9em;
+                                background-position: -24.625em -14.688em;
+                            }
+
+                        }
+
+                    }
+
+                    &-text {
+                        max-width: 14em;
+                        font-size: 0.875em;
+                        letter-spacing: 0.03em;
+                    }
+
+                }
+
+            }
+
+            &-image {
+                background: url("/wp-content/themes/twentytwenty-child/img/promo-bg4-small.jpg") no-repeat;
+                background-size: cover;
+                min-height: 23rem;
+                transform: scaleX(-1);
+            }
+
+        }
+
+        .form-contacts {
+            max-width: 18.125em;
+
+            &__box {
+
+                &--user:before,
+                &--phone:before,
+                &--message:before {
+                    background-repeat: no-repeat;
+                }   
+
+                &--user {
+
+                    &:before {
+                        background-image: url("data:image/svg+xml,%3Csvg width='15' height='17' viewBox='0 0 22 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.6212 13.4628C13.5674 13.4628 15.9643 10.6727 15.9643 7.24363C15.9643 5.57559 15.9643 0.5 10.6212 0.5C5.27815 0.5 5.27815 5.57559 5.27815 7.24363C5.27815 10.6727 7.6751 13.4628 10.6212 13.4628ZM10.6212 2.0766C13.3314 2.0766 14.3877 3.52549 14.3877 7.24363C14.3877 9.8035 12.6981 11.8862 10.6212 11.8862C8.54433 11.8862 6.85474 9.8035 6.85474 7.24363C6.85474 3.52549 7.91106 2.0766 10.6212 2.0766ZM16.6475 15.6164C15.6916 15.258 14.8843 14.353 14.6589 14.084C14.3798 13.7508 13.8843 13.705 13.549 13.9846C13.2147 14.2637 13.1701 14.7608 13.4496 15.0951C13.818 15.5355 14.8139 16.6139 16.0957 17.0932C16.9229 17.4032 19.5075 18.6035 19.6614 21.5092C16.8183 22.4483 13.7813 22.9234 10.6228 22.9234C7.46488 22.9234 4.42731 22.4483 1.58418 21.5092C1.73764 18.6062 4.31958 17.4032 5.14413 17.0937C6.43326 16.6112 7.4281 15.5355 7.79597 15.0951C8.07555 14.7608 8.03088 14.2637 7.69664 13.9846C7.36188 13.705 6.86525 13.7508 6.58619 14.084C6.36179 14.352 5.5551 15.2554 4.59128 15.6164C3.46453 16.0395 -0.194744 17.7595 0.00811088 22.1088C0.0228258 22.4294 0.230411 22.709 0.532592 22.8157C3.69524 23.9335 7.09018 24.5 10.6228 24.5C14.156 24.5 17.5504 23.9335 20.7125 22.8157C21.0142 22.709 21.2217 22.4299 21.237 22.1088C21.4388 17.7548 17.7758 16.0379 16.6475 15.6164Z' fill='%23afafaf'/%3E%3C/svg%3E%0A");
+                    }
+
+                }
+
+                &--phone {
+
+                    &:before {
+                        background-image: url("data:image/svg+xml,%0A%3Csvg width='15' height='17' viewBox='0 0 19 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.6085 11.9101C14.551 11.8457 14.0261 11.2832 13.2456 11.2832C12.7761 11.2832 12.3302 11.4819 11.8927 11.9019C11.3334 12.4386 10.7554 12.9943 10.1231 12.9943C9.69011 12.9943 9.23039 12.738 8.71964 12.2113C8.38143 11.8611 7.76658 11.1721 7.4547 10.7947C6.2493 9.32764 6.77463 8.48753 7.75524 7.20741C8.65402 6.03253 8.22832 4.76465 7.74673 4.22621C7.69651 4.16315 6.51095 2.68071 5.93296 2.0334C5.57005 1.6274 5.05848 1.16108 4.31847 1.16108C3.76114 1.16108 3.18396 1.42826 2.55371 1.97715C1.99071 2.4657 1.33616 3.30671 0.608713 4.47797C0.522034 4.61768 0.485176 4.7887 0.505428 4.95699C0.967578 8.81867 2.4237 12.2177 4.71582 14.7843L5.1565 15.2778C7.44822 17.8444 10.4824 19.4747 13.9321 19.9937C13.9584 19.9977 13.986 20 14.0123 20C14.1362 20 14.2569 19.9578 14.359 19.8775C15.4048 19.0615 16.1566 18.3289 16.5908 17.7006C17.8978 15.8199 17.1882 14.6395 16.541 13.9147C15.9634 13.2678 14.6401 11.94 14.6085 11.9101ZM15.6312 16.8664C15.3015 17.3431 14.6915 17.9419 13.8588 18.6083C10.774 18.0921 8.0659 16.6119 6.01559 14.3157L5.57491 13.8217C3.52419 11.5254 2.20254 8.49252 1.74242 5.03773C2.3358 4.10645 2.87127 3.42284 3.29818 3.05132C3.70241 2.69977 4.04548 2.52104 4.31847 2.52104C4.55421 2.52104 4.77293 2.65849 5.07347 2.99507C5.62756 3.61563 6.82851 5.11803 6.85767 5.15386C6.99417 5.31671 7.26514 5.75536 6.80825 6.35233C5.9682 7.44919 4.56231 9.28454 6.56077 11.7169C6.89574 12.1233 7.53165 12.835 7.89538 13.2115C8.64187 13.9804 9.37053 14.3547 10.1231 14.3547C11.205 14.3547 12.0248 13.5676 12.7125 12.9076C12.8972 12.7298 13.0718 12.6441 13.2447 12.6441C13.5287 12.6441 13.7531 12.8768 13.7737 12.8985C13.7871 12.9117 15.1286 14.2567 15.6823 14.8772C16.0496 15.2887 16.4304 15.7155 15.6312 16.8664ZM9.89304 4.50745C10.8858 4.89893 11.77 5.52402 12.5205 6.36503C13.2719 7.20605 13.8296 8.19585 14.1788 9.30722C14.2667 9.58666 14.5012 9.76175 14.7519 9.76175C14.8187 9.76175 14.8868 9.74905 14.9536 9.7232C15.2695 9.5989 15.4356 9.21015 15.325 8.85542C14.9151 7.5508 14.2606 6.38907 13.3796 5.4029C12.4991 4.41673 11.4622 3.68367 10.2965 3.2237C9.97931 3.09941 9.63219 3.28539 9.52162 3.63967C9.41023 3.99395 9.57711 4.3827 9.89304 4.50745ZM18.1684 7.65604C17.6042 5.89463 16.7159 4.32691 15.5284 2.99689C14.34 1.66687 12.9406 0.672531 11.3686 0.0401818C11.0506 -0.0868323 10.7039 0.0973382 10.5909 0.45071C10.4779 0.804535 10.6424 1.1942 10.9575 1.32121C12.3605 1.88461 13.6089 2.77189 14.6685 3.95857C15.728 5.14524 16.5203 6.54376 17.023 8.11511C17.1125 8.39272 17.3458 8.56555 17.5949 8.56555C17.6629 8.56555 17.7326 8.5524 17.8014 8.52654C18.1178 8.39953 18.2814 8.00987 18.1684 7.65604Z' fill='%23afafaf'/%3E%3C/svg%3E%0A");
+                    }
+
+                }
+
+                &--message {
+
+                    &:before {
+                        top: 1.2em;
+                        background-image: url("data:image/svg+xml,%0A%3Csvg width='18' height='21' viewBox='0 0 19 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.89844 2.51953C4.65625 1.08984 6.77734 0.375 9.26172 0.375C11.7461 0.375 13.8672 1.08984 15.625 2.51953C17.3828 3.94922 18.2617 5.67188 18.2617 7.6875C18.2617 9.70312 17.3828 11.4258 15.625 12.8555C13.8672 14.2852 11.7461 15 9.26172 15C8.16016 15 7.07031 14.8359 5.99219 14.5078C4.46875 15.5859 2.83984 16.125 1.10547 16.125C0.730469 16.125 0.472656 15.9492 0.332031 15.5977C0.191406 15.2695 0.238281 14.9766 0.472656 14.7188C0.519531 14.6719 0.625 14.5547 0.789062 14.3672C0.976562 14.1562 1.19922 13.8398 1.45703 13.418C1.73828 12.9727 1.96094 12.5391 2.125 12.1172C0.882813 10.8047 0.261719 9.32812 0.261719 7.6875C0.261719 5.67188 1.14062 3.94922 2.89844 2.51953ZM9.26172 13.3125C11.2773 13.3125 13 12.7617 14.4297 11.6602C15.8594 10.5586 16.5742 9.23438 16.5742 7.6875C16.5742 6.14062 15.8594 4.81641 14.4297 3.71484C13 2.61328 11.2773 2.0625 9.26172 2.0625C7.24609 2.0625 5.52344 2.61328 4.09375 3.71484C2.66406 4.81641 1.94922 6.14062 1.94922 7.6875C1.94922 8.88281 2.41797 9.97266 3.35547 10.957L4.05859 11.7305L3.70703 12.7148C3.51953 13.1836 3.28516 13.6641 3.00391 14.1562C3.70703 13.9219 4.375 13.5703 5.00781 13.1016L5.71094 12.6445L6.51953 12.8906C7.41016 13.1719 8.32422 13.3125 9.26172 13.3125Z' fill='%23C9C9C9'/%3E%3C/svg%3E%0A");
+                    }
+
+                }
+
+            }
+
+            &__input {
+                min-height: 2.500em;
+
+                &--padding {
+                    padding-left: 2.7em;
+                }
+
+                &--height {
+                    min-height: 4.688em;
+                    resize: none;
+                }
+            }
+
+            &__button {
+                min-height: 2.500em;
+            }
+        }
+
+    }
+
+    &-panoramic-windows {
+        .promo-content__title {
+            text-align: center;
+        }
+        
+        .promo {
+
+            &-image {
+                min-height: 20.1rem;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg5-small.jpg');
+            }
+
+            &-content {
+                max-width: 37rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+
+    }
+
+    &-front-doors {
+
+        padding-bottom: 1.500em;
+
+        .container {
+            width: calc(100% - 3rem);
+        }
+        
+        .promo {
+
+            &-image {
+                min-height: 20.3rem;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg6-small.jpg');
+            }
+
+            &-content {
+
+                &__title {
+                    max-width: 13em;
+                    text-align: center;
+                    color: #3A3A3A;
+                }
+
+                &__text {
+                    max-width: 28em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1.875em;
+                }
+
+                &__span {
+                    display: block;
+                }
+
+            }
+
+            &-description {
+                max-width: 34rem;
+            }
+
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+
+        .info-price {
+            margin-bottom: 2.375em;
+        }
+
+    }
+
+    &-warm-aluminum {
+
+        .promo {
+
+            &-image {
+                min-height: 12.625em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg7-small.jpg');
+            }
+
+            &-content {
+
+                &__title {
+                    text-align: center;
+                }
+
+                &__text {
+                    font-size: 1.375em;
+                    color: #3A3A3A;
+                    text-transform: uppercase;
+                }
+
+            }
+
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+
+    }
+
+    &-windows-to-house {
+        background-color: #fff;
+        .promo {
+
+            &-content {
+
+                &__title {
+                    text-align: center;
+                }
+                
+                &__title {
+                    max-width: 11em;
+                    color: #3A3A3A;
+                }
+
+                &__span {
+                    display: block;
+                }
+
+                .info-price {
+                    margin-bottom: 2.250em;
+                }
+
+            }
+
+            &-image {
+                min-height: 12.625em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg8-small.jpg');
+            }
+
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+
+    }
+
+    &-veranda-glazing {
+        background-color: #fff;
+        .promo {
+
+            &-image {
+                min-height: 12.688em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg9-small.jpg');
+            }
+
+            &-content {
+
+                padding-bottom: 1em;
+
+                &__title {
+                    max-width: 12em;
+                    margin-bottom: 1.125em;
+                }
+
+                &__price {
+
+                    &-text {
+                        max-width: 14em;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1.175em;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 1.563em;
+                        font-weight: 700;
+                        color: #333333;
+                    }
+
+                    &-color {
+                        margin-left: 0.2em;
+                        font-size: 3.125em;
+                        font-weight: 800;
+                        color: $orange;
+                    }
+                    
+                }
+
+            }
+
+        }
+
+    }
+
+    &-windows-in-wooden-house {
+
+        .promo {
+
+            &-image {
+                min-height: 12.625em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg10-small.jpg');
+            }
+
+            &-content {
+                padding-bottom: 1em;
+
+                &__title {
+                    max-width: 11em;
+                    color: #3A3A3A;
+                }
+            }
+
+        }
+
+    }
+
+    &-wooden-windows {
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg11-small.jpg');
+
+                &:after {
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 90%)
+                }
+            }
+
+            &-content {
+                &__title {
+                    color: #3A3A3A;
+                }
+
+                &__subtitle {
+                    display: block;
+                    font-size: 1.35rem;
+                    font-weight: 700;
+                    color: $orange;
+                    text-align: left;
+                    margin-top: 0.4em;
+                }
+
+                &__word {
+                    margin-left: 0.4em;
+                    margin-right: 0.4em;
+                }
+
+            }
+
+        }
+
+        &__list {
+            max-width: 18em;
+            margin-bottom: 2.188em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__item {
+            margin-bottom: 1.063em;
+        }
+
+        &__text {
+            display: flex;
+            align-items: flex-end;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            color: #333333;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 1.125em;
+                height: 1.125em;
+                margin-right: 0.688em;
+                background-color: $yellow;
+                border-radius: 50%;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='8' height='7' viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.10865 6.20203L0.732085 3.75051C0.589305 3.60323 0.589305 3.36442 0.732085 3.21713L1.24914 2.68374C1.39192 2.53645 1.62344 2.53645 1.76622 2.68374L3.36719 4.33519L6.79628 0.797962C6.93906 0.650679 7.17058 0.650679 7.31336 0.797962L7.83042 1.33134C7.9732 1.47863 7.9732 1.71743 7.83042 1.86473L3.62572 6.20204C3.48293 6.34932 3.25143 6.34932 3.10865 6.20203V6.20203Z' fill='black'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+
+    }
+
+    &-stocks {
+        background-color: #fff;
+        .promo {
+
+            &-image {
+
+                min-height: 12.688em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg12-small.jpg');
+                background-position-x: -10em;
+
+            }
+
+            &-content {
+
+                &__title {
+                    max-width: 11em;
+                    margin-bottom: 1.375em;
+                    color: #3A3A3A;
+                }
+
+            }
+
+        }
+
+        &__subtitle {
+            max-width: 14em;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.23rem;
+        }
+
+    }
+
+    &-glazing-balconies {
+        background-color: #fff;
+        .promo {
+
+            &-image {
+
+                min-height: 12.688em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg13-small.jpg');
+
+            }
+
+            &-content {
+                
+                &__title {
+                    margin-bottom: 1.188em;
+                    max-width: 11em;
+                    color: #3A3A3A;
+                }
+
+                &__warn {
+
+                    margin-bottom: 2.563em;
+                    max-width: 19em;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    &-price {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 0.375em;
+                    }
+
+                    &-word,
+                    &-text {
+                        font-weight: 700;
+                    }
+
+                    &-word,
+                    &-text,
+                    &-big {
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    
+                    &-word {
+                        margin-right: 0.688em;
+                        font-size: 1.563em;
+                        color: #333333;
+                    }
+
+                    &-big {
+                        font-size: 3.125em;
+                        font-weight: 800;
+                    }
+
+                    &-text {
+                        font-size: 0.625em;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .info-price {
+            margin-bottom: 2.188em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+
+    }
+
+    &-finishing-balconies {
+
+        background-color: #fff;
+        .promo {
+
+            &-image {
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg14-small.jpg');
+            }
+
+            &-content {
+
+                padding-bottom: 0;
+
+                &__title {
+                    margin-bottom: 0.863em;
+                    color: #3A3A3A;
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+
+                &__text {
+                    margin-bottom: 2.375em;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
+
+            }
+        }
+
+        .info-price {
+            margin-bottom: 2.613em;
+        }
+
+    }
+
+    &-pine-wood-windows {
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/promo-pine-wood-windows-small.jpg");
+            }
+
+            &-content {
+                padding-top: 1.5em;
+
+                &__title {
+                    margin-bottom: 1.163em;
+                    max-width: 12em;
+                }
+            }
+
+            &-advantages {
+                &__item {        
+                    &:first-child {
+                        &:after {
+                            top: 0.8em;
+                            left: 1.2em;
+                            width: 1.313em;
+                            height: 1.813em;
+                            background-position: 51.257% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+        
+                    &:nth-child(2) {
+                        &:after {
+                            top: 1em;
+                            left: 0.8em;
+                            width: 2.313em;
+                            height: 1.863em;
+                            background-position: 53.767% 0.014%;
+                            font-size: 0.9rem;
+                        }
+                    }
+        
+                    &:nth-child(3) {
+                        &:after {
+                            top: 1em;
+                            left: 1em;
+                            width: 1.625em;
+                            height: 1.5em;
+                            background-position: 56.384% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+        
+                &__text {
+                    .orange {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .info-price {
+            margin-bottom: 2.913em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+    }
+
+    &-larch-windows {
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/larch-windows-small.jpg");
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 15%;
+                    height: 100%;
+                    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+                }
+            }
+
+            &-content {
+                padding-top: 1.8em;
+
+                &__title {
+                    max-width: 12em;
+                    margin-bottom: 1.063em;
+                }
+            }
+
+            &-advantages {
+                &__item {
+                    &:first-child {
+                        &:after {
+                            top: 0.8em;
+                            left: 1.1em;
+                            width: 1.538em;
+                            height: 1.913em;
+                            background-position: 58.757% 0;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:after {
+                            top: 0.8em;
+                            left: 0.8em;
+                            width: 2.038em;
+                            height: 2.113em;
+                            background-position: 61.29% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &:after {
+                            top: 0.8em;
+                            left: 0.8em;
+                            width: 2.038em;
+                            height: 1.813em;
+                            background-position: 63.91% 0;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                &__text {
+                    letter-spacing: 0.03em;
+                }
+            }
+        }
+
+        .info-price {
+            margin-bottom: 3.013em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+    }
+
+    &-oak-wood-windows {
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/oak-wood-windows-small.jpg");
+            }
+
+            &-content {
+                padding-top: 1.8em;
+
+                &__title {
+                    max-width: 12em;
+                    margin-bottom: 0.963em;
+                }
+            }
+
+            &-advantages {
+                margin-bottom: 2.8em;
+
+                &__item {
+                    &:first-child {
+                        &:after {
+                            top: 0.9em;
+                            left: 0.8em;
+                            width: 2.138em;
+                            height: 1.813em;
+                            background-position: 66.595% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:after {
+                            top: 0.8em;
+                            left: 0.7em;
+                            width: 2.338em;
+                            height: 2.113em;
+                            background-position: 69.525% 0;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &:after {
+                            top: 0.8em;
+                            left: 0.8em;
+                            width: 2.038em;
+                            height: 2.113em;
+                            background-position: 72.39% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                &__text {
+                    letter-spacing: 0.03em;
+                }
+            }            
+        }
+
+        .info-price {
+            margin-bottom: 3.013em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+    }
+
+    &-warm-glazing {
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/promo-warm-glazing-small.jpg");
+            }
+
+            &-content {
+                &__title {
+                    max-width: 12em;
+                    margin-bottom: 1.163em;
+                    font-size: 2.4rem;
+
+                    .no-wrap {
+                        white-space: nowrap;
+                    }
+
+                    .margin {
+                        margin-left: -0.2em;
+                    }
+                }
+            }
+
+            &-advantages {
+                margin-bottom: 3.2em;
+
+                &__item {
+                    &:first-child {
+                        &:after {
+                            top: 0.6em;
+                            left: 0.97em;
+                            width: 1.138em;
+                            height: 2.213em;
+                            background-position: 77.316% 0.058%;
+                            font-size: 1.1rem;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:after {
+                            top: 0.8em;
+                            left: 0.7em;
+                            width: 2.338em;
+                            height: 2.113em;
+                            background-position: 51.257% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &:after {
+                            top: 0.7em;
+                            left: 0.8em;
+                            width: 2.038em;
+                            height: 2.113em;
+                            background-position: 75.31% 0.029%;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                &__text {
+                    letter-spacing: 0.03em;
+                }
+            } 
+        }
+
+        .info-price {
+            margin-bottom: 2.813em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+    }
+
+    &-cold-glazing {
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/promo-cold-glazing-small.jpg");
+            }
+
+            &-content {
+                padding-top: 2em;
+
+                &__title {
+                    max-width: 14em;
+                    margin-bottom: 1.263em;
+                    font-size: 2.4rem;
+                    line-height: 1.3;
+                    text-align: center;
+
+                    .no-wrap {
+                        white-space: nowrap;
+                    }
+
+                    .margin {
+                        margin-left: -0.2em;
+                    }
+                }
+            }
+
+            &-advantages {
+                margin-bottom: 2.9em;
+
+                &__item {
+                    &:first-child {
+                        &:after {
+                            top: 0.6em;
+                            left: 0.87em;
+                            width: 1.538em;
+                            height: 2.213em;
+                            background-position: 58.757% 0;
+                            font-size: 1.1rem;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:after {
+                            top: 0.8em;
+                            left: 0.7em;
+                            width: 2.338em;
+                            height: 2.113em;
+                            background-position: 51.257% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &:after {
+                            top: 0.7em;
+                            left: 0.8em;
+                            width: 2.038em;
+                            height: 2.113em;
+                            background-position: 75.31% 0.029%;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                &__text {
+                    letter-spacing: 0.03em;
+                }
+            } 
+        }
+
+        .info-price {
+            margin-bottom: 2.813em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+    }
+
+    &-frameless-glazing {
+        .container {
+            width: calc(100% - 3rem);
+        }
+
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/promo-frameless-glazing-small.jpg");
+            }
+
+            &-content {
+                padding-top: 2em;
+
+                &__title {
+                    max-width: 15em;
+                    margin-bottom: 1.263em;
+                    font-size: 2.4rem;
+                    line-height: 1.3;
+                    text-align: center;
+
+                    .no-wrap {
+                        white-space: nowrap;
+                    }
+
+                    .margin {
+                        margin-left: -0.2em;
+                    }
+                }
+            }
+
+            &-advantages {
+                margin-bottom: 2.9em;
+
+                &__item {
+                    &:first-child {
+                        &:after {
+                            top: 1em;
+                            left: 0.67em;
+                            width: 2.338em;
+                            height: 1.513em;
+                            background-position: 80.086% 0;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:after {
+                            top: 0.7em;
+                            left: 0.8em;
+                            width: 2.338em;
+                            height: 2.113em;
+                            background-position: 83.073% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &:after {
+                            top: 0.7em;
+                            left: 0.8em;
+                            width: 2.038em;
+                            height: 2.113em;
+                            background-position: 75.31% 0.029%;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                &__text {
+                    letter-spacing: 0.03em;
+                }
+            } 
+        }
+
+        .info-price {
+            margin-bottom: 2.813em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+    }
+
+    &-glazing-balconies-with-removal {
+        .container {
+            width: calc(100% - 2rem);
+        }
+
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/promo-glazing-balconies-with-removal-small.jpg");
+            }
+
+            &-content {
+                padding-top: 2em;
+                padding-bottom: 2.4em;
+
+                &__title {
+                    max-width: 15em;
+                    margin-bottom: 1.363em;
+                    font-size: 2.4rem;
+                    line-height: 1.3;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+
+                    .no-wrap {
+                        white-space: nowrap;
+                    }
+
+                    .margin {
+                        margin-left: -0.2em;
+                    }
+                }
+
+                &__subtitle {
+                    letter-spacing: 0.07em;
+                }
+            }
+        }
+
+        .info-price {
+            margin-bottom: 0;
+        }
+    }
+
+    &-combining-balcony {
+        .container {
+            width: calc(100% - 2rem);
+        }
+
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/promo-combining-balcony-small.jpg");
+            }
+
+            &-content {
+                padding-top: 2em;
+                padding-bottom: 2.2em;
+
+                &__title {
+                    max-width: 15em;
+                    margin-bottom: 1.063em;
+                    font-size: 2.4rem;
+                    line-height: 1.3;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+
+                    .no-wrap {
+                        white-space: nowrap;
+                    }
+
+                    .margin {
+                        margin-left: -0.2em;
+                    }
+                }
+
+                &__subtitle {
+                    letter-spacing: 0.07em;
+                }
+            }
+        }
+
+        .info-price {
+            margin-bottom: 0;
+        }
+    }
+
+    &-insulation-balconies-loggias {
+        .container {
+            width: calc(100% - 2rem);
+        }
+
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/promo-insulation-balconies-loggias.small.jpg");
+            }
+
+            &-content {
+                padding-top: 2.9em;
+                padding-bottom: 2.2em;
+
+                &__title {
+                    max-width: 14em;
+                    margin-bottom: 1.063em;
+                    font-size: 2.4rem;
+                    line-height: 1.3;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+
+                    .margin {
+                        margin-left: -0.2em;
+                    }
+                }
+
+                &__subtitle {
+                    letter-spacing: 0.07em;
+                }
+
+                &__info-box {
+                    margin-bottom: 2.05em;
+                }
+            }
+        }
+
+        .info-price {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &-main .container,
+        &-plastic-windows .container,
+        &-ready-windows .container,
+        &-main .exact-calculation-button,
+        &-ready-windows .exact-calculation-button,
+        &-panoramic-windows__box,
+        &-front-doors__box,
+        &-veranda-glazing__box,
+        &-windows-in-wooden-house__box,
+        &-wooden-windows__box,
+        &-stocks__box,
+        &-glazing-balconies__box,
+        &-finishing-balconies .container,
+        &-pine-wood-windows__box,
+        &-larch-windows__box,
+        &-oak-wood-windows__box,
+        &-warm-glazing__box,
+        &-cold-glazing__box,
+        &-frameless-glazing__box,
+        &-glazing-balconies-with-removal__box,
+        &-combining-balcony__box,
+        &-insulation-balconies-loggias__box {
+            display: flex;
+        }
+
+        &-image {
+            min-width: calc(60% + ((100vw - 100%) / 2));
+            order: 1;
+            padding-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            position: relative;
+
+            &:after {
+                display: none;
+            }
+
+            &__brands {
+                top: 20%;
+                transform: none;
+                z-index: 1;
+            }
+
+            &__rehau {
+                width: 3.000em;
+                height: 3.125em;
+                background-position: -0.500em -7.125em;
+            }
+
+            &__kbe {
+                width: 4.875em;
+                height: 2.438em;
+                margin-top: 1em;
+                background-position: -4.063em -7.625em;
+            }
+
+            &__image {
+                position: absolute;
+                bottom: 0;
+                right: 10%;
+            }
+        }
+        
+        &-content {
+            min-width: 40%;
+            padding-top: 0;
+            padding-bottom: 0;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: -30%;
+                width: 30%;
+                height: 100%;
+                background: linear-gradient(83.87deg, #FFFFFF 18.88%, rgba(255, 255, 255, 0) 95.99%);
+            }
+
+            &__box {
+                max-width: 16em;
+                padding-top: 1.875em;
+                padding-bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &__title,
+            &__list {
+                margin-left: 0;
+            }
+
+            &__title {
+                margin-bottom: 1.250em;
+                font-size: 2.5rem;
+                line-height: 1.3;
+            }
+
+            &__list {
+                max-width: 16em;
+                margin-bottom: 1.250em;
+
+                &-item {
+                    max-width: 3.8em;
+                }
+
+                &-icon {
+                    margin-bottom: 0.500em;
+                    width: 2.875em;
+                    height: 2.875em;
+
+                    &--1 {
+                        &:before {
+                            width: 28px;
+                            height: 30px;
+                            background-position: -988px -170px;
+                        }
+                    }
+
+                    &--2 {
+                        &:before {
+                            width: 30px;
+                            height: 30px;
+                            background-position: -988px -210px
+                        }
+                    }
+
+                    &--3 {
+                        &:before {
+                            width: 30px;
+                            height: 24px;
+                            background-position: -988px -257px;
+                        }
+                    }
+                    
+                }
+
+                &-title {
+                    line-height: 0.9;
+                }
+
+                &-link {
+                    font-size: 0.438em;
+                }
+            }
+
+        }
+        
+        &-plastic-windows {
+
+            padding-bottom: 0;
+
+            .promo-content {
+
+                &:before {
+                    background: linear-gradient(89.87deg, #FFFFFF 42.88%, rgba(255, 255, 255, 0) 95.99%);
+                }
+
+                &__box {
+                    max-width: 18em;
+                }
+
+                &__title {
+                    text-align: left;
+                }
+
+                &__price {
+
+                    &-box {
+                        margin-bottom: 2.188em;
+                        font-size: 1.1rem;
+                        margin-left: 0;
+                    }
+
+                    &-two {
+                        padding-top: 0.688em;
+                        padding-bottom: 0.688em;
+                    }
+
+                }
+
+            }
+
+            .info-price {
+                display: block;
+                margin-left: 0;
+            }
+
+        }
+
+        &-ready-windows {
+
+            .promo {
+
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test.png"), url("/wp-content/themes/twentytwenty-child/img/promo-bg3-small.jpg");
+                    background-size: 17em, cover;
+
+
+                    &__brands {
+                        right: 61%;
+                        top: 21%;
+                    }
+                }
+
+                &-content {
+
+                    &:before {
+                        background: linear-gradient(86.87deg, #FFFFFF 21.88%, rgba(255, 255, 255, 0) 101.99%);
+                    }
+
+                    &__box {
+                        padding-bottom: 2em;
+                    }
+
+                    &__title {
+                        text-align: left;
+                    }
+
+                    &__text {
+                        max-width: 28em;
+                        margin-bottom: 2.7em;
+                        margin-left: 0;
+                        padding-left: 7.363em;
+                        font-size: 0.500em;
+                        position: relative;
+                        
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 6.063em;
+                            height: 6.063em;
+                            background-color: $yellow;
+                            border-radius: 50%;
+                        }
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 1em;
+                            left: 1em;
+                            width: 3.2rem;
+	                        height: 3.2rem;
+                            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -20.5rem -23rem;
+                        }
+                    }
+
+                }
+            }
+
+            .info-price {
+                margin-bottom: 0;
+                margin-left: 0;
+            }
+
+        }
+
+        &-windows-repairs {
+
+            .form-contacts {
+                display: block;
+                margin-left: 0;
+
+                &__box,
+                &__button {
+                    max-width: none;
+                }
+
+                &__box {
+                    margin-bottom: 1em;
+                    
+                    &--message {
+                        &:before {
+                            width: 1.275em;
+                            height: 1.3em;
+                        }
+                    }
+                }
+            }
+
+            .promo {
+
+                &-content {
+
+                    padding-bottom: 2em;
+
+                    &:before {
+                        display: none;                        
+                    }
+
+                    &__box {
+                        max-width: 37em;
+                    }
+
+                    &__title {
+                        max-width: none;
+                    }
+
+                    &__text {
+                        max-width: 28em;
+                        font-size: 1.8rem;
+                    }
+
+                    &__list,
+                    &__form {
+                        width: 50%;
+                    }
+
+                    &__list {
+                        max-width: none;
+
+                        &-form {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .promo-content__text {
+                                margin-bottom: 1.125em;
+                                text-align: left;
+                                font-size: 1.6rem;
+                            }
+                        }
+
+                        &-item {
+                            margin-bottom: 1.338em;
+                        }
+
+                        &-text {
+                            max-width: 13em;
+                            font-size: 0.938em;
+                        }
+
+                    }
+
+                }
+
+                &-image {
+                    margin-left: -6%;
+                    margin-right: -6%;
+                    min-height: 45.4rem;
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: -0.1em;
+                        left: 0;
+                        width: 100%;
+                        height: 20%;
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+                    }
+                }
+
+            }
+
+        }
+
+        &-panoramic-windows {
+
+            &__box {
+                margin-bottom: 3em;
+            }
+
+            .promo {
+
+                &-image {
+                    min-width: calc(55% + ((100vw - 100%) / 2));
+                    min-height: 29rem;
+                }
+
+                &-content {
+
+                    min-width: 45%;
+
+                    &__box {
+                        max-width: 19em;
+                    }
+
+                    &__title {
+                        text-align: left;
+                    }
+
+                    &__title {
+                        max-width: 11em;
+
+                        &:after {
+                            content: ' В ТОЛЬЯТТИ';
+                        }
+                    }
+
+                }
+
+            }
+
+            .info-price {
+                margin-left: 0;
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+
+        }
+
+        &-front-doors {
+
+            .container {
+                width: calc(100% - 4rem);
+            }
+
+
+            .promo {
+
+                &-content {
+
+                    min-width: 40%;
+
+                    &__box,
+                    &__text {
+                        margin-left: 0;
+                    }
+
+                    &__title {
+                        text-align: left;
+                    }
+
+                    &__text {
+
+                        max-width: 31em;
+                        font-size: 0.8rem;
+                        line-height: 1.2;
+
+                        &:after {
+                            width: 2.9rem;
+                            height: 3rem;
+                            background-position: -19.1rem -48.4rem;
+                            top: 1.2em;
+                            left: 1.3em;
+                        }
+                    }
+
+                    &__span {
+                        display: inline;
+                    }
+                }
+
+                &-image {
+                    min-width: calc(60% + ((100vw - 100%) / 2));
+                }
+
+                &-description {
+                    max-width: 71rem;
+                }
+
+            }
+
+            .info-price {
+                margin-left: 0;
+            }
+
+            .exact-calculation-button {
+                display: flex;
+                bottom: 0;
+                transform: translateY(0);
+            }
+
+        }
+
+        &-warm-aluminum {
+
+            .promo {
+
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-bg7-small.jpg");
+                    background-size: 22em, cover;
+                    background-position: -1em 0, 0 0;
+                }
+
+                &-content {
+
+                    &:before {
+                        right: -40%;
+                        width: 40%;
+                        background: linear-gradient(89.87deg, #FFFFFF 52.88%, rgba(255, 255, 255, 0) 100.99%);
+                    }
+
+                    &__title {
+                        text-align: left;
+                    }
+
+                    &__text {
+                        max-width: 12.5em;
+                        font-size: 1.063em;
+                        font-weight: 600;
+                        line-height: 1.375em;
+
+                        &:before {
+                            width: 3.063em;
+                            height: 3.063em;
+                            margin-right: 0.8em;
+                        }
+
+                        &:after {
+                            width: 1.813em;
+                            height: 1.938em;
+                            top: 0.7em;
+                            left: 0.710em;
+                            background-position: -19.1rem -43.5rem;
+                        }
+                    }
+
+                }
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+
+        }
+
+        &-windows-to-house {
+
+            .promo {
+
+                &-content {
+
+                    &:before {
+                        right: -90%;
+                        width: 90%;
+                        background: linear-gradient(73.16deg, #FFFFFF 22.02%, rgba(255, 255, 255, 0) 57.33%), linear-gradient(82.87deg, #FFFFFF 12.88%, rgba(255, 255, 255, 0) 85.99%);
+                    }
+
+                    &__box {
+                        max-width: 18em;
+                    }
+
+                    &__title {
+                        text-align: left;
+                    }
+
+                    &__subtitle {
+
+                        &-symbol {
+                            display: none;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+
+        }
+
+        &-veranda-glazing {
+            
+            .promo {
+
+                &-content {
+
+                    min-width: 45%;
+
+                    &:before {
+                        right: -89%;
+                        width: 90%;
+                        background: linear-gradient(73.16deg, #FFFFFF 22.02%, rgba(255, 255, 255, 0) 57.33%), linear-gradient(82.87deg, #FFFFFF 12.88%, rgba(255, 255, 255, 0) 85.99%);
+                    }
+
+                    &__box {
+                        max-width: 19em;
+                    }
+
+                    &__title,
+                    &__price-color {
+                        color: #3A3A3A;
+                    }
+
+                    &__price {
+
+                        &-text,
+                        &-color {
+                            font-weight: 600;
+                        }
+
+                        &-text {
+                            max-width: 8em;
+                            margin-left: 0;
+                            text-transform: uppercase;
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                width: 4.9rem;
+                                height: 4.9rem;
+                                margin-right: 0.4em;
+                                background-color: $yellow;
+                                border-radius: 50%;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 0.4em;
+                                left: 0.5em;
+                                width: 1.938em;                               ;
+                                height: 1.875em;
+                                background-size: 38.938em 25.375em;
+                                background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+                                background-repeat: no-repeat;
+                                background-position: 31.57% 67.46%;
+                                font-size: 0.7em;
+                            }
+
+                        }
+
+                        &-color {
+                            font-size: 1.063em;
+                        }
+
+                    }
+
+                }
+
+                &-image {
+                    min-width: calc(55% + ((100vw - 100%) / 2));
+                }
+
+            }
+
+            .info-price {
+                margin-left: 0;
+            }
+
+        }
+
+        &-windows-in-wooden-house {
+
+            .promo {
+
+                &-content {
+
+                    &__box {
+                        max-width: 18em
+                    }
+
+                    &:before {
+                        right: -89%;
+                        width: 90%;
+                        background: linear-gradient(73.16deg, #FFFFFF 22.02%, rgba(255, 255, 255, 0) 57.33%), linear-gradient(82.87deg, #FFFFFF 12.88%, rgba(255, 255, 255, 0) 85.99%);
+                    }
+
+                    &__icon {
+                        position: relative;
+                        background-image: none;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0.6em;
+                            left: 0.8em;
+                            width: 1.5em;
+	                        height: 1.813em;
+                            background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+                            background-position: -10.438em -32.688em;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &-wooden-windows {
+            .promo {
+                &-image {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/test.png'), url('/wp-content/themes/twentytwenty-child/img/promo-bg11-small.jpg');
+                    background-size: 16em, cover;
+                }
+
+                &-content {
+                    padding-top: 2em;
+
+                    &__title {
+
+                        max-width: 8em;
+
+                        &-box {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                    }
+
+                    &__subtitle {
+                        margin-top: 0;
+                        margin-left: 1em;
+                        font-size: 1.1rem;
+                        line-height: 1.2;
+                    }
+                }
+            }
+
+            &__text {
+
+                &:before {
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='4' height='4' viewBox='0 0 4 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.60384 3.2009L0.547593 2.11134C0.484136 2.04588 0.484136 1.93974 0.547593 1.87428L0.777398 1.63722C0.840855 1.57175 0.943751 1.57175 1.00721 1.63722L1.71875 2.3712L3.24279 0.799094C3.30625 0.733635 3.40914 0.733635 3.4726 0.799094L3.70241 1.03615C3.76586 1.10161 3.76586 1.20775 3.70241 1.27321L1.83366 3.20091C1.77019 3.26637 1.6673 3.26637 1.60384 3.2009V3.2009Z' fill='black'/%3E%3C/svg%3E%0A");
+                }
+
+            }
+
+            &__list,
+            .info-price {
+                margin-left: 0;
+            }
+
+            &__list {
+                margin-bottom: 0;
+                font-size: 0.8rem;
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+
+        }
+
+        &-stocks {
+
+            .promo {
+
+                &-content {
+                    min-width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding-top: 3em;
+                    padding-bottom: 3em;
+                }
+
+                &-image {
+                    min-width: calc(50% + ((100vw - 100%) / 2));
+                    min-height: 18.188em;
+                    background-position-x: -18em;
+                }
+
+            }
+
+            &__subtitle {
+                margin-left: 0;
+                font-size: 1.98rem;
+            }
+
+        }
+
+        &-glazing-balconies {
+
+            .promo-content__warn,
+            .info-price {
+                margin-left: 0;
+            }
+
+            .promo {
+
+                &-content {
+
+                    &__title {
+
+                        max-width: 8em;
+
+                        &:after {
+                            content: ' ЗА';
+                        }
+
+                    }
+
+                    &__warn {
+
+                        margin-bottom: 1.563em;
+                        padding-left: 4em;
+                        position: relative;
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0;
+                            width: 3.063em;
+                            height: 3.063em;
+                            background-color: $yellow;
+                            border-radius: 50%;
+                        }
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0.3em;
+                            left: 0.7em;
+                            width: 1.938em;                               ;
+                            height: 1.875em;
+                            background-size: 38.938em 25.375em;
+                            background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+                            background-repeat: no-repeat;
+                            background-position: 31.57% 67.46%;
+                        }
+
+                        &-price {
+                            margin-bottom: 0;
+                        }
+
+                        &-word {
+                            display: none;
+                        }
+
+                        &-big {
+                            font-size: 1.875em;
+                            font-weight: 700;
+                        }
+
+                        &-text {
+                            font-size: 0.375em;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+
+        }
+
+        &-finishing-balconies {
+
+            .promo {
+
+                &-image {
+                    min-width: calc(55% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+
+                    min-width: 45%;
+
+                    &__box {
+                        max-width: 22em;
+                    }
+
+                    &__title {
+                        max-width: 12em;
+
+                        &:first-child {
+                            display: none;
+                        }
+
+                        &:nth-child(2) {
+                            display: block;
+                        }
+                    }
+
+                    &__text {
+
+                        margin-bottom: 0.375em;
+
+                        &:before {
+                            margin-right: 1.1em;
+                        }
+
+                        &:after {
+                            top: 0.8em;
+                            left: 0.9em;
+                            width: 1.8rem;
+                            height: 2.4rem;
+                            background-position: -48.3rem -38.5rem;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .info-price {
+                margin-left: 0;
+            }
+
+        }
+
+        &-pine-wood-windows {
+            .promo-advantages,
+            .info-price {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-pine-wood-windows-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                }
+
+                &-content {
+                    &__title {
+                        margin-bottom: 0.363em;
+                    }
+                }
+
+                &-advantages {
+                    &__item {
+                        &:first-child {
+                            &:after {
+                                font-size: 0.6rem;
+                                top: 0.9em;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                font-size: 0.5rem;
+                            }   
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                font-size: 0.6rem;
+                                left: 0.9em;
+                            }   
+                        }
+                    }
+
+                    &__text {
+                        font-size: 0.750em;
+                    }
+                }
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+        }
+
+        &-larch-windows {
+            .promo-advantages,
+            .info-price {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/larch-windows-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                }
+
+                &-content {
+                    &:before {
+                        display: none;
+                    }
+
+                    &__title {
+                        margin-bottom: 0.463em;
+                    }
+                }
+
+                &-advantages {
+                    &__item {
+                        margin-bottom: 0.363em;
+
+                        &:first-child {
+                            &:after {
+                                top: 0.6em;
+                                left: 0.9em;
+                                font-size: 0.6rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {                                
+                                top: 1em;
+                                left: 1em;
+                                font-size: 0.5rem;
+                            }   
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                font-size: 0.6rem;
+                                left: 0.8em;
+                            }   
+                        }
+                    }
+
+                    &__text {
+                        font-size: 0.750em;
+                    }
+                }
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+        }
+
+        &-oak-wood-windows {
+            .promo-advantages,
+            .info-price {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/oak-wood-windows-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                }
+
+                &-content {
+                    &__title {
+                        margin-bottom: 0.463em;
+                    }
+                }
+
+                &-advantages {
+                    margin-bottom: 0.8em;
+
+                    &__item {
+                        margin-bottom: 0.363em;
+
+                        &:first-child {
+                            &:after {
+                                left: 0.66em;
+                                top: 0.75em;
+                                font-size: 0.56rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                top: 0.9em;
+                                left: 0.9em;
+                                font-size: 0.49rem;
+                            }   
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                font-size: 0.56rem;
+                                left: 0.9em;
+                            }   
+                        }
+                    }
+
+                    &__text {
+                        font-size: 0.750em;
+                    }
+                }
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+        }
+
+        &-warm-glazing {
+            .promo-advantages,
+            .info-price {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-warm-glazing-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                    min-width: calc(55% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+                    padding-top: 1.5em;
+                    min-width: 45%;
+
+                    &__title {
+                        margin-bottom: 0.463em;
+                        letter-spacing: 0.03em;
+
+                        .margin {
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+                &-advantages {
+                    margin-bottom: 0.8em;
+
+                    &__item {
+                        margin-bottom: 0.363em;
+
+                        &:first-child {
+                            &:after {
+                                left: 1.26em;
+                                top: 0.75em;
+                                font-size: 0.56rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                top: 1.3em;
+                                left: 0.9em;
+                                font-size: 0.49rem;
+                            }   
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                font-size: 0.56rem;
+                                left: 0.9em;
+                            }   
+                        }
+                    }
+
+                    &__text {
+                        font-size: 0.750em;
+                    }
+                }
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+        }
+
+        &-cold-glazing {
+            .promo-advantages,
+            .info-price {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-cold-glazing-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                    min-width: calc(57% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+                    padding-top: 1.5em;
+                    min-width: 43%;
+                    &:before {
+                        display: none;
+                    }
+
+                    &__title {
+                        margin-bottom: 0.463em;
+                        letter-spacing: 0.03em;
+                        text-align: left;
+
+                        .margin {
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+                &-advantages {
+                    margin-bottom: 0.8em;
+
+                    &__item {
+                        margin-bottom: 0.363em;
+
+                        &:first-child {
+                            &:after {
+                                left: 1.26em;
+                                top: 0.75em;
+                                font-size: 0.56rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                top: 1.3em;
+                                left: 0.9em;
+                                font-size: 0.49rem;
+                            }   
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                font-size: 0.56rem;
+                                left: 0.9em;
+                            }   
+                        }
+                    }
+
+                    &__text {
+                        font-size: 0.750em;
+                    }
+                }
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+        }
+
+        &-frameless-glazing {
+            .promo-advantages,
+            .info-price {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-frameless-glazing-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                }
+
+                &-content {
+                    &__title {
+                        position: relative;
+                        margin-bottom: 0.363em;
+                        text-align: left;
+                    }
+                }
+
+                &-advantages {
+                    margin-bottom: 0.7em;
+
+                    &__item {
+                        &:first-child {
+                            &:after {
+                                font-size: 0.5rem;
+                                top: 1.3em;                
+                                left: 0.87em;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                top: 1em;
+                                font-size: 0.5rem;
+                            }   
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                font-size: 0.5rem;
+                                top: 0.9em;
+                                left: 0.9em;
+                            }   
+                        }
+                    }
+
+                    &__text {
+                        font-size: 0.750em;
+                    }
+                }
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+        }
+
+        &-glazing-balconies-with-removal {
+            .container {
+                width: calc(100% - 4rem);
+            }
+
+            .info-price {
+                margin-right: 0;
+                margin-left: 2em;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-glazing-balconies-with-removal-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                }
+
+                &-content {
+                    &:before {
+                        background: linear-gradient(83.87deg, #FFFFFF 18.88%, rgba(255, 255, 255, 0) 80.99%);
+                    }
+
+                    &__title {
+                        position: relative;
+                        margin-bottom: 0.963em;
+                        text-align: left;
+                        letter-spacing: 0.03em;
+                        line-height: 1.22;
+
+                        .no-wrap {
+                            white-space: normal;
+                        }
+                    }
+
+                    &__subtitle {
+                        max-width: 12em;
+                        letter-spacing: 0.05em;
+                        font-size: 1.163em;
+                    }
+
+                    &__info-box {
+                        margin-bottom: 1.013em;
+                    }
+
+                    &__icon {
+                        position: relative;
+                        background-image: none;
+                        margin-right: 0.8em;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 1.8em;
+                            left: 2em;
+                            width: 4.938em;
+                            height: 5.325em;
+                            background-position: 88.031% 0;
+                            font-size: 0.55rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-combining-balcony {
+            .container {
+                width: calc(100% - 4rem);
+            }
+
+            .info-price {
+                margin-right: 0;
+                margin-left: 2em;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-combining-balcony-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                }
+
+                &-content {
+                    &:before {
+                        background: linear-gradient(83.87deg, #FFFFFF 18.88%, rgba(255, 255, 255, 0) 80.99%);
+                    }
+
+                    &__title {
+                        position: relative;
+                        margin-bottom: 0.963em;
+                        text-align: left;
+                        letter-spacing: 0.03em;
+                        line-height: 1.22;
+
+                        .no-wrap {
+                            white-space: normal;
+                        }
+                    }
+
+                    &__subtitle {
+                        max-width: 12em;
+                        letter-spacing: 0.05em;
+                        font-size: 1.163em;
+                    }
+
+                    &__info-box {
+                        margin-bottom: 1.013em;
+                    }
+
+                    &__icon {
+                        position: relative;
+                        background-image: none;
+                        margin-right: 0.8em;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 1.8em;
+                            left: 2em;
+                            width: 4.938em;
+                            height: 5.325em;
+                            background-position: 88.031% 0;
+                            font-size: 0.55rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-insulation-balconies-loggias {
+            .container {
+                width: calc(100% - 4rem);
+            }
+
+            .info-price {
+                margin-right: 0;
+                margin-left: 2em;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-insulation-balconies-loggias.middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                }
+
+                &-content {
+                    &:before {
+                        background: linear-gradient(83.87deg, #FFFFFF 18.88%, rgba(255, 255, 255, 0) 80.99%);
+                    }
+
+                    &__title {
+                        position: relative;
+                        margin-bottom: 0.963em;
+                        text-align: left;
+                        letter-spacing: 0.03em;
+                        line-height: 1.22;
+
+                        .no-wrap {
+                            white-space: normal;
+                        }
+                    }
+
+                    &__subtitle {
+                        max-width: 12em;
+                        letter-spacing: 0.05em;
+                        font-size: 1.163em;
+
+                        &-text {
+                            margin-left: 4.5em;
+                        }
+                    }
+
+                    &__info-box {
+                        margin-bottom: 1.013em;
+                    }
+
+                    &__icon {
+                        position: relative;
+                        background-image: none;
+                        margin-right: 0.8em;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 1.7em;
+                            left: 2.6em;
+                            width: 3.338em;
+                            height: 4.925em;
+                            background-position: 92.463% 0;
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 960px) {
+        &-main,
+        &-plastic-windows,
+        &-ready-windows,
+        &-windows-repairs,
+        &-panoramic-windows,
+        &-front-doors,
+        &-warm-aluminum,
+        &-windows-to-house,
+        &-veranda-glazing,
+        &-windows-in-wooden-house,
+        &-stocks,
+        &-glazing-balconies,
+        &-finishing-balconies,
+        &-larch-windows,
+        &-oak-wood-windows,
+        &-warm-glazing,
+        &-cold-glazing,
+        &-frameless-glazing,
+        &-glazing-balconies-with-removal,
+        &-combining-balcony,
+        &-insulation-balconies-loggias {
+            .container {
+                width: calc(100% - 8rem);
+            }
+
+        }
+
+        &-content {
+            &__box {
+                max-width: 20em;
+            }
+
+            &__title {
+                font-size: 2.8rem;
+            }
+
+            &__list {
+                font-size: 2rem;
+
+                &-item {
+                    max-width: 4.7em;
+                }
+
+                &-title {
+                    line-height: 0.6;
+                }
+
+                &-link {
+                    font-size: 0.538em;
+                }
+            }
+
+        }
+
+        &-plastic-windows {
+            .promo-content {
+                &__box {
+                    max-width: 21em;
+                }
+            }
+        }
+
+        &-ready-windows {
+            .promo {
+                &-image {
+                    background-size: 19em, cover;
+                }
+
+                &-content {
+                    &__text {
+                        max-width: 27.2em;
+                        font-size: 0.7em;
+
+                        &:after {
+                            top: 1.5em;
+                            left: 1.5em;
+                        }
+                    }
+
+                }
+
+                &-image {
+                    &__brands {
+                        display: flex;
+                        top: 14%;
+                        left: 10%;
+                        width: 18em;
+                    }
+                }
+
+            }
+
+            .exact-calculation-button {
+                left: 45%;
+            }
+
+        }
+
+        &-windows-repairs {            
+            .promo {
+                &-content {
+
+                    &__box {
+                        max-width: 47em;
+                    }
+
+                    &__list {
+
+                        &-content {
+
+                            &--icon-1 {
+
+                                &:after {
+                                    background-position: -13.65em -11.563em;
+                                }
+
+                            }
+
+                            &--icon-2 {
+
+                                &:after {
+                                    background-position: -12.175em -11.525em;
+                                }
+
+                            }
+
+                            &--icon-3 {
+
+                                &:after {
+                                    background-position: -19.438em -9.65em;
+                                }
+
+                            }
+
+                            &--icon-4 {
+
+                                &:after {
+                                    background-position: -19.625em -11.688em
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .form-contacts {
+
+                max-width: none;
+
+                &__box:after,
+                &__input,
+                &__button {
+                    font-size: 1.6rem;
+                }
+
+                &__box {
+
+                    &:before {
+                        width: 0.875em;
+                        height: 1em;
+                    }
+
+                    &--phone {
+
+                        &:after {
+                            left: 2.6em;
+                        }
+
+                        .form-contacts__input {
+                            padding-left: 4em;
+                        }
+
+                    }
+
+                    &--message {
+                        &:before {
+                            width: 1.175em;
+                            height: 1.3em;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &-front-doors {
+            .exact-calculation-button {
+                left: 55%;
+            }
+        }
+
+        &-warm-aluminum {
+
+            .promo {
+                &-image {
+                    background-size: 23em, cover;
+                }
+
+                &-content {
+
+                    &__box {
+                        margin-left: 0;
+                    }
+
+                }
+
+            }
+
+        }
+
+        &-windows-to-house {
+            
+            .promo {
+
+                &-content {
+
+                    &__box {
+                        max-width: 20em;
+                        margin-left: 0;
+                    }
+
+                }
+
+            }
+
+        }
+
+        &-veranda-glazing {
+
+            .promo {
+
+                &-content {
+
+                    &__box {
+                        max-width: 22em;
+                        margin-left: 0;
+                    }
+
+                }
+
+            }
+
+        }
+
+        &-windows-in-wooden-house__box {
+
+            .promo {
+
+                &-content {
+
+                    &__box {
+                        max-width: 21em;
+                    }
+
+                }
+
+            }
+
+            .info-price {
+                margin-left: 0;
+            }
+
+        }
+
+        &-stocks {
+
+            .promo {
+
+                &-image {
+                    background-position-x: -10em;
+                }
+
+            }
+
+        }
+
+        &-finishing-balconies {
+
+            .promo {
+
+                &-image {
+                    min-width: calc(48% + ((100vw - 100%) / 2));
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg14-big.jpg');
+
+                    &__image {
+                        max-width: 77%;
+                    }
+                }
+
+                &-content {
+
+                    min-width: 52%;
+                    padding-top: 1.075em;
+
+                    &__box {
+                        max-width: 38em;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+        &-content {
+            &:before {
+                background: linear-gradient(83.87deg, #FFFFFF 35.88%, rgba(255, 255, 255, 0) 80.99%);
+            }
+    
+            min-width: 45%;
+    
+            &__box {
+                max-width: none;
+                padding-top: 3.875em;
+                padding-bottom: 3.875em;
+            }
+    
+            &__title {
+                font-size: 4.8rem;
+            }
+    
+            &__list {
+                font-size: 3.6rem;
+    
+                &-item {
+                    max-width: 3.7em;
+                }
+    
+                &-icon--1,
+                &-icon--2 {
+                    
+                    &:before {
+                        height: 7rem;
+                    }
+    
+                }   
+    
+                &-icon--1 {
+    
+                    &:before {
+                        width: 6.4rem;
+                        background-position: -95.1rem -41.8rem;
+                    }
+    
+                }
+    
+                &-icon--2 {
+    
+                    &:before {
+                        width: 6.9rem;
+                        background-position: -44.7rem -50.7rem;
+                    }
+    
+                }
+    
+                &-icon--3 {
+    
+                    &:before {
+                        width: 7rem;
+                        height: 5.8rem;
+                        background-position: -52.1rem -50.7rem;
+                    }
+    
+                }
+    
+                &-link {
+                    font-size: 0.438em;
+                }
+            }
+
+        }
+
+        &-image {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg1-big.jpg');
+            min-width: calc(55% + ((100vw - 100%) / 2));
+    
+            &__image {
+                right: auto;
+                left: 23%;
+            }
+    
+            &__brands {
+                left: 18%;
+            }
+    
+            &__rehau {
+                width: 101px;
+                height: 100px;
+                background-position: -5px -8px;
+            }
+    
+            &__kbe {
+                width: 134px;
+                height: 79px;
+                background-position: -189px -8px;
+            }
+
+        }
+
+        &-plastic-windows {
+
+            .promo {
+
+                &-content {
+
+                    &:before {
+                        width: 20%;
+                        right: -19%;
+                    }
+    
+                    &__box {
+                        max-width: 32em;
+                    }
+    
+                    &__price {
+    
+                        &-box {
+                            margin-bottom: 3.188em;
+                            font-size: 2.1rem;
+                        }
+    
+                        &-one {
+                            padding-top: 0.463em;
+                            padding-bottom: 0.463em;
+                        }
+    
+                        &-two {
+                            padding-top: 0.688em;
+                            padding-bottom: 0.688em;
+                        }
+                        
+                    }
+
+                }
+
+                &-image {
+
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/promo-bg2-big.jpg");
+
+                    &__brands {
+                        left: 8%;
+                    }
+                    
+                    &__image {
+                        max-width: 90%;
+                        left: 8%;
+                    }
+
+                }
+
+            }
+
+            .info-price {
+                margin-bottom: 0;
+            }
+
+        }
+
+        &-ready-windows {
+
+            .promo {
+
+                &-content {
+                    &:before {
+                        right: -39%;
+                    }
+
+                    &__text {
+                        max-width: 28.2em;
+                        padding-left: 8.363em;
+                        font-size: 1em;
+
+                        &:before {
+                            width: 6.875em;
+                            height: 6.875em;
+                        }
+
+                        &:after {
+                            background-position: -18.6rem -9rem;
+                            width: 7.6rem;
+                            height: 7rem;
+                            top: 1.2em;
+                            left: 0.9em;
+                        }
+
+                    }
+
+                }
+
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test.png"), url('/wp-content/themes/twentytwenty-child/img/promo-bg3-big.jpg');
+                    background-size: 32.1em, cover;
+                    background-position: -11em 0, 0 0;
+                }
+
+            }
+
+            .exact-calculation-button {
+                left: 59%;
+            }
+
+        }
+
+        &-windows-repairs {
+
+            .container {
+                display: flex;
+            }
+
+            .promo {
+
+                &-content {
+
+                    &:before {
+                        display: block;
+                        background: linear-gradient(70.87deg, #FFFFFF 12.88%, rgba(255, 255, 255, 0) 84.99%);
+                    }
+
+                    min-width: 60%;
+                    padding-bottom: 0;
+
+                    &__box {
+                        padding-bottom: 0;
+                    }
+
+                    &__title,
+                    &__text {
+                        text-align: left;
+                    }
+
+                    &__text {
+                        max-width: 24em;
+                        margin-left: 0;
+                        font-size: 2.4rem;
+                    }
+
+                    &__list {
+                        font-size: 2rem;
+                    }
+
+                }
+
+                &-image {
+                    min-width: calc(40% + ((100vw - 100%) / 2));
+                    margin-left: 0;
+                    margin-right: 0;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg4-big.jpg');
+                    background-position-x: 48%;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+
+            }
+
+            .form-contacts {
+
+                max-width: 18.125em;
+
+                &__box {
+                    min-width: 0;
+                }
+
+            }
+
+        }
+
+        &-panoramic-windows {
+
+            .promo {    
+
+                &-image {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg5-big.jpg');
+                    background-position-x: -5em;
+                }
+
+                &-content {
+                    &__box {
+                        max-width: 32em;
+                    }
+
+                    &__title {
+                        margin-bottom: 1.05em;
+                    }
+
+                    &__text {
+                        max-width: 30em;
+                        margin-bottom: 4.438em;
+                        &:before {
+                            margin-right: 2.2em;
+                        }
+                    }
+                }
+
+            }
+
+            .info-price {
+                margin-left: 1.8em;
+            }
+
+            .exact-calculation-button {
+                left: 69.4%;
+                bottom: -3%;
+            }
+
+        }
+
+        &-front-doors {
+
+            .promo {
+
+                &-image {
+                    min-width: calc(55% + ((100vw - 100%) / 2));
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg6-big.jpg');
+                }
+
+                &-content {
+                    min-width: 45%;
+
+                    &__text {
+
+                        font-size: 1.6rem;
+
+                        &:after {
+                            top: 1.3em;
+                            left: 1.5em;
+                            width: 6.3rem;
+                            height: 6.6rem;
+                            background-position: -60.1rem -48.3rem;
+                        }
+
+                    }
+                }
+
+                &-description {
+                    display: flex;
+                    align-items: center;
+                    max-width: 109rem;
+                    text-align: left;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        width: 15.8rem;
+                        height: 15.8rem;
+                        margin-right: 1.663em;
+                        background-color: $yellow;
+                        border-radius: 50%;
+                        flex-shrink: 0;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 1.5em;
+                        left: 1.5em;
+                        width: 8.7rem;
+                        height: 8.5rem;
+                        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -0.8rem -59.9rem;
+                    }
+
+                }
+
+            }
+
+            .exact-calculation-button {
+                left: 60%;
+            }
+
+        }
+
+        &-warm-aluminum {
+
+            .promo {
+
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url('/wp-content/themes/twentytwenty-child/img/promo-bg7-big.jpg');
+                    background-size: 45.6em, cover;
+                    background-position: -7em 0, 0 0;
+                }
+
+                &-content {
+
+                    &:before {
+                        right: -29%;
+                    }
+
+                    &__text {
+                        max-width: 12.3em;
+                        margin-bottom: 0.938em;
+                        font-size: 2.188em;
+
+                        &:after {
+                            left: 0.65em;
+                            background-position: -67.8rem -47.3rem;
+                        }
+                    }
+
+                }
+            }
+
+            .info-price {
+                max-width: 28.1em;
+            }
+
+        }
+
+        &-windows-to-house {
+
+            .promo {
+
+                &-content {
+
+                    &:before {
+                        right: -89%;
+                    }
+
+                    &__box {
+                        max-width: 31em;
+                    }
+
+                    &__span {
+                        display: inline;
+                    }
+
+                }
+
+                &-image {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg8-big.jpg');
+                }
+
+            }
+
+        }
+
+        &-veranda-glazing {
+
+            .promo {
+
+                &-content {
+
+                    min-width: 52%;
+
+                    &__box {
+                        max-width: 36em;
+                    }
+
+                    &__price-text {
+                        max-width: 9em;
+                        font-size: 3.125em;
+
+                        &:before {
+                            width: 11rem;
+                            height: 11rem;
+                        }
+
+                        &:after {
+                            top: 0.5em;
+                            left: 0.7em;
+                        }
+                    }
+
+                }
+
+                &-image {
+                    min-width: calc(48% + ((100vw - 100%) / 2));
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg9-big.jpg');
+                }
+
+            }
+
+        }
+
+        &-windows-in-wooden-house {
+            .promo {
+                &-content {
+                    &__icon {
+                        &:before {
+                            top: 1.3em;
+                            left: 1.6em;
+                            width: 3.125em;
+                            height: 3.750em;
+                            background-position: -47.875em -29.563em;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-windows-in-wooden-house__box {
+
+            .promo {
+
+                &-image {
+
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg10-big.jpg');
+
+                }
+
+                &-content {
+
+                    &__box {
+                        max-width: 31em;
+                    }
+
+                    &__icon {
+                        background-position: -74.1rem -45.4rem
+                    }
+
+                }
+
+            }
+
+        }
+
+        &-wooden-windows {
+            .promo {
+                &-image {
+                    // background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg11-big.jpg');
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/test.png'), url('/wp-content/themes/twentytwenty-child/img/promo-bg11-small.jpg');
+                    background-size: 31em, cover;
+                }
+
+                &-content {
+
+                    padding-top: 3.5em;
+                    padding-bottom: 3.5em;
+
+                    &__subtitle {
+                        font-size: 1.8rem;
+                    }
+
+                }
+
+            }
+
+            &__list {
+                display: flex;
+                max-width: 37em;
+                margin-bottom: 3.188em;
+                font-size: 1.4rem;
+            }
+            
+
+            &__text {
+                align-items: flex-start;
+
+                &:before {
+                    width: 1.500em;
+                    height: 1.500em;
+                    flex-shrink: 0;
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.81153 7.6027L0.64278 4.33401C0.452407 4.13763 0.452407 3.81923 0.64278 3.62283L1.33219 2.91166C1.52257 2.71526 1.83125 2.71526 2.02163 2.91166L4.15625 5.11359L8.72838 0.397283C8.91875 0.200906 9.22743 0.200906 9.41781 0.397283L10.1072 1.10846C10.2976 1.30484 10.2976 1.62324 10.1072 1.81963L4.50097 7.60272C4.31057 7.7991 4.00191 7.7991 3.81153 7.6027V7.6027Z' fill='black'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+        }
+
+        &-stocks {
+
+            .promo {
+
+                &-image {
+
+                    min-height: 42.588em;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg12-big.jpg');
+                    background-position-x: -32em;
+
+                }
+
+                &-content {
+
+                    padding-top: 7em;
+                    padding-bottom: 7em;
+
+                    &__title {
+                        margin-bottom: 0.775em;
+                        line-height: 1.2;
+                    }
+
+
+                }
+
+            }
+
+            &__subtitle {
+                font-size: 3.8rem;
+            }
+
+        }
+
+        &-glazing-balconies {
+
+            .promo {
+
+                &-content {
+
+                    &__warn {
+                        font-size: 3.4rem;
+
+                        &:before {
+                            background-position: -34.5rem -49.3rem
+                        }
+                    }
+
+                }
+
+                &-image {
+                    
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg13-big.jpg');
+
+                }
+
+            }
+
+        }
+
+        &-finishing-balconies {
+
+            .promo {
+
+                &-content {
+
+                    &__text {
+                        font-size: 3.5rem;
+
+                        &:after {
+                            width: 4.4rem;
+                            height: 6rem;
+                            top: 0.7em;
+                            left: 1em;
+                            background-position: -83.5rem -47.5rem;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &-pine-wood-windows {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-pine-wood-windows-big.jpg");
+                    background-size: 36.7em, cover;
+                    min-width: calc(52% + ((100vw - 100%) / 2));
+                    background-position: -5em 0, 100% 0;
+                }
+
+                &-content {
+                    padding-top: 4em;
+                    min-width: 48%;
+
+                    &__title {
+                        margin-bottom: 0.963em;
+                        letter-spacing: -0.05em;
+                    }
+                }
+
+                &-advantages {
+                    &__item {
+
+                        &:first-child {
+                            &:after {
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                top: 1.2em;
+                                left: 1em;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        font-size: 1.5em;
+                        letter-spacing: 0.03em;
+                    }
+                }
+            }
+        }
+
+        &-larch-windows {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/larch-windows-big.jpg");
+                    background-size: 34.8em, cover;
+                    min-width: calc(51% + ((100vw - 100%) / 2));
+                    background-position: -7em 0, 100% 0;
+                }
+
+                &-content {
+                    min-width: 49%;
+
+                    &__title {
+                        margin-bottom: 0.963em;
+                        letter-spacing: -0.04em;
+                    }
+                }
+
+                &-advantages {
+                    &__item {
+                        margin-bottom: 0.863em;
+
+                        &:first-child {
+                            &:after {
+                                top: 0.9em;
+                                left: 1.1em;
+                                font-size: 1.3rem;
+                            }
+                        }
+    
+                        &:nth-child(2) {
+                            &:after {
+                                top: 0.8em;
+                                left: 0.8em;
+                                font-size: 1.3rem;
+                            }
+                        }
+    
+                        &:nth-child(3) {
+                            &:after {
+                                top: 1em;
+                                left: 0.7em;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+
+        &-oak-wood-windows {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/oak-wood-windows-big.jpg");
+                    background-size: 34.8em, cover;
+                    min-width: calc(51% + ((100vw - 100%) / 2));
+                    background-position: -5em 0, 100% 0;
+                }
+
+                &-content {
+                    min-width: 49%;
+                    &__title {
+                        margin-bottom: 0.963em;
+                        letter-spacing: -0.04em;
+                    }
+                }
+
+                &-advantages {
+                    margin-bottom: 2.5em;
+
+                    &__item {
+                        margin-bottom: 0.863em;
+
+                        &:first-child {
+                            &:after {
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                font-size: 1.3rem;
+                                top: 0.8em;
+                                left: 0.7em;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                top: 0.9em;
+                                left: 0.9em;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        font-size: 1.5em;
+                        letter-spacing: 0.03em;
+                    }
+                }
+            }
+        }
+
+        &-warm-glazing {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/promo-warm-glazing-big.jpg");
+                    background-size: cover;
+                    background-position: 100% 0;
+                    min-width: calc(48% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+                    min-width: 52%;
+
+                    &__title {
+                        max-width: 14em;
+                        margin-bottom: 1.163em;
+                        font-size: 2.688em;
+                        letter-spacing: 0;
+                        line-height: 1.33;
+                    }
+                }
+
+                &-advantages {
+                    max-width: 28em;
+                    margin-bottom: 2.5em;
+
+                    &__item {
+                        margin-bottom: 0.863em;
+
+                        &:first-child {
+                            &:after {
+                                left: 1.06em;
+                                top: 0.65em;
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                font-size: 1.3rem;
+                                top: 0.8em;
+                                left: 0.7em;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                top: 0.9em;
+                                left: 0.9em;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        font-size: 1.5em;
+                        letter-spacing: 0.03em;
+                    }
+                }
+            }
+        }
+        
+        &-cold-glazing {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-cold-glazing-big.jpg");
+                    background-size: 100%, cover;
+                    background-position: -5em 0, 100% 100%;
+                    min-width: calc(48% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+                    min-width: 52%;
+
+                    &:before {
+                        display: block;
+                    }
+
+                    &__title {
+                        position: relative;
+                        max-width: 14em;
+                        margin-bottom: 1.163em;
+                        font-size: 2.688em;
+                        letter-spacing: 0;
+                        line-height: 1.33;
+                    }
+                }
+
+                &-advantages {
+                    max-width: 28em;
+                    margin-bottom: 2.5em;
+
+                    &__item {
+                        margin-bottom: 0.863em;
+
+                        &:first-child {
+                            &:after {
+                                left: 1.06em;
+                                top: 0.65em;
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                font-size: 1.3rem;
+                                top: 0.8em;
+                                left: 0.7em;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                top: 0.9em;
+                                left: 0.9em;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        font-size: 1.5em;
+                        letter-spacing: 0.03em;
+                    }
+                }
+            }
+        }
+
+        &-frameless-glazing {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-frameless-glazing-big.jpg");
+                    background-size: 34.6em, cover;
+                    min-width: calc(52% + ((100vw - 100%) / 2));
+                    background-position: -4em 0, 100% 0;
+                }
+
+                &-content {
+                    min-width: 48%;
+
+                    &:before {
+                        right: -50%;
+                        width: 50%;
+                    }
+
+                    &__title {
+                        margin-bottom: 1.063em;
+                        letter-spacing: -0.05em;
+                        font-size: 4.3rem;
+                        letter-spacing: 0;
+                        line-height: 1.4;
+                    }
+                }
+
+                &-advantages {
+                    max-width: 24em;
+                    margin-bottom: 2.6em;
+
+                    &__item {
+                        margin-bottom: 0.863em;
+
+                        &:first-child {
+                            &:after {
+                                top: 1em;
+                                left: 0.77em;
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                top: 0.9em;
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                top: 0.8em;
+                                left: 0.7em;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        font-size: 1.5em;
+                        letter-spacing: 0.03em;
+                    }
+                }
+            }
+        }
+
+        &-glazing-balconies-with-removal {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-glazing-balconies-with-removal-big.jpg");
+                    background-size: 35.8em, cover;
+                    background-position: -7em 0, 0 0;
+                    min-width: calc(52% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+                    min-width: 48%;
+                    padding-top: 4em;
+
+                    &__title {
+                        font-size: 3em;
+                    }
+
+                    &__title {
+                        letter-spacing: 0;
+                    }
+
+                    &__subtitle {
+                        font-size: 2.188em;
+                    }
+
+                    &__info-box {
+                        margin-bottom: 3.013em;
+                    }
+
+                    &__icon {
+                        &:after {
+                            top: 2.1em;
+                            left: 2.2em;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-combining-balcony {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-combining-balcony-big.jpg");
+                    background-size: 35.8em, cover;
+                    background-position: -7em 0, 0 0;
+                    min-width: calc(52% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+                    min-width: 48%;
+                    padding-top: 4em;
+
+                    &__title {
+                        font-size: 3em;
+                    }
+
+                    &__title {
+                        letter-spacing: 0;
+                    }
+
+                    &__subtitle {
+                        font-size: 2.188em;
+                    }
+
+                    &__info-box {
+                        margin-bottom: 3.013em;
+                    }
+
+                    &__icon {
+                        margin-right: 1.375em;
+
+                        &:after {
+                            top: 2.1em;
+                            left: 2.2em;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-insulation-balconies-loggias {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-insulation-balconies-loggias.big.jpg");
+                    background-size: 35.8em, cover;
+                    background-position: -7em 0, 0 0;
+                    min-width: calc(52% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+                    min-width: 48%;
+                    padding-top: 4em;
+
+                    &__title {
+                        font-size: 3em;
+                        letter-spacing: 0;
+                        .no-wrap {
+                            white-space: nowrap;
+                        }
+                    }
+
+                    &__subtitle {
+                        font-size: 2.188em;
+                    }
+
+                    &__info-box {
+                        margin-bottom: 3.013em;
+                    }
+
+                    &__icon {
+                        margin-right: 1.375em;
+
+                        &:after {
+                            top: 1.5em;
+                            left: 2.6em;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &-plastic-windows {
+            .promo-image {
+                &__brands {
+                    top: 9%;
+                    left: 7%;
+                }
+
+                &__image {
+                    left: 8%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        &-plastic-windows {
+            .promo-image {
+                &__image {
+                    left: 14%;
+               }
+            }
+        }
+    }
+
+    @media (min-width: 1600px) {
+        &-plastic-windows {
+            .promo-image {
+                &__image {
+                    left: 24%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1930px) {
+        &-panoramic-windows {
+            .promo-image {
+                background-position-x: 0;
+            }   
+        }
+    }
+
+}
+
+.info-price,
+.free-check-out {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-price {
+    margin-bottom: 1.613em;
+}
+
+
+@media (min-width: 768px) {    
+
+    .free-check-out {
+        display: none;
+    }
+
+    .exact-calculation-button {
+        position: absolute;
+        bottom: 0;
+        left: 60%;
+        z-index: 1;
+        transform: translateY(50%);
+    }
+
+    .promo {
+
+        &-description {
+            max-width: 68.2rem;
+            font-size: 2rem;
+        }
+
+        &-content {
+
+            &__text {
+                display: flex;
+                align-items: center;
+                max-width: 25em;
+                margin-bottom: 1.938em;
+                font-size: 1rem;
+                position: relative;
+                text-align: left;
+
+                &:before,
+                &:after {
+                    content: '';
+                }
+
+                &:before {
+                    display: inline-block;
+                    width: 4.9rem;
+                    height: 4.9rem;
+                    margin-right: 1.7em;
+                    background-color: $yellow;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                }
+
+                &:after {
+                    position: absolute;
+                    top: 1.5em;
+                    left: 0.9em;
+                    width: 3.2rem;
+                    height: 2.1rem;
+                    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -31.7em -15.8rem;
+                }
+            }
+
+            &__info-box {
+                display: flex;
+                align-items: center;
+            }
+
+            &__icon {
+                display: inline-block;
+                width: 3.063em;
+                height: 3.063em;
+                margin-right: 1em;
+                border-radius: 50%;
+                background: $yellow url("data:image/svg+xml,%3Csvg width='30' height='32' viewBox='0 0 30 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4.27734' y='0.896973' width='24.7538' height='28.5231' fill='white' stroke='black' stroke-width='0.5'/%3E%3Crect x='6.91602' y='3.53564' width='8.54615' height='23.2462' fill='%23FFE600' stroke='black' stroke-width='0.5'/%3E%3Crect x='17.4688' y='3.9126' width='8.92308' height='7.03846' fill='%23FFE600' stroke='black' stroke-width='0.5'/%3E%3Crect x='17.4688' y='12.9585' width='8.92308' height='13.8231' fill='%23FFE600' stroke='black' stroke-width='0.5'/%3E%3Crect x='0.337891' y='13.3354' width='15.8986' height='18.3462' fill='white' stroke='black' stroke-width='0.5'/%3E%3Crect x='2.05078' y='15.0488' width='5.37413' height='14.9196' fill='%23FFE600' stroke='black' stroke-width='0.5'/%3E%3Crect x='8.9043' y='15.2939' width='5.61888' height='4.39511' fill='%23FFE600' stroke='black' stroke-width='0.5'/%3E%3Crect x='8.9043' y='21.168' width='5.61888' height='8.8007' fill='%23FFE600' stroke='black' stroke-width='0.5'/%3E%3C/svg%3E%0A") center no-repeat;
+            }
+
+            &__subtitle {
+
+                color: #3A3A3A;
+                font-size: 1.063em;
+                line-height: 1.1;
+                text-align: left;
+
+                &-text {
+                    display: block;
+                    margin-left: 3em;
+                }
+
+            }
+
+        }
+
+        &-image {
+            &__quality-icon {
+                bottom: 4em;
+                left: -5%;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 960px) {
+
+    .exact-calculation-button {
+        left: 65%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .promo {
+
+        &-content {
+
+            &__text {
+                max-width: 29em;
+                font-size: 1.6rem;
+
+                &:before {
+                    width: 11rem;
+                    height: 11rem;
+                }
+
+                &:after {
+                    width: 7.6rem;
+                    height: 7rem;
+                    background-position: -27rem -9rem;
+                }
+            }
+
+            &__icon {
+                width: 6.375em;
+                height: 6.375em;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='61' height='66' viewBox='0 0 61 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8.69922' y='0.5' width='51.5692' height='59.4154' fill='white' stroke='black'/%3E%3Crect x='14.1914' y='5.99219' width='17.8308' height='48.4308' fill='%23FFE600' stroke='black'/%3E%3Crect x='36.1602' y='6.77686' width='18.6154' height='14.6923' fill='%23FFE600' stroke='black'/%3E%3Crect x='36.1602' y='25.6079' width='18.6154' height='28.8154' fill='%23FFE600' stroke='black'/%3E%3Crect x='0.5' y='26.3926' width='33.1359' height='38.2308' fill='white' stroke='black'/%3E%3Crect x='4.06641' y='29.959' width='11.2278' height='31.0979' fill='%23FFE600' stroke='black'/%3E%3Crect x='18.332' y='30.4688' width='11.7373' height='9.18981' fill='%23FFE600' stroke='black'/%3E%3Crect x='18.332' y='42.6963' width='11.7373' height='18.3606' fill='%23FFE600' stroke='black'/%3E%3C/svg%3E%0A");
+            }
+
+            &__subtitle {
+                font-size: 2.188em;
+                line-height: 1.3;
+            }
+
+        }
+
+        &-image {
+            &__quality-icon {
+                width: 9.063em;
+                height: 9.063em;
+                bottom: 11em;
+                left: 1%;
+                background-position: -0.8rem -44rem;
+            }
+        }
+
+        &-description {
+            max-width: 109.2rem;
+            font-size: 2.4rem;
+        }
+
+        &-windows-repairs {
+            .promo {
+                &-image {
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+    }
+    
+}

@@ -1,0 +1,172 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.modal-window {
+    display: none;
+
+    /* .modal-window__wrapper */
+
+    &__wrapper {
+        width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        transition: 0.35s ease-in-out;
+        overflow-y: auto;
+    }
+
+    &__closed {
+        width: 0.889em;
+        height: 0.889em;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        cursor: pointer;
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 0.167em;
+            height: 1.111em;
+            background-color: #7c7c7c;
+            border-radius: 7px;
+        }
+
+        &::before {
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        &::after {
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+    &__closed_div{
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: auto;
+
+    }
+
+    /* .modal-window__content */
+
+    &__content {
+        width: 100%;
+        max-width: 37.5rem;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 4.5rem 1.5rem;
+        position: relative;
+
+        @include _768 {
+            max-width: 74.5rem;
+            padding: 3.9rem;
+        }
+    }
+
+    /* .modal-window__inner */
+
+    &__inner {
+        border-radius: 0.6rem;
+        padding: 3.5rem 0;
+        text-align: center;
+
+        @include _768 {
+            padding: 3.6rem 5rem;
+        }
+    }
+
+    /* .modal-window__title */
+
+    &__title {
+        font-size: 2.4rem;
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            font-size: 3rem;
+            margin-bottom: 3.6rem;
+        }
+    }
+
+    /* .modal-window__form */
+
+    &__form {
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            display: flex;
+        }
+    }
+
+    /* .modal-window__inpet */
+
+    &__input {
+        margin-bottom: 1rem;
+        text-align: center;
+        border: none;
+        border-bottom: 0.3rem solid #C9C9C9;
+        width: 100%;
+        max-width: 27.5rem;
+        min-height: 3.5rem;
+        border-radius: 0.6rem 0.6rem 0 0;
+
+        &::placeholder {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        @include _768 {
+            min-height: 4rem;
+            margin: 0;
+        }
+    }
+
+    /* .modal-window__btn */
+
+    &__btn {
+        max-width: 27.5rem;
+
+        @include _768 {
+            min-height: 4rem;
+            margin-right: 0;
+        }
+    }
+
+    /* .modal-window__text */
+
+    &__text {
+        font-size: 1.2rem;
+
+        @include _768 {
+            font-size: 1.4rem;
+        }
+    }
+
+    /* .modal-window__link */
+
+    &__link {
+        color: inherit;
+    }
+}

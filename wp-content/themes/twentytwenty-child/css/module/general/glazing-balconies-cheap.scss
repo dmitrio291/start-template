@@ -1,0 +1,236 @@
+@import '../../base/all/var';
+
+.glazing-balconies-cheap {
+
+    .title,
+    &__subtitle {
+        margin-bottom: 1.163em;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    &__item {
+        max-width: 34.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.563em;
+        padding: 1.563em 0.813em;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 0.313em;
+        text-align: center;
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9) {
+            display: none;
+        }
+
+
+    }
+
+    &__title {
+        margin-bottom: 0.750em;
+        min-height: 2.167em;
+        font-size: 1.8rem;
+    }
+
+    &__image {
+        width: 30.3rem;
+        height: 20.4rem;
+        margin-bottom: 1.375em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.6rem;
+    }
+
+    &__price-old,
+    &__price-new,
+    &__button-box {
+        max-width: 30.2rem;
+        min-height: 3.5rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__price {
+        &-old,
+        &-new {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-align: center;
+            border-radius: 0.375em;
+            margin-bottom: 0.438em;
+        }
+        
+        &-old {
+            border: 0.2rem solid #F2F2F2;
+            font-size: 1.250em;
+            color: #979797;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0.4em;
+                left: 5em;
+                width: 9.3rem;
+                height: 0.077em;
+                background-color: $orange;
+                transform-origin: 0 0;
+                transform: rotate(8deg);
+            }
+        }
+
+        &-new {
+            border: 0.1rem solid $orange;
+            font-size: 1.375em;
+        }
+    }
+
+    .button {
+        width: 100%;
+        max-width: 30.2rem;
+    }
+
+    &__button {
+        &-box {
+            text-align: center;
+        }
+
+        max-width: 34.5rem;
+    }
+
+    @media (min-width: 768px) {
+        &__subtitle {
+            font-size: 2rem;
+        }
+
+        .text {
+            margin-bottom: 2.188em;
+            text-align: center;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 46em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__item {
+            padding: 1.563em 0.413em;
+            min-width: 22.6rem;
+            max-width: 22.6rem;
+
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(9) {
+                display: block;
+            }
+        }
+
+        &__title {
+            font-size: 1.6rem;
+        }
+
+        &__image {
+            width: 19.8rem;
+            height: 15rem;
+        }
+
+        &__price-old,
+        &__price-new,
+        .button {
+            min-height: 3rem;
+        }
+
+        &__price {
+            &-old {
+                font-size: 1.8rem;
+
+                &:before {
+                    top: 0.4em;
+                    left: 3.3em;
+                    width: 7.4rem;
+                }
+            }
+
+            &-new {
+                font-size: 2rem;
+            }
+        }
+
+        &__button {
+            display: none;
+        }
+
+        .button {
+            font-size: 1.4rem;
+        }
+
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__list {
+            max-width: 96rem;
+            column-gap: 1rem;
+        }
+
+        &__item {
+            padding: 1.563em 0.913em;
+            min-width: 30.7rem;
+            max-width: 30.7rem;
+            margin-bottom: 2rem;
+        }
+
+        &__title {
+            max-width: 25rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__image {
+            width: 26.9rem;
+            height: 20.4rem;
+        }
+
+        &__price-old,
+        &__price-new,
+        .button {
+            max-width: 26.8rem;
+            min-height: 3.5rem;
+        }
+
+        &__price {
+            &-old {
+                &:before {
+                    top: 0.40em;
+                    left: 5em;
+                    width: 8.2rem;
+                    transform: rotate(9deg);
+                }
+            }
+        }
+    }
+
+}

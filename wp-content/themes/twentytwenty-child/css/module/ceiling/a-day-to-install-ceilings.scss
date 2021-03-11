@@ -1,0 +1,33 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+
+.a-day-to-install-ceilings {
+
+    /* .a-day-to-install-ceilings__wrapper */
+
+    &__wrapper {
+    }
+
+    /* .a-day-to-install-ceilings__title */
+
+    &__title {
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            margin-bottom: 3rem;
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .a-day-to-install-ceilings__text */
+
+    &__text {
+    }
+}

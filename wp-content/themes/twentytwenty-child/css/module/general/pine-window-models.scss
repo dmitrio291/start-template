@@ -1,0 +1,162 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.pine-window-models {
+    background-color: $lightGray;
+
+    /* .pine-window-models__title */
+
+    &__title {
+        text-align: center;
+        padding: 0 1em;
+        line-height: 1.2em;
+        margin-bottom: 1.1em;
+
+        @include _768 {
+            margin-bottom: 0.9em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .pine-window-models__slider */
+
+    &__slider {
+        margin-bottom: 2.3em;
+    }
+
+    /* .pine-window-models__inner */
+
+    &__inner {
+        @include _1200 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--center {
+            justify-content: center;
+        }
+    }
+
+    /* .pine-window-models__item */
+
+    &__item {
+        background-color: #fff;
+        padding: 1.7em 1em;
+        border-radius: 0.75em;
+        max-width: 33.6rem;
+        margin: 0 auto;
+
+        @include _768 {
+            max-width: 47rem;
+            padding: 2em 0.9em;
+        }
+
+        @include _1200 {
+            display: flex;
+            flex-direction: column;
+            min-height: 68.7rem;
+        }
+    }
+
+    /* .pine-window-models__item-title */
+
+    &__item-title {
+        text-align: center;
+        margin-bottom: 1.5em;
+
+        @include _768 {
+            margin-bottom: 1.1em;
+        }
+
+        @include _1200 {
+        }
+    }
+
+    /* .pine-window-models__item-img */
+
+    &__item-img {
+        max-width: 30.4rem;
+        width: 100%;
+        height: 17rem;
+        margin-bottom: 1em;
+        border-radius: 0.3em;
+
+        @include _768 {
+            max-width: 44rem;
+            height: 24.5rem;
+            margin-bottom: 1.65em;
+        }
+    }
+
+    /* .pine-window-models__item-text */
+
+    &__item-text {
+        line-height: 1.2;
+        margin-bottom: 1em;
+
+        @include _768 {
+            margin-bottom: 1.3em;
+        }
+        @include _1200 {
+            min-height: 13.3rem;
+        }
+    }
+
+    /* .pine-window-models__text */
+
+    &__text {
+        margin-bottom: 0.5em;
+
+        @include _768 {
+            margin-bottom: 0.8em;
+        }
+
+    }
+
+    /* .pine-window-models__price */
+
+    &__price {
+        margin-bottom: 1.6em;
+
+        span {
+            font-size: 2.1rem;
+            margin-left: 0.4em;
+
+            @include _768 {
+                font-size: 3rem;
+            }
+        }
+
+        @include _768 {
+            margin-bottom: 1.5em;
+            margin-top: 1.9em;
+        }
+
+        @include _1200 {
+            padding-left: 0;
+            margin-top: auto;
+            margin-bottom: 1em;
+        }
+    }
+
+    /* .pine-window-models__btn */
+
+    &__btn {
+        margin-top: 2.5rem;
+        @include _768 {
+            margin-top: 3rem;
+        }
+
+        @include _1200 {
+            margin-top: auto;
+        }
+    }
+}

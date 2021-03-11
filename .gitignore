@@ -1,0 +1,4 @@
+wp-content/themes/twentytwenty-child/**/*.css
+wp-content/themes/twentytwenty-child/**/*.map
+!wp-content/themes/twentytwenty-child/font/**/*.css
+!wp-content/themes/twentytwenty-child/libs/swiper/**/*.css

@@ -1,0 +1,82 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.calculate-your-cost {
+
+    /* .calculate-your-cost__inner */
+
+    &__inner {
+        position: relative;
+        background-color: $orange;
+        border-radius: 0.6rem;
+        padding: 3rem 1.5rem;
+
+        @include _768 {
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+
+        @include _1200 {
+            padding-left: 8.2rem;
+            padding-right: 8.2rem;
+        }
+    }
+
+    /* .calculate-your-cost__title */
+
+    &__title {
+        color: #fff;
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+        max-width: 25.5rem;
+
+        @include _768 {
+            line-height: 1.1;
+            margin-bottom: 3rem;
+            max-width: 39.4rem;
+        }
+
+        @include _1200 {
+            line-height: 1.25;
+            max-width: 52.6rem;
+        }
+    }
+
+    /* .calculate-your-cost__btn */
+
+    &__btn {
+        max-width: 20rem;
+        margin-left: 0;
+        background-color: #fff;
+        color: $orange;
+
+        @include _768 {
+            max-width: 27.4rem;
+        }
+    }
+
+    /* .calculate-your-cost__icon */
+
+    &__icon {
+        position: absolute;
+        right: 1.5rem;
+        bottom: 3rem;
+        width: 6.1em;
+        height: 6.1em;
+
+        @include _768 {
+            right: 6rem;
+            font-size: 1.4em;
+        }
+
+        @include _1200 {
+            right: 8.2rem;
+            font-size: 1.74em;
+        }
+    }
+}

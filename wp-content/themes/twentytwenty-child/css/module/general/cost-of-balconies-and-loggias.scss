@@ -1,0 +1,159 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.cost-of-balconies-and-loggias {
+    /* .cost-of-balconies-and-loggias__title */
+
+    &__title {
+        line-height: 1.2em;
+        margin-bottom: 1.1em;
+
+        @include _768 {
+            margin-bottom: 1.15em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .cost-of-balconies-and-loggias__slider */
+
+    &__slider {
+        margin-bottom: 2em;
+
+        .pagination.active {
+            background-color: $blue;
+        }
+
+        @include _768 {
+            margin-bottom: 0;
+        }
+    }
+
+    /* .cost-of-balconies-and-loggias__item */
+
+    &__item {
+        @include _768 {
+            &+& {
+                margin-top: 1.8em;
+            }
+
+            display: flex;
+        }
+    }
+
+    /* .cost-of-balconies-and-loggias__img-box */
+
+    &__img-box {
+        margin-bottom: 1.7em;
+        max-width: 34.5rem;
+        width: 100%;
+        height: 18.5rem;
+        border-radius: 0.3em;
+        overflow: hidden;
+
+        @include _768 {
+            max-width: 22.6rem;
+            height: 19rem;
+            margin-right: 0.9em;
+            margin-bottom: 0;
+        }
+
+        @include _1200 {
+            max-width: 30.7rem;
+            height: 18.5rem;
+            margin-right: 1.3em;
+        }
+    }
+
+    /* .cost-of-balconies-and-loggias__img-title */
+
+    &__img-title {
+        margin-bottom: 1em;
+
+        span {
+            text-transform: uppercase;
+        }
+
+        @include _768 {
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .cost-of-balconies-and-loggias__img */
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .cost-of-balconies-and-loggias__info-box */
+
+    &__info-box {
+        @include _768 {
+            width: 100%;
+        }
+
+        @include _1200 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    /* .cost-of-balconies-and-loggias__info-text */
+
+    &__info-text {
+        margin-bottom: 1.7em;
+        line-height: 1.2;
+
+        @include _768 {
+            margin-bottom: 0.9em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.4em;
+        }
+    }
+
+    /* .cost-of-balconies-and-loggias__price-box */
+
+    &__price-box {
+        align-items: center;
+
+        @include _1200 {
+            margin-top: auto;
+        }
+    }
+
+    /* .cost-of-balconies-and-loggias__price */
+
+    &__price {
+        font-size: 3rem;
+
+        @include _768 {
+            font-size: 4rem;
+        }
+    }
+
+    /* .cost-of-balconies-and-loggias__link */
+
+    &__link {
+        max-width: 19.6rem;
+        margin-right: 0;
+
+        @include _768 {
+            max-width: 22.6rem;
+        }
+
+        @include _1200 {
+            max-width: 38.8rem;
+        }
+    }
+}

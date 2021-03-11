@@ -1,0 +1,221 @@
+@import '../../base/all/var';
+
+.lowest-prices-in-Tolyatti {
+    display: none;
+    .title {
+        margin-bottom: 5.4rem;
+    }
+
+    &__box,
+    &__inner,
+    &__year-arrow,
+    &__hint {
+        position: relative;
+    }
+
+    &__box {
+        max-width: 83.4rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__inner:before,
+    &__inner:after,
+    &__year-arrow:before,
+    &__year-arrow:after,
+    &__hint:before,
+    &__hint:after {
+        content: '';
+        position: absolute;
+    }
+
+    &__inner {
+        margin-bottom: 1.2rem;
+        background-image: url('/wp-content/themes/twentytwenty-child/img/lowest-prices-in-Tolyatti-dotted-line.svg');
+        background-size: 115rem 4.9rem;
+        background-position: 0 2.9rem;
+        border-left: 0.2rem solid #E8E8E8;
+        border-bottom: 0.2rem solid #E8E8E8;
+
+        &:before,
+        &:after {
+            border-style: solid;
+            border-width: 0 0.6rem 1.1rem 0.6rem;
+            border-color: transparent transparent #E8E8E8 transparent;
+        }
+
+        &:before {
+            top: -1.1rem;
+            left: -0.7rem;
+        }
+
+        &:after {
+            bottom: -0.8rem;
+            right: -0.2rem;
+            transform: rotate(209deg);
+        }
+    }
+
+    &__list,
+    &__years,
+    &__price {
+        display: flex;
+    }   
+
+    &__list {
+        align-items: flex-end;
+        max-width: 76.4rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__item {
+        &:first-child {
+            margin-right: 4.5rem;
+        }
+
+        &:nth-child(2) {
+            margin-right: 6.7rem;
+        }
+
+        &:nth-child(3) {
+            margin-right: 6.2rem;
+        }
+    }
+
+    &__years {
+        justify-content: space-between;
+    }
+
+    &__year {
+        font-size: 1.8rem;
+
+        &:first-child {
+            width: 142rem;
+        }
+
+        &:nth-child(2) {
+            width: 117rem;
+        }
+
+        &:nth-child(3) {
+            width: 112rem;
+        }
+
+        &:last-child {
+            width: 104rem;
+        }
+
+        &-arrow {
+            &:before {
+                top: 0.9rem;
+                right: -3.2rem;
+                width: 1.9rem;
+                height: 0.1rem;
+                background-color: #3A3A3A;;
+            }
+
+            &:after {
+                top: 0.61rem;
+                right: -3.12rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-top: 0.1rem solid #3A3A3A;
+                border-right: 0.1rem solid #3A3A3A;
+                transform: rotate(48deg);
+            }
+        }
+    }
+
+    &__hint,
+    &__price {
+        border-radius: 0.6rem;
+        background-color: $white;
+    }
+
+    &__hint {
+        padding: 1rem;
+        margin-top: -1.9rem;
+        margin-bottom: 2.5rem;
+        max-width: 16.8rem;
+        border: 0.1rem solid $orange;
+        text-align: center;
+
+        &:before,
+        &:after {
+            left: 50%;
+            transform: translateX(-50%);
+            border-style: solid;
+        }
+
+        &:before {
+            bottom: -14%;
+            border-width: 0.9rem 0.7rem 0 0.7rem;
+            border-color: $orange transparent transparent transparent;
+        }
+
+        &:after {
+            bottom: -13%;
+            border-width: 1.4rem 0.8rem 0 0.8rem;
+            border-color: $white transparent transparent transparent;
+        }
+    }
+
+    &__price,
+    &__year {
+        color: #3A3A3A;
+    }
+
+    &__price {
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 3.1rem;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1.8rem;
+        font-weight: 700;
+        border: 0.1rem solid #D0D0D0;
+
+        span {
+            margin-left: 1.1rem;
+        }
+
+        &.active {
+            background-color: $orange;
+            color: $white;
+            border-color: transparent;
+            font-weight: 900;
+        }
+
+        &.mb {
+            margin-bottom: 1.3rem;
+        }
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__ruble,
+    &__prices-text {
+        position: absolute;
+    }
+
+    &__ruble {
+        top: -1.3rem;
+        left: -2.2rem;
+        font-size: 1.8rem;
+        color: #5D5D5D;
+    }
+
+    &__prices-text {
+        top: -2rem;
+        right: 23.3rem;
+    }
+    
+    @media (min-width: 1200px) {
+        display: block;
+    }
+}

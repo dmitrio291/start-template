@@ -1,0 +1,180 @@
+@import '../../base/all/var';
+
+.footer {
+    background-color: #015A76;
+    color: $white;
+
+    &__contacts,
+    &__operating-mode,
+    &__content {
+        max-width: 23rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__contacts {
+        margin-bottom: 1.563em;
+    }
+
+    &__phone,
+    &__email,
+    &__link {
+        display: block;
+    }
+
+    &__phone,
+    &__email,
+    &__operating-mode-text,
+    &__link {
+        font-weight: 700;
+    }
+
+    &__phone,
+    &__link {
+        text-decoration: none;
+        color: $white;
+    }
+
+    &__phone {
+        margin-bottom: 0.1em;
+        font-size: 2.8rem;
+    }
+
+    &__email {
+        font-size: 1.8rem;
+        color: #01D2E9;
+    }
+
+    &__operating-mode,
+    &__content {
+        text-align: center;
+    }
+
+    &__operating-mode-text,
+    &__link,
+    &__copyright {
+        font-size: 1.4rem;
+    }
+
+    &__operating {
+
+        &-mode {
+            margin-bottom: 1.563em;
+
+            &-text {
+                margin-bottom: 0.375em;
+            }
+        }
+
+    }
+
+    &__from-9-to-23 {
+        font-size: 2.4rem;
+    }
+
+    &__link {
+
+        &:first-child {
+            margin-bottom: 1.125em;
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 1.563em;
+        }
+    }
+
+    &__copyright {
+        opacity: 0.5;
+    }
+
+    @media (min-width: 768px) {
+
+        &__container {
+            display: flex;
+        }
+
+        &__phone {
+            font-size: 2.5rem;
+        }
+
+        &__email,
+        &__operating-mode-text {
+            font-size: 1.5rem;
+        }
+
+        &__from-9-to-23 {
+            font-size: 2rem;
+        }
+
+        &__content {
+            text-align: left;
+        }
+
+        &__link,
+        &__copyright {
+            font-size: 1.2rem;
+        }
+
+        &__link {
+
+            &:first-child {
+                margin-bottom: 0.3em;
+            }
+
+            &:nth-child(2) {
+                margin-bottom: 0.4em;
+            }
+
+        }
+
+    }
+
+    @media (min-width: 960px) {
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 1.5em;
+        padding-bottom: 0;
+
+        &__contacts,
+        &__operating-mode,
+        &__content {
+            max-width: 33rem;
+        }
+
+        &__phone {
+            font-size: 3.5rem;
+        }
+
+        &__email,
+        &__operating-mode-text {
+            font-size: 2.2rem;
+        }
+
+        &__from-9-to-23 {
+            font-size: 2.4rem;
+        }
+
+        &__link,
+        &__copyright {
+            font-size: 1.4rem;
+        }
+
+        &__link {
+
+            &:first-child {
+                margin-bottom: 0.563em;
+            }
+
+            &:nth-child(2) {
+                margin-bottom: 0.625em;
+            }
+
+        }
+    }
+}

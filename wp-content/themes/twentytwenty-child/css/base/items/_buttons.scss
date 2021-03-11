@@ -1,0 +1,555 @@
+/**
+* Кнопка
+*/
+// https://codepen.io/stidlivii/pen/VwLVwjW?editors=1100
+
+input[type="tel"]::-moz-placeholder { color: #D0D0D0;}
+input[type="tel"]::-webkit-input-placeholder { color: #D0D0D0; }
+input[type="tel"]:-ms-input-placeholder { color: #D0D0D0; }
+input[type="tel"]::-ms-input-placeholder { color: #D0D0D0; }
+input[type="tel"]::placeholder { color: #D0D0D0; } 
+
+
+.btn{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background: #DD0053;
+    border-radius: 3.1em;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    padding: .7em 2em 0.3em;
+    box-shadow: #B40446 0 0.3em 0 0;
+  }
+
+
+.btn-base{
+  //font-family: "Systopie", 'Montserrat', sans-serif;
+  font-family: 'ALS Schlange sans', 'Montserrat', sans-serif;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  font-weight: 900;
+  &:hover{
+    box-shadow: none;
+  }
+}
+.btn-phone{
+  position: relative;
+  input{
+    font-family:  'ALS Schlange sans', 'Montserrat', sans-serif;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    padding: .6em 1.8em .5em 3.925em;
+    padding-left: 2.8em;
+    font-size: 1em;
+    /*&:focus + span{
+      
+        display: none;
+      
+    }*/
+  }
+  &::after{
+    content: "";
+    background-image: url(/wp-content/themes/twentytwenty-child/img/ico_tel.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1.125em;
+    height: 1.25em;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0em;
+    transform: translate(93%, -50%);
+  }
+  span{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0.45em 0 0.4em 2.8em;
+    
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &::before{
+      content: "+7";
+    }
+  }
+  &.t1{
+    font-size: 1.6rem;
+    input{
+      padding: .7em 1.8em .551em 3.925em;
+    }
+    span{
+      padding: 0.65em 0 0.4em 2.8em;
+    }
+
+  }
+
+}
+
+.btn-name{
+  position: relative;
+  input{
+    font-family:  'ALS Schlange sans', 'Montserrat', sans-serif;
+    border-radius: 6px;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    padding: .6em 1.8em .5em 3.925em;
+    padding-left: 2.8em;
+    font-size: 1em;
+  }
+  &::after{
+    content: "";
+    background-image: url(/wp-content/themes/twentytwenty-child/img/ico_user.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1.125em;
+    height: 1.25em;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0em;
+    transform: translate(93%, -50%);
+  }
+  span{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0.45em 0 0.4em 2.8em;
+    
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+  }
+
+  &.t1{
+    font-size: 1.6rem;
+    input{
+      padding: .7em 1.8em .551em 2.75em;
+    }
+    
+
+  }
+}
+
+.btn-t1{
+  min-width: 25.9rem;
+  padding: .45em;
+}
+.btn-t2{
+  padding: .8em 5.28em;
+  @media ( max-width: 350px ) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+.btn-t3{
+  padding: .719em 3.75em;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.btn-t4{
+  padding: .625em 1.28em;
+  @media ( max-width: 350px ) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+.btn-t5{
+  padding: .625em 2em;
+}
+.btn-t4-phone{
+  input{
+    padding: .546em 1.8em .4em 3.925em;
+    height: auto;
+  }
+  span{
+    padding: 0.5em 0 0.4em 2.8em;
+  }
+}
+
+/**
+* Блок всплывающей подсказки под кнопкой
+*/
+// https://codepen.io/stidlivii/pen/dyoQPpq?editors=1100
+
+.wrap-text-btn{
+  position: relative;
+  transform: translateY(-.1em);
+  display: none;
+  flex-direction: column;
+  @media ( min-width: 670px ) {
+      display: inline-flex;
+  }
+  @media ( min-width: 768px ) {
+    transform: translateY(.4em);
+  }
+  .btn{
+      margin-bottom: .8rem;
+  }
+}
+
+.wrap-text-btn > span{
+  position: relative;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  border-radius: .3em;
+  padding: .2em .8em;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  text-align: center;
+  border: .1rem solid #DD0053;
+  white-space: nowrap;
+
+}
+.wrap-text-btn > span:before,
+.wrap-text-btn > span:after{
+  bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.wrap-text-btn > span:before {
+    border-color: rgba(194,225,245,0);
+    border-bottom-color: #DD0053;
+    border-width: .6em;
+    margin-left: -.6em;
+}
+.wrap-text-btn > span:after{
+    border-color: rgba(136,183,213,0);
+    border-bottom-color: #fff;
+    border-width: .5em;
+    margin-left: -.5em;
+    bottom: calc(100% - 1px);
+}
+  
+
+/*кнопка "получить точный расчёт и сравнить цены"*/
+.departure-template{
+  font-size: 2.147359rem;
+  letter-spacing: 0.05em;
+  color: #fff;
+  display: flex;
+  background: #F26422;
+  max-width: 15.66em;
+  padding: .45em 1.732em .3em 1.57em;
+  box-shadow: 0px 0px 0px 4px #fff;
+  border-radius: .2em;
+  margin: 0 auto ;
+  cursor: pointer;
+  @media ( max-width: 380px ) {
+    font-size: 1.9rem;
+  }
+  @media ( min-width: 670px ) {
+    font-size: 2.4rem;
+    padding: .675em 1.732em .576em 1.57em;
+  }
+  img{
+    height: 2.0835em;
+    width: 1.775em;
+    font-size: .8942em;
+    transform: translate(-0.65em, -0.05em);
+  }
+  i {
+    letter-spacing: 0.03em;
+    font-size: .791668em;
+    font-weight: 900;
+    line-height: 1.35;
+    font-style: normal;
+    white-space: nowrap;
+  }
+}
+
+.header-content__link,
+.header-content__hint,
+.header-contact__box,
+.header-contact__number,
+.free-check-out__hint,
+.free-check-out__image,
+.exact-calculation-button,
+.exact-calculation-button__image {
+  display: inline-block;
+}
+
+.header-content__link,
+.header-contact__phone,
+.free-check-out__button,
+.exact-calculation-button {
+  text-decoration: none;
+}
+
+.header-content__link,
+.header-contact__number,
+.exact-calculation-button {
+  background-color: $orange;
+}
+
+.header-content__link,
+.header-contact__number,
+.exact-calculation-button {
+  color: $white;
+}
+
+.header-content,
+.header-contact {
+  max-width: 16em;
+}
+
+.header-content__hint:before,
+.header-content__hint:after,
+.header-contact__number,
+.free-check-out__hint:before,
+.free-check-out__hint:after {
+  position: absolute;
+}
+
+.header-content__hint,
+.free-check-out__button,
+.free-check-out__hint,
+.exact-calculation-button__text {
+  text-transform: uppercase;
+}
+
+.header-content__link,
+.exact-calculation-button__text {
+  letter-spacing: 0.03em;
+}
+
+.header-content__link,
+.exact-calculation-button__text,
+.free-check-out__big-text {
+  font-weight: 900;
+}
+
+.header-contact__content,
+.free-check-out__button {
+  display: flex;
+}
+
+.header-contact__box,
+.header-content__hint,
+.free-check-out,
+.free-check-out__hint {
+  position: relative;
+}
+
+.header-content__hint,
+.header-contact__phone,
+.free-check-out__small-text,
+.free-check-out__hint {
+  font-weight: 700;
+}
+
+.header-content__hint,
+.free-check-out__hint {
+  padding: 0.5em;
+  font-size: 0.875em;
+  border: 0.200em solid $orange;
+  border-radius: 0.4em;
+}
+
+.header-content__hint:before, 
+.header-content__hint:after,
+.free-check-out__hint:before,
+.free-check-out__hint:after {
+  content: '';
+    left: 50%;
+    border: solid transparent;
+}
+
+.header-content__hint:before,
+.free-check-out__hint:before {
+  bottom: 104%;
+  border-bottom-color: $orange;
+  border-width: 0.8em;
+  margin-left: -0.8em;
+}
+
+.header-content__hint:after,
+.free-check-out__hint:after {
+  bottom: calc(100% - 1px);
+  border-bottom-color: $white;
+  border-width: 0.75em;
+  margin-left: -0.75em;
+}
+
+// Кнопка "Бесплатный замер" в хедере
+.header-content {
+
+  &__link {
+    margin-bottom: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+  }
+
+}
+
+// Кнопка "Вам перезвонить" в хедере
+.header-contact {
+  
+  &__phone {
+    color: $black;
+    font-size: 1.875em;
+  }
+
+  &__content {
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 1.500em;
+  }
+
+  &__box {
+    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -44.000em -11.938em;
+	  width: 2.250em;
+	  height: 2.250em;
+  }
+
+  &__number {
+    top: 0.37em;
+    right: -0.6em;
+    width: 1.500em;
+    height: 1.500em;
+    line-height: 1.500em;
+    font-size: 0.625em;
+    font-weight: 600;
+    border-radius: 50%;
+  }
+
+}
+
+// Кнопка "Бесплатный выезд замерщика"
+.free-check-out {
+  
+  max-width: 21.563em;
+  
+  &__button {
+    margin-bottom: 0.5em;
+    min-height: 3.750em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.4em 0 0.5em;
+    background: linear-gradient(266.8deg, #FFF854 0.02%, #FFE03E 101.17%);
+    border-radius: 0.375em;
+    color: $black;
+  }
+
+  &__image {
+    align-self: flex-end;
+    width: 3.938em;
+    height: 3.063em;
+    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -42.688em -14.750em;
+  }
+
+  &__big-text {
+    display: block;
+    margin-bottom: 0.2em;
+    font-size: 1.500em;
+    letter-spacing: 0.27em;
+  }
+
+  &__small-text {
+    letter-spacing: 0.3em;
+  }
+
+  @media (min-width: 960px) {
+    min-width: 21.563em;
+  }
+
+}
+
+// Кнопка "Получить точный расчёт и сравнить цены"
+.exact-calculation-button {
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 20.938em;
+  min-height: 3.750em;
+  max-width: 13em;
+  padding: 0.3em 0.5em 0.3em 1.6em;
+  border-radius: 0.2em;
+  box-shadow: 0px 0px 0px .125em #ffffff;
+  @media (min-width: 1200px) {
+    box-shadow: 0px 0px 0px .25em #ffffff;
+  }
+  
+    &__text {
+      max-width: 15em;
+      line-height: 1.35;
+      font-size: 1.063em;
+    }
+  
+    &__image {
+      width: 2.125em;
+      height: 2.563em;
+      background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -9.250em -6.688em;
+    }
+
+  @media (min-width: 768px) {
+
+    min-width: 13.563em;
+    min-height: 2.625em;
+    padding: 0.3em 0.2em 0.3em 0.6em;
+
+    &__text {
+      font-size: 0.750em;
+    }
+
+    &__image {
+      width: 1.313em;
+      height: 1.563em;
+      background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -47.313em -12.375em;
+    }
+    
+  }
+
+  @media (min-width: 1200px) {
+    min-width: 23.125em;
+    min-height: 5.000em;
+    padding: 0.3em 0.4em 0.3em 1.3em;
+
+    &__image {
+      width: 2.875em;
+	    height: 3.375em;
+      background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -38.125em -18.313em;
+    }
+
+    &__text {
+      font-size: 1.188em;
+    }
+  }
+
+}

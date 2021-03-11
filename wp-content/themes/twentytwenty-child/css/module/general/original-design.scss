@@ -1,0 +1,133 @@
+@import "../../base/all/var";
+
+.original-design {
+    background-color: $lightGray;
+
+    .container {
+        width: calc(100% - 1rem);
+    }
+
+    .title {
+        margin-bottom: 1.063em;
+    }
+
+    &__image,
+    .button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__image {
+        max-width: 20.313em;
+        margin-bottom: 1.488em;
+        border: 0.313em solid $white;
+        filter: drop-shadow(0 0.250em 0.250em rgba(0, 0, 0, 0.25));
+        border-radius: 0.625em;
+    }
+
+    .text {
+        margin-bottom: 1.663em;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 22.29em;
+        padding-top: 0.62em;
+        padding-bottom: 0.62em;
+        letter-spacing: 0.05em;
+    }
+
+    @media (min-width: 768px) {
+        padding-bottom: 8.2em;
+
+        .title {
+            margin-bottom: 1.063em;
+        }
+
+        .text {
+            max-width: 20em;
+            font-size: 1.8rem;
+        }
+
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            max-width: 45em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__image {
+            max-width: 21.5625em;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+            border-width: 0.4375em;
+        }
+
+        .text {
+            // text-align: center;
+            // max-width: 29.5em;
+            // margin-bottom: 1.463em;
+            // margin-left: auto;
+            // margin-right: auto;
+            margin-bottom: 0;
+            line-height: 1.23;
+        }
+
+        .button {
+            max-width: 21.63em;
+            font-size: 1em;
+            letter-spacing: 0.04em;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -4.5em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        &__box {
+            max-width: 60em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title {
+            margin-bottom: 0.763em;
+        }
+
+        &__image {
+            max-width: 24.1625em;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .text {
+            max-width: 30em;
+            margin-bottom: 1.763em;
+            text-align: left;
+            line-height: 1.27;
+        }
+
+        .button {
+            position: static;
+            transform: translateX(0);
+            margin: 0;
+            max-width: 19.50em;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.windows-of-any-manufacturer {
+
+    /* .windows-of-any-manufacturer__title */
+
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 2.7rem;
+
+        @include _768 {
+            line-height: 1.1;
+            text-align: center;
+            max-width: 40.1rem;
+            margin: 0 auto 3rem;
+        }
+
+        @include _1200 {
+            line-height: 1.25;
+            max-width: 53.5rem;
+        }
+    }
+
+    /* .windows-of-any-manufacturer__text */
+
+    &__text {
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .windows-of-any-manufacturer__list */
+
+    &__list {
+        flex-wrap: wrap;
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            margin-bottom: 1.5rem;
+        }
+
+        @include _1200 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    /* .windows-of-any-manufacturer__item */
+
+    &__item {
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        max-width: 10.7rem;
+        height: 5.4rem;
+        margin-bottom: 1.2rem;
+
+        &:last-child {
+            @include _max768 {
+                margin: 0 auto;
+            }
+        }
+
+        @include _768 {
+            max-width: 13rem;
+            height: 6.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @include _1200 {
+            max-width: 17.6rem;
+            height: 9rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    /* .windows-of-any-manufacturer__img */
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .windows-of-any-manufacturer__btn */
+
+    &__btn {
+        @include _768 {
+            max-width: 30.7rem;
+            margin-left: 0;
+            text-align: left;
+        }
+    }
+}

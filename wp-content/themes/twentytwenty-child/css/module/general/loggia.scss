@@ -1,0 +1,509 @@
+@import '../../base/all/var';
+
+.loggia {
+    .title,
+    &__advantages,
+    &__image-box,
+    .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__input + label,
+    &__image,
+    &__dots label span,
+    .button {
+        display: block;
+    }
+
+    &__input + label {
+        opacity: 0;
+    }
+
+    &__input:checked + label {
+        opacity: 1;
+        width: 7.814em;
+        height: 3.086em;
+        padding: 0.35em 0.6em;
+        background-color: #ffffff;
+    }
+
+    .title {
+        max-width: 9.5em;
+        margin-bottom: 1.250em;
+    }
+
+    &__image-box,
+    &__advantages-item,
+    &__dots label {
+        position: relative;
+    }
+
+    &__image {
+        width: 100%;
+
+        &-box {
+            max-width: 20.750em;
+            margin-bottom: 1em;
+        }
+    }
+    
+    &__text {
+        margin-bottom: 1em;
+    }
+
+    &__advantages,
+    &__advantages-item {
+        display: flex;
+    }
+
+    &__advantages-item:after,
+    &__dots,
+    &__dots label:before {
+        position: absolute;
+    }
+
+    &__advantages {
+        max-width: 21em;
+        margin-bottom: 1em;
+
+        &-item {
+            align-items: center;
+
+            &:before,
+            &:after {
+                content: '';
+            }
+
+            &:before {
+                display: inline-block;
+                width: 2.05em;
+                height: 2.05em;
+                border-radius: 50%;
+                border: 0.188em solid $orange;
+                margin-right: 0.5em;
+            }
+
+            &:after {
+                font-size: 0.7rem;
+            }
+
+            &--1 {
+                &::after {
+                    top: 1.3em;
+                    left: 1em;
+                    width: 2.5em;
+                    height: 2.125em;
+                    background-position: 95.784% 0;
+                }
+            }
+
+            &--2 {
+                margin-left: 0.1em;
+                margin-right: 0.5em;
+                &::after {
+                    top: 1.1em;
+                    left: 1.2em;
+                    width: 2.5em;
+                    height: 2.725em;
+                    background-position: 99.027% 0.014%;
+                }
+            }
+
+            &--3 {
+                &::after {
+                    top: 1.3em;
+                    left: 1em;
+                    width: 2.5em;
+                    height: 2.125em;
+                    background-position: 61.29% 0.014%;
+                }
+            }
+        }
+
+        &-text {
+            max-width: 6em;
+            font-size: 0.7em;
+        }
+    }
+
+    &__dots {
+        width: 1.556em;
+        height: 1.556em;
+        background-color: #ffffff;
+        border-radius: 50%;
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.544034 15.1283C0.544034 11.0956 1.96653 7.65671 4.81153 4.81171C7.65653 1.96671 11.0816 0.55802 15.0867 0.585642C19.0918 0.55802 22.5168 1.96671 25.3618 4.81171C28.2068 7.65671 29.6293 11.0956 29.6293 15.1283C29.6293 19.1058 28.2068 22.517 25.3618 25.362C22.5168 28.207 19.0918 29.6433 15.0867 29.6709C11.0816 29.6433 7.65653 28.207 4.81153 25.362C1.96653 22.517 0.544034 19.1058 0.544034 15.1283ZM22.8345 12.7252L17.4069 12.7667L17.4483 7.33906C17.4207 6.8695 17.1859 6.63472 16.744 6.63472H13.4294C12.9875 6.63472 12.7527 6.8695 12.7251 7.33906L12.7665 12.7667L7.33889 12.7252C6.86932 12.7529 6.63454 12.9876 6.63454 13.4296V16.7441C6.63454 17.1861 6.86932 17.4209 7.33889 17.4485L12.7665 17.407L12.7251 22.8346C12.7527 23.3042 12.9875 23.539 13.4294 23.539H16.744C17.1859 23.539 17.4207 23.3042 17.4483 22.8346L17.4069 17.407L22.8345 17.4485C23.304 17.4209 23.5388 17.1861 23.5388 16.7441V13.4296C23.5388 12.9876 23.304 12.7529 22.8345 12.7252Z' fill='%23F26422'/%3E%3C/svg%3E");
+        background-position: center;
+
+        &--1 {
+            top: 2em;
+            left: 4.4em;
+        }
+
+        &--2 {
+            top: 6em;
+            left: 10em;
+        }
+
+        &--3 {
+            top: 8em;
+            left: 3em;
+        }
+
+        &--4 {
+            top: 12em;
+            left: 10em;
+        }
+
+        &--5 {
+            top: 18em;
+            left: 3em;
+        }
+
+        &--6 {
+            top: 18em;
+            left: 14em;
+        }
+
+        &--7 {
+            top: 23em;
+            left: 10em;
+        }
+
+        label {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.875em;
+            cursor: pointer;
+
+            &:before {
+                right: 0;
+                top: 0;
+                font-size: 0.7em;
+                transform: translate(-75%, 65%);
+                content: "";
+                width: 0.714em;
+                height: 0.78em;
+                background-image: url("data:image/svg+xml,%3Csvg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.67188 5.75L9.40625 8.48438C9.57031 8.64844 9.65234 8.84896 9.65234 9.08594C9.65234 9.32292 9.57031 9.53255 9.40625 9.71484L8.80469 10.3164C8.6224 10.4805 8.41276 10.5625 8.17578 10.5625C7.9388 10.5625 7.73828 10.4805 7.57422 10.3164L4.83984 7.58203L2.10547 10.3164C1.94141 10.4805 1.74089 10.5625 1.50391 10.5625C1.26693 10.5625 1.05729 10.4805 0.875 10.3164L0.273438 9.71484C0.109375 9.53255 0.0273438 9.32292 0.0273438 9.08594C0.0273438 8.84896 0.109375 8.64844 0.273438 8.48438L3.00781 5.75L0.273438 3.01562C0.109375 2.85156 0.0273438 2.65104 0.0273438 2.41406C0.0273438 2.17708 0.109375 1.96745 0.273438 1.78516L0.875 1.18359C1.05729 1.01953 1.26693 0.9375 1.50391 0.9375C1.74089 0.9375 1.94141 1.01953 2.10547 1.18359L4.83984 3.91797L7.57422 1.18359C7.73828 1.01953 7.9388 0.9375 8.17578 0.9375C8.41276 0.9375 8.6224 1.01953 8.80469 1.18359L9.40625 1.78516C9.57031 1.96745 9.65234 2.17708 9.65234 2.41406C9.65234 2.65104 9.57031 2.85156 9.40625 3.01562L6.67188 5.75Z' fill='black'/%3E%3C/svg%3E");
+                background-size: cover;
+            }
+
+            span {
+                .orange {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+
+    .button {
+        width: 100%;
+        max-width: 20em;
+    }
+
+    @media (min-width: 500px) {
+        .title {
+            max-width: 16.5em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 6rem);
+        }
+
+        &__box {
+            display: grid;
+            grid-template-areas: 
+            'loggia-title loggia-title'
+            'loggia-content loggia-img'
+            'loggia-advantages loggia-advantages'
+            'loggia-btn loggia-btn';
+            grid-template-columns: 25em 1fr;
+            grid-template-rows: 3.9em 25.2em;
+            max-width: 45em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title {
+            margin-bottom: 1.1em;
+            grid-area: loggia-title;
+        }
+
+        &__text {
+            margin-bottom: 1.2em;
+            font-size: 1.8rem;
+            line-height: 1.23;
+        }
+
+        &__content {
+            margin-bottom: 1.875em;
+            grid-area: loggia-content;
+        }
+
+        &__advantages {
+            grid-area: loggia-advantages;
+            max-width: 36.275em;
+            justify-content: space-between;
+            margin-bottom: 1.788em;
+            margin-left: 0;
+            margin-right: 0;
+
+            &-item {
+                &:before {
+                    width: 3.125em;
+                    height: 3.125em;
+                    margin-right: 1.125em;
+                }
+
+                &:after {
+                    font-size: 1.2rem;
+                }
+
+                &--1 {
+                    &:after {
+                        top: 1.1em;
+                        left: 0.8em;
+                    }
+                }
+
+                &--2 {
+                    &:after {                  
+                        top: 0.9em;
+                        left: 0.9em;
+                    }
+                }
+
+                &--3 {
+                    &:after {                  
+                        top: 1.1em;
+                        left: 0.8em;
+                    }
+                }
+            }
+
+            &-text {
+                font-size: 1em;
+                letter-spacing: 0.03em;
+            }
+        }
+
+        &__image {
+            &-box {
+                max-width: 14.65em;
+                margin-left: auto;
+                margin-right: 0;
+                margin-bottom: 2.2em;
+                grid-area: loggia-img;
+            }
+        }
+
+        &__dots {
+            width: 0.95em;
+            height: 0.95em;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='25' height='25' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.73069 8.11686C2.73069 6.53295 3.2894 5.18228 4.40682 4.06486C5.52423 2.94745 6.86947 2.39416 8.44254 2.40501C10.0156 2.39416 11.3608 2.94745 12.4783 4.06486C13.5957 5.18228 14.1544 6.53295 14.1544 8.11686C14.1544 9.67907 13.5957 11.0189 12.4783 12.1363C11.3608 13.2537 10.0156 13.8179 8.44254 13.8287C6.86947 13.8179 5.52423 13.2537 4.40682 12.1363C3.2894 11.0189 2.73069 9.67907 2.73069 8.11686ZM11.4856 7.17302L9.35383 7.18929L9.3701 5.05752C9.35925 4.87309 9.26704 4.78088 9.09346 4.78088L7.79161 4.78088C7.61804 4.78088 7.52582 4.87309 7.51497 5.05752L7.53125 7.18929L5.39947 7.17302C5.21504 7.18387 5.12283 7.27608 5.12283 7.44966V8.75151C5.12283 8.92509 5.21504 9.0173 5.39947 9.02815L7.53125 9.01188L7.51497 11.1437C7.52582 11.3281 7.61804 11.4203 7.79161 11.4203L9.09346 11.4203C9.26704 11.4203 9.35925 11.3281 9.3701 11.1437L9.35383 9.01188L11.4856 9.02815C11.67 9.0173 11.7622 8.92509 11.7622 8.75151V7.44966C11.7622 7.27608 11.67 7.18387 11.4856 7.17302Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+
+            &--1 {
+                top: 2.8em;
+                left: 0.5em;
+            }
+
+            &--2 {
+                top: 5.9em;
+                left: 8.2em;
+            }
+
+            &--3 {
+                top: 10.4em;
+                left: 3.8em;
+            }
+
+            &--4 {
+                top: 11.7em;
+                left: 7.7em;
+            }
+
+            &--5 {
+                top: 14.9em;
+                left: 0.7em;
+            }
+
+            &--6 {
+                top: 14.6em;
+                left: 11.4em;
+            }
+
+            &--7 {
+                top: 19.2em;
+                left: 7.7em;
+            }
+
+            label {
+                font-size: 0.775em;
+
+                span + span {
+                    .orange {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+
+        &__input:checked {
+            + label {
+                width: 8.514em;
+            }
+        }
+        
+        .button {
+            max-width: 19.19em;
+            padding-top: 0.7em;
+            padding-bottom: 0.7em;
+            grid-area: loggia-btn;
+            margin: 0;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__box {
+            grid-template-areas: 
+            'loggia-title loggia-title'
+            'loggia-content loggia-img'
+            'loggia-advantages loggia-img'
+            'loggia-btn loggia-img';
+            max-width: 60em;
+            grid-template-columns: 34.8em 1fr;
+            grid-template-rows: 4.9em 21em;
+        }
+
+        &__dots {
+            width: 1.15em;
+            height: 1.15em;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='29' height='29' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.73069 8.11686C2.73069 6.53295 3.2894 5.18228 4.40682 4.06486C5.52423 2.94745 6.86947 2.39416 8.44254 2.40501C10.0156 2.39416 11.3608 2.94745 12.4783 4.06486C13.5957 5.18228 14.1544 6.53295 14.1544 8.11686C14.1544 9.67907 13.5957 11.0189 12.4783 12.1363C11.3608 13.2537 10.0156 13.8179 8.44254 13.8287C6.86947 13.8179 5.52423 13.2537 4.40682 12.1363C3.2894 11.0189 2.73069 9.67907 2.73069 8.11686ZM11.4856 7.17302L9.35383 7.18929L9.3701 5.05752C9.35925 4.87309 9.26704 4.78088 9.09346 4.78088L7.79161 4.78088C7.61804 4.78088 7.52582 4.87309 7.51497 5.05752L7.53125 7.18929L5.39947 7.17302C5.21504 7.18387 5.12283 7.27608 5.12283 7.44966V8.75151C5.12283 8.92509 5.21504 9.0173 5.39947 9.02815L7.53125 9.01188L7.51497 11.1437C7.52582 11.3281 7.61804 11.4203 7.79161 11.4203L9.09346 11.4203C9.26704 11.4203 9.35925 11.3281 9.3701 11.1437L9.35383 9.01188L11.4856 9.02815C11.67 9.0173 11.7622 8.92509 11.7622 8.75151V7.44966C11.7622 7.27608 11.67 7.18387 11.4856 7.17302Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+
+            &--1 {
+                top: 3em;
+                left: 1em;
+            }
+
+            &--2 {
+                top: 6.7em;
+                left: 11.1em;
+            }
+
+            &--3 {
+                top: 11.4em;
+                left: 5.8em;
+            }
+
+            &--4 {
+                top: 13.7em;
+                left: 10.4em;
+            }
+
+            &--5 {
+                top: 16.1em;
+                left: 2.4em;
+            }
+
+            &--6 {
+                top: 17em;
+                left: 14.4em;
+            }
+
+            &--7 {
+                top: 22.5em;
+                left: 10.6em;
+            }
+
+            label {
+                font-size: 1.075em;
+            }
+        }
+
+        .title,
+        &__advantages {
+            max-width: none;
+        }
+
+        .title,
+        &__advantages,
+        .button {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .title,
+        &__content
+        &__image-box {
+            margin-bottom: 0;
+        }
+
+        .title {
+            grid-area: loggia-title;
+        }
+
+        &__content {
+            grid-area: loggia-content;
+        }
+
+        &__advantages {
+            &-item {
+                &--1 {
+                    &:after {
+                        top: 1.8em;
+                    }
+                }
+
+                &--2 {
+                    &:after {
+                        top: 1.6em;
+                    }
+                }
+
+                &--3 {
+                    &:after {
+                        top: 1.9em;
+                    }
+                }
+            }
+        }
+
+        &__text {
+            margin-bottom: 1.3em;
+            line-height: 1.2;
+        }
+
+        &__advantages {
+            grid-area: loggia-advantages;
+        }
+
+        &__image {
+            &-box {
+                grid-area: loggia-img;
+                max-width: 19.85em;
+                margin-bottom: 0;
+            }
+        }
+
+        .button {
+            grid-area: loggia-btn;
+            margin-bottom: 0;
+            min-height: 1.98rem;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}

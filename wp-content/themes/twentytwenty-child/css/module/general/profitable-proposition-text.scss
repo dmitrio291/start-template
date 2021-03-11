@@ -1,0 +1,55 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.profitable-proposition-text {
+
+    /* .profitable-proposition-text__title */
+
+    &__title {
+        line-height: 1.5em;
+        margin-bottom: 0.3em;
+
+        @include _768 {
+            margin-bottom: 1em;
+            line-height: 1;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.85em;
+            line-height: 1.2;
+        }
+    }
+
+    /* .profitable-proposition-text__text */
+
+    &__text {
+        max-width: 20em;
+        margin: 0 auto;
+        line-height: 1.15;
+
+        span {
+            display: block;
+
+            @include _768 {
+                display: inline-block;
+            }
+            @include _1200 {
+                display: block;
+            }
+        }
+
+        @include _768 {
+            max-width: 100%;
+
+        }
+
+        @include _1200 {
+            line-height: 1.2;
+        }
+    }
+}

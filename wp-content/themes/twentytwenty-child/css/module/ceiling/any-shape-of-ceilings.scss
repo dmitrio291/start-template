@@ -1,0 +1,133 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.any-shape-of-ceilings {
+
+    /* .any-shape-of-ceilings__title */
+
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 2.3rem;
+
+        @include _768 {
+            line-height: 1.1;
+            margin-bottom: 2.9rem;
+        }
+
+        @include _1200 {
+            line-height: 1.25;
+        }
+    }
+
+    /* .any-shape-of-ceilings__slider */
+
+    &__slider {
+        margin-bottom: 3.2rem;
+
+        .owl-stage-outer {
+            filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.25));
+        }
+
+        .pagination.active {
+            background-color: $blue;
+        }
+
+        @include _1200 {
+            margin-bottom: 0;
+        }
+    }
+
+    /* .any-shape-of-ceilings__item */
+
+    &__item {
+        border-radius: 0.6rem;
+        overflow: hidden;
+        background-color: #fff;
+        border: 0.1rem solid #e6e6e6;
+        text-align: center;
+        width: 100%;
+        max-width: 16.6rem;
+
+        @include _768 {
+            max-width: 22.5rem;
+        }
+
+        @include _1200 {
+            max-width: 22.5rem;
+        }
+    }
+
+    /* .any-shape-of-ceilings__box-img */
+
+    &__box-img {
+        height: 11.4rem;
+
+        @include _768 {
+            height: 15.3rem;
+        }
+    }
+
+    /* .any-shape-of-ceilings__img */
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .any-shape-of-ceilings__item-title */
+
+    &__item-title {
+        background-color: $orange;
+        color: #fff;
+        line-height: 1.8;
+        padding: 0 1rem;
+        margin-bottom: 0.6rem;
+
+        @include _768 {
+            line-height: 2.2;
+            margin-bottom: 1.1rem;
+        }
+    }
+
+    /* .any-shape-of-ceilings__text */
+
+    &__text {
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+        padding: 0 0.5rem;
+
+        @include _768 {
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    /* .any-shape-of-ceilings__price */
+
+    &__price {
+        font-size: 2.4rem;
+        position: relative;
+        margin-bottom: 1.7rem;
+
+        &::before {
+            content: "от ";
+            color: #000;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+
+            @include _768 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @include _768 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

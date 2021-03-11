@@ -1,0 +1,483 @@
+//@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic');
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+.not-block {
+    color: red;
+    text-align: center;
+    font-weight: 900;
+    padding: 2em;
+    background: #ff000014;
+    border: 1px solid red;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    font-family: "ALS Schlange sans", sans-serif;
+    line-height: 1.1;
+    min-height: 100vh;
+    min-width: 37.5rem;
+    font-size: 1.6rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+// контейнер сайта
+.header-inner,
+.container {
+    max-width: 96rem;
+    width: calc(100% - 3rem);
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 385px) {
+        width: calc(100% - 3rem);
+    }
+}
+
+// заголовки
+.title {
+    margin-top: 0;
+    font-size: 2.4rem;
+    font-weight: 900;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 4rem;
+    }
+}
+
+// классы цветов
+.orange {
+    color: $orange;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.blue {
+    color: $blue;
+}
+
+.white {
+    color: $white;
+}
+
+// позиционирование
+.center {
+    text-align: center;
+}
+
+.flex-row {
+    display: flex;
+}
+
+// сбросы стилей
+.reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// внутренние отсупы для секций
+.padding {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+
+    @media (min-width: 768px) {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+// кнопка
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.3em;
+    min-height: 3.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: $orange;
+    color: $white;
+    border-radius: 0.375em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.4rem;
+    letter-spacing: 0.04em;
+
+    @media (min-width: 768px) {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        min-height: 4rem;
+    }
+
+    @media (min-width: 960px) {
+        font-size: 1.6rem;
+    }
+}
+
+// Стили для плейсхолдера
+::-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+::-moz-placeholder {
+    color: #cccccc;
+}
+
+:-moz-placeholder {
+    color: #cccccc;
+}
+
+:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+// Жирность
+.bold {
+    font-weight: 700;
+}
+
+.black {
+    font-weight: 900;
+}
+
+// Запрет перенос символов на новую строку
+.nowrap {
+    white-space: nowrap;
+}
+
+// Текст
+.text {
+    margin-bottom: 1.563em;
+    text-align: center;
+    font-size: 1.6rem;
+
+    @media (min-width: 768px) {
+        margin-bottom: 0.813em;
+        font-size: 1.8rem;
+        text-align: left;
+    }
+}
+
+// Спец. символы
+// Символ рубля
+.rubl {
+    &:after {
+        content: "\20BD";
+        display: inline-block;
+        color: inherit;
+    }
+}
+
+// скрытие элемента
+.none {
+    display: none;
+}
+
+// спрайт
+.sprite,
+.sprite-after:after {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/sprite3.png");
+    background-repeat: no-repeat;
+    background-size: 118.125em 436.813em;
+}
+
+// от "ЦЕНА" ₽/м2
+
+.square-meter {
+    position: relative;
+
+    &::before,
+    &::after {
+        line-height: initial;
+        color: #000;
+        font-weight: 900;
+    }
+
+    &::before {
+        content: "от";
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        margin-right: 0.5em;
+
+        @media (min-width: 768px) {
+            font-size: 1.8rem;
+            margin-right: 0.3em;
+        }
+
+        @media (min-width: 1200px) {}
+    }
+
+    &::after {
+        content: "₽/м2";
+        font-size: 1.6rem;
+        margin-left: 0.5em;
+
+        @media (min-width: 768px) {
+            font-size: 1.8rem;
+        }
+
+        @media (min-width: 1200px) {
+            margin-left: 0.35em;
+        }
+    }
+}
+
+// Белая стрелка вправо на всю ширину
+
+.arrow {
+    display: block;
+    height: 0.15em;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    margin-top: 1em;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        border-right: 0.15em solid #fff;
+        border-top: 0.15em solid #fff;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+
+        @media (min-width: 768px) {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-right: 0.2em solid #fff;
+            border-top: 0.2em solid #fff;
+        }
+    }
+}
+
+// ========================= ФЛЕКСЫ =========================
+
+.db {
+    display: block;
+}
+
+.df {
+    display: flex;
+}
+
+.dfsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dfsa {
+    display: flex;
+    justify-content: space-around;
+}
+
+// ========================= Контейнер =========================
+
+.container-wrapper {
+    max-width: 34.5rem;
+    margin: 0 auto;
+
+    @include _768 {
+        max-width: 70.8rem;
+    }
+
+    @include _1200 {
+        max-width: 96rem;
+    }
+}
+
+// ========================= отступы для секции =========================
+
+.indent {
+    padding: 4.5rem 0;
+
+    @include _768 {
+        padding: 5.5rem 0;
+    }
+
+    @include _1200 {
+        padding: 6rem 0;
+    }
+}
+
+// ========================= ШРИФТЫ =========================
+
+.t-14-16-16 {
+    font-size: 1.4rem;
+
+    @include _768 {
+        font-size: 1.6rem;
+    }
+}
+
+.t-16-18-16 {
+    font-size: 1.6rem;
+
+    @include _768 {
+        font-size: 1.8rem;
+    }
+
+    @include _1200 {
+        font-size: 1.6rem;
+    }
+}
+
+.t-16-18-18 {
+    font-size: 1.6rem;
+
+    @include _768 {
+        font-size: 1.8rem;
+    }
+}
+
+.t-16-16-18 {
+    font-size: 1.6rem;
+
+    @include _768 {
+        font-size: 1.6rem;
+    }
+
+    @include _1200 {
+        font-size: 1.8rem;
+    }
+}
+
+.t-10-12-14 {
+    font-size: 1rem;
+
+    @include _768 {
+        font-size: 1.2rem;
+    }
+
+    @include _1200 {
+        font-size: 1.4rem;
+    }
+}
+
+.t-16-18-24 {
+    font-size: 1.6rem;
+
+    @include _768 {
+        font-size: 1.8rem;
+    }
+
+    @include _1200 {
+        font-size: 2.4rem;
+    }
+}
+
+.t-16-20-24 {
+    font-size: 1.6rem;
+
+    @include _768 {
+        font-size: 2rem;
+    }
+
+    @include _1200 {
+        font-size: 2.4rem;
+    }
+}
+
+.t-18-20-24 {
+    font-size: 1.8rem;
+
+    @include _768 {
+        font-size: 2rem;
+    }
+
+    @include _1200 {
+        font-size: 2.4rem;
+    }
+}
+
+.t-24-30-40 {
+    font-size: 2.4rem;
+
+    @include _768 {
+        font-size: 3rem;
+    }
+
+    @include _1200 {
+        font-size: 4rem;
+    }
+}
+
+.t-24-30-30 {
+    font-size: 2.4rem;
+
+    @include _768 {
+        font-size: 3rem;
+    }
+}
+
+.fw3 {
+    font-weight: 300;
+}
+
+.fw4 {
+    font-weight: 400;
+}
+
+.fw7 {
+    font-weight: 700;
+}
+
+.fw9 {
+    font-weight: 900;
+}
+
+// ========================= задний фон =========================
+
+.bggray {
+    background-color: $lightGray;
+}
+.bg-light-gray {
+    background-color: $bglightGray !important;
+}
+
+.bg-light-blue {
+    background: url("/wp-content/themes/twentytwenty-child/img/light-blue-bg-fone-2.webp");
+}

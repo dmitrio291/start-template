@@ -1,0 +1,261 @@
+@import '../../base/all/var';
+
+.free-consultation {
+    background-image: url('/wp-content/themes/twentytwenty-child/img/consultation-bg-small.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.77);
+    }
+
+    &__box {
+        position: relative;
+        max-width: 34.5rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 3rem 1.2rem;
+        background-color: #ffffff;
+        border-radius: 0.6rem;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .title,
+    &__text,
+    &__phone-link,
+    &__about-name,
+    &__about-position {
+        color: #3A3A3A;
+    }
+
+    .title {
+        margin-bottom: 0.5rem;
+        font-size: 2.2rem;
+        text-align: left;
+    }
+
+    &__text {
+        margin-bottom: 3rem;
+    }
+
+    &__phone {
+        margin-bottom: 1.2rem;
+
+        &-link {
+            text-decoration: none;
+            font-size: 3.2rem;
+        }
+    }
+
+    &__whatsapp {
+        &-link {
+            display: block;
+            position: relative;
+            margin-left: 0.5rem;
+            padding: 0.4rem 1rem 0.4rem 3.4rem;
+            max-width: 20rem;
+            font-size: 1.2rem;
+            margin-bottom: 3.3rem;
+            text-decoration: none;
+            background-color: #E1EFD0;
+            color: #243542;
+            border-radius: 0.3rem;
+
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -0.5rem;
+                left: -0.4em;
+                width: 3rem;
+                height: 3rem;
+                background: url('/wp-content/themes/twentytwenty-child/img/consultation-phone-icon.png');
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    &__work-schedule {
+        margin-bottom: 2.9rem;
+    }
+
+    &__about {
+        margin-bottom: 3.5rem;
+
+        &-text {
+            position: relative;
+            padding: 1.5rem 3.3rem 1.5rem 2.3rem;
+            max-width: 31.3rem;
+            margin-bottom: 2.1rem;
+            background-color: #F2F2F2;
+            border-radius: 0.6rem;
+            line-height: 1.2;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -2rem;
+                right: 7.3rem;
+                border-style: solid;
+                border-width: 0 23px 23px 0;
+                border-color: transparent #F2F2F2 transparent transparent;
+            }
+        }
+
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 28.8rem;
+            margin-left: auto;
+        }
+
+        &-content {
+            text-align: right;
+        }
+
+        &-name {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .button {
+        max-width: 31.3rem;
+    }
+
+    @media (min-width: 600px) {
+        background-image: url('/wp-content/themes/twentytwenty-child/img/consultation-bg-middle.webp');
+
+        &__box {
+            max-width: 50.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__box {
+            max-width: 70.8rem;
+            display: grid;
+            grid-template-areas: 
+                'free-consultation__title free-consultation__title'
+                'free-consultation__text free-consultation__text'
+                'free-consultation__phone free-consultation__about'
+                'free-consultation__whatsapp-link free-consultation__about'
+                'free-consultation__work-schedule free-consultation__about'
+                'free-consultation__button free-consultation__about';
+            grid-template-rows: 4rem 6.7rem 5.7rem 5rem 4.5rem 3.9rem;
+            padding: 3rem 2.5rem;
+        }
+
+        .title {
+            font-size: 3rem;
+            grid-area: free-consultation__title;
+        }
+
+        &__text,
+        &__work-schedule {
+            font-size: 1.8rem;
+        }
+
+        &__text {
+            max-width: 41rem;
+            grid-area: free-consultation__text;
+        }
+
+        &__work-schedule {
+            grid-area: free-consultation__work-schedule;
+        }
+
+        &__phone {
+            grid-area: free-consultation__phone;
+
+            &-link {
+                font-size: 4rem;
+            }
+        }
+
+        &__whatsapp-link {
+            grid-area: free-consultation__whatsapp-link;
+            min-height: 2.1rem;
+        }
+
+        &__about {
+            grid-area: free-consultation__about;
+            margin-top: 0.9rem;
+
+            &-box {
+                margin-left: 0;
+            }
+
+            &-text {
+                padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+                max-width: 20.8rem;
+            }
+
+            &-text,
+            &-box {
+                margin-left: auto;
+            }
+        }
+
+        .button {
+            grid-area: free-consultation__button;
+            margin: 0;
+            max-width: 20.1rem;
+        }
+
+        &__about {
+            &-box {
+                max-width: 20.8rem;
+            }
+
+            &-content {
+                max-width: 12rem;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        background-image: url("/wp-content/themes/twentytwenty-child/img/consultation-bg-big.webp");
+
+        &__box {
+            max-width: 96rem;
+            padding-right: 2.8rem;
+            padding-left: 2.8rem;
+            grid-template-rows: 4.5rem 6.9rem 5.6rem 5.1rem 5rem 3.9rem;
+        }
+
+        &__about {
+            margin-top: -5.2rem;
+
+            &-text {
+                max-width: 38rem;
+                padding: 2.5rem 3.1rem 2.3rem 2rem;
+                margin-bottom: 2.8rem;
+                font-size: 1.8rem;
+
+                &:after {
+                    right: 6.9rem;
+                }
+            }
+
+            &-box {
+                max-width: 29.5rem;
+            }
+
+            &-content {
+                max-width: 21rem;
+            }
+        }
+
+        .button {
+            max-width: 28.2rem;
+        }
+    }
+}

@@ -1,0 +1,382 @@
+.windows-modal {
+
+    &__modal,
+    &__text,
+    &__title,
+    .form-contacts,
+    &__warning,
+    &__close-btn {
+        position: relative;
+        z-index: 10;
+    }
+
+    button {
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        font-size: 1.6rem;
+        line-height: 1.25;
+        color: #ffffff;
+    }
+    
+    .btn {
+        &-base {
+            font-family: 'ALS Schlange sans', 'Montserrat', sans-serif;
+            border-radius: 6px;
+            text-align: center;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 900;
+    
+            &--add {
+                width: 100%;
+                max-width: 33.5rem;
+                padding: .7em .1em .551em;
+                letter-spacing: 0.05em;
+            }
+    
+            &--bg {
+                background: #F26422;
+            }
+        }
+    
+    }
+
+    &__title {
+        margin-bottom: 1.4em;
+    }
+
+    .overlay {
+        width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.75);
+        transition: 0.35s ease-in-out;
+        overflow-y: auto;
+    }
+
+    &__title {
+        margin-top: 0;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 900;
+        max-width: 19rem;
+
+        &:first-of-type {
+            margin-bottom: 0.500em;
+        }
+
+        &:nth-of-type(2) {
+            margin-bottom: 2.678em;
+        }
+    }
+
+    .form-contacts {
+        max-width: 34rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__input {
+            width: 100%;
+            padding: 0.6em 3.2em;
+            border: 1px solid #E8E8E8;
+            border-radius: 6px;
+            font-size: 1.6rem;
+            outline: none;
+
+            &--name:focus,
+            &--phone:focus {
+                &:focus {
+                    border: 1px solid #333333;                
+                }
+    
+                &:focus + .form-contacts__icon {
+                    fill: #000000;
+                }
+            }
+
+            &--phone {
+                padding-left: 5em;
+            }
+
+            &::-webkit-input-placeholder {color:#CCCCCC;}
+            &::-moz-placeholder          {color:#CCCCCC;}/* Firefox 19+ */
+            &:-moz-placeholder           {color:#CCCCCC;}/* Firefox 18- */
+            &:-ms-input-placeholder      {color:#CCCCCC;}
+
+        }
+
+        &__box {
+            margin-bottom: 0.778em;
+            position: relative;
+        }
+
+        &__icon {
+            fill: #bfbfbf;
+            position: absolute;
+            left: 1em;
+
+            &--name {
+                top: 0.5em;
+            }
+
+            &--phone {
+                top: 0.5em;
+            }
+        }
+
+        &__number {
+            position: absolute;
+            top: 0.7em;
+            left: 3.2em;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__warning {
+        font-size: 1.4rem;
+        text-align: center;
+
+        a {
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            text-decoration: none;
+        }
+    }
+
+    .btn-base {
+        &--add {
+            margin-bottom: 1em;
+        }
+    }
+
+    &__close-btn {
+        width: 0.889em;
+        height: 0.889em;
+        position: absolute;
+        top: 0.5em;
+        right: 0.7em;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 0.167em;
+            height: 1.111em;
+            background-color: #7c7c7c;
+            border-radius: 7px;
+        }
+
+        &::before {
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        &::after {
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+
+    &__modal {
+        padding: 2em 1.2em 2em;
+        overflow: hidden;
+        background-color: #ffffff;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+        }
+
+        &::before {
+            bottom: -14.6em;
+            right: -14em;
+            width: 68.1rem;
+            height: 46.7rem;
+            border-radius: 50%;
+            background: linear-gradient(266.8deg, #FFF854 0.02%, #FFE03E 101.17%);
+            z-index: 2;
+        }
+
+        &::after {
+            bottom: 3.3em;
+            right: 0;
+            width: 23.1rem;
+            height: 38.7rem;
+            background: url('/wp-content/themes/twentytwenty-child/img/worker-img.png') 0 0 no-repeat;
+            background-size: 14em;
+            z-index: 1;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__modal {
+            border-radius: 0.625em;
+        }
+
+        .form-contacts {
+            display: block;
+
+            &__box {
+                max-width: none;
+            }
+        }
+    }
+
+    @media (min-width: 960px) {
+        .form-contacts {
+            &__box {
+                min-width: 16.625em;
+            }
+        }
+    }
+
+    @media (min-width: 900px) {
+        &__title {
+            margin-bottom: 2em;
+        }
+
+        &__modal {
+            min-width: 80rem;
+            padding: 3em 4em 3em;
+            
+            &::before {
+                width: 45rem;
+                height: 45rem;
+                bottom: -4.6em;
+                right: -4em;
+                z-index: 1;
+            }
+
+            &::after {
+                width: 36.1rem;
+                height: 41.7rem;
+                bottom: 0;
+                right: 2em;
+                z-index: 2;
+                background-size: 21em;
+            }
+        }
+
+        &__text {
+            font-weight: 700;
+            font-size: 2rem;
+
+            &:first-of-type {
+                max-width: 31rem;
+            }
+
+            &:nth-of-type(2) {
+                max-width: 27rem;
+                margin-bottom: 1.678em;
+            }
+        }
+
+        .form-contacts {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 31rem;
+        }
+
+        &__warning {
+            text-align: left;
+            max-width: 30rem;
+        }
+    }
+
+    @media (min-width: 1320px) {
+        &__title {
+            margin-bottom: 1em;
+            font-size: 4.8rem;
+        }
+
+        &__modal {
+            min-width: 100rem;
+            padding: 3em 6em 3em;
+
+            &::before {
+                width: 55rem;
+                height: 55rem;
+                bottom: -9em;
+            }
+
+            &::after {
+                width: 40.1rem;
+                height: 48.7rem;
+                right: 2em;
+                bottom: -1em;
+                background-size: 23em;
+            }
+        }
+
+        &__text {
+            font-size: 2.4rem;
+
+            &:first-of-type {
+                max-width: 39rem;
+                margin-bottom: 1em;
+            }
+
+            &:nth-of-type(2) {
+                margin-bottom: 1em;
+                max-width: 32rem;
+            }
+        }
+
+        .form-contacts {
+            max-width: 40rem;
+
+            &__input,
+            &__number {
+                font-size: 2.2rem;
+            }
+
+            &__icon {
+                width: 2.4rem;
+                height: 2.4rem;
+
+                &--name {
+                    top: 0.7em;
+                }
+
+                &--phone {
+                    top: 0.8em;
+                }
+            }
+        }
+
+        .btn-base {
+            &--add {
+                max-width: 100%;
+                padding: 1em;
+            }
+        }
+
+        &__close-btn {
+            width: 1.889em;
+            height: 1.889em;
+
+            &::before,
+            &::after {
+                width: 0.278em;
+                height: 1.667em;
+                left: 43%;
+            }
+        }
+    }
+
+}

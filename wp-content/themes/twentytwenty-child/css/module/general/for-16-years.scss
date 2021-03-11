@@ -1,0 +1,163 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.for-16-years {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/for-16-years-bg-mob.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(41, 41, 41, 0.47);
+    }
+
+    @include _768 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/for-16-years-bg-plan.webp);
+    }
+
+    @include _1200 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/for-16-years-bg-desc.webp);
+    }
+
+    /* .for-16-years__wrapper */
+
+    &__wrapper {
+        position: relative;
+        color: #fff;
+    }
+
+    /* .for-16-years__title */
+
+    &__title {
+        margin-bottom: 3rem;
+        letter-spacing: 0.05em;
+        line-height: 1.2;
+
+        @include _768 {
+            line-height: 1.1;
+
+            span {
+                display: block;
+            }
+        }
+
+        @include _1200 {
+            line-height: 1.25;
+            margin-bottom: 3.3rem;
+        }
+    }
+
+    /* .for-16-years__text */
+
+    &__text {
+        letter-spacing: 0.05em;
+        margin-bottom: 2.8rem;
+
+        @include _1200 {
+            margin-bottom: 6.3rem;
+        }
+    }
+
+    /* .for-16-years__list */
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* .for-16-years__item */
+
+    &__item {
+        &:nth-child(1) {
+            width: 60%;
+            margin-bottom: 2.7rem;
+        }
+
+        &:nth-child(2) {
+            width: 45%;
+        }
+
+        &:nth-child(3) {
+            width: 53%;
+            border-left: 0.1rem solid rgba(#ffffff, 0.5);
+            padding-left: 2.5rem;
+        }
+
+        @include _768 {
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                border-right: 0.1rem solid rgba(#ffffff, 0.5);
+                margin-right: 4.5rem;
+            }
+
+            &:nth-child(1) {
+                max-width: 25.5rem;
+                margin-bottom: 0;
+            }
+
+            &:nth-child(2) {
+                max-width: 19rem;
+            }
+
+            &:nth-child(3) {
+                border-left: none;
+                max-width: 17rem;
+                padding: 0;
+            }
+        }
+
+        @include _1200 {
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-right: 5.8rem;
+            }
+
+            &:nth-child(1) {
+                max-width: 27rem;
+            }
+
+            &:nth-child(2) {
+                max-width: 21.4rem;
+            }
+        }
+    }
+
+    /* .for-16-years__item-title */
+
+    &__item-title {
+        letter-spacing: 0.05em;
+        display: block;
+        margin-bottom: 0.6rem;
+
+        @include _768 {
+            margin-bottom: 0.7rem;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    /* .for-16-years__item-text */
+
+    &__item-text {
+        letter-spacing: 0.05em;
+
+        @include _768 {
+            line-height: 1.2;
+        }
+    }
+}

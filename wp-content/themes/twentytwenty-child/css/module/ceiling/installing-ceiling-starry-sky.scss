@@ -1,0 +1,65 @@
+.installing-ceiling-starry-sky {
+    .title,
+    &__list {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .title {
+        max-width: 28rem;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 34.5rem;
+    }
+
+    &__item {
+        margin-bottom: 1.5rem;
+
+        img {
+            width: 16.5rem;
+            height: 9.9rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 3.5rem;
+            max-width: none;
+        }
+
+        &__list {
+            max-width: 71rem;
+        }
+
+        &__item {    
+            img {
+                width: 34.7rem;
+                height: 20.6rem;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 3rem;
+        }
+
+        &__list {
+            max-width: none;
+            margin-bottom: 1.6rem;
+        }
+
+        &__item {    
+            img {
+                width: 22.5rem;
+                height: 13.6rem;
+            }
+        }
+    }
+}

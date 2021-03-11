@@ -1,0 +1,352 @@
+@import '../../base/all/var';
+
+.examples-works {
+    .title {
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    &__list,
+    &__item,
+    .button,
+    &__popup-box {
+        max-width: 34.5rem;
+    }
+    
+    &__list,
+    &__popup .popup__content,
+    &__popup-box {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__list {
+        margin-bottom: 2.5rem;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 1.5rem;
+        padding-bottom: 2.2rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+        border-radius: 0.6rem;
+        background-color: $white;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    &__box {
+        margin-bottom: 1.4rem;
+    }
+
+    &__img,
+    &__preview {
+        display: block;
+    }
+
+    &__img {
+        width: 100%;
+        border-top-left-radius: 0.6rem;
+        border-top-right-radius: 0.6rem;
+    }
+
+    &__circle,
+    &__preview {
+        cursor: pointer;
+    }
+
+    &__circle {
+        position: absolute;
+        top: 1.3rem;
+        right: 1.2rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 50%;
+        background-color: $white;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='9' height='10' viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3.76562C0 3.90234 0.0976562 4 0.234375 4H1.01562C1.13281 4 1.25 3.90234 1.25 3.76562V2.125H2.89062C3.00781 2.125 3.125 2.02734 3.125 1.89062V1.10938C3.125 0.992188 3.00781 0.875 2.89062 0.875H0.46875C0.195312 0.875 0 1.08984 0 1.34375V3.76562ZM5.625 1.10938V1.89062C5.625 2.02734 5.72266 2.125 5.85938 2.125H7.5V3.76562C7.5 3.90234 7.59766 4 7.73438 4H8.51562C8.63281 4 8.75 3.90234 8.75 3.76562V1.34375C8.75 1.08984 8.53516 0.875 8.28125 0.875H5.85938C5.72266 0.875 5.625 0.992188 5.625 1.10938ZM8.51562 6.5H7.73438C7.59766 6.5 7.5 6.61719 7.5 6.73438V8.375H5.85938C5.72266 8.375 5.625 8.49219 5.625 8.60938V9.39062C5.625 9.52734 5.72266 9.625 5.85938 9.625H8.28125C8.53516 9.625 8.75 9.42969 8.75 9.15625V6.73438C8.75 6.61719 8.63281 6.5 8.51562 6.5ZM3.125 9.39062V8.60938C3.125 8.49219 3.00781 8.375 2.89062 8.375H1.25V6.73438C1.25 6.61719 1.13281 6.5 1.01562 6.5H0.234375C0.0976562 6.5 0 6.61719 0 6.73438V9.15625C0 9.42969 0.195312 9.625 0.46875 9.625H2.89062C3.00781 9.625 3.125 9.52734 3.125 9.39062Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__previews,
+    &__row {
+        display: flex;
+    }
+
+    &__previews {
+        margin-top: -0.1rem;
+    }
+    
+    &__preview {
+        width: 100%;
+        opacity: 0.67;
+
+        &.active {
+            opacity: 1;
+            border: 0.1rem solid $orange;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__table {
+        width: 97%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &-box {
+            max-width: 99%;
+            height: 11rem;
+            margin-bottom: 1.5rem;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar-track {
+                background-color: #C4C4C4;
+            }
+
+            &::-webkit-scrollbar {
+                width: 0.4rem;
+                height: 0.4rem;
+                background-color: #C4C4C4;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $orange;
+            }
+        }
+    }
+
+    &__row {
+        justify-content: space-between;
+        align-items: center;
+        min-height: 2.7rem;
+        border-top: 0.05rem solid #C4C4C4;
+        color: #3A3A3A;
+
+        &:nth-child(even) {
+            background-color: #F2F2F2;
+        }
+
+        &:last-child {
+            border-bottom: 0.05rem solid #C4C4C4;
+        }
+    }
+
+    &__ceil {
+        padding-left: 1rem;
+
+        &-price {
+            min-width: 5rem;
+            margin-right: 0.2rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__price {
+        font-size: 1.8rem;
+    }
+
+    &__popup {
+        .popup {
+            &__inner {
+                vertical-align: middle;
+            }
+        }
+
+        &.popup .btn-close {
+            top: 0.45em;
+            right: 0.75em;
+        }
+
+        &.popup .btn-close:before,
+        &.popup .btn-close:after {
+            width: 0.188em;
+            height: 0.95em;
+        }
+
+        &-box {
+            &-left {
+                margin-bottom: 2rem;
+            }
+
+            .examples-works {
+                &__img {
+                    height: 26.7rem;
+                    object-fit: cover;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                }
+
+                &__previews {
+                    margin-bottom: 0.1rem;
+                }
+
+                &__preview {
+                    border: 0.1rem solid $white;
+
+                    &.active {
+                        border-color: $orange;
+                    }
+                }
+
+                &__title,
+                &__price {
+                    text-align: center;
+                }
+
+                &__title {
+                    margin-bottom: 1.5rem;
+                }
+
+                &__row {
+                    min-height: 3.1rem;
+                }
+
+                &__table {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+
+                    &-popup {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+
+                &__ceil {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .popup {
+            &__content {
+                padding-top: 3.7rem;
+                padding-bottom: 3.7rem;
+            }
+        }
+    }
+
+    &__table-popup {
+        .examples-works__row:nth-child(even) {
+            background-color: $white;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 2.9rem
+        }
+
+        &__list {
+            max-width: 70.5rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            &.tablet-block {
+                display: block;
+            }
+        }
+
+        &__popup {
+            &-box {
+                display: flex;
+                justify-content: space-between;
+                max-width: 68rem;
+
+                &-left {
+                    margin-bottom: 0;
+                    width: 33rem;
+                }
+
+                .examples-works {
+                    &__title,
+                    &__price {
+                        text-align: left;
+                    }
+                }
+            }
+
+            .popup {
+                &__content {
+                    max-width: 72rem;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 3.6rem;
+        }
+
+        &__list {
+            max-width: none;
+        }
+
+        &__item {
+            max-width: 30.5rem;
+            margin-bottom: 2rem;
+
+            &.desktop-none {
+                display: block;
+            }
+        }
+
+        .button {
+            display: none;
+        }
+
+        &__popup {
+            &-box {
+                max-width: 88rem;
+
+                &-left {
+                    width: 47rem;
+                }
+
+                &-right {
+                    width: 37.8rem;
+                }
+            }
+
+            .examples-works {
+                &__title {
+                    margin-bottom: 1.9rem;
+                    font-size: 1.8rem;
+                }
+
+                &__preview {
+                    height: 8.8rem;
+                    object-fit: cover;
+                }
+
+                &__table {
+                    &-popup {
+                        margin-bottom: 1.6rem;
+                    }
+                }
+
+                &__row {
+                    min-height: 3.8rem;
+                }
+
+                &__price {
+                    letter-spacing: 0.02em;
+                }
+            }
+
+            .popup {
+                &__content {
+                    max-width: 96rem;
+                }
+            }
+        }
+    }
+}

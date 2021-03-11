@@ -1,0 +1,161 @@
+@import '../../base/all/var';
+
+.four-types-glazing {
+    background-color: #F6F6F6;
+
+    .container {
+        width: calc(100% - 1rem);
+    }
+
+    &__slider {
+        max-width: 35.1rem;
+    }
+
+    &__slide {
+        padding: 2rem 0.8rem;
+        background-color: $white;
+        border-radius: 0.6rem;
+    }
+    
+    &__title,
+    &__text,
+    &__cost,
+    .button {
+        font-size: 1.2rem;
+    }
+
+    &__title,
+    &__text {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 0.8rem;
+        white-space: nowrap;
+
+        &--right {
+            position: relative;
+            right: 0.4rem;
+        }
+    }
+
+    &__text {
+        margin-bottom: 1.5rem;
+    }
+
+    &__image {
+        margin-bottom: 0.9rem;
+        width: 100%;
+    }
+
+    &__price {
+        margin-bottom: 1.5rem;
+    }
+
+    &__cost {
+        margin-right: 0.6rem;
+    }
+
+    &__from,
+    &__square {
+       font-size: 0.8rem; 
+       font-weight: 700;
+    }
+
+    .button {
+        min-height: 2.6rem;
+    }
+
+    &__pagination {
+        margin-top: 2.2rem;
+        text-align: center;
+    }
+
+    .swiper-pagination {
+        &-bullet {
+            width: 1rem;
+            height: 1rem;
+            background-color: #C9C9C9;
+            opacity: 1;
+
+            &-active {
+                background-color: $orange;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 3rem);
+        }
+
+        &__slider {
+            max-width: 70.8rem;
+        }
+
+        &__slide {
+            padding: 2.4rem 1.1rem;
+        }
+
+        &__title,
+        &__text,
+        &__cost {
+            font-size: 1.6rem;
+        }
+
+        &__title {
+            margin-bottom: 1.7rem;
+        }
+
+        &__text {
+            margin-bottom: 1.8rem;
+            line-height: 1.2;
+        }
+
+        &__image {
+            margin-bottom: 1.6rem;
+        }
+
+        &__price {
+            margin-bottom: 2rem;
+
+            .orange {
+                margin-right: 0.2rem;
+                font-size: 2.4rem;
+            }
+        }
+
+        &__cost {
+            margin-right: 0.7rem;
+        }
+
+        &__from,
+        &__square {
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+
+        &__from {
+            margin-right: 0.4rem;
+        }
+
+        .button {
+            min-height: 3.5rem;
+            font-size: 1.4rem;
+        }
+
+        &__pagination {
+            margin-top: 2.7rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__slider {
+            max-width: 96rem;
+        }
+
+        &__pagination {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.result-in-few-hours {
+    .title {
+        margin-bottom: 2.5rem;
+
+        .block {
+            display: block;
+        }
+    }
+
+    &__list {
+        max-width: 34.5rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__item {
+        margin-bottom: 2.5rem;
+    }
+
+    &__img {
+        max-width: 34.5rem;
+    }
+
+    @media(min-width: 768px) {
+        .title {
+            .block {
+                display: inline;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 71.4rem;
+        }
+
+        &__item {
+            margin-bottom: 0.750em;
+        }
+
+        &__img {
+            max-width: 34.8rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 3rem;
+        }
+
+        &__list {
+            max-width: none;
+        }
+
+        &__img {
+            max-width: 47.2rem;
+        }
+    }
+}

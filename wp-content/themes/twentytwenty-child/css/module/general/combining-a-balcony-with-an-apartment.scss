@@ -1,0 +1,39 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.combining-a-balcony-with-an-apartment {
+    /* .combining-a-balcony-with-an-apartment__wrapper */
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    /* .combining-a-balcony-with-an-apartment__title */
+
+    &__title {
+        padding: 0 1em;
+        line-height: 1.2em;
+        margin-bottom: 0.9em;
+
+        @include _768 {
+            margin-bottom: 1.1em;
+            padding: 0;
+        }
+        @include _1200 {
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .combining-a-balcony-with-an-apartment__text */
+
+    &__text {
+        @include _1200 {
+            line-height: 1.2em;
+        }
+    }
+}

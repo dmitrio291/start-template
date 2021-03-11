@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/style.css">
+</head>
+
+<body>
+
+    <button data-modal-btn="mail-popup">Модальное окно</button>
+
+    <div data-modal-window="mail-popup" class="discount-popup popup">
+        <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/module/general/popups.css">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content popup__content--mail">
+                    <button class="popup__btn-close btn-close"></button>
+                    <div class="discount-popup__box">
+                        <h2 class="discount-popup__title center">ПИСЬМО ГЕНЕРАЛЬНОМУ ДИРЕКТОРУ</h2>
+                        <form class="form-contacts form-contacts--mail" action="#">
+                            <div class="form-contacts__box form-contacts__box--name">
+                                <input class="form-contacts__input phone-user" type="text" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-contacts__box form-contacts__box--tel">
+                                <input class="form-contacts__input phone-user" type="tel" placeholder="мой телефон">
+                            </div>
+                            <div class="form-contacts__box form-contacts__box--email">
+                                <input class="form-contacts__input phone-user" type="email" placeholder="E-mail">
+                            </div>
+                            <div class="form-contacts__box form-contacts__box--doc">
+                                <input class="form-contacts__input phone-user" type="text" placeholder="№ договора">
+                            </div>
+                            <div class="form-contacts__box form-contacts__box-textarea">
+                                <textarea name="form-contacts__textarea" class="form-contacts__textarea phone-user"
+                                    placeholder="Текст сообщения"></textarea>
+                            </div>
+                            <input type="file" id="input-file" name="photo" multiple accept="image/*,image/jpeg">
+                            <label class="input-file" for="input-file">Прикрепить файл</label>
+                            <button class="form-contacts__button button all-send" type="submit">ОТПРАВИТЬ
+                                СООБЩЕНИЕ</button>
+                        </form>
+                    </div>
+                    <p class="discount-popup__text mail-popup__text center">Оставляя свои контактные данные, вы
+                        подтверждаете свое
+                        совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a
+                            class="discount-popup__link" href="#">Правовой&nbsp;информацией</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/wp-content/themes/twentytwenty-child/js/only-js-without-jquery.js"></script>
+</body>
+
+</html>

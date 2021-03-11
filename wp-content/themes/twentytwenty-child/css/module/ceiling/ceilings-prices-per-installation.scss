@@ -1,0 +1,273 @@
+.ceilings-prices-per-installation {
+    &__title-1,
+    .button {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .title sup,
+    &__without-seam-img,
+    &__without-seam-meter {
+        position: relative;
+    }
+
+    .title {
+        margin-bottom: 2.5rem;
+
+        &.mb {
+            margin-bottom: 4.5rem;
+        }
+
+        sup {
+            top: -0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .block {
+            display: block;
+        }
+    }
+
+    &__title {
+        &-1 {
+            max-width: 35rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &__list {
+        margin-bottom: 2.9rem;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-areas: 
+            'ceilings-prices-per-installation__type ceilings-prices-per-installation__type'
+            'ceilings-prices-per-installation__text ceilings-prices-per-installation__text'
+            'ceilings-prices-per-installation__price ceilings-prices-per-installation__circle';
+        grid-template-columns: 1fr;
+        margin-bottom: 1.5rem;
+        padding: 3.4rem 1.5rem 2.9rem 2rem;
+        border: 0.1rem solid #E6E6E6;
+    }
+
+    &__type {
+        display: block;
+        grid-area: ceilings-prices-per-installation__type;
+        margin-bottom: 1.5rem;
+        font-size: 2.4rem;
+    }
+
+    &__text {
+        grid-area: ceilings-prices-per-installation__text;
+        margin-bottom: 1.3rem;
+    }
+
+    &__circle {
+        display: flex;
+        align-items: center;
+        grid-area: ceilings-prices-per-installation__circle;
+    }
+
+    &__price {
+        grid-area: ceilings-prices-per-installation__price;
+        margin-bottom: 0.2rem;
+
+        &-value {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-size: 3rem;
+        }
+
+        &-rubl {
+            font-size: 2rem;
+        }
+
+        &-text {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__circle {
+        width: 5.3rem;
+        height: 5.3rem;
+        background-color: #6DCB34;
+        color: #ffffff;
+        border-radius: 50%;
+        &-text {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+    &__description {
+        display: none;
+    }
+
+    &__without-seam {
+        grid-area: ceilings-prices-per-installation__circle;
+        max-width: 6.3rem; 
+
+        &-text,
+        &-meter {
+            color: #2579bf;
+            font-size: 1.3rem;
+        }
+
+
+        &-img {
+            top: -0.4rem;
+        }
+
+        &-meter {
+            top: -0.8rem;
+            left: -0.2rem;
+            text-align: center;
+        }
+    }
+
+    .button {
+        max-width: 34.5rem;
+        letter-spacing: 0;
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 3.6rem;
+
+            &.mb {
+               margin-bottom: 5.1rem;
+            }
+
+            .block {
+                display: inline;
+            }
+
+            sup {              
+                top: -1rem;
+                font-size: 1.6rem;
+            }
+        }
+
+        &__title {
+            &-1 {
+                max-width: 54rem;
+            }
+        }
+
+        &__list {
+            max-width: 67rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__item {
+            grid-template-areas: 
+            'ceilings-prices-per-installation__type ceilings-prices-per-installation__circle'
+            'ceilings-prices-per-installation__text ceilings-prices-per-installation__circle'
+            'ceilings-prices-per-installation__price ceilings-prices-per-installation__circle';
+            align-items: center;
+            padding: 2.8rem 3.8rem 2.7rem 3.3rem;
+        }
+
+        &__type,
+        &__text {
+            font-size: 1.8rem;
+        }
+
+        &__type {
+            grid-area: ceilings-prices-per-installation__type;
+            margin-bottom: 1rem;
+        }
+
+        &__text {
+            grid-area: ceilings-prices-per-installation__text;
+        }
+
+        &__price {
+            grid-area: ceilings-prices-per-installation__price;
+
+            &-value {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        &__circle {
+            grid-area: ceilings-prices-per-installation__circle;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 3.2rem;
+
+            sup {
+                top: -1.3rem;
+                font-size: 2rem;
+            }
+        }
+
+        &__title {
+            &-1 {
+                max-width: 75rem;
+            }
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            max-width: none;
+            margin-bottom: 1.3rem;
+        }
+
+        &__item,
+        &__description {
+            display: block;
+        }
+
+        &__item {
+            padding: 3.1rem 1.8rem 2.7rem 1.6rem;
+            max-width: 30.7rem;
+        }
+
+        &__type {
+            margin-bottom: 1.2rem;
+        }
+
+        &__text {
+            margin-bottom: 1.6rem;
+        }
+
+        &__price {
+            margin-bottom: 2rem;
+        }
+
+        &__circle,
+        &__without-seam {
+            margin-bottom: 2rem;
+        }
+
+        &__without-seam {
+            margin-top: 2.7rem;
+        }
+
+        &__description {
+            &-title,
+            &-text {
+                font-size: 1.4rem;
+            }
+
+            &-title {
+                margin-bottom: 0.9rem;
+            }
+
+            &-text {
+                margin-bottom: 0.7rem;
+            }
+        }
+
+        .button {
+            max-width: 37rem;
+        }
+    }
+}

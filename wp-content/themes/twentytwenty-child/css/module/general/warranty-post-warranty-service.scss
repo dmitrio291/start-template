@@ -1,0 +1,383 @@
+@import '../../base/all/var';
+
+.warranty-post-warranty-service {
+    .title,
+    &__image,
+    &__form {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .title,
+    &__item p,
+    &__info {
+        line-height: 1.2;
+    }
+
+    .title {
+        max-width: 27rem;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-bottom: 2.7rem;
+    }
+
+    &__item:before,
+    &__brands-item:before {
+        content: '';
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 1rem;
+        border-radius: 50%;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='6' height='4' viewBox='0 0 6 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.40577 3.80135L0.82139 2.16701C0.726203 2.06882 0.726203 1.90962 0.82139 1.81142L1.1661 1.45583C1.26128 1.35763 1.41563 1.35763 1.51081 1.45583L2.57812 2.55679L4.86419 0.198641C4.95937 0.100453 5.11372 0.100453 5.2089 0.198641L5.55361 0.554229C5.6488 0.652418 5.6488 0.811619 5.55361 0.909817L2.75048 3.80136C2.65529 3.89955 2.50095 3.89955 2.40577 3.80135Z' fill='black'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0.07rem solid $orange;
+    }
+
+    &__item,
+    &__brands-item {
+        display: flex;
+    }
+
+    &__item {
+        margin-bottom: 0.9rem;
+
+        &:before {
+            transform: translateY(0.3rem);
+            flex-shrink: 0;
+        }
+    }
+
+    &__text {
+        margin-bottom: 2.3rem;
+        line-height: 1.19;
+
+        &.text {
+            &-1,
+            &-2 {
+                margin-bottom: 1.6rem;
+            }
+
+            &-3 {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    &__image,
+    &__input {
+        display: block;
+    }
+
+    &__image {
+        margin-bottom: 2.5rem;
+    }
+
+    &__brands {
+        margin-bottom: 2.5rem;
+
+        &-item {
+            margin-bottom: 1.2rem;
+
+            &:before {
+                transform: translateY(0.1rem);
+            }
+
+            .orange {
+                margin-right: 0.4rem;
+            }
+        }
+    }
+
+    &__form,
+    &__form-box,
+    &__input {
+        border-radius: 0.6rem;
+    }
+
+    &__form {
+        max-width: 34.5rem;
+        padding: 2.5rem;
+        background-color: #F2F2F2;
+
+        &-box {
+            position: relative;
+            margin-bottom: 1rem;
+
+            &.textarea-box {
+                .warranty-post-warranty-service {
+                    &__input {
+                        height: 9rem;
+                        padding-top: 1.3rem;
+                        padding-left: 1.2rem;
+                        resize: vertical;
+                    }
+                }
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0.2rem;
+        left: 1.2rem;
+        width: 3rem;
+        height: 3rem;
+        transform: scale(0.54);
+        pointer-events: none;
+    }
+
+    &__input {
+        width: 100%;
+        height: 3.5rem;
+        padding-left: 4.6rem;
+        padding-right: 2rem;
+        border: 0.1rem solid #D0D0D0;
+        font-size: 1.4rem;
+        color: #BFBFBF;
+    }
+
+    .button {
+        margin-bottom: 2.6rem;
+    }
+
+    &__info,
+    &__info a {
+        color: #5D5D5D;
+    }
+
+    &__info {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    @media (min-width: 600px) {
+        .title {
+            max-width: 46rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 6rem);
+        }
+
+        .title {
+            max-width: 57rem;
+            line-height: 1.1;
+        }
+
+        &__list {
+            margin-bottom: 1.6rem;
+        }
+
+        &__item p,
+        &__text,
+        &__brands-item {
+            font-size: 1.8rem;
+        }
+
+        &__item {
+            margin-bottom: 0.7rem;
+
+            p {
+                line-height: 1.23;
+            }
+        }
+
+        &__text {
+            margin-bottom: 1.6rem;
+
+            &.text {
+                &-1 {
+                    margin-bottom: 1.8rem;
+                }
+
+                &-3 {
+                    margin-bottom: 1.9rem;
+                }
+            }
+        }
+
+        &__box,
+        &__form {
+            max-width: 70.8rem;
+        }
+
+        &__box {
+            display: grid;
+            grid-template-areas: 
+                'warranty-post-warranty-service__image warranty-post-warranty-service__text-1'
+                'warranty-post-warranty-service__image warranty-post-warranty-service__text-2'
+                'warranty-post-warranty-service__image warranty-post-warranty-service__text-3'
+                'warranty-post-warranty-service__image warranty-post-warranty-service__brands';
+            grid-column-gap: 1.5rem;
+            margin-bottom: 1.6rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__image {
+            margin-bottom: 0;
+
+            &-box {
+                grid-area: warranty-post-warranty-service__image;
+            }
+        }
+
+        &__text {
+            &.text {
+                &-1 {
+                    grid-area: warranty-post-warranty-service__text-1;
+                }
+
+                &-2 {
+                    grid-area: warranty-post-warranty-service__text-2;
+                }
+
+                &-3 {
+                    grid-area: warranty-post-warranty-service__text-3;
+                }
+            }
+        }
+
+        &__brands {
+            grid-area: warranty-post-warranty-service__brands;
+            margin-bottom: 0;
+
+            &-item {
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__form {
+            display: grid;
+            grid-template-areas: 
+                'warranty-post-warranty-service__form-box-phone warranty-post-warranty-service-textarea-box'
+                'warranty-post-warranty-service__form-box-name warranty-post-warranty-service-textarea-box'
+                'warranty-post-warranty-service__form-box-contract warranty-post-warranty-service-button'
+                'warranty-post-warranty-service__info warranty-post-warranty-service__info';
+            grid-column-gap: 1.5rem;
+            grid-template-columns: 1fr 1fr;
+            padding: 3rem 6rem;
+
+            &-box {
+                &:first-child {
+                    grid-area: warranty-post-warranty-service__form-box-phone;
+                }
+
+                &:nth-child(2) {
+                    grid-area: warranty-post-warranty-service__form-box-name;
+                }
+
+                &:nth-child(3) {
+                    grid-area: warranty-post-warranty-service__form-box-contract;
+                }
+
+                &.textarea-box {
+                    grid-area: warranty-post-warranty-service-textarea-box;
+                }
+            }
+        }
+
+        &__icon {
+            top: 0.4rem;
+            left: 1.3rem;
+            transform: scale(0.64);
+        }
+
+        &__input {
+            height: 4rem;
+            padding-left: 5.1rem;
+            font-size: 1.6rem;
+        }
+
+        .button {
+            grid-area: warranty-post-warranty-service-button;
+            margin-bottom: 2rem;
+        }
+
+        &__info {
+            grid-area: warranty-post-warranty-service__info;
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            max-width: none;
+            margin-bottom: 3.6rem;
+            line-height: 1.14;
+        }
+
+        &__list {
+            max-width: 91rem;
+        }
+
+        &__box {
+            grid-column-gap: 0.8rem;
+            grid-template-columns: 32rem;
+            margin-bottom: 2rem;
+        }
+
+        &__box,
+        &__form {
+            max-width: 96rem;
+        }
+
+        &__image {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &__text {
+            &.text {
+                &-3 {
+                    margin-bottom: 1.3rem;
+                }
+            }
+        }
+
+        &__form {
+            grid-template-areas: 
+                'warranty-post-warranty-service__form-box-phone warranty-post-warranty-service-textarea-box warranty-post-warranty-service__form-box-contract'
+                'warranty-post-warranty-service__form-box-name warranty-post-warranty-service-textarea-box warranty-post-warranty-service-button'
+                'warranty-post-warranty-service__info warranty-post-warranty-service__info warranty-post-warranty-service__info';
+            grid-template-columns: 27rem 28.8rem 1fr;
+            grid-column-gap: 4.1rem;
+            padding: 3rem 2.5rem;
+
+            &-box {
+                &:first-child {
+                    grid-area: warranty-post-warranty-service__form-box-phone;
+                }
+
+                &:nth-child(2) {
+                    grid-area: warranty-post-warranty-service__form-box-name;
+                }
+
+                &:nth-child(3) {
+                    grid-area: warranty-post-warranty-service__form-box-contract;
+                }
+
+                &.textarea-box {
+                    grid-area: warranty-post-warranty-service-textarea-box;
+                }
+            }
+        }
+
+        .button {
+            grid-area: warranty-post-warranty-service-button;
+        }
+
+        &__info {
+            grid-area: warranty-post-warranty-service__info;
+            max-width: 62rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,274 @@
+.discounts-promotions-ceilings {
+    .title {
+        margin-bottom: 1.163em;
+        letter-spacing: 0.03em;
+
+        .block {
+            display: block;
+        }
+    }
+
+    .bold {
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-bottom: 1.563em;
+    }
+
+    &__item,
+    &__img,
+    .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item {
+        margin-bottom: 0.938em;
+        max-width: 21.563em;
+        min-height: 26.375em;
+        padding: 1.113em 0.8em;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 0.375em;
+
+        &.hide {
+            display: none;
+        }
+    }
+
+    &__img,
+    .button {
+        display: block;
+    }
+
+    &__img {
+        max-width: 18.938em;
+        margin-bottom: 1.163em;
+    }
+
+    &__text {
+        font-size: 1.125em;
+        line-height: 1.25;
+
+        &--small {
+            letter-spacing: 0.03em;
+            max-width: 18em;
+            line-height: 1.06;
+        }
+
+        &.letter-spacing {
+            letter-spacing: 0;
+            line-height: 1.1;
+        }
+
+        &.installment,
+        &.discount,
+        &.payment,
+        &.gager,
+        &.settlers,
+        &.discount-10 {
+            margin-left: 0.4em;
+        }
+
+        &.installment,
+        &.post,
+        &.payment,
+        &.gager,
+        &.from-1-to-30,
+        &.settlers,
+        &.discount-10 {
+            letter-spacing: 0.03em;
+        }
+
+        &.installment {
+            .block {
+                display: block;
+            }
+        }
+
+        &.discount {
+            max-width: 16.8em;
+        }
+
+        &.from-1-to-30 {
+            margin-left: 0.5em;
+        }
+
+        &.post {
+            max-width: 12.6em;
+            margin-left: 0.5em;
+
+            .block {
+                display: block;
+            }
+        }
+
+        &.payment {
+            max-width: 12em;
+        }
+
+        &.settlers {
+            .block {
+                display: block;
+            }
+        }
+
+        &.discount-10 {
+            max-width: 11em;
+
+            .block {
+                display: block;
+            }
+        }
+    }
+
+    &__montage {
+        max-width: 16em;
+        margin-left: 0.4em;
+        margin-top: 1.2em;
+        margin-bottom: 0.625em;
+        font-size: 1.125em;
+        letter-spacing: 0.03em;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 24.738em;
+    }
+    
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 1.363em;
+
+            .block {
+                display: inline;
+            }
+        }
+
+        #discountsPromotionsCeilingsBtn {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 44.250em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__item {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1.138em;
+            padding: 0.713em 0.8em;
+            max-width: 14.125em;
+            min-height: 18.940em;
+
+            &.hide {
+                display: block;
+            }
+        }
+
+        &__img {
+            max-width: 12.375em;
+            margin-bottom: 0.963em;
+        }
+
+        &__text,
+        &__montage {
+            font-size: 1em;
+        }
+
+        &__text {
+            &.installment,
+            &.discount,
+            &.payment,
+            &.gager,
+            &.settlers,
+            &.discount-10,
+            &.from-1-to-30 {
+                margin-left: 0;
+            }
+
+            &.post {
+                margin-left: 0.2em;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 0.863em;
+        }
+
+        &__list {
+            max-width: none;
+        }
+
+        &__item {
+            margin-bottom: 1.638em;
+            padding: 1.013em 0.8em 2.713em;
+            min-width: 19.188em;
+        }
+
+        &__img {
+            max-width: none;
+            width: 16.813em;
+            height: 15em;
+        }
+
+        &__text,
+        &__montage {
+            font-size: 1.125em;
+        }
+        
+        &__text {
+            &.installment,
+            &.discount,
+            &.payment,
+            &.gager,
+            &.settlers,
+            &.discount-10,
+            &.from-1-to-30 {
+                margin-left: 0.4em;
+            }
+
+            &.installment {
+                .block,
+                .bold {
+                    display: block;
+                }
+            }
+
+            &.from-1-to-30 {
+                .from-1-to-30__block {
+                    display: block;
+                }
+            }
+
+            &.post .block,
+            &.settlers .block,
+            &.discount-10 .block {
+                display: inline;
+            }
+
+            &.post {
+                max-width: 14.6em;
+            }
+
+            &.payment {
+                max-width: 15em;
+            }
+
+            &.discount-10 {
+                max-width: 15em;
+            }
+        }
+
+        &__img {
+            margin-bottom: 1.563em;
+        }
+    }
+}

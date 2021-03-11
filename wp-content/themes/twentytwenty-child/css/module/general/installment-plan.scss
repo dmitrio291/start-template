@@ -1,0 +1,467 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.installment-plan {
+    overflow-x: hidden;
+    /* .installment-plan__wrapper */
+
+    &__wrapper {
+        padding: 4.5rem 0;
+
+        @include _768 {
+            padding: 3.5rem 0 5.5rem;
+        }
+
+        @include _1200 {
+            padding: 4rem 0 6rem;
+        }
+    }
+
+    /* .installment-plan__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1.05em;
+        line-height: 1.2em;
+
+        @include _768 {
+            margin-bottom: 0.65em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.75em;
+        }
+    }
+
+    /* .installment-plan__box-tabs */
+
+    &__box-tabs {
+        margin-bottom: 1.8em;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 0.05em;
+            width: 200vw;
+            left: -100%;
+            z-index: -1;
+            bottom: 0.05em;
+            margin: 0 auto;
+            background-color: #000;
+        }
+
+        @include _768 {
+            margin-bottom: 1.6em;
+            background-color: #efefef;
+
+            &::before {
+                content: none;
+            }
+        }
+
+        @include _1200 {
+            margin-bottom: 1.8em;
+        }
+    }
+
+    /* .installment-plan__lable */
+
+    &__tab {
+        font-weight: 900;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.4rem;
+        opacity: 0.5;
+        line-height: 1.8em;
+        position: relative;
+
+        &.active {
+            opacity: 1;
+            border-bottom: 0.25em solid #ffe600;
+
+            @include _768 {
+                border: 0.2em solid $orange;
+                background-color: #fff;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 1em;
+                    height: 1em;
+                    border-bottom: 0.2em solid $orange;
+                    border-left: 0.2em solid $orange;
+                    transform: rotate(-45deg);
+                    background-color: #fff;
+                    bottom: -0.65em;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+            }
+
+            @include _1200 {
+                &::before {
+                    bottom: -0.68em;
+                }
+            }
+        }
+
+        @include _768 {
+            opacity: 1;
+            font-weight: 700;
+            width: 33.33%;
+            font-size: 1.6rem;
+            line-height: 2.6em;
+            border: 0.2em solid transparent;
+        }
+
+        @include _1200 {
+            font-size: 1.8rem;
+            line-height: 3em;
+
+            &::before {
+                bottom: -0.68em;
+            }
+        }
+    }
+
+    /* .installment-plan__content */
+
+    &__content {
+        margin-bottom: 2.5em;
+
+        @include _1200 {
+            margin-bottom: 1.8em;
+        }
+    }
+
+    /* .installment-plan__footer */
+
+    &__footer {
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 1.25em;
+
+        @include _768 {
+            font-size: 1.1rem;
+            margin-top: auto;
+        }
+
+        @include _1200 {
+            line-height: 1.4;
+        }
+    }
+
+    /* .installment-plan__slider */
+
+    &__slider,
+    &__slider-new {
+        & .pagination.active {
+            background-color: #17a1e3;
+        }
+    }
+
+    &__slider-new {
+        .installment-plan__item {
+            @include _1200 {
+                transition: all 0.3s;
+                padding-top: 28rem;
+                padding-bottom: 2.5rem;
+                background-position-y: 2.5rem;
+                min-height: 52.2rem;
+                &:hover {
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        @include _1200 {
+            display: flex;
+        }
+
+        .installment-plan__btn {
+            background-color: #fff;
+            color: $orange;
+            border: 0.1rem solid $orange;
+            border-radius: 0.6rem;
+            max-width: 24.7rem;
+            font-size: 1.6rem;
+            min-height: 4rem;
+            line-height: 1.4rem;
+
+            @include _768 {
+                max-width: 24.2rem;
+            }
+
+            @include _1200 {
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: $orange;
+                    color: #fff;
+                }
+            }
+        }
+
+        .installment-plan__installment-plan {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    /* .installment-plan__item */
+
+    &__item {
+        padding-top: 25.8rem;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 8.7em;
+
+        @include _768 {
+            padding-top: 21.7rem;
+            min-height: 36rem;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        @include _1200 {
+            min-height: 41.2rem;
+            padding-top: 26.3rem;
+        }
+    }
+
+    /* .installment-plan__item--1 */
+
+    &__item--1 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-one-sash.webp);
+        background-size: 8.7em;
+
+        @include _768 {
+            background-size: 7.2em;
+        }
+
+        @include _1200 {
+            background-size: 8.9em;
+        }
+    }
+
+    /* .installment-plan__item--2 */
+
+    &__item--2 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-two-sash.webp);
+        background-size: 14.9em;
+
+        @include _768 {
+            background-size: 12.2em;
+        }
+
+        @include _1200 {
+            background-size: 15.15em;
+        }
+    }
+
+    /* .installment-plan__item--3 */
+
+    &__item--3 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-three-sash.webp);
+        background-size: 18.9em;
+
+        @include _768 {
+            background-size: 15.1em;
+        }
+
+        @include _1200 {
+            background-size: 18.7em;
+        }
+    }
+
+    /* .installment-plan__item--4 */
+
+    &__item--4 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-one-balcony-block.webp);
+        background-size: 13.7em;
+
+        @include _768 {
+            background-size: 10.4em;
+        }
+
+        @include _1200 {
+            background-size: 14.1em;
+        }
+    }
+
+    /* .installment-plan__item--5 */
+
+    &__item--5 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-two-balcony-block.webp);
+        background-size: 20em;
+
+        @include _768 {
+            background-size: 14.4em;
+        }
+
+        @include _1200 {
+            background-size: 19.8em;
+        }
+    }
+
+    /* .installment-plan__item--6 */
+
+    &__item--6 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-three-balcony-block.webp);
+        background-size: 12em;
+
+        @include _768 {
+            background-size: 8.7em;
+        }
+
+        @include _1200 {
+            background-size: 11.9em;
+        }
+    }
+
+    /* .installment-plan__item--7 */
+
+    &__item--7 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-one-glazing.webp);
+        background-size: 15.7em;
+
+        @include _768 {
+            background-size: 12.85em;
+        }
+
+        @include _1200 {
+            background-size: 16em;
+        }
+    }
+
+    /* .installment-plan__item--8 */
+
+    &__item--8 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-two-glazing.webp);
+        background-size: 17em;
+
+        @include _768 {
+            background-size: 14em;
+        }
+
+        @include _1200 {
+            background-size: 17.5em;
+        }
+    }
+
+    /* .installment-plan__name */
+
+    &__name {
+        font-weight: 400;
+        font-size: 1.6rem;
+        margin-bottom: 0.6em;
+
+        @include _768 {
+            font-size: 1.2rem;
+        }
+
+        @include _1200 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .installment-plan__old-price */
+
+    &__old-price {
+        font-weight: 700;
+        font-size: 1.6rem;
+        margin-right: 1.6em;
+        display: inline-block;
+        margin-bottom: 0.9em;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 0.1em;
+            width: 110%;
+            background-color: $orange;
+            left: -0.3em;
+            right: 0;
+            top: 0.5em;
+            transform: rotate(10deg);
+        }
+
+        @include _768 {
+            margin: 0;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.3em;
+        }
+    }
+
+    /* .installment-plan__new-price */
+
+    &__new-price {
+        font-weight: 900;
+        font-size: 2.4rem;
+
+        @include _768 {
+            display: block;
+            margin-bottom: 0.2em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.3em;
+        }
+    }
+
+    /* .installment-plan__text */
+
+    &__text {
+        font-size: 1.6rem;
+        margin-bottom: 0.9em;
+
+        @include _768 {
+            max-width: 12em;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            margin-bottom: 0.8em;
+        }
+
+        @include _1200 {
+            font-size: 1.4rem;
+            max-width: 14em;
+            margin-bottom: 0;
+        }
+    }
+
+    /* .installment-plan__installment-plan */
+
+    &__installment-plan {
+        font-size: 1.4rem;
+        display: inline-block;
+        background-color: #f6f6f6;
+        padding: 0.5em;
+        border-radius: 0.3em;
+
+        @include _768 {
+            margin-top: auto;
+        }
+    }
+
+    .active-tab {
+        display: block !important;
+    }
+
+    .tab-item {
+        display: none;
+    }
+}

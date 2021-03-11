@@ -1,0 +1,498 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.header {
+    background-color: #fff;
+
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .header__top */
+
+    &__top {
+        display: none;
+
+        @include _768 {
+            display: block;
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 3.1rem;
+        }
+
+        @include _1200 {
+            font-size: 1.6rem;
+            line-height: 3.7rem;
+        }
+    }
+
+    /* .header__wrapper */
+
+    &__wrapper {
+        align-items: center;
+        padding: 0 1.5rem;
+        height: 4.9rem;
+        flex-wrap: wrap;
+
+
+        @include _768 {
+            height: 7.7rem;
+            padding: 0 3rem;
+        }
+
+        @include _1200 {
+            padding: 0;
+            max-width: 120rem;
+            margin: 0 auto;
+            height: 8.6rem;
+        }
+    }
+
+    /* .header__logo-box */
+
+    &__logo-box {
+        max-width: 6.5rem;
+
+        @include _768 {
+            max-width: 12.8rem;
+        }
+
+        @include _1200 {
+            max-width: 15rem;
+        }
+    }
+
+    /* .header__calc */
+
+    &__calc {
+        display: none;
+
+        @include _1200 {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 0.1rem solid #000;
+            font-size: 1.1rem;
+
+            span {
+                border-bottom: 0.1rem solid $orange;
+            }
+        }
+    }
+
+    /* .header__free-box */
+
+    &__free-box {
+        display: none;
+
+        @include _768 {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            max-width: 14.4rem;
+
+            &>span:first-child {
+                background-color: $orange;
+                font-size: 1.2rem;
+                line-height: 2.1rem;
+                border-radius: 0.3rem;
+                color: #fff;
+                font-weight: 700;
+                max-width: 12.3rem;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+
+                @include _1200 {
+                    font-size: 1.4rem;
+                    max-width: 14.9rem;
+                    line-height: 2.3rem;
+                }
+            }
+        }
+
+        @include _1200 {
+            max-width: 15.3rem;
+        }
+    }
+
+    &__free-subbtn {
+        font-size: 0.8rem;
+        border: 0.1rem solid $orange;
+        text-align: center;
+        line-height: 1.6rem;
+        margin-top: 0.4rem;
+        border-radius: 0.3rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-top: 0.1rem solid $orange;
+            border-right: 0.1rem solid $orange;
+            background-color: #fff;
+            transform: rotate(-45deg) translateY(-0.5rem);
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
+
+        @include _1200 {
+            font-size: 1rem;
+        }
+    }
+
+    /* .header__insallment */
+
+    &__insallment {
+        display: none;
+
+        @include _1200 {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            padding-left: 2.5rem;
+            position: relative;
+            line-height: 1.9rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 1.9rem;
+                height: 1.9rem;
+                left: 0;
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.52915 14.4785C1.55771 14.1244 1.58241 13.8033 1.60947 13.4824C1.63889 13.1367 1.6739 12.7911 1.69753 12.4451C1.69838 12.3893 1.67751 12.3354 1.63932 12.2948C1.19239 11.8616 0.741158 11.4327 0.290572 11.0029C0.111669 10.8311 -0.0461862 10.6423 0.0124458 10.3777C0.0444464 10.2323 0.121763 10.0917 0.201443 9.96302C0.515436 9.45552 0.83759 8.95296 1.15974 8.44997C1.18013 8.42121 1.19295 8.38777 1.197 8.35275C1.20105 8.31773 1.19622 8.28225 1.18294 8.24959C0.975901 7.64007 0.773159 7.02841 0.56698 6.41847C0.457877 6.09631 0.547651 5.80938 0.844677 5.63284C1.38876 5.3094 1.93714 4.99311 2.48981 4.68399C2.60128 4.62127 2.65797 4.54761 2.67687 4.42197C2.7665 3.83135 2.86072 3.24131 2.95951 2.65184C2.98099 2.52684 3.01149 2.39412 3.07398 2.28673C3.18137 2.10096 3.36435 2.01934 3.57869 2.01054C4.21505 1.98434 4.85141 1.95405 5.48799 1.93387C5.62201 1.92957 5.70276 1.87588 5.779 1.77236C6.14776 1.27152 6.51738 0.77089 6.89795 0.279283C7.12775 -0.0179579 7.39192 -0.0714354 7.73362 0.0898564C8.3135 0.362184 8.88865 0.642243 9.46874 0.912638C9.52919 0.937533 9.59695 0.937995 9.65774 0.913926C10.2415 0.642243 10.8214 0.362399 11.4042 0.0881382C11.7522 -0.075516 12.0208 -0.00979663 12.2534 0.297968C12.6323 0.800099 13.0089 1.30438 13.3831 1.8108C13.4078 1.84774 13.4412 1.87802 13.4804 1.89897C13.5196 1.91991 13.5633 1.93086 13.6078 1.93086C14.2521 1.95599 14.8951 1.98112 15.5386 2.01226C15.8981 2.02965 16.1015 2.21951 16.159 2.57452C16.2604 3.1995 16.3633 3.82448 16.4616 4.44989C16.4666 4.49566 16.483 4.53944 16.5093 4.57726C16.5355 4.61507 16.5708 4.64571 16.612 4.66638C17.1704 4.98509 17.7301 5.30446 18.2833 5.63284C18.599 5.82033 18.6765 6.0961 18.5561 6.4466C18.347 7.05211 18.1433 7.65926 17.9448 8.26806C17.9281 8.31982 17.9448 8.39864 17.9736 8.44653C18.29 8.95296 18.6153 9.4538 18.9308 9.96066C19.0092 10.0865 19.0853 10.2229 19.1203 10.3649C19.178 10.5996 19.0601 10.7888 18.8956 10.9469C18.4472 11.3783 17.9985 11.8094 17.5449 12.2355C17.4554 12.3197 17.4238 12.4017 17.436 12.5261C17.497 13.1561 17.5518 13.787 17.6003 14.4188C17.6259 14.7438 17.4431 14.9968 17.1298 15.0883C16.5045 15.2704 15.879 15.4512 15.2533 15.6308C15.1689 15.6548 15.1245 15.7004 15.0914 15.7811C14.8481 16.3655 14.5992 16.9477 14.3511 17.5304C14.2652 17.7297 14.1398 17.8904 13.9181 17.943C13.836 17.9648 13.7503 17.9694 13.6664 17.9565C13.0343 17.8335 12.4029 17.7072 11.7734 17.5717C11.6377 17.5422 11.5387 17.562 11.4324 17.6507C10.9573 18.0469 10.4754 18.4346 9.99836 18.8287C9.7314 19.0495 9.41591 19.06 9.14659 18.8407C8.65276 18.4391 8.1608 18.0353 7.67069 17.6294C7.58672 17.5601 7.5079 17.5394 7.39665 17.5633C6.75234 17.7018 6.10803 17.8326 5.46372 17.9623C5.1929 18.0167 4.92401 17.8506 4.7945 17.5543C4.67874 17.2888 4.56642 17.0216 4.45345 16.7549C4.30955 16.4156 4.16974 16.0747 4.02004 15.7382C3.99856 15.6922 3.93585 15.6523 3.88366 15.6357C3.41117 15.4948 2.93546 15.3604 2.46125 15.2236C2.29974 15.177 2.13694 15.134 1.97737 15.081C1.68614 14.985 1.52872 14.7565 1.52915 14.4785ZM6.49934 5.04093C6.3694 5.05876 6.17225 5.07358 5.98067 5.11396C5.363 5.24282 4.89286 5.57764 4.62505 6.15881C4.34928 6.75737 4.3074 7.3772 4.49769 8.01055C4.66585 8.56895 4.99166 9.00042 5.53352 9.23903C6.14153 9.5062 6.76909 9.52747 7.39965 9.33374C8.01669 9.14453 8.42883 8.72788 8.64209 8.12481C8.81649 7.63084 8.8298 7.12248 8.71426 6.61176C8.60129 6.11306 8.33884 5.70801 7.91961 5.41528C7.51692 5.13307 7.04979 5.04953 6.49934 5.04093ZM12.4781 9.54014C12.3722 9.55259 12.1774 9.56269 11.9895 9.60027C11.2468 9.74846 10.7254 10.163 10.4822 10.8938C10.2737 11.5212 10.3042 12.1412 10.5694 12.7469C10.7488 13.1566 11.0456 13.4556 11.45 13.645C11.9927 13.8987 12.561 13.9324 13.1394 13.8168C13.7893 13.688 14.2703 13.3207 14.545 12.7174C14.7944 12.17 14.8103 11.5946 14.6574 11.016C14.5212 10.5006 14.2203 10.1078 13.7592 9.83652C13.3906 9.61917 12.9854 9.55238 12.4781 9.54014ZM7.23256 13.8914V13.8899C7.38999 13.8899 7.54784 13.8957 7.70506 13.8864C7.7523 13.8834 7.81802 13.8501 7.83972 13.811C8.16688 13.22 8.49039 12.6269 8.81026 12.0319C9.07056 11.5508 9.32699 11.0674 9.58751 10.5863C10.0368 9.75584 10.487 8.92604 10.938 8.09689C11.2346 7.5498 11.5305 7.00249 11.8256 6.45498C12.0481 6.04283 12.2689 5.62962 12.4914 5.2179C12.5344 5.1393 12.5079 5.11353 12.4289 5.11374C12.0997 5.11374 11.7704 5.11138 11.441 5.11933C11.4128 5.12262 11.3856 5.13201 11.3614 5.14685C11.3372 5.16168 11.3165 5.1816 11.3007 5.20523C10.8927 5.95564 10.4891 6.70862 10.0836 7.4616C9.41483 8.70196 8.74554 9.9419 8.07575 11.1814C7.61099 12.0439 7.14551 12.9061 6.67932 13.7679C6.62992 13.8594 6.64409 13.8888 6.74912 13.8907C6.91062 13.8935 7.0717 13.8914 7.23256 13.8914Z' fill='%233A3A3A'/%3E%3Cpath d='M7.24018 7.25416C7.24662 7.531 7.22193 7.80355 7.13452 8.06857C6.98418 8.52496 6.59867 8.56383 6.3315 8.41435C6.18804 8.33403 6.12532 8.18713 6.07851 8.04108C5.95587 7.65922 5.94234 7.26598 6.00656 6.87423C6.03929 6.68542 6.09707 6.50182 6.17837 6.32829C6.33386 5.99067 6.906 6.03727 7.04818 6.32013C7.17403 6.57076 7.22171 6.83193 7.24018 7.10425C7.24297 7.15387 7.24018 7.20412 7.24018 7.25416Z' fill='%233A3A3A'/%3E%3Cpath d='M13.1847 11.6988C13.1436 11.9537 13.1166 12.2097 13.0592 12.4586C12.971 12.8407 12.6471 13.0114 12.3003 12.8768C12.1385 12.8139 12.0556 12.6749 12.0084 12.525C11.8366 11.981 11.8312 11.4322 12.0196 10.8914C12.1465 10.5274 12.4579 10.455 12.7446 10.5654C12.9257 10.635 13.0103 10.7974 13.0526 10.9679C13.1116 11.2054 13.1413 11.4503 13.1847 11.6988Z' fill='%233A3A3A'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+            }
+
+
+        }
+    }
+
+    /* .header__sale */
+
+    &__sale {
+        display: none;
+
+        @include _1200 {
+            display: block;
+            text-decoration: none;
+            padding-left: 2.9rem;
+            position: relative;
+            line-height: 2.2rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 2.2rem;
+                width: 2.2rem;
+                left: 0;
+                background-image: url("data:image/svg+xml,%3Csvg width='22' height='19' viewBox='0 0 22 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9464 16.4888C12.9464 16.9771 12.5419 17.2143 12.0536 17.2143H9.375C8.88672 17.2143 8.48214 16.9771 8.48214 16.4888V15.7076V9.17857V6.5H12.9464V9.17857V15.7076V16.4888ZM6.58482 4.71429C5.84542 4.71429 5.24554 4.1144 5.24554 3.375C5.24554 2.6356 5.84542 2.03571 6.58482 2.03571C7.05915 2.03571 7.39397 2.28683 7.54743 2.46819L9.30525 4.71429H6.58482ZM16.183 3.375C16.183 4.1144 15.5831 4.71429 14.8438 4.71429H12.1373L13.8811 2.46819C14.0346 2.28683 14.3694 2.03571 14.8438 2.03571C15.5831 2.03571 16.183 2.6356 16.183 3.375ZM21.4286 6.94643C21.4286 6.69531 21.2333 6.5 20.9821 6.5H14.8438C16.5737 6.5 17.9688 5.10491 17.9688 3.375C17.9688 1.64509 16.5737 0.249999 14.8438 0.249999C13.909 0.249999 13.0441 0.640624 12.5 1.32422L10.7143 3.62612L8.92857 1.32422C8.38449 0.640624 7.51953 0.249999 6.58482 0.249999C4.85491 0.249999 3.45982 1.64509 3.45982 3.375C3.45982 5.10491 4.85491 6.5 6.58482 6.5H0.446429C0.195312 6.5 0 6.69531 0 6.94643V11.4107C0 11.6618 0.195312 11.8571 0.446429 11.8571H1.78571V17.6607C1.78571 18.4001 2.3856 19 3.125 19H18.3036C19.043 19 19.6429 18.4001 19.6429 17.6607V11.8571H20.9821C21.2333 11.8571 21.4286 11.6618 21.4286 11.4107V6.94643Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+
+    /* .header__box-phone */
+
+    &__box-phone {
+        text-align: right;
+        margin-left: auto;
+        margin-right: 1.7rem;
+
+        @include _768 {
+            margin: 0;
+        }
+    }
+
+    /* .header__phone */
+
+    &__phone {
+        color: inherit;
+        text-decoration: none;
+
+        @include _768 {
+            font-size: 2.4rem;
+        }
+    }
+
+    /* .header__whatsapp */
+
+    &__whatsapp {
+        color: inherit;
+        text-decoration: none;
+        font-size: 0.8rem;
+        background: #E1EFD0;
+        max-width: 12rem;
+        margin-left: auto;
+        position: relative;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("/wp-content/themes/twentytwenty-child/img/whatsapp.webp");
+            background-size: contain;
+            width: 1.8rem;
+            height: 1.8rem;
+            left: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @include _768 {
+            font-size: 1rem;
+            max-width: 16.1rem;
+            padding-right: .63rem;
+
+            &::before {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+
+    /* .header__menu */
+
+    &__menu {
+        font-size: 1rem;
+
+        @include _768 {
+            font-size: 1.4rem;
+        }
+    }
+
+    /* .header__menu-box */
+
+    &__menu-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 0.9rem;
+        margin: 0.5rem auto;
+        width: 1.5rem;
+
+        span {
+            display: block;
+            height: 0.1rem;
+            background-color: $orange;
+
+            @include _768 {
+                height: 0.15rem;
+            }
+
+            @include _1200 {
+                height: 0.2rem;
+            }
+        }
+
+        @include _768 {
+            width: 2.1rem;
+            height: 1.15rem;
+        }
+
+        @include _1200 {
+            height: 1.4rem;
+        }
+    }
+
+    &__bottom-calc {
+        background: #F6F6F6;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 3.5rem;
+        color: inherit;
+
+        .calc-icon {
+            position: relative;
+            display: inline-block;
+            width: 1.2rem;
+            height: 1.5rem;
+            background-image: url("/wp-content/themes/twentytwenty-child/img/header-calc.webp");
+            transform: translateY(20%);
+            margin-right: 0.5rem;
+
+        }
+
+        @include _1200 {
+            display: none;
+        }
+    }
+
+    /* .header__nav */
+
+    &__nav {
+        display: none;
+
+        @include _768 {
+            display: block;
+            background: #FFE600;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 0.2rem 4.2rem;
+            height: 3.5rem;
+        }
+
+        @include _1200 {
+            height: 4.9rem;
+            padding: 0.4rem 0;
+        }
+    }
+
+    /* .header__nav-list */
+
+    &__nav-list {
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+
+        @include _768 {}
+
+        @include _1200 {
+            max-width: 120rem;
+            margin: 0 auto;
+            font-size: 1.4rem;
+        }
+    }
+
+    /* .header__nav-item */
+
+    &__nav-item {
+        width: 100%;
+        max-width: 10.7rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.1rem;
+        border-radius: 1.4rem;
+        position: relative;
+        line-height: 1;
+        padding: 0 1rem;
+        cursor: pointer;
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+        }
+
+        &.shevron {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0.4rem;
+                height: 0.4rem;
+                border-right: 0.1rem solid #000;
+                border-bottom: 0.1rem solid #000;
+                transform: rotate(45deg);
+                bottom: 0.2rem;
+
+                @include _1200 {
+                    bottom: 0.5rem;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: #fff;
+
+            .header__drop-menu {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        @include _1200 {
+            max-width: 19.1rem;
+            height: 4.1rem;
+        }
+    }
+
+    /* .header__drop-menu */
+
+    &__drop-menu {
+        display: none;
+
+        @include _768 {
+            position: absolute;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            top: 5.1rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='10' viewBox='0 0 20 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.85038 1C11.7686 6.33333 16.9104 8.55556 19.0418 9H1.05859C3.18994 8.55556 7.93217 6.33333 9.85038 1Z' fill='white' stroke='white' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                width: 1.8rem;
+                height: .8rem;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                transform: translateY(-100%);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 1rem;
+                width: 100%;
+                top: -1rem;
+                left: 0;
+            }
+        }
+
+        @include _1200 {}
+    }
+
+    /* .header__drop-item */
+
+    &__drop-item {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.6rem;
+        margin-bottom: 0.2rem;
+        text-decoration: none;
+        color: inherit;
+        border-bottom: 0.3rem solid transparent;
+        padding-top: 0.3rem;
+
+        &:first-child {
+            border-radius: 1.5rem 1.5rem 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 0 1.5rem 1.5rem;
+            margin-bottom: 0;
+        }
+
+        &.active,
+        &:hover {
+            border-bottom: 0.3rem solid #F26422;
+        }
+
+        @include _768 {}
+
+        @include _1200 {}
+    }
+
+
+}

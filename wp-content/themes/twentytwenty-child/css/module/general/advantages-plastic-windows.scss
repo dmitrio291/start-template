@@ -1,0 +1,299 @@
+.advantages-plastic-windows {
+
+    .title {
+        margin-bottom: 1.25em;
+    }
+
+    .orange {
+        font-weight: 700;
+    }
+
+    .advantages {
+        &-list {
+            max-width: 20em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2.500em;
+    
+            &__item {
+                display: flex;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                margin-bottom: 1em;
+            }
+    
+            img {
+                width: 4em;
+                position: absolute;
+                top: 0.4em;
+                right: -0.3em;
+            }
+    
+            &__circle {
+                width: 5.056em;
+                height: 5.056em;
+                margin-right: 1.278em;
+                background-color: #FFE600;
+                border-radius: 50%;
+                position: relative;
+    
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: -0.6em;
+                    display: block;
+                    width: 1.778em;
+                    height: 1.778em;
+                    border-radius: 50%;
+                    background-color: #F26422;
+                    color: #ffffff;
+                    text-align: center;
+                    line-height: 1.778em;
+                    font-size: 1.033em;                ;
+                    font-weight: 700;
+                }
+    
+                &--1 {
+                    &::before {
+                        content: '1';
+                    }
+                }
+    
+                &--2 {
+                    &::before {
+                        content: '2';
+                    }
+                }
+    
+                &--3 {
+                    &::before {
+                        content: '3';
+                    }
+                }
+    
+                &--4 {
+                    &::before {
+                        content: '4';
+                    }
+                }
+    
+                &--5 {
+                    &::before {
+                        content: '5';
+                    }
+                }
+            }
+    
+            p {
+                max-width: 13.267em;
+            }
+        }
+    }
+
+    .block {
+        display: block;
+    }
+
+    &__text {
+        max-width: 20em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        &--mb-27 {
+            margin-bottom: 1.3em;
+        }
+    }
+
+    .form-contacts {
+        &__box {
+            margin-bottom: 0.875em;
+        }
+
+        &__input {
+            padding-left: 0;
+            padding-right: 0;
+            min-height: 2.50em;
+            text-align: center;
+            border-radius: 0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 0.188em solid #C9C9C9;
+            font-size: 0.875em;
+            font-weight: 700;
+        }
+
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        .title {
+            max-width: 16.9em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .advantages {
+            &-list {
+                max-width: 38em;
+    
+                &__item {
+                    align-items: center;
+                    margin-bottom: 1.875em;
+                }
+    
+                &__circle {
+                    margin-right: 1.875em;
+                }
+
+                &__block {
+                    display: block;
+                }
+    
+                p {
+                    max-width: 27.367em;
+                    font-size: 1.125em;
+                    line-height: 1.22;
+                }
+
+                .block {
+                    display: inline;
+                }
+    
+            }
+        }
+        
+        &__text {
+            max-width: 32em;
+            font-size: 1.125em;
+            line-height: 1.2;
+        }
+        
+        .form-contacts {
+            max-width: 59rem;
+
+            &__box,
+            &__button {
+                max-width: none;
+                width: 18em;
+            }
+
+            &__box {
+                margin-bottom: 0;
+            }
+
+            &__input {
+                min-height: 2.50em;
+                font-size: 1em;
+            }
+
+            &__button {
+                margin: 0;
+            }
+        }
+    }
+
+    @media (min-width: 960px) {
+        .form-contacts {
+            &__box {
+                min-width: 0;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        .title {
+            max-width: none;
+        }
+
+        .advantages-list,
+        &__text {
+            margin-bottom: 1.875em;
+        }
+
+        .advantages {
+            &-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 70em;
+
+                &__item {
+                    display: block;
+                    flex-basis: 33%;
+                    margin-bottom: 2.3125em;
+                    text-align: center;
+
+                    &:nth-child(4) p .block,
+                    &:last-child .block,
+                    &:last-child .block-helper  {
+                        display: block;
+                    }
+
+                    &:nth-child(4),
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__circle {
+                    width: 9.1875em;
+                    height: 9.1875em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1.25em;
+
+                    &:before {
+                        top: 0.2em;
+                        left: -0.2em;
+                        width: 1.77em;
+                        height: 1.77em;
+                        line-height: 1.77em;
+                        font-size: 1.875em;
+                    }
+                }
+
+                p {
+                    max-width: 17em;
+                }
+
+                img {
+                    width: 8.1em;
+                    right: -0.6em;
+                    top: 2em;
+                    font-size: 1.3rem;
+                }
+            }
+
+        }
+
+        &__text {
+            &--mb-27 {
+                max-width: 35em;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .form-contacts {
+            max-width: 64rem;
+
+            &__input,
+            .button {
+                width: 19.0625em;
+            }
+        }
+
+    }
+
+}

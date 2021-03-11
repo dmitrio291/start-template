@@ -1,0 +1,76 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.installation-of-windows-in-houses {
+
+    /* .installation-of-windows-in-houses__title */
+
+    &__title {
+        margin-bottom: 0.9em;
+
+        @include _768 {
+            margin-bottom: 1em;
+        }
+
+        @include _1200 {
+            line-height: 1.2;
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .installation-of-windows-in-houses__box-img */
+
+    &__box-img {
+        width: 100%;
+        height: 18.8rem;
+        margin-bottom: 1.7em;
+
+        @include _768 {
+            height: 38.7rem;
+            margin-bottom: 1.8em;
+        }
+
+        @include _1200 {
+            height: 51.7rem;
+            margin-bottom: 2em;
+        }
+    }
+
+    /* .installation-of-windows-in-houses__img */
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .installation-of-windows-in-houses__text */
+
+    &__text {
+        line-height: 1.2;
+
+        @include _768 {
+            padding: 0 8em;
+            line-height: 1.25;
+        }
+
+        @include _1200 {
+            padding: 0 15em;
+        }
+    }
+
+    /* .installation-of-windows-in-houses__link */
+
+    &__link {
+        text-decoration: none;
+        display: block;
+
+        @include _768 {
+            display: inline;
+        }
+    }
+}

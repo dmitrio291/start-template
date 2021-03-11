@@ -1,0 +1,156 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.beware-of-fakes {
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    /* .beware-of-fakes__title */
+
+    &__title,
+    &__subtitle {
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        margin-bottom: 2.8rem;
+    }
+
+    &__title {
+        line-height: 1.2;
+
+        @include _1200 {
+            margin-bottom: 3.3rem;
+        }
+    }
+
+    /* .beware-of-fakes__subtitle */
+
+    &__subtitle {
+        @include _768 {
+            margin-bottom: 3.6rem;
+        }
+    }
+
+    /* .beware-of-fakes__list */
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        @include _768 {
+            display: block;
+        }
+    }
+
+    /* .beware-of-fakes__list-title */
+
+    &__list-title {
+        margin-bottom: 1.5rem;
+
+        @include _768 {
+            margin-bottom: 1.7rem;
+        }
+    }
+
+    /* .beware-of-fakes__item */
+
+    &__item {
+        padding-left: 2.7rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        position: relative;
+
+        span {
+            margin-bottom: .6rem;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0.95em;
+            height: 0.95em;
+            border: 0.063em solid $orange;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.00961 7.00225L0.368983 4.27834C0.210339 4.11469 0.210339 3.84936 0.368983 3.6857L0.943494 3.09305C1.10214 2.92939 1.35938 2.92939 1.51802 3.09305L3.29687 4.92799L7.10698 0.997735C7.26562 0.834088 7.52286 0.834088 7.68151 0.997735L8.25602 1.59038C8.41466 1.75403 8.41466 2.01936 8.25602 2.18303L3.58414 7.00227C3.42548 7.16591 3.16825 7.16591 3.00961 7.00225Z' fill='black'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 0.5em;
+            border-radius: 50%;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include _768 {
+            margin-bottom: 1.8rem;
+            padding-left: 3.8rem;
+
+            &:before {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    /* .beware-of-fakes__box-img */
+
+    &__list-img {
+        width: 100%;
+        height: 16.7rem;
+        order: 1;
+        margin: 2.5rem 0;
+
+        @include _768 {
+            max-width: 28.6rem;
+            height: 13.9rem;
+            float: right;
+            margin: 0;
+        }
+
+        @include _1200 {
+            max-width: 38.8rem;
+            height: 28rem;
+        }
+    }
+
+    /* .beware-of-fakes__box-text */
+
+    &__box-text {
+        border: 0.1rem solid $orange;
+        border-radius: 0.6rem;
+        padding: 1.5rem 0.6rem;
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            margin: 3rem 0;
+            padding: 2.1rem 2.7rem;
+        }
+
+        @include _1200 {
+            padding: 2.1rem 3.7rem;
+        }
+    }
+
+    /* .beware-of-fakes__text */
+
+    &__text {
+        line-height: 1.2;
+        margin-bottom: 2rem;
+
+        @include _768 {
+            line-height: 1.25;
+            margin-bottom: 2.2rem;
+        }
+    }
+}

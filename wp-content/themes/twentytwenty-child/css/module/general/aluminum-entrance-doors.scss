@@ -1,0 +1,121 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.aluminum-entrance-doors {
+
+    /* .aluminum-entrance-doors__title */
+
+    &__title {
+        margin-bottom: 1.1em;
+
+        @include _max768 {
+            span {
+                display: block;
+            }
+        }
+
+        @include _768 {
+            margin-bottom: 1em;
+        }
+        
+        @include _1200 {
+            line-height: 1.2;
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .aluminum-entrance-doors__inner */
+
+    &__inner {
+        @include _1200 {
+            display: flex;
+        }
+    }
+
+    /* .aluminum-entrance-doors__img */
+
+    &__img {
+        height: 22.9rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: 0.3em solid #ffffff;
+        border-radius: 0.3em;
+        margin: 0 auto 1.7em;
+        display: block;
+
+        @include _768 {
+            height: 23.6rem;
+            margin: 0 auto 2em;
+            border-width: 0.5em;
+            border-radius: 0.5em;
+        }
+
+        @include _1200 {
+            margin: 0 1.5em 0 0;
+            height: 26.6rem;
+        }
+    }
+
+    /* .aluminum-entrance-doors__text */
+
+    &__text {
+        margin-bottom: 1.7em;
+        text-align: center;
+
+        @include _768 {
+            text-align: left;
+            line-height: 1.25;
+            margin-bottom: 1.55em;
+        }
+
+        @include _1200 {
+            margin-bottom: 2.5em;
+        }
+    }
+
+    /* .aluminum-entrance-doors__box-price */
+
+    &__box-price {
+        align-items: center;
+
+        @include _768 {
+            padding: 0 3.8em 0 8.9em;
+        }
+
+        @include _1200 {
+            padding: 0;
+        }
+
+    }
+
+    /* .aluminum-entrance-doors__price */
+
+    &__price {
+        font-size: 3rem;
+
+        @include _768 {
+            font-size: 4rem;
+        }
+
+    }
+
+    /* .aluminum-entrance-doors__link */
+
+    &__link {
+        max-width: 16.5rem;
+        margin-right: 0;
+
+        @include _768 {
+            max-width: 28.6rem;
+            margin: inherit;
+        }
+
+        @include _1200 {
+            max-width: 30.6rem;
+        }
+    }
+}

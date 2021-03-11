@@ -1,0 +1,127 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.balcony-alignment {
+    /* .balcony-alignment__wrapper */
+
+    &__wrapper {
+        text-align: center;
+
+        @include _768 {
+            text-align: left;
+        }
+    }
+
+    &__title {
+        line-height: 1.2;
+        padding: 0 1em;
+        margin-bottom: 1.2em;
+
+        @include _768 {
+            padding: 0;
+            line-height: 1.1;
+            margin-bottom: 1em;
+        }
+
+        @include _1200 {
+            line-height: 1.2;
+            margin-bottom: 0.7em;
+        }
+    }
+
+    /* .balcony-alignment__slider */
+
+    &__text {
+        line-height: 1.2;
+        margin-bottom: 1.4em;
+
+        @include _768 {
+            line-height: 1.25;
+            margin-bottom: 1.6em;
+        }
+    }
+
+    &__slider {
+        margin-bottom: 1.7em;
+        padding-bottom: 0.3em;
+
+        .pagination.active {
+            background-color: $blue;
+        }
+
+        .balcony-alignment__text {
+            margin-bottom: 0;
+        }
+
+        @include _1200 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    /* .balcony-alignment__item */
+
+    &__item {
+        @include _768 {
+            display: flex;
+        }
+
+        @include _1200 {
+
+            &+& {
+                margin-top: 1.9em;
+            }
+        }
+    }
+
+    /* .balcony-alignment__item-title */
+
+    &__item-title {
+        margin-bottom: 0.8em;
+    }
+
+    &__box-img {
+        width: 100%;
+        max-width: 22.5rem;
+        height: 15.1rem;
+        margin: 0 auto;
+        border-radius: 0.6rem;
+        overflow: hidden;
+        margin-bottom: 1.7em;
+
+        @include _768 {
+            max-width: 22.6rem;
+            height: 18rem;
+            margin-right: 1em;
+            margin-bottom: 0;
+        }
+
+        @include _1200 {
+            max-width: 22.5rem;
+            height: 15.1rem;
+            margin-right: 1.1em;
+        }
+    }
+
+    /* .balcony-alignment__img */
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__box-info {
+        @include _768 {
+            width: 100%;
+        }
+    }
+}

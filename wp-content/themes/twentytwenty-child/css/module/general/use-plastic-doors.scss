@@ -1,0 +1,76 @@
+@import '../../base/all/var';
+
+.use-plastic-doors {
+    .title {
+        max-width: 15em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.1625em;
+    }
+
+    &__box {
+        max-width: 14.0625em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .owl-stage-outer {
+        filter: drop-shadow(0 0 0.375em rgba(0, 0 , 0, 0.25));
+        border-radius: 0.625em;
+    }
+
+    &__img {
+        width: 100%;
+        border-top-left-radius: 0.525em;
+        border-top-right-radius: 0.525em;
+    }
+
+    &__text {
+        padding: 1.225em 1.25em;
+        text-align: center;
+        font-size: 1.125em;
+        font-weight: 700;
+        background-color: #ffffff;
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 0.9625em;
+        }
+
+        &__box {
+            max-width: 44.5625em;
+        }
+
+        &__text {
+            border-bottom-left-radius: 0.525em;
+            border-bottom-right-radius: 0.525em;
+            padding-top: 1.025em;
+            padding-bottom: 1.025em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        .title {
+            max-width: none;
+        }
+
+        &__box {
+            max-width: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            max-width: 14.0625em;
+            filter: drop-shadow(0 0 0.375em rgba(0, 0 , 0, 0.25));
+        }
+
+        &__img {
+            display: block;
+        }
+    }
+}

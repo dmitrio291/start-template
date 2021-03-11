@@ -1,0 +1,121 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.tips-for-ceilings {
+    /* .tips-for-ceilings__wrapper */
+
+    &__wrapper {
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .tips-for-ceilings__title */
+
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .tips-for-ceilings__list */
+
+    &__list {
+        line-height: 1.15;
+        margin-bottom: 2.5rem;
+        @include _768 {
+            margin-bottom: 3rem;
+            line-height: 1.25;
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .tips-for-ceilings__item */
+
+    &__item {
+        margin-bottom: 2.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @include _768 {
+            display: flex;
+            margin-bottom: 3rem;
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .tips-for-ceilings__block-video */
+
+    &__block-video {
+        width: 100%;
+        height: 19.5rem;
+        margin-bottom: 2rem;
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+        @include _768 {
+            max-width: 34.7rem;
+            margin-right: 1.5rem;
+            margin-bottom: 0;
+        }
+        @include _1200 {
+            max-width: 38.8rem;
+            height: 21.8rem;
+            margin-right: 2rem;
+        }
+    }
+
+    /* .tips-for-ceilings__text-box */
+
+    &__text-box {
+        width: 100%;
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .tips-for-ceilings__text-title */
+
+    &__text-title {
+        margin-bottom: 1.5rem;
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .tips-for-ceilings__text */
+
+    &__text {
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .tips-for-ceilings__btn */
+
+    &__btn {
+        @include _768 {
+            max-width: 30.6rem;
+        }
+        @include _1200 {
+        }
+    }
+}

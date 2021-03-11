@@ -1,0 +1,167 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.on-your-balcony {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/on-your-balcony-bg-s.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .container {
+        width: calc(100% - 3.1rem);
+    }
+
+    @include _768 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/on-your-balcony-bg-m.webp);
+    }
+
+    @include _1200 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/on-your-balcony-bg-l.webp);
+    }
+
+    /* .on-your-balcony__title */
+
+    &__title {
+        text-align: center;
+        line-height: 1.2em;
+        margin-bottom: 1em;
+        padding: 0 0.5em;
+
+        @include _768 {
+            margin-bottom: 1.2em;
+            padding: 0;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.6em;
+        }
+    }
+
+    /* .on-your-balcony__inner */
+
+    &__inner {
+        @include _768 {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+
+    /* .on-your-balcony__slider */
+
+    &__slider {
+        margin-bottom: 1.8em;
+
+        .pagination {
+            background-color: #D0D0D0;
+        }
+
+        .navigation-left,
+        .navigation-right {
+            width: 1.3em;
+            height: 2.413em;
+            background-size: 1rem;
+
+            span {
+                display: none;
+            }
+
+            @include _768 {
+                background-color: transparent;
+            }
+
+            @include _1200 {
+                width: 1.8em;
+                height: 2.5em;
+                background-size: 1.5rem;
+            }
+        }
+
+        .navigation-left {
+            left: -0.375em;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='15' height='23' viewBox='0 0 15 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.397759 10.6059L11.398 0.370135C11.9284 -0.123378 12.7887 -0.123378 13.319 0.370135L14.6022 1.56415C15.1319 2.05714 15.1325 2.85561 14.6044 3.34965L5.88629 11.4997L14.6039 19.6503C15.1325 20.1444 15.1314 20.9429 14.6016 21.4358L13.3185 22.6299C12.7881 23.1234 11.9278 23.1234 11.3975 22.6299L0.397759 12.3935C-0.132586 11.9 -0.132586 11.0994 0.397759 10.6059Z' fill='black'/%3E%3C/svg%3E%0A");
+
+            @include _1200 {
+                // left: 3em;
+            }
+        }
+
+        .navigation-right {
+            right: -0.375em;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='14' height='23' viewBox='0 0 14 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.6287 12.3938L3.36185 22.6297C2.86669 23.1234 2.06392 23.1234 1.56881 22.6297L0.371356 21.4359C-0.122957 20.9431 -0.123907 20.1443 0.369243 19.6503L8.50588 11.5L0.369243 3.34965C-0.123907 2.85567 -0.122957 2.05694 0.371356 1.56411L1.56881 0.370252C2.06397 -0.123417 2.86674 -0.123417 3.36185 0.370252L13.6286 10.6062C14.1238 11.0998 14.1238 11.9002 13.6287 12.3938Z' fill='black'/%3E%3C/svg%3E%0A");
+
+            @include _1200 {
+                // right: 3em;
+            }
+        }
+
+        & .pagination-box {
+            bottom: 0.6em;
+        }
+
+        & .pagination {
+            width: 0.563em;
+            height: 0.563em;
+        }
+
+        & .pagination.active {
+            background-color: #17a1e3;
+        }
+
+        @include _768 {
+            width: 50%;
+        }
+
+        @include _1200 {
+            margin-bottom: 0;
+        }
+    }
+
+    /* .on-your-balcony__box-text */
+
+    &__box-text {
+        @include _768 {
+            width: 49%;
+        }
+
+        @include _1200 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    /* .on-your-balcony__text */
+
+    &__text {
+        text-align: center;
+        line-height: 1.1em;
+        margin-bottom: 1.4em;
+
+        @include _768 {
+            text-align: left;
+            line-height: 1.2;
+            padding-right: 0.5em;
+        }
+    }
+
+    .owl-carousel .owl-item .on-your-balcony__img {
+        width: 30.1rem;
+        height: 20rem;
+        margin: 0 auto;
+
+        @include _768 {
+            width: 30.2rem;
+            height: 20.1rem;
+        }
+
+        @include _1200 {
+            width: 41rem;
+            height: 27.5rem;
+        }
+    }
+}

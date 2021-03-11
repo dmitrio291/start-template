@@ -1,0 +1,194 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.other-types-of-wooden-windows {
+    background-color: #f6f6f6;
+
+    /* .wood-species__title */
+
+    &__title {
+        line-height: 1.2;
+        text-align: center;
+        max-width: 10em;
+        margin: 0 auto 1.1em;
+
+        @include _768 {
+            max-width: 100%;
+            margin-bottom: 0.9em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .wood-species__slider */
+
+    &__slider {
+        margin-bottom: 2.3em;
+
+        & .pagination-box {
+            bottom: -2.5em;
+        }
+
+        & .pagination.active {
+            background-color: #17a1e3;
+        }
+
+        & .owl-stage-outer {
+            filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+            border-radius: 0.3em;
+        }
+
+        @include _768 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+
+        @include _1200 {
+            justify-content: center;
+        }
+    }
+
+    /* .wood-species__item */
+
+    &__item {
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 0.3em;
+        padding: 1.9em 1.05em 1.5em;
+
+        @include _768 {
+            padding: 1.8em 0.9em;
+            max-width: 34.2rem;
+        }
+
+        @include _1200 {
+            max-width: 38.8rem;
+            padding: 2em 1em;
+            margin: 0 0.6em;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    /* .wood-species__name */
+
+    &__name {
+        font-size: 1.8rem;
+        margin-bottom: 0.55em;
+    }
+
+    /* .wood-species__price */
+
+    &__price {
+        font-size: 1.8rem;
+        margin-bottom: 1.3em;
+
+        @include _1200 {
+            margin-bottom: 1.6em;
+        }
+    }
+
+    /* .wood-species__img */
+
+    &__img {
+        height: 18.9rem;
+        margin-bottom: 1.6em;
+
+        @include _768 {
+            height: 19rem;
+            margin-bottom: 1.4em;
+        }
+
+        @include _1200 {
+            width: 100%;
+            height: 24.5rem;
+            margin-bottom: 1.6em;
+        }
+    }
+
+    /* .wood-species__text */
+
+    &__text {
+        font-size: 1.4rem;
+        line-height: 1.2em;
+        margin-bottom: 1.5em;
+
+        @include _1200 {
+            font-size: 1.8rem;
+            line-height: 1.25;
+        }
+    }
+
+    /* .wood-species__specifications */
+
+    &__specifications {
+        margin-bottom: 1.6em;
+
+        @include _768 {
+            margin-bottom: 2em;
+        }
+
+        @include _1200 {
+            justify-content: space-around;
+            margin-top: auto;
+            margin-bottom: 1.2em;
+        }
+    }
+
+    /* .wood-species__specifications-item */
+
+    &__specifications-item {
+        max-width: 5em;
+        width: 100%;
+
+        @include _1200 {
+            max-width: 5.8em;
+        }
+    }
+
+    /* .wood-species__specifications-rating */
+
+    &__specifications-rating {
+        margin-bottom: 0.4em;
+    }
+
+    /* .wood-species__specifications-name */
+
+    &__specifications-name {
+        font-size: 1.2rem;
+    }
+
+    /* .wood-species__link */
+
+    &__link {
+        max-width: 25.8rem;
+
+        @include _1200 {
+            max-width: 30.6rem;
+        }
+    }
+
+    .circle-rating {
+        display: block;
+        width: 0.5em;
+        height: 0.5em;
+        background-color: #d0d0d0;
+        border-radius: 50%;
+
+        &--orange {
+            display: block;
+            width: 0.5em;
+            height: 0.5em;
+            border-radius: 50%;
+            background-color: $orange;
+        }
+    }
+}

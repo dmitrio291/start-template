@@ -1,0 +1,121 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+.windows-house {
+    /* .windows-house__item */
+
+    &__item {
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        /* .windows-house__item--home */
+
+        &--home {
+            background-image: url(/wp-content/themes/twentytwenty-child/img/windows-to-the-house-img-home-s.webp);
+            padding-top: 11.938em;
+
+            @include _768 {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/windows-to-the-house-img-home-m.webp);
+                background-position: right;
+                padding-top: 0;
+            }
+
+            @include _1200 {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/windows-to-the-house-img-home-l.webp);
+                background-size: 26em;
+                background-position: 29em 0;
+            }
+        }
+
+        /* .windows-house__item--balcony */
+
+        &--balcony {
+            background-image: url(/wp-content/themes/twentytwenty-child/img/windows-to-the-house-img-balcony-s.webp);
+            margin-top: 1.563em;
+            padding-top: 15em;
+
+            @include _768 {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/windows-to-the-house-img-balcony-m.webp);
+                background-position: left;
+                padding-top: 0;
+            }
+
+            @include _1200 {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/windows-to-the-house-img-balcony-l.webp);
+                background-size: 20em;
+                background-position: inherit;
+            }
+        }
+    }
+
+    /* .windows-house__info */
+
+    &__info {
+        @include _768 {
+            max-width: 34.7rem;
+        }
+
+        @include _1200 {
+            max-width: 44.5rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 28rem;
+        }
+
+        &--balcony {
+            margin-left: auto;
+
+            @include _1200 {
+                min-height: 34rem;
+                margin-right: 1.6em;
+            }
+        }
+    }
+
+    /* .windows-house__title */
+
+    &__title {
+        margin-bottom: 0.4em;
+        line-height: 1.2em;
+        text-align: center;
+
+        @include _768 {
+            margin-bottom: 0.8em;
+            line-height: 1.1em;
+            text-align: left;
+
+            span {
+                display: block;
+            }
+        }
+
+        @include _1200 {
+            margin-bottom: 0.47em;
+        }
+    }
+
+    /* .windows-house__text */
+
+    &__text {
+        margin-bottom: 1.3em;
+        line-height: 1.38;
+
+        @include _768 {
+            line-height: 1.25;
+            margin-bottom: 2.5em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.6em;
+        }
+    }
+
+    /* .windows-house__btn */
+
+    &__btn {
+        @include _1200 {
+            max-width: 32rem;
+            margin-left: 0;
+        }
+    }
+}

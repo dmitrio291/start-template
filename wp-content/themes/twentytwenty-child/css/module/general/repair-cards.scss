@@ -1,0 +1,290 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.repair-cards {
+
+    /* .repair-cards__list */
+
+    &__list {
+        flex-wrap: wrap;
+    }
+
+    /* .repair-cards__item */
+
+    &__item {
+        width: 100%;
+        padding: 1.1rem;
+        padding-right: 0.7rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        background-color: #fff;
+        border-radius: 0.3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include _768 {
+            max-width: 34.7rem;
+
+            &:nth-child(11) {
+                margin-bottom: 0;
+            }
+        }
+
+        @include _1200 {
+            border-radius: 0.6rem;
+            max-width: 47rem;
+            padding: 1.5rem;
+            padding-right: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    /* .repair-cards__box-img */
+
+    &__box-img {
+        width: 100%;
+        max-width: 14.1rem;
+        height: 11.8rem;
+        border-radius: 0.3rem;
+        overflow: hidden;
+        margin-right: 1.05em;
+
+        @include _1200 {
+            max-width: 19.2rem;
+            height: 15.9rem;
+            border-radius: 0.6rem;
+            margin-right: 1.65em;
+        }
+    }
+
+    /* .repair-cards__img */
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .repair-cards__box-info */
+
+    &__box-info {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* .repair-cards__info-title */
+
+    &__info-title {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        margin-bottom: 0.4em;
+        text-transform: uppercase;
+
+        @include _1200 {
+            font-size: 1.6rem;
+            margin-bottom: 1.1em;
+        }
+    }
+
+    /* .repair-cards__info-text */
+
+    &__info-text {
+        font-size: 1.2rem;
+        line-height: 1.1;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            border: 0.1rem solid $orange;
+            left: -0.8em;
+            top: 0.25em;
+        }
+
+        @include _1200 {
+            font-size: 1.4rem;
+        }
+    }
+
+    /* .repair-cards__info-price */
+
+    &__info-price {
+        margin-top: auto;
+        font-weight: 700;
+        margin-bottom: 0.3em;
+        font-size: 2rem;
+
+        &::after {
+            font-weight: 400;
+            font-size: 1.6rem;
+
+            @include _1200 {
+                font-size: 1.8rem;
+                margin-bottom: 0.4em;
+            }
+        }
+
+        &::before {
+            content: "от ";
+            font-size: 1.6rem;
+
+            @include _1200 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @include _1200 {
+            font-size: 2.4rem;
+        }
+    }
+
+    /* .repair-cards__info-btn */
+
+    &__info-btn {
+        min-height: 2.2rem;
+        font-size: 1.2rem;
+        line-height: 1;
+        max-width: 16.05rem;
+        margin-left: 0;
+
+        @include _1200 {
+            min-height: 3rem;
+            font-size: 1.4rem;
+            max-width: 19.5rem;
+        }
+    }
+
+    /* .repair-cards__item--last */
+
+    &__item--last {
+        background-color: $orange;
+        color: #fff;
+        padding-top: 1.3rem;
+        padding-bottom: 0.7rem;
+
+        @include _1200 {
+            padding-top: 1.6rem;
+        }
+    }
+
+    /* .repair-cards__item-title */
+
+    &__item-title {
+        font-size: 1.2rem;
+        margin-bottom: 1.9rem;
+
+        @include _1200 {
+            font-size: 1.6rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .repair-cards__last-item */
+
+    &__last-item {
+
+        &:first-child {
+            margin-right: 2.1rem;
+
+            @include _1200 {
+                margin-right: 4rem;
+            }
+        }
+
+        &:last-child {
+            width: 30%;
+        }
+    }
+
+    /* .repair-cards__last-message */
+
+    &__last-message {
+        background-color: #fff;
+        color: #000;
+        font-size: 1.2rem;
+        padding: 0.7rem 0.8rem;
+        width: 100%;
+        max-width: 18.8rem;
+        margin-bottom: 2.2rem;
+        border-radius: 0.6rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border: 1rem solid transparent;
+            border-top: 1rem solid #fff;
+            right: -1rem;
+        }
+
+        @include _1200 {
+            font-size: 1.4rem;
+            max-width: 21.7rem;
+            line-height: 1.2;
+            padding: 1rem;
+            padding-right: 0.6rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .repair-cards__last-btn */
+
+    &__last-btn {
+        background-color: #fff;
+        color: $orange;
+        min-height: 2.2rem;
+        font-size: 1.2rem;
+        max-width: 16rem;
+        margin-left: 0;
+
+        @include _1200 {
+            max-width: 19.5rem;
+            min-height: 3rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    /* .repair-cards__last-img */
+
+    &__last-img {
+        width: 4.2rem;
+        height: 4.2rem;
+        margin-bottom: 0.5rem;
+
+        @include _1200 {
+            width: 5.2rem;
+            height: 5.2rem;
+        }
+    }
+
+    /* .repair-cards__last-name */
+
+    &__last-name {
+        font-size: 1.2rem;
+
+        @include _1200 {
+            font-size: 1.4rem;
+        }
+    }
+
+    /* .repair-cards__last-info */
+
+    &__last-info {
+        font-size: 1.1rem;
+
+        @include _1200 {
+            font-size: 1.2rem;
+            max-width: 9em;
+        }
+    }
+}

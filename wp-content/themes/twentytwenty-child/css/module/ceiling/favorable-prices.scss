@@ -1,0 +1,518 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+/*****************************************************/
+/*Добавил Сергей*/
+.favorable-prices__item-list.list-open .item-none {
+    display: none;
+}
+.favorable-prices__link {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.favorable-prices__link.btn-open::before {
+    content: "Показать полный список";
+}
+.favorable-prices__link::before {
+    content: "Скрыть";
+}
+@media (min-width: 1200px) {
+	.favorable-prices__link {
+		margin-bottom: 1rem;
+	}
+}
+/*****************************************************/
+
+.favorable-prices {
+    img,  iframe{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .active-tab {
+        display: block !important;
+
+        @include _1200 {
+            display: grid !important;
+        }
+    }
+
+    .tab-item {
+        display: none;
+    }
+
+    .tab {
+        &:nth-child(n + 9) {
+            //display: none;
+        }
+
+        @include _768 {
+            &:nth-child(n + 9) {
+                display: block;
+            }
+            &:nth-child(n + 10) {
+                //display: none;
+            }
+        }
+        @include _1200 {
+            &:nth-child(n + 10) {
+                display: block;
+            }
+        }
+    }
+
+    /* .favorable-prices__title */
+
+    &__title {
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 2.7rem;
+
+        span {
+            display: block;
+        }
+
+        @include _768 {
+            line-height: 1.1;
+
+            span {
+                display: inline;
+            }
+        }
+
+        @include _1200 {
+            line-height: 1.2;
+        }
+    }
+
+    /* .favorable-prices__suptitle  */
+
+    &__suptitle {
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+        @include _768 {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .favorable-prices__item */
+
+    &__item {
+        border: 0.1rem solid #e6e6e6;
+        margin: 0 -1.5rem;
+        margin-bottom: 2.5rem;
+        padding: 2.5rem 1.5rem 3.5rem;
+
+        &.none {
+            display: none;
+        }
+
+        @include _768 {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 3rem 6rem;
+            margin-bottom: 3rem;
+        }
+
+        @include _1200 {
+            padding: 0;
+            padding-right: 1.5rem;
+            display: grid;
+            grid-template-columns: 1.03fr 1fr;
+            grid-template-rows: auto 1fr;
+            gap: 0px 2rem;
+            grid-template-areas:
+                "img title"
+                "img list";
+        }
+    }
+
+    /* .favorable-prices__item-title-box */
+
+    &__item-title-box {
+        @include _1200 {
+            grid-area: title;
+            padding-top: 3.4rem;
+        }
+    }
+
+    /* .favorable-prices__item-title */
+
+    &__item-title {
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 1.4rem;
+
+        @include _768 {
+            margin-bottom: 2.5rem;
+        }
+
+        @include _1200 {
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+    }
+
+    /* .favorable-prices__item-title-info */
+
+    &__item-title-info {
+        align-items: center;
+        margin-bottom: 4rem;
+
+        @include _1200 {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    /* .favorable-prices__item-title-price */
+
+    &__item-title-price {
+        font-size: 2.4rem;
+        line-height: 1.2;
+        position: relative;
+
+        &::before {
+            content: "Итоговая стоимость";
+            position: absolute;
+            bottom: -1.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #e6e6e6;
+            white-space: nowrap;
+        }
+
+        &::after {
+            content: " \20BD";
+            font-size: 1.5rem;
+        }
+
+        @include _768 {
+            font-size: 3rem;
+
+            &::before {
+                font-size: 1.3rem;
+            }
+
+            &::after {
+                font-size: 2rem;
+            }
+        }
+
+        @include _1200 {
+            &::before {
+                font-size: 1.4rem;
+            }
+
+            &::after {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    /* .favorable-prices__item-img-box */
+
+    &__item-img-box {
+        @include _1200 {
+            grid-area: img;
+        }
+    }
+
+    /* .favorable-prices__item-img-big */
+
+    iframe {
+        width: 100%;
+        height: 33.3rem;
+
+        &.hide {
+            display: none;
+        }
+    }
+
+    &__item-img-big {
+        display: block;
+        width: 100%;
+        max-width: 34.5rem;
+        height: 19.5rem;
+        margin-bottom: 0.1rem;
+
+        &.hide {
+            display: none;
+        }
+
+        @include _768 {
+            max-width: 58.8rem;
+            height: 33.3rem;
+        }
+
+        @include _1200 {
+            max-width: 46.8rem;
+            height: 26.5rem;
+            margin-bottom: 0.2rem;
+        }
+    }
+
+    /* .favorable-prices__item-img-list */
+
+    &__item-img-list {
+        margin-bottom: 2.7rem;
+
+        @include _1200 {
+            flex-wrap: wrap;
+            margin-bottom: -0.2rem;
+        }
+    }
+
+    /* .favorable-prices__item-img */
+
+    &__item-img {
+        display: none;
+        width: 100%;
+        max-width: 17.1rem;
+        height: 9.6rem;
+
+        img {
+            &.active {
+                @include _1200 {
+                    outline: 0.2rem solid $orange;
+                }
+            }
+        }
+
+        &:first-child {
+            display: block;
+        }
+
+        &:last-child {
+            display: block;
+        }
+        iframe{
+            height: inherit;
+        }
+
+        @include _768 {
+            max-width: 29.2rem;
+            height: 16.4rem;
+        }
+
+        @include _1200 {
+            max-width: 15.4rem;
+            height: 8.7rem;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+    }
+
+    /* .favorable-prices__item-list-box */
+
+    &__item-list-box {
+        @include _1200 {
+            grid-area: list;
+        }
+    }
+
+    /* .favorable-prices__item-list-title */
+
+    &__item-list-title {
+        margin-bottom: 1.6rem;
+    }
+
+    /* .favorable-prices__item-list */
+
+    &__item-list {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin-bottom: 1.7rem;
+
+        &--closed {
+            & > .favorable-prices__item-list-item:nth-child(n + 5) {
+                //display: none;
+            }
+        }
+
+        @include _768 {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-bottom: 2.5rem;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    /* .favorable-prices__item-list-item */
+
+    &__item-list-item {
+
+        &.hidden {
+            display: none;
+        }
+        
+        @include _1200 {
+            &:nth-child(n + 9) {
+                //display: none;
+            }
+        }
+    }
+
+    /* .favorable-prices__item-list-info */
+
+    &__item-list-info {
+        white-space: nowrap;
+    }
+
+    /* .favorable-prices__item-list-btn */
+
+    &__item-list-btn {
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        font-weight: 700;
+        cursor: pointer;
+
+        &--open::before {
+            content: "Показать полный список";
+        }
+
+        &--closed::before {
+            content: "Скрыть";
+        }
+
+        @include _1200 {
+            display: none;
+        }
+    }
+
+    /* .favorable-prices__btn */
+
+    &__btn {
+        @include _768 {
+            max-width: 34.6rem;
+        }
+
+        @include _1200 {
+            max-width: 30.6rem;
+        }
+    }
+
+    /* .favorable-prices__box-tabs */
+
+    &__box-tabs {
+        flex-wrap: wrap;
+    }
+
+    /* .favorable-prices__tabs */
+
+    &__tabs {
+        margin-bottom: 2.5rem;
+        line-height: 1.5;
+        cursor: pointer;
+        width: 100%;
+        max-width: 16.5rem;
+
+        &.active {
+            pointer-events: none;
+        }
+        @include _768 {
+            margin-bottom: 3rem;
+            max-width: 22.6rem;
+        }
+
+        @include _1200 {
+            max-width: 22.5rem;
+        }
+    }
+
+    /* .favorable-prices__tabs-img-box */
+
+    &__tabs-img-box {
+        width: 100%;
+
+        height: 9.7rem;
+        margin-bottom: 1rem;
+        @include _768 {
+            height: 13.3rem;
+        }
+
+        @include _1200 {
+            height: 14.4rem;
+        }
+    }
+
+    /* .favorable-prices__tabs-price */
+
+    &__tabs-price {
+        &::after {
+            content: " \20BD";
+        }
+    }
+}
+
+/*****************************************************/
+/*Добавил Сергей*/
+.favorable-prices__item-list.list-open .item-none {
+    display: none;
+  }
+  
+  .favorable-prices__link {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .favorable-prices__link.btn-open::before {
+    content: "Показать полный список";
+  }
+  
+  .favorable-prices__link::before {
+    content: "Скрыть";
+  }
+  
+  @media (min-width: 1200px) {
+    .favorable-prices__link {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* иконка play */
+  .favorable-prices__item-img {
+      position: relative;
+  }
+  .favorable-prices__item-img:hover.favorable-prices__item-img .icon-video {
+      opacity: 1;
+  }
+  .favorable-prices__item-img .icon-video {
+      width: 40px;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      opacity: .8;
+  }
+  
+  /* скрытые блоки */
+  .favorable-prices__item-hidden {
+      height: 0;
+      visibility: hidden;	
+      position: absolute;
+      top: 0;
+  }
+  .favorable-prices__item-hidden.is-visible {
+      height: auto;
+      visibility: visible;
+      position: static;
+  }
+  /*****************************************************/

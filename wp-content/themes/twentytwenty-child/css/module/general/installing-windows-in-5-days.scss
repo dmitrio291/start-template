@@ -1,0 +1,318 @@
+@import '../../base/all/var';
+
+.installing-windows-in-5-days {
+    padding-bottom: 8.5rem;
+
+    &__box {
+        display: grid;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.6rem;
+        margin-bottom: 2.6rem;
+        max-width: 34.5rem;
+    }
+
+    &__rectangle {
+        position: relative;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        padding: 1.4rem 0.5rem 1.7rem;
+        max-width: 9rem;
+        max-height: 7.5rem;
+        background-color: $orange;
+        border-radius: 0.3rem;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 1.8rem;
+            right: -0.9rem;
+            border-style: solid;
+            border-width: 0.6rem 0 0.6rem 0.9rem;
+            border-color: transparent transparent transparent $orange;
+        }
+    }
+
+    &__5-years {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: $white;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    &__guarantees {
+        padding: 0.4rem 1.5rem;
+        background-color: $white;
+        border-radius: 0.3rem;
+        font-size: 1rem;
+    }
+
+    .title {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        text-align: left;
+        letter-spacing: 0.04em;
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    &__text {
+        letter-spacing: 0.04em;
+        grid-row: 2 / 3;
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    &__slider {
+        max-width: 34.6rem;
+        margin-right: auto;
+        margin-left: auto;
+
+        &-item {
+            position: relative;
+            max-width: 22.6rem;
+            text-align: center;
+            border: 0.1rem solid #E6E6E6;
+            border-radius: 1rem;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: linear-gradient(-270deg, rgba(255,255,255,0.9023984593837535) 0%, rgba(255,255,255,0.6222864145658263) 35%, rgba(255,255,255,0.6727065826330532) 82%, rgba(255,255,255,1) 100%);
+                border-radius: 1rem;
+            }
+        }
+
+        &-box,
+        &-img {
+            position: relative;
+        }
+
+        &-box {
+            overflow: hidden;
+            min-height: 19rem;
+            margin-bottom: 1.6rem;
+            background-image: url('/wp-content/themes/twentytwenty-child/img/installing-windows-in-5-days-bg.jpg');
+            background-repeat: no-repeat;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        &-img {
+            display: block;
+            border-radius: 1rem;
+            top: 1.7rem;
+            right: -0.9rem;
+        }
+
+        &-text {
+            position: absolute;
+            bottom: 1.2rem;
+            left: 0;
+            max-width: 14.9rem;
+            padding: 0.9rem 2.2rem 0.6rem;
+            background-color: $orange;
+            color: $white;
+            border-radius: 0.6rem;
+            letter-spacing: 0.05em;
+        }
+
+        &-name,
+        &-number,
+        &-installed-windows {
+            letter-spacing: 0.05em;
+        }
+
+        &-name {
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+
+            .block {
+                display: block;
+            }
+        }
+
+        &-number {
+            font-size: 2.4rem;
+            margin-bottom: 0.4rem;
+        }
+
+        &-installed-windows {
+            color: #979797;
+            margin-bottom: 2.2rem;
+        }
+    }
+
+    .owl-carousel {
+        .installing-windows-in-5-days__slider-img {
+            width: 20rem;
+            height: 17.5rem;
+        }
+
+        .owl-item.active {
+            .installing-windows-in-5-days__slider-item:before {
+                background: none;
+            }
+        }
+    }
+
+    .pagination {
+        background-color: #E8E8E8;
+        cursor: pointer;
+
+        &.active {
+            background-color: $orange;
+        }
+
+        &-box {
+            bottom: -2.5em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__box {
+            max-width: 74rem;
+            grid-column-gap: 2.3rem;
+            grid-template: 
+                'installing-windows-in-5-days__rectangle installing-windows-in-5-days-title'
+                'installing-windows-in-5-days__rectangle installing-windows-in-5-days__text';
+            grid-template-columns: 21.8rem 45rem;
+            grid-template-rows: 6.8rem;
+            margin-bottom: 3.1rem;
+        }
+
+        &__rectangle {
+            grid-area: installing-windows-in-5-days__rectangle;
+            padding: 2rem 1.5rem;
+            max-width: 20.8rem;
+            max-height: 10.9rem;
+            border-radius: 0.6rem;
+
+            &:after {
+                border-width: 8.5px 0 8.5px 17px;
+                top: 3rem;
+                right: -1.7rem;
+            }
+        }
+
+        &__5-years,
+        .title {
+            font-size: 3rem;
+        }
+
+        &__5-years {
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            grid-area: installing-windows-in-5-days-title;
+            line-height: 1.1;
+        }
+
+        &__guarantees {
+            display: block;
+            padding: 0.5rem 1.5rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        &__text {
+            grid-area: installing-windows-in-5-days__text;
+            text-align: left;
+            font-size: 1.8rem;
+        }
+
+        &__slider {
+            max-width: 73.6rem;
+
+            &-item {
+                &:before {
+                    background: none;
+                } 
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__box {
+            max-width: none;
+            grid-template-columns: 21.8rem 1fr;
+            grid-template-rows: 10.4rem;
+            grid-column-gap: 2.9rem;
+        }
+
+        &__rectangle {
+            padding: 3.2rem 1.5rem;
+            max-height: 14.5rem;
+        }
+
+        &__5-years {
+            margin-bottom: 0.8rem;
+            font-size: 4rem;
+        }
+
+        .title {
+            font-size: 4rem;
+            line-height: 1.3;
+        }
+
+        &__slider {
+            max-width: none;
+
+            &-name {
+                margin-bottom: 1.6rem;
+            }
+        }
+
+        &__navigation {
+            display: flex;
+            justify-content: space-between;
+
+            &-left,
+            &-right {
+                bottom: -4.7rem;
+                position: absolute;
+                border: none;
+                background-color: transparent;
+                z-index: 1;
+
+                span {
+                    display: block;
+                    color: transparent;
+                    width: 8rem;
+                    height: 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    cursor: pointer;
+                }
+            }
+
+            &-left {
+                left: 36.2rem;
+
+                span {
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='72' height='16' viewBox='0 0 72 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292907 8.76657C-0.097616 8.37605 -0.0976123 7.74288 0.292912 7.35236L6.65687 0.988398C7.04739 0.597874 7.68056 0.597874 8.07108 0.988398C8.46161 1.37892 8.46161 2.01209 8.07108 2.40261L2.41423 8.05947L8.07108 13.7163C8.46161 14.1068 8.46161 14.74 8.07108 15.1305C7.68056 15.5211 7.04739 15.5211 6.65687 15.1305L0.292907 8.76657ZM72 9.05947L1.00002 9.05947L1.00001 7.05947L72 7.05947L72 9.05947Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+            &-right {
+                right: 36.2rem;
+
+                span {
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='72' height='16' viewBox='0 0 72 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M71.7071 8.76657C72.0976 8.37605 72.0976 7.74288 71.7071 7.35236L65.3431 0.988398C64.9526 0.597874 64.3194 0.597874 63.9289 0.988398C63.5384 1.37892 63.5384 2.01209 63.9289 2.40261L69.5858 8.05947L63.9289 13.7163C63.5384 14.1068 63.5384 14.74 63.9289 15.1305C64.3194 15.5211 64.9526 15.5211 65.3431 15.1305L71.7071 8.76657ZM-4.81556e-06 9.05947L71 9.05947L71 7.05947L-5.00033e-06 7.05947L-4.81556e-06 9.05947Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+                }
+            }
+        }
+
+        .owl-carousel {
+            .installing-windows-in-5-days__slider-img {
+                height: 17.1rem;
+            }
+        }
+    }
+}

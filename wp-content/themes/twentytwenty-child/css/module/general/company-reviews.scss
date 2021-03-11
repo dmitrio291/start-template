@@ -1,0 +1,489 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.company-reviews {
+    /* .company-reviews__wrapper */
+
+    .active-tab {
+        display: block !important;
+
+        @include _768 {
+            display: grid !important;
+        }
+    }
+
+    .tab-item {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .play {
+        position: absolute;
+        display: block;
+        width: 1.8125em;
+        height: 1.8125em;
+        background-image: url("data:image/svg+xml,%3Csvg width='39' height='38' viewBox='0 0 39 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse opacity='0.5' cx='19.162' cy='18.746' rx='18.8612' ry='18.7304' fill='%23FFE600'/%3E%3Cpath d='M27.3125 18.7459L15.0859 25.756L15.0859 11.7358L27.3125 18.7459Z' fill='white'/%3E%3Cpath d='M15.0859 11.7462V11.7358L27.3125 18.7459L25.2807 19.9108L15.0859 11.7462Z' fill='%23F3EFC9'/%3E%3C/svg%3E%0A");
+        background-size: contain;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__wrapper {
+        @include _1200 {
+            position: relative;
+        }
+    }
+
+    /* .company-reviews__title */
+
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 2.7rem;
+
+        @include _1200 {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    /* .company-reviews__tabs-content */
+
+    &__tabs-content {
+        padding: 2rem 1.5rem;
+        margin: 0 -1.5rem 2.5rem;
+        border: 0.1rem solid #d0d0d0;
+
+        @include _768 {
+            border-radius: 0.6rem;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 3rem 2.2rem;
+        }
+
+        @include _1200 {
+            margin-bottom: 3.4rem;
+        }
+    }
+
+    /* .company-reviews__inner */
+
+    &__inner {
+        @include _768 {
+            display: grid;
+            grid-template-columns: 0.84fr 1fr;
+            grid-template-rows: 0.4fr auto auto;
+            gap: 0px 0px;
+            grid-template-areas:
+                "slider title"
+                "slider list"
+                "slider list";
+        }
+
+        @include _1200 {
+            grid-template-columns: 1.05fr 1fr;
+        }
+    }
+
+    /* .company-reviews__tab-box-title */
+
+    &__tab-box-title {
+        @include _768 {
+            grid-area: title;
+        }
+    }
+
+    /* .company-reviews__tab-title */
+
+    &__tab-title {
+        line-height: 1.1;
+        margin-bottom: 1.4rem;
+
+        @include _768 {
+            margin-bottom: 1.7rem;
+        }
+
+        @include _1200 {
+            margin-bottom: 3.3rem;
+        }
+    }
+
+    /* .company-reviews__tab-box-info */
+
+    &__tab-box-info {
+        display: flex;
+        margin-bottom: 1.5rem;
+
+        @include _768 {
+            justify-content: space-between;
+            margin-bottom: 1.7rem;
+        }
+
+        @include _1200 {
+            padding-right: 8.7rem;
+            margin-bottom: 3.3rem;
+        }
+    }
+
+    /* .company-reviews__tab-box-icon */
+
+    &__tab-box-icon {
+        display: flex;
+        align-items: center;
+        margin-right: 2.6rem;
+
+        &:last-child {
+            color: #c4c4c4;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.5625em;
+            height: 1.5625em;
+            border-radius: 50%;
+            border: 0.1rem solid #c4c4c4;
+            font-size: 1.4em;
+            margin-right: 0.9rem;
+
+            &--orange {
+                border-color: $orange;
+
+                .purse {
+                    stroke: $orange;
+                }
+            }
+
+            @include _768 {
+                font-size: 2.1em;
+                border-width: 0.2rem;
+                margin-right: 1.5rem;
+            }
+        }
+
+        .purse {
+            width: 1em;
+            height: 1.1875em;
+            stroke: #d4d4d4;
+        }
+
+        @include _768 {
+            margin-right: 1.5rem;
+        }
+    }
+
+    /* .company-reviews__tab-title-text */
+
+    &__tab-title-text {
+        font-size: 1.4rem;
+
+        @include _768 {
+            font-size: 1.6rem;
+        }
+    }
+
+    /* .company-reviews__tab-box-sliders */
+
+    &__tab-box-sliders {
+        margin-bottom: 2.7rem;
+
+        .owl-nav {
+            top: 35%;
+            position: absolute;
+            transform: translateY(-50%);
+            font-size: 2.4em;
+            color: #fff;
+            width: 100%;
+
+            @include _1200 {
+                font-size: 3.1em;
+                top: 40%;
+            }
+        }
+
+        .owl-next,
+        .owl-prev {
+            position: absolute;
+        }
+
+        .owl-next {
+            right: 1rem;
+        }
+
+        .owl-prev {
+            left: 1rem;
+        }
+
+        .sync1 {
+            margin-bottom: 0.5rem;
+        }
+
+        .sync2 {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 3.1rem;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+                right: 0;
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            .owl-item {
+                opacity: 0.3;
+
+                &.current {
+                    opacity: 1;
+                }
+            }
+        }
+
+        @include _768 {
+            grid-area: slider;
+            max-width: 17.4em;
+        }
+
+        @include _1200 {
+            max-width: 44.7rem;
+        }
+    }
+
+    /* .company-reviews__tab-sliders-item-big */
+
+    &__tab-sliders-item-big {
+        width: 100%;
+        max-width: 34.5rem;
+        height: 20.2rem;
+        cursor: pointer;
+        position: relative;
+
+        .play {
+            width: 1.8125em;
+            height: 1.8125em;
+        }
+
+        @include _768 {
+            max-width: 27.8rem;
+            height: 16.3rem;
+        }
+
+        @include _1200 {
+            max-width: 44.8rem;
+            height: 26.3rem;
+        }
+    }
+
+    /* .company-reviews__tab-sliders-item-small */
+
+    &__tab-sliders-item-small {
+        width: 100%;
+        max-width: 13.4rem;
+        height: 7.9rem;
+
+        @include _768 {
+            max-width: 10.9rem;
+            height: 6.4rem;
+        }
+
+        @include _1200 {
+            max-width: 17.5rem;
+            height: 10.3rem;
+        }
+    }
+
+    /* .company-reviews__tab-box-list */
+
+    &__tab-box-list {
+        @include _768 {
+            grid-area: list;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    /* .company-reviews__tab-list */
+
+    &__tab-list {
+        &.close-mob {
+            .company-reviews__tab-list-item {
+                display: none;
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    display: block;
+                }
+            }
+        }
+
+        @include _768 {
+            min-height: 6.7em;
+
+            &.close-plan {
+                .company-reviews__tab-list-item {
+                    display: none;
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    /* .company-reviews__tab-list-item */
+
+    &__tab-list-item {
+        line-height: 1.2;
+        margin-bottom: 0.7rem;
+
+        @include _768 {
+            margin-bottom: 1rem;
+        }
+
+        @include _1200 {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    /* .company-reviews__tab-list-open */
+
+    &__tab-list-open {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &.closed {
+            &::before {
+                content: "Показать полный ";
+            }
+        }
+
+        &.open {
+            &::before {
+                content: "Скрыть ";
+            }
+        }
+
+        @include _768 {
+            text-align: left;
+            margin-top: auto;
+        }
+
+        @include _1200 {
+            display: none;
+        }
+    }
+
+    /* .company-reviews__tabs-buttons */
+
+    &__tabs-buttons {
+        display: none;
+
+        @include _1200 {
+            display: block;
+            position: absolute;
+            top: 41%;
+            width: 100%;
+        }
+    }
+
+    /* .company-reviews__tabs-button */
+
+    &__tabs-button {
+        @include _1200 {
+            position: absolute;
+            cursor: pointer;
+            background-size: 2rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 4rem;
+            height: 4rem;
+            border: none;
+            background-color: $orange;
+            border-radius: 50%;
+        }
+    }
+
+    /* .company-reviews__tabs-button-left */
+
+    &__tabs-button-left {
+        @include _1200 {
+            left: -6rem;
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.53125C6.71875 5.25 6.71875 4.78125 7 4.46875L11.25 0.21875C11.5625 -0.0625 12.0312 -0.0625 12.3125 0.21875L13.0312 0.9375C13.3125 1.25 13.3125 1.71875 13.0312 2L10 5.03125L13.0312 8.03125C13.3125 8.3125 13.3125 8.78125 13.0312 9.09375L12.3125 9.78125C12.0312 10.0938 11.5625 10.0938 11.25 9.78125L7 5.53125ZM1 4.46875L5.25 0.21875C5.5625 -0.0625 6.03125 -0.0625 6.3125 0.21875L7.03125 0.9375C7.3125 1.21875 7.3125 1.71875 7.03125 2L4 5L7.03125 8.03125C7.3125 8.3125 7.3125 8.78125 7.03125 9.09375L6.3125 9.78125C6.03125 10.0938 5.53125 10.0938 5.25 9.78125L1 5.53125C0.71875 5.25 0.71875 4.78125 1 4.46875Z' fill='%23F6F6F6'/%3E%3C/svg%3E%0A");
+        }
+    }
+
+    /* .company-reviews__tabs-button-right */
+
+    &__tabs-button-right {
+        @include _1200 {
+            right: -6rem;
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.53125C7.28125 5.25 7.28125 4.78125 7 4.46875L2.75 0.21875C2.4375 -0.0625 1.96875 -0.0625 1.6875 0.21875L0.96875 0.9375C0.6875 1.25 0.6875 1.71875 0.96875 2L4 5.03125L0.96875 8.03125C0.6875 8.3125 0.6875 8.78125 0.96875 9.09375L1.6875 9.78125C1.96875 10.0938 2.4375 10.0938 2.75 9.78125L7 5.53125ZM13 4.46875L8.75 0.21875C8.4375 -0.0625 7.96875 -0.0625 7.6875 0.21875L6.96875 0.9375C6.6875 1.21875 6.6875 1.71875 6.96875 2L10 5L6.96875 8.03125C6.6875 8.3125 6.6875 8.78125 6.96875 9.09375L7.6875 9.78125C7.96875 10.0938 8.46875 10.0938 8.75 9.78125L13 5.53125C13.2812 5.25 13.2812 4.78125 13 4.46875Z' fill='%23F6F6F6'/%3E%3C/svg%3E%0A");
+        }
+    }
+
+    /* .company-reviews__tabs-btn */
+
+    &__tabs-btn {
+        flex-wrap: wrap;
+        margin-bottom: -0.8rem;
+        margin-right: -0.8rem;
+
+        @include _768 {
+            margin-bottom: -1.2rem;
+            margin-right: -1.2rem;
+        }
+    }
+
+    /* .company-reviews__box-img */
+
+    &__box-img {
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        max-width: 8rem;
+        height: 4.8rem;
+        margin-right: 0.8rem;
+        margin-bottom: 0.8rem;
+
+        .play {
+            width: 0.6875em;
+            height: 0.6875em;
+        }
+
+        &.active {
+            border: 0.2rem solid $orange;
+            pointer-events: none;
+        }
+
+        @include _768 {
+            max-width: 13.1rem;
+            height: 7.9rem;
+            margin-right: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        @include _1200 {
+            max-width: 12.68rem;
+            height: 7.64rem;
+        }
+    }
+}

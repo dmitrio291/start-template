@@ -1,0 +1,19 @@
+.bath-glazing-text {
+    .container {
+        width: calc(100% - 3.1rem);
+    }
+
+    .text-along {
+        line-height: 1.12;
+        letter-spacing: 0.005em;
+        font-size: 1.8rem;
+
+        span {
+            margin-bottom: 1.1em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        width: calc(100% - 4rem);
+    }
+}

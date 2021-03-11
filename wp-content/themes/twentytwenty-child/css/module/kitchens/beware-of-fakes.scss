@@ -1,0 +1,266 @@
+@import '../../base/all/var';
+
+.beware-of-fakes {
+    .title,
+    &__text,
+    &__warning,
+    &__description,
+    &__description-two {
+        line-height: 1.2;
+    }
+
+    .title,
+    &__info {
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    .title {
+        margin-bottom: 2.6rem;
+
+        .block {
+            display: block;
+        }
+    }
+
+    &__info {
+        margin-bottom: 2.7rem;
+    }
+
+    &__subgrids {
+        margin-bottom: 2.5rem;
+
+        .beware-of-fakes {
+            &__item {
+                &:nth-child(2) {
+                    margin-bottom: 1.6rem;                    
+                }
+
+                &:nth-child(3) {
+                    .beware-of-fakes__title {
+                        margin-bottom: 1.6rem;
+                    }
+                }
+
+                &:nth-child(4) {
+                    margin-bottom: 2.4rem;
+
+                    .beware-of-fakes__title {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__principles-operation-text,
+    &__title {
+        color: #3A3A3A;
+    }
+
+    &__principles-operation-text {
+        margin-bottom: 1.6rem;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 1.7rem;
+        padding-left: 2.7rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            border: 0.1rem solid $orange;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.00961 7.00225L0.368983 4.27834C0.210339 4.11469 0.210339 3.84936 0.368983 3.6857L0.943494 3.09305C1.10214 2.92939 1.35938 2.92939 1.51802 3.09305L3.29687 4.92799L7.10698 0.997735C7.26562 0.834088 7.52286 0.834088 7.68151 0.997735L8.25602 1.59038C8.41466 1.75403 8.41466 2.01936 8.25602 2.18303L3.58414 7.00227C3.42548 7.16591 3.16825 7.16591 3.00961 7.00225Z' fill='black'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 0.7rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0.7rem;
+    }
+
+    &__warning {
+        margin-bottom: 2.7rem;
+        padding: 1.4rem 0.7rem;
+        border: 0.1rem solid $orange;
+        border-radius: 0.6rem;
+    }
+
+    &__description {
+        &-color {
+            margin-bottom: 2.5rem;
+        }
+
+        &-two {
+            margin-bottom: 2.5rem;
+        }
+
+        &-color {
+            margin-bottom: 2.2rem;
+        }
+    }
+
+    &__image {
+        display: block;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 6rem);
+        }
+
+        .title {
+            margin-bottom: 2.9rem;
+
+            .block {
+                display: inline;
+            }
+        }
+
+        &__info,
+        &__principles-operation-text,
+        &__title,
+        &__text,
+        &__warning,
+        &__description,
+        &__description-two,
+        &__description-color {
+            font-size: 1.8rem;
+        }
+
+        &__info {
+            margin-bottom: 3.4rem;
+            line-height: 1.1;
+        }
+
+        &__subgrids {
+            display: grid;
+            grid-template: 
+                'beware-of-fakes__principles-operation-text beware-of-fakes__picture'
+                'beware-of-fakes__item-1 beware-of-fakes__picture'
+                'beware-of-fakes__item-2 beware-of-fakes__item-2'
+                'beware-of-fakes__item-3 beware-of-fakes__item-3';  
+            grid-template-columns: 40.3rem 28.6rem;
+            column-gap: 2rem;
+            margin-bottom: 0.7rem;
+            max-width: 71rem;
+            margin: 0 auto;
+
+            .beware-of-fakes {
+                &__item {
+                    &:nth-child(2) {
+                        margin-bottom: 1.9rem;
+                    }
+        
+                    &:nth-child(3) {
+                        .beware-of-fakes__title {
+                            margin-bottom: 0.7rem;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        .beware-of-fakes__title {
+                            margin-bottom: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__principles-operation-text {
+            margin-bottom: 1.9rem;
+            grid-area: beware-of-fakes__principles-operation-text;
+        }
+
+        &__item {
+            padding-left: 3.8rem;
+
+            &::before {
+                width: 2rem;
+                height: 2rem;
+                background-size: 0.9rem;
+                background-position: 0.5rem;
+            }
+            
+            &:nth-child(2) {
+                grid-area: beware-of-fakes__item-1;
+            }
+
+            &:nth-child(3) {
+                grid-area: beware-of-fakes__item-2;
+            }
+
+            &:nth-child(4) {
+                grid-area: beware-of-fakes__item-3;
+            }
+        }
+
+        &__picture {
+            grid-area: beware-of-fakes__picture;
+        }
+
+        &__warning {
+            margin-bottom: 3.2rem;
+            padding: 2rem 2.6rem;
+
+            .block {
+                display: block;
+            }
+        }
+
+        &__description {
+            margin-bottom: 0.3rem;
+
+            &-color {
+                margin-bottom: 2.5rem;
+            }
+
+            &-two {
+                margin-bottom: 3.2rem;
+
+                .block {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__subgrids {
+            max-width: 96rem;
+            margin-bottom: 0.7rem;
+            grid-template: 
+                'beware-of-fakes__principles-operation-text beware-of-fakes__picture'
+                'beware-of-fakes__item-1 beware-of-fakes__picture'
+                'beware-of-fakes__item-2 beware-of-fakes__picture'
+                'beware-of-fakes__item-3 beware-of-fakes__picture';
+
+            .beware-of-fakes {
+                &__title {
+                    margin-bottom: 0.4rem;
+                }
+            }
+        }
+
+        .title {
+            margin-bottom: 3.1rem;
+        }
+
+        &__warning {
+            padding: 2.1rem 3.7rem;
+
+            &--helper {
+                padding-top: 2.7rem;
+                padding-bottom: 2.7rem;
+            }
+        }
+    }
+}

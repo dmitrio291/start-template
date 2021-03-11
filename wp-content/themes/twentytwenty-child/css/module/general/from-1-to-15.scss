@@ -1,0 +1,51 @@
+.from-1-to-15 {
+    .container {
+        width: calc(100% - 4.1rem);
+    }
+
+    .title,
+    .title .orange {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        margin-bottom: 0.575em;
+        line-height: 1.1666;
+        
+        .orange {
+            display: block;
+            max-width: 14em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 5.1rem);
+        }
+
+        .title,
+        .title .orange {
+            max-width: none;
+        }
+
+        .title {
+            margin-bottom: 0.775em;
+        }
+
+        .text {
+            text-align: center;
+            line-height: 1.175;
+
+            .block {
+                display: block;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 0.875em;
+        }
+    }
+}

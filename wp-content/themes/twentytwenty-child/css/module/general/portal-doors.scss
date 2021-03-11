@@ -1,0 +1,136 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.portal-doors {
+    /* .portal-doors__wrapper */
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    /* .portal-doors__title */
+
+    &__title {
+        margin-bottom: 1em;
+
+        @include _1200 {
+            margin-bottom: 0.8em;
+            line-height: 1.2;
+        }
+    }
+
+    /* .portal-doors__img */
+
+    &__img {
+        width: 31.6rem;
+        height: 21.5rem;
+        object-fit: cover;
+        border: 0.35em solid #fff;
+        border-radius: 0.3em;
+        filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.25));
+        margin-bottom: 1.4em;
+
+        @include _768 {
+            width: 34.6rem;
+            height: 23.7rem;
+            margin-bottom: 1.6em;
+        }
+
+        @include _1200 {
+            width: 38.8rem;
+            height: 26.6rem;
+            margin-bottom: 0;
+            margin-left: 1em;
+        }
+    }
+
+    /* .portal-doosr__inner */
+
+    &__inner {
+        @include _1200 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    /* .portal-doosr__box-info */
+
+    &__box-info {
+        text-align: center;
+
+        @include _768 {
+            text-align: left;
+        }
+        
+        @include _1200 {
+            padding-top: 0.4em;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    /* .portal-doosr__text */
+    
+    &__text {
+        margin-bottom: 2em;
+        
+        @include _768 {
+            margin-bottom: 1.7em;
+            line-height: 1.25;
+        }
+
+        @include _1200 {
+            line-height: 1.21em;
+            margin-bottom: 0.7em;
+        }
+    }
+
+    /* .portal-doosr__box-price */
+
+    &__box-price {
+        @include _768 {
+            align-items: flex-end;
+            padding: 0 3.7em 0 7.8em;
+        }
+
+        @include _1200 {
+            padding: 0;
+            margin-top: auto;
+        }
+    }
+
+    /* .portal-doosr__price */
+
+    &__price {
+        font-size: 2.9rem;
+
+        @include _768 {
+            font-size: 4rem;
+            line-height: 0.7em;
+            margin-right: 0.6em;
+        }
+
+        @include _1200 {
+        }
+    }
+
+    /* .portal-doosr__link */
+
+    &__link {
+        max-width: 16.5rem;
+        margin-right: 0;
+
+        @include _768 {
+            max-width: 28.6rem;
+        }
+
+        @include _1200 {
+            max-width: 30.6rem;
+        }
+    }
+}

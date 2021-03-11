@@ -1,0 +1,108 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.prepayment-to-start {
+
+    /* .prepayment-to-start__title */
+
+    &__title {
+        letter-spacing: 0.03em;
+        line-height: 1.2em;
+        margin-bottom: 1.6em;
+
+        @include _768 {
+            line-height: 1.1em;
+            margin-bottom: 1.1em;
+
+            span {
+                display: block;
+            }
+        }
+
+        @include _1200 {
+            line-height: 1.2em;
+            margin-bottom: 0.8em;
+            margin-right: -1px;
+                margin-left: -1px;
+            font-weight: 900;
+        }
+    }
+
+    /* .prepayment-to-start__subtitle */
+
+    &__subtitle {
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        margin-bottom: 1.5rem;
+
+        @include _768 {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .prepayment-to-start__list */
+
+    &__list {
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .prepayment-to-start__item */
+
+    &__item {
+        padding-left: 3.3rem;
+        line-height: 1.2;
+        position: relative;
+
+        &+& {
+            margin-top: 1rem;
+
+            @include _768 {
+                margin-top: 1.5rem;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            border: 0.1rem solid $orange;
+            left: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.00961 7.00225L0.368983 4.27834C0.210339 4.11469 0.210339 3.84936 0.368983 3.6857L0.943494 3.09305C1.10214 2.92939 1.35938 2.92939 1.51802 3.09305L3.29687 4.92799L7.10698 0.997735C7.26562 0.834088 7.52286 0.834088 7.68151 0.997735L8.25602 1.59038C8.41466 1.75403 8.41466 2.01936 8.25602 2.18303L3.58414 7.00227C3.42548 7.16591 3.16825 7.16591 3.00961 7.00225Z' fill='black'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    /* .prepayment-to-start__text */
+
+    &__text {
+        letter-spacing: 0.03em;
+        line-height: 1.1em;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .prepayment-to-start__btn */
+
+    &__btn {
+
+        @include _768 {
+            max-width: 30.5rem;
+        }
+    }
+}

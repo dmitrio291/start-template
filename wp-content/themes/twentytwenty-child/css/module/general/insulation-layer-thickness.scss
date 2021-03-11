@@ -1,0 +1,30 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.insulation-layer-thickness {
+    background-color: $lightGray;
+
+    /* .insulation-layer-thickness__text */
+
+    &__text {
+        span {
+            display: block;
+            max-width: 16em;
+            margin: 0 auto;
+
+            @include _768 {
+                max-width: 100%;
+                margin: 0;
+            }
+
+            @include _1200 {
+                display: inline-block;
+            }
+        }
+    }
+}

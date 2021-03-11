@@ -1,0 +1,758 @@
+@import '../../base/all/var';
+
+.methods-glazing-wooden-house {
+    padding-bottom: 0;
+
+    .title,
+    &__image-box,
+    &__advantages {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        max-width: 14em;
+        margin-bottom: 1.113em;
+    }
+
+    &__radio {
+        display: none;
+    }
+
+    &__radio:checked {
+        + .methods-glazing-wooden-house__label {
+            .methods-glazing-wooden-house__toggle {
+                border-color: #F26422;
+            }
+        }
+    }
+
+    &__radio:checked {
+        + .methods-glazing-wooden-house__label {
+            .methods-glazing-wooden-house__toggle {
+                &:after {
+                    background-color: #F26422;
+                }
+            }
+        }
+    }
+
+    &__radio:checked {
+        + .methods-glazing-wooden-house__label {
+            .methods-glazing-wooden-house__toggle-text {
+                color: #F26422;
+            }
+        }
+    }
+
+    [id="by-gap-technology"]:checked {
+        ~ .methods-glazing-wooden-house {
+            &__box {
+                .foam {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    [id="using-the-casing"]:checked {
+        ~ .methods-glazing-wooden-house {
+            &__box {
+                .bar {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__label,
+    &__warning,
+    &__advantages {
+        display: flex;
+    }
+
+    &__label,
+    &__toggle {
+        cursor: pointer;
+    }   
+
+    &__label {
+        align-items: center;
+        margin-bottom: 1.438em;
+        margin-left: 0.3em;
+    }
+
+    &__toggle:after,
+    &__warning:before,
+    &__warning:after,
+    &__image-text:before,
+    &__image-text:after,
+    &__advantages:before,
+    &__advantages:after {
+        content: '';
+    }
+
+    &__toggle:after,
+    &__warning:after,
+    &__image-text,
+    &__image-text:before,
+    &__image-text:after,
+    &__advantages:after {
+        position: absolute;
+    }
+
+    &__toggle,
+    &__image {
+        display: block;
+    }
+
+    &__toggle,
+    &__warning,
+    &__image-box,
+    &__advantages {
+        position: relative;
+    }
+
+    &__toggle {
+        width: 1.563em;
+        height: 1.563em;
+        margin-right: 0.688em;
+        border: 1px solid #333333;
+        border-radius: 50%;
+
+        &:after {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0.688em;
+            height: 0.688em;
+            border-radius: 50%;
+        }
+
+        &-text {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #9A9A9A;
+        }
+    }
+
+    &__warning {
+        max-width: 14em;
+        margin-bottom: 0.9em;
+        font-weight: 900;
+        font-size: 1.125em;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            display: inline-block;
+            width: 2.8em;
+            height: 2.8em;
+            margin-right: 0.7em;
+            background-color: $yellow;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        &:after {
+            top: 0.7em;
+            left: 0.7em;
+            width: 1.625em;
+            height: 1.438em;
+            background-position: 6.491% 0;
+            font-size: 1.7rem;
+        }
+    }
+    
+    &__image {
+        width: 100%;
+
+        &-box {
+            display: none;
+            max-width: 18.625em;
+            margin-bottom: 1.3em;
+        }
+
+        &-text {
+            max-width: 5em;
+            font-size: 0.675em;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+
+            &:before {
+                background-repeat: no-repeat;
+            }
+
+            &:after {
+                background-color: $orange;
+            }
+
+            &:nth-of-type(1) {
+                top: 7.8em;
+                left: 2.7em;
+                
+                &:before {
+                    top: -7.4em;
+                    left: 0.6em;
+                    width: 13em;
+                    height: 7em;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/methods-glazing-wooden-house-line-small1.svg');
+                }
+
+                &:after {
+                    top: -1em;
+                    left: 0.38em;
+                    width: 0.544em;
+                    height: 0.544em;
+                    border-radius: 50%;
+                }
+            }
+
+            &:nth-of-type(2) {
+                top: 16em;
+                left: 0.4em;            
+
+                &:before {
+                    top: 1.8em;
+                    left: 0.1em;
+                    width: 4.5em;
+                    height: 6em;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/methods-glazing-wooden-house-line-small2.svg');
+                }
+
+                &:after {
+                    top: 1.6em;
+                    left: -0.02em;
+                    width: 0.544em;
+                    height: 0.544em;
+                    border-radius: 50%;
+                }
+            }
+
+            &:nth-of-type(3) {
+                top: 0.2em;
+                right: 0.4em;
+
+                &:before {
+                    top: 1.9em;
+                    left: -4.3em;
+                    width: 5.5em;
+                    height: 6em;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/methods-glazing-wooden-house-line-small3.svg');
+                }
+
+                &:after {
+                    top: 1.6em;
+                    left: 0.18em;
+                    width: 0.544em;
+                    height: 0.544em;
+                    border-radius: 50%;
+                }
+            }
+
+            &:nth-of-type(4) {
+                top: 17.7em;
+                right: -0.3em;
+
+                &:before {
+                    top: -6.2em;
+                    left: -3.8em;
+                    width: 4.8em;
+                    height: 6em;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/methods-glazing-wooden-house-line-small4.svg');
+                }
+
+                &:after {
+                    top: -1.2em;
+                    left: 0.08em;
+                    width: 0.544em;
+                    height: 0.544em;
+                    background-color: $orange;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    &__advantages {
+        max-width: 19em;
+        margin-bottom: 0.75em;
+        height: 3em;
+        line-height: 3em;
+        font-size: 1.125em;
+        font-weight: 700;
+        background-color: #F6F6F6;
+        border-radius: 2.125em;
+
+        &:before {
+            display: inline-block;
+            margin-right: 0.7em;
+            width: 2.8em;
+            height: 2.8em;
+            background-color: $orange;
+            border-radius: 50%;
+        }
+
+        &.icon-1 {
+            &:after {
+                top: 0.9em;
+                left: 1.5em;
+                width: 2em;
+	            height: 3.188em;
+                background-position: 3.714% 0.014%;
+                font-size: 1rem;
+            }
+        }
+
+        &.icon-2 {
+            margin-bottom: 1.5em;
+
+            &:after {
+                top: 1em;
+                left: 1.2em;
+                width: 3.3em;
+                height: 3.788em;
+                background-position: 0 1.155%;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    &__form {
+        &-box {
+            padding: 1.625em 0.813em 1.625em;
+            background-color: #E9E9E9;
+            margin-left: -1.3em;
+            margin-right: -1.3em;
+        }
+
+        &-title {
+            margin-bottom: 0.938em;
+            text-transform: uppercase;
+            font-size: 1em;
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+
+    .form-contacts__input,
+    .button {
+        min-height: 2.50em;
+    }
+
+    .form-contacts {
+        &__input {
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border: 0;
+            border-bottom: 0.188em solid #C9C9C9;;
+            font-size: 0.875em;
+            font-weight: 700;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding-bottom: 5.5rem;
+
+        .container {
+            text-align: center;
+        }
+
+        .title {
+            max-width: 15em;
+        }
+
+        &__label {
+            display: inline-flex;
+            align-items: baseline;
+            margin-bottom: 1.738em;
+        }
+
+        &__toggle {
+            align-self: flex-start;
+            width: 4em;
+            height: 1.5em;
+            background-color: #FFE600;
+            border-radius: 1.250em;
+            box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.15);
+            border: none;
+            margin-right: 0;
+
+            &:after {
+                display: none;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 2%;
+                width: 1.375em;
+                height: 1.375em;
+                background-color: #ffffff;
+                border-radius: 50%;
+                box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+            }
+
+            &--left {
+                order: 1;
+                margin-left: 0.6em;
+                &:before {
+                    right: 0;
+                }
+            }
+
+            &--right {
+                margin-right: 0.6em;
+                &:before {
+                    left: 0;
+                }
+            }
+
+            &-text {
+                font-size: 1.5em;
+            }
+        }
+
+        &__radio:checked + &__label &__toggle {
+            display: none;
+        }
+
+        &__box {
+            display: grid;
+            grid-template-areas: 
+                'methods-glazing-warning methods-glazing-image'
+                'methods-glazing-advantages-1 methods-glazing-image'
+                'methods-glazing-advantages-2 methods-glazing-image'
+                'methods-glazing-form methods-glazing-form';
+            max-width: 45.5em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__warning,
+        &__image-box {
+            text-align: left;
+        }
+
+        &__warning,
+        &__advantages {
+            font-size: 1.250em;
+        }
+
+        &__warning {
+            grid-area: methods-glazing-warning;
+            margin-top: 0.3em;
+            margin-bottom: 1.9em;
+
+            &:before {
+                width: 3.4em;
+                height: 3.4em;
+                margin-right: 1em;
+            }
+
+            &:after {
+                top: 0.7em;
+                left: 0.7em;
+                font-size: 2.3rem;
+            }
+        }
+
+        &__image {
+            &-box {
+                grid-area: methods-glazing-image;
+            }
+        }
+
+        &__advantages {
+            max-width: 17.5em;
+            height: 3.45em;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1.65em;
+            line-height: 3.3;
+
+            &:before {
+                width: 3.4em;
+                height: 3.4em;
+                margin-right: 1em;
+            }
+
+            &.icon-1 {
+                grid-area: methods-glazing-advantages-1;
+                &:after {
+                    top: 0.8em;
+                    left: 1.5em;
+                    font-size: 1.4rem;
+                }
+            }
+
+            &.icon-2 {
+                grid-area: methods-glazing-advantages-2;
+                margin-bottom: 3.7em;
+
+                &:after {
+                    top: 1.3em;
+                    left: 1.5em;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        &__form {
+            &-box {
+                grid-area: methods-glazing-form;
+                width: 100%;
+                max-width: 24.25em;
+                padding-top: 2.288em;
+                padding-bottom: 2.288em;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 0.313em;
+            }
+
+            &-title {
+                margin-bottom: 1.038em;
+                font-size: 1.125em;
+            }
+        }
+
+        .form-contacts,
+        .button {
+            display: block;
+        }
+
+        .form-contacts {
+            &__box,
+            &__button {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 22.25em;
+            }
+
+            &__box {
+                margin-bottom: 0.9em;
+            }
+
+            &__input {
+                font-size: 1em;
+            }
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        &__toggle {
+            &:before {
+                top: 4.2%;
+            }
+        }
+
+        .button {
+            max-width: 23.25em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-bottom: 6rem;
+
+        .title {
+            margin-bottom: 0.913em;
+        }
+
+        &__box {
+            max-width: 69.5em;
+            grid-template-areas: 
+                'methods-glazing-warning methods-glazing-image'
+                'methods-glazing-advantages-1 methods-glazing-image'
+                'methods-glazing-advantages-2 methods-glazing-image'
+                'methods-glazing-form  methods-glazing-image';
+                grid-template-rows: 7.1em 5.8em 6.6em 12em;
+        
+        }
+
+        &__label {
+            margin-bottom: 0.738em;
+        }
+
+        &__toggle {
+            width: 5em;
+            height: 1.875em;
+            margin-top: 0.13em;
+
+            &:before {
+                width: 1.750em;
+                height: 1.750em;
+                transform: translateY(-.05em);
+            }
+
+            &--left {
+                margin-left: 1em;
+            }
+
+            &--right {
+                margin-right: 1em;
+            }
+
+            &-text {
+                font-size: 2em;
+            }
+        }
+
+        &__warning {
+            grid-area: methods-glazing-warning;
+            margin-top: 0.1em;
+            margin-bottom: 0.9em;
+            font-size: 1.5em;
+            font-weight: 700;
+
+            &:before {
+                width: 2.9em;
+                height: 2.9em;
+                margin-right: 0.8em;
+            }
+
+            &:after {
+                top: 1.2em;
+                left: 0.7em;
+                font-size: 2.3rem;
+            }
+        }
+
+        &__image {
+            &-box {
+                margin-top: 2em;
+                max-width: 29.625em;
+                grid-area: methods-glazing-image;
+            }
+
+            &-text {
+                max-width: 5.4em;
+                font-size: 1.075em;
+                letter-spacing: 0.04em;
+
+                &:nth-of-type(1) {
+                    top: 8.2em;
+
+                    &:before {
+                        top: -8.5em;
+                        width: 15em;
+                        height: 8em;
+                        background-image: url("/wp-content/themes/twentytwenty-child/img/methods-glazing-wooden-house-line-big1.svg");
+                    }
+
+                    &:after {
+                        top: -1.2em;
+                        left: 0.48em;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    top: 15.3em;
+                    left: 0.4em;
+
+                    &:before {
+                        top: 1.9em;
+                        left: 0.5em;
+                        width: 5.5em;
+                        height: 7em;
+                        background-image: url("/wp-content/themes/twentytwenty-child/img/methods-glazing-wooden-house-line-big2.svg");
+                    }
+
+                    &:after {
+                        top: 1.6em;
+                        left: 0.38em;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    &:before {
+                        left: -4.8em;
+                        background-image: url("/wp-content/themes/twentytwenty-child/img/methods-glazing-wooden-house-line-big3.svg");
+                    }
+
+                    &:after {
+                        left: 0.38em;
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    top: 17.3em;
+                    right: -0.9em;
+
+                    &:before {
+                        height: 7em;
+                        top: -6.7em;
+                        left: -4.1em;
+                        background-image: url("/wp-content/themes/twentytwenty-child/img/methods-glazing-wooden-house-line-big4.svg");
+                    }
+
+                    &:after {
+                        top: -1em;
+                        left: 0.38em;
+                    }
+                }
+            }
+        }
+
+        &__advantages {
+            margin-bottom: 0.55em;
+            height: 2.15em;
+            align-items: center;
+            min-height: 3.4em;
+            max-width: 19.1em;
+
+            &:before {
+                width: 3.45em;
+                height: 3.45em;
+                margin-right: 0.6em;
+            }
+
+            &.icon-1 {
+                grid-area: methods-glazing-advantages-1;
+
+                &:after {
+                    top: 0.9em;
+                    left: 1.5em;
+                    font-size: 1.4rem;
+                }
+            }
+
+            &.icon-2 {
+                grid-area: methods-glazing-advantages-2;
+                margin-bottom: 0.8em;
+
+                &:after {
+                    top: 1.1em;
+                    left: 1.3em;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        &__form {
+            &-box {
+                grid-area: methods-glazing-form;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 1.888em;
+                padding-bottom: 0;
+            }
+
+            &-title {
+                margin-bottom: 0.738em;
+            }
+        }
+
+        .form-contacts {
+            &__box {
+                margin-bottom: 1.2em;
+            }
+        }
+    }
+}

@@ -1,0 +1,482 @@
+@import '../../base/all/var';
+
+.want-save-money {
+    .container {
+        width: calc(100% - 3rem);
+    }
+
+    &__box {
+        max-width: 21.6em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__manufacture-title,
+    &__manufacture-we-ourselves,
+    &__number,
+    &__our-office {
+        font-weight: 900;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    &__manufacture-windows,
+    &__item,
+    &__inner {
+        background-size: cover;
+    }
+
+    &__manufacture-windows,
+    &__list {
+        color: $white;
+    }
+
+    &__overlay,
+    &__manufacture-box,
+    &__item-box,
+    &__our-office,
+    &__inner:first-child,
+    &__inner-content {
+        position: relative;
+    }
+
+    &__overlay:before,
+    &__inner:first-child:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__overlay:before {
+        background-color: rgba(0, 0, 0, 0.56);
+    }
+
+    &__manufacture {
+        &-windows {
+            width: 21.563em;
+            height: 17.438em;
+            padding: 1.963em 1.063em;
+            margin-bottom: 0.9em;
+            background-image: url('/wp-content/themes/twentytwenty-child/img/want-save-money1.webp');
+        }
+
+        &-box {
+            .want-save-money__text {
+                max-width: 15em;
+            }
+        }
+        
+        &-title {
+            margin-bottom: 4em;
+            letter-spacing: 0.08em;
+        }
+
+        &-we-ourselves {
+            margin-bottom: 1.575em;
+            max-width: 12em;
+            line-height: 1.21;
+            letter-spacing: 0.08em;
+            margin-bottom: 1.375em;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 10.313em;
+        height: 7.5em;
+        margin-bottom: 0.875em;
+        padding: 1em;
+        &:first-child {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/want-save-money3.webp');
+        }
+
+        &:nth-child(2) {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/want-save-money4.webp');
+
+            .want-save-money__text {
+                max-width: 4.4em;
+            }
+        }
+
+        &:nth-child(3) {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/want-save-money5.webp');
+        }
+
+        &:nth-child(4) {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/want-save-money6.webp');
+        }
+    }
+
+    &__number {
+        display: block;
+        margin-bottom: 0.438em;
+        font-size: 1.688em;
+    }
+
+    &__text {
+        max-width: 8em;
+
+        &-info {
+            margin-bottom: 1.438em;
+            max-width: 15em;
+        }
+    }
+
+    &__inner {
+        width: 21.500em;
+        height: 13.563em;
+
+        &:first-child {
+            margin-bottom: 0.875em;
+            padding: 1.6em 1em;
+            background-image: url('/wp-content/themes/twentytwenty-child/img/want-save-money2.webp');
+            
+            &:before {
+                background-color: rgba(255, 255, 255, 0.86);
+            }
+        }
+
+        &:last-child {
+            padding: 1.6em 1.4em;
+            background-color: $orange;
+            color: $white;
+        }
+    }
+
+    &__come {
+        margin-bottom: 1.113em;
+        font-size: 1.375em;
+    }
+
+    &__glad-see {
+        margin-bottom: 1.688em;
+        max-width: 14em;
+    }
+
+    &__our-office {
+        font-size: 1.688em;
+        max-width: 5em;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -3.3em;
+            width: 3.088em;
+            height: 0.9em;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='83' height='24' viewBox='0 0 83 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M82.0607 13.0607C82.6464 12.4749 82.6464 11.5251 82.0607 10.9393L72.5147 1.3934C71.9289 0.807611 70.9792 0.807611 70.3934 1.3934C69.8076 1.97919 69.8076 2.92893 70.3934 3.51472L78.8787 12L70.3934 20.4853C69.8076 21.0711 69.8076 22.0208 70.3934 22.6066C70.9792 23.1924 71.9289 23.1924 72.5147 22.6066L82.0607 13.0607ZM0 13.5H81V10.5H0V13.5Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__free {
+        max-width: 14em;
+        margin-bottom: 0.4em;
+        font-size: 1.375em;
+        line-height: 1.27;
+    }
+
+    &__button {
+        padding: 0.625em 1.275em;
+        color: $orange;
+        background-color: $white;
+        border: none;
+        border-radius: 0.375em;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+        &__box {
+            max-width: 44em;
+            display: flex;
+        }
+
+        &__manufacture {
+            &-windows {
+                width: 21.5em;
+                height: 21.6em;
+                margin-right: 1.1em;
+                padding: 2.663em 0.963em;
+                margin-bottom: 1.2em;
+            }
+
+            &-title,
+            &-we-ourselves {
+                font-size: 1.563em;
+                letter-spacing: 0;
+            }
+
+            &-title {
+                margin-bottom: 5em;
+            }
+
+            &-we-ourselves {
+                margin-bottom: 1.875em;
+            }
+        }
+
+        &__number {
+            margin-bottom: 0.213em;
+        }
+
+        &__text,
+        &__glad-see {
+            font-size: 1.125em;
+        }
+
+        &__text {
+            line-height: 1.22;
+
+            &-info {
+                margin-bottom: 3.963em;
+            }
+        }
+
+        &__list {
+            max-width: 21.5em;
+        }
+
+        &__item {
+            width: 10.250em;
+            height: 10.313em;
+            padding: 2.5em 0.4em 5em 0.5em;
+        }
+
+        &__number {
+            font-size: 1.875em;
+        }
+
+        &__inner {
+            width: 21.563em;
+            height: 21.563em;
+
+            &:first-child {
+                margin-bottom: 0;
+                margin-right: 1em;
+                padding: 2.6em 0.9em;
+            }
+
+            &:last-child {
+                padding: 2.3em 1.4em;
+            }
+        }
+
+        &__come,
+        &__our-office,
+        &__free {
+            font-size: 1.563em;
+        }
+
+        &__come {
+            margin-bottom: 1.713em;
+            max-width: 8em;
+        }
+
+        &__glad-see {
+            margin-bottom: 2.988em;
+        }
+
+        &__our-office {
+            line-height: 1.12;
+
+            &:after {
+                width: 3.488em;
+                right: -4em;
+            }
+        }
+
+        &__free {
+            margin-bottom: 0.513em;
+            line-height: 1.2;
+        }
+
+        &__button {
+            padding-top: 0.725em;
+            padding-bottom: 0.725em;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        &__box {
+            max-width: 47.7em;
+        }
+
+        &__manufacture-title,
+        &__manufacture-we-ourselves,
+        &__come,
+        &__our-office,
+        &__free {
+            font-size: 1.875em;
+        }
+
+        &__manufacture {
+            &-windows {
+                width: 23.063em;
+                height: 23.063em;
+                margin-right: 1.3em;
+                padding: 2.763em 0.963em;
+            }
+
+            &-title {
+                margin-bottom: 3em;
+            }
+
+            &-we-ourselves {
+                margin-bottom: 1.575em;
+            }
+        }
+
+        &__list {
+            max-width: 22.9em;
+        }
+
+        &__item {
+            width: 10.938em;
+            height: 10.938em;
+            margin-bottom: 1.275em;
+            padding: 2.3em 0.4em 5em 0.9em;
+        }
+
+        &__number {
+            margin-bottom: 0.513em;
+        }
+
+        &__inner {
+            width: 23.063em;
+            height: 23.063em;
+
+            &:first-child {
+                margin-right: 1.3em;
+                padding: 3.2em 1.3em;
+            }
+
+            &:last-child {
+                padding-top: 3em;
+                padding-bottom: 3em;
+            }
+        }
+
+        &__come {
+            margin-bottom: 1.413em;
+        }
+
+        &__glad-see {
+            max-width: 18em;
+            margin-bottom: 3.088em;
+            line-height: 1.22;
+        }
+
+        &__our-office {
+            &:after {
+                width: 3.588em;
+                height: 0.8em;
+                top: 100%;
+                right: -4.5em;
+                transform: translateY(-100%);
+            }
+        }
+
+        &__free {
+            margin-bottom: 0.2em;
+        }
+
+        &__text {
+            &-info {
+                margin-bottom: 4.963em;
+            }
+        }
+
+        &__button {
+            padding-left: 2.575em;
+            padding-right: 2.375em;  
+            padding-top: 0.739em;
+            padding-bottom: 0.638em;
+        }
+    }
+
+    &--ceilings {
+        .want-save-money {
+            &__manufacture {
+                &-title {
+                    margin-bottom: 0.875em;
+                }
+
+                &-we-ourselves {
+                    max-width: 13em;
+                    margin-bottom: 0.975em;
+                } 
+            }
+
+            &__glad-see {
+                max-width: 17.7em;
+            }
+
+            &__free {
+                margin-bottom: 0.825em;
+            }
+
+            &__warning {
+                max-width: 15em;
+                margin-bottom: 1.125em;
+                font-weight: 700;
+            }
+
+            &__button {
+                padding: 0.532em 1.222em;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .want-save-money {
+                &__manufacture {
+                    &-we-ourselves {
+                        margin-bottom: 1.075em;
+                    }
+                }
+
+                &__free {
+                    margin-bottom: 1.663em;
+                }
+
+                &__warning {
+                    margin-bottom: 4.563em;
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .want-save-money {
+                &__free {
+                    margin-bottom: 1.363em;
+                }
+
+                &__button {
+                    padding-left: 2.572em;
+                    padding-right: 2.572em;
+                }
+            }
+        }
+    }
+}

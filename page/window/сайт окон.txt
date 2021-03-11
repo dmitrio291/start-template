@@ -1,0 +1,20 @@
+index.html - Главная (okna-plastikovyye.ru)
+plastikovye-okna.html - Пластиковые окна (https://okna-plastikovyye.ru/plastikovye-okna/)
+gotovye-okna.html - ГОТОВые ОКНА (https://okna-plastikovyye.ru/gotovye-okna/)
+kalkulyator-stoimosti-okon.html - ЦЕНЫ НА ОКНА (https://okna-plastikovyye.ru/kalkulyator-stoimosti-okon/)
+remont-okon.html - РЕМОНТ ОКОН (https://okna-plastikovyye.ru/remont-okon/)
+panoramnye-okna.html - ПАНОРАМНЫЕ ОКНА (https://okna-plastikovyye.ru/panoramnye-okna/)
+vhodnye-dveri.html - ВХОДНЫЕ ДВЕРИ (https://okna-plastikovyye.ru/vhodnye-dveri/)
+okna-dlya-doma.html - ОКНА В ДОМ (https://okna-plastikovyye.ru/okna-dlya-doma/)
+
+
+
+
+
+
+
+
+
+
+
+

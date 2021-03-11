@@ -1,0 +1,131 @@
+@import '../../base/all/var';
+
+.advantages-windows {
+
+    &__title {
+        margin-bottom: 1.375em;
+    }
+
+    &__text,
+    &__content {
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 1.500em;
+    }
+
+    &__icon {
+        display: block;
+        width: 4.625em;
+        height: 4.625em;
+        margin-bottom: 0.375em;
+        border: 3px solid $orange;
+        border-radius: 50%;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+            background-repeat: no-repeat;
+        }
+
+        &--1 {
+
+            &:before {
+                width: 1.813em;
+                height: 2.438em;
+                background-position: -43.625em -26.188em;
+            }
+
+        }
+
+        &--2 {
+
+            &:before {
+                width: 2.188em;
+                height: 2.625em;
+                background-position: -43.000em -22.750em;
+            }
+
+        }
+
+        &--3 {
+            
+            &:before {
+                width: 2.313em;
+                height: 2.000em;
+                background-position: -46.063em -26.438em;
+            }
+
+        }
+    }
+
+    &__word {
+        font-size: 1.4rem;
+    }
+
+    &__list,
+    &__content {
+        margin-bottom: 1.688em;
+    }
+
+    &__list {
+        justify-content: space-between;
+    }
+
+    &__content {
+        line-height: 1.188em;
+    }
+
+    &__systems,
+    &__holz-eko {
+        font-weight: 700;
+    }
+
+    &__holz-eko {
+        border-bottom: 1px solid $orange;
+    }
+
+    &__holz-nova {
+        border-bottom: 1px dashed $orange;
+    }
+
+    &__button {
+        width: 100%;
+        min-height: 4rem;
+        margin-bottom: 1.875em;
+    }
+
+    // .owl-dots {
+    //     text-align: center;
+    // }
+
+    // &__dot {
+
+    //     border: none;
+    //     background-color: transparent;
+        
+    //     span {
+    //         display: block;
+    //         width: 0.438em;
+    //         height: 0.438em;
+    //         background-color: #D0D0D0;
+    //         border-radius: 50%;
+    //     }
+
+    //     &.active {
+
+    //         span {
+    //             background-color: $orange;
+    //         }
+
+    //     }
+
+    // }
+
+}

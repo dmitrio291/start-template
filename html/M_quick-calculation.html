@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/style.css">
+</head>
+
+<body>
+
+    <section class="quick-calculation">
+        <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/module/general/quick-calculation.css">
+
+        <div class="container">
+
+            <div class="quick-calculation__wrapper center indent">
+
+                <h3 class="quick-calculation__title t-24-30-40">БЫСТРЫЙ РАСЧЕТ СТОИМОСТИ НОВОГО ОКНА</h3>
+
+                <form class="quick-calculation__form" action="#">
+
+                    <div class="quick-calculation__form-box">
+
+                        <p class="quick-calculation__text fw7 t-16-18-18">ПЛОЩАДЬ ОКНА</p>
+                        <input class="quick-calculation__input" type="text" placeholder="1 M&sup2;">
+                        <span class="quick-calculation__price">= <span>6600</span> ₽</span>
+                        <span class="quick-calculation__new-price"><span>2 310</span> ₽</span>
+
+                    </div>
+
+                    <button class="quick-calculation__btn button open-modal-1" type="submit" data-modal="#modal2">детальный калькулятор</button>
+
+                </form>
+
+                <p class="quick-calculation__footer-text fw7 t-16-18-18">Звоните прямо сейчас и получите самое выгодное предложение!
+                    <span class="db">ДЕШЕВЛЕ НЕТ НИГДЕ!</span>
+                </p>
+
+            </div>
+
+        </div>
+
+        <script>
+            let quickCalcInput = document.querySelector('.quick-calculation__input');
+            
+
+            quickCalcInput.addEventListener('keypress', (event) => {
+
+                // чтоб вводились только символы
+                if ( isNaN( String.fromCharCode(event.keyCode) )){
+                    return false;
+                } 
+
+                let quickCalcPrice = document.querySelector('.quick-calculation__price span');
+                let quickCalcNewPrice = document.querySelector('.quick-calculation__new-price span');
+
+                const keyName = event.key;
+
+                quickCalcPrice.textContent = keyName * 6600;
+                quickCalcNewPrice.textContent = keyName * 2310;
+
+                //alert('keypress event\n\n' + 'key: ' + keyName);
+
+            });
+
+        </script>
+
+    </section>
+
+</body>
+
+</html>

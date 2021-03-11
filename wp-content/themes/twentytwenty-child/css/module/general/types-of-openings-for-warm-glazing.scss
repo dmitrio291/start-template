@@ -1,0 +1,107 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.types-of-openings-for-warm-glazing {
+    /* .types-of-openings-for-warm-glazing__wrapper */
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    /* .types-of-openings-for-warm-glazing__title */
+
+    &__title {
+        line-height: 1.2em;
+        margin-bottom: 1.1em;
+
+        @include _768 {
+            padding: 0 5em;
+            line-height: 1.1;
+        }
+
+        @include _1200 {
+            padding: 0;
+            line-height: 1.2;
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .types-of-openings-for-warm-glazing__slider */
+
+    &__slider {
+        margin-bottom: 3.2em;
+
+        & .pagination-box {
+            bottom: -1.9em;
+        }
+
+        & .pagination.active {
+            background-color: #17a1e3;
+        }
+
+        @include _768 {
+            margin-bottom: 2.5em;
+        }
+
+        @include _1200 {
+            margin-bottom: 2.3em;
+        }
+    }
+
+    /* .types-of-openings-for-warm-glazing__img */
+
+    &__img {
+        height: 26.1rem;
+        object-fit: contain;
+        margin-bottom: 0.6em;
+
+        @include _768 {
+            height: 17.4rem;
+            margin-bottom: 1.55em;
+        }
+
+        @include _1200 {
+            height: 20.5rem;
+        }
+    }
+
+    /* .types-of-openings-for-warm-glazing__item-title */
+
+    &__item-title {
+        font-size: 1.6rem;
+        margin-bottom: 0.7em;
+
+        @include _768 {
+            margin-bottom: 0.9em;
+        }
+        @include _1200 {
+            font-size: 1.8rem;
+            margin-bottom: 1em;
+        }
+    }
+
+    /* .types-of-openings-for-warm-glazing__item-text */
+
+    &__item-text {
+        @include _768 {
+        }
+
+        @include _1200 {
+            font-size: 1.8rem;
+            line-height: 1.2;
+        }
+    }
+
+    /* .types-of-openings-for-warm-glazing__text */
+
+    &__text {
+        @include _1200 {
+            line-height: 1.2em;
+        }
+    }
+}

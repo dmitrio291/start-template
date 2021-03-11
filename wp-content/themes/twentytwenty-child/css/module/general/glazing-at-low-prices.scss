@@ -1,0 +1,444 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.glazing-at-low-prices {
+
+    & .container {
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    /* .glazing-at-low-prices__wrapper */
+
+    &__wrapper {
+        padding: 4.5rem 0;
+        overflow: hidden;
+
+        @media (max-width: 767px) {
+            max-width: 100%;
+        }
+
+        @include _768 {
+            padding: 5.5rem 0;
+        }
+
+        @include _1200 {
+            padding: 6rem 0;
+        }
+    }
+
+    /* .glazing-at-low-prices__title */
+
+    &__title {
+        text-align: center;
+        background-color: transparent;
+        position: relative;
+        z-index: 3;
+        max-width: 12em;
+        margin: 0 auto 0.8em;
+
+        span {
+            display: block;
+
+            @include _768 {
+                display: inline-block;
+            }
+        }
+
+        @include _768 {
+            margin-bottom: 1.1em;
+            margin-left: 0;
+            max-width: 100%;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.9em;
+        }
+    }
+
+    /* .glazing-at-low-pricesow-prices__box-tabs */
+
+    &__box-tabs {
+        margin-bottom: 1.8em;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 0.05em;
+            width: 200vw;
+            z-index: -1;
+            bottom: 0.05em;
+            margin: 0 auto;
+            background-color: #000;
+        }
+
+        @include _768 {
+            margin-bottom: 1.6em;
+            justify-content: space-between;
+
+            &::before {
+                content: none;
+            }
+        }
+
+        @include _1200 {
+            margin-bottom: 1.6em;
+        }
+    }
+
+    /* .glazing-at-low-pricesow-prices__lable */
+
+    &__tab {
+        font-weight: 700;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.8rem;
+        opacity: 0.5;
+        line-height: 1.8em;
+        position: relative;
+        width: 33.33%;
+
+        &.active {
+            opacity: 1;
+            border-bottom: 0.25em solid #ffe600;
+            pointer-events: none;
+
+            @include _768 {
+                background-color: $orange;
+                color: #fff;
+                border: 0.1rem solid transparent;
+            }
+        }
+
+        @include _768 {
+            opacity: 1;
+            font-size: 1.6rem;
+            line-height: 3.8rem;
+            border: 0.1rem solid #c4c4c4;
+            border-radius: 0.6rem;
+            color: #c4c4c4;
+            max-width: 22.6rem;
+            height: 4rem;
+        }
+
+        @include _1200 {
+            max-width: 28rem;
+        }
+    }
+
+    /* .glazing-at-low-prices__inner */
+
+    &__inner {
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-position: right 0.4em;
+        min-height: 33rem;
+
+        @include _768 {
+            min-height: 31.3rem;
+        }
+
+        @include _1200 {
+            min-height: 37.3rem;
+        }
+
+        &--1 {
+            background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-s-1.webp);
+
+            @include _768 {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-m-1.webp);
+            }
+
+            @include _1200 {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-l-1.webp);
+            }
+        }
+
+        &--2 {
+            background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-s-2.webp);
+
+            @include _768 {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-m-2.webp);
+            }
+
+            @include _1200 {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-l-2.webp);
+            }
+        }
+
+        &--3 {
+            background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-s-3.webp);
+
+            @include _768 {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-m-3.webp);
+            }
+
+            @include _1200 {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-l-3.webp);
+            }
+        }
+    }
+
+    /* .glazing-at-low-prices__box-img */
+
+    &__box-img {
+        position: relative;
+        z-index: 1;
+
+        @include _768 {
+            z-index: 0;
+        }
+    }
+
+    /* .glazing-at-low-prices__img */
+
+    &__img {
+        width: 100%;
+        max-height: 46.4rem;
+        object-fit: cover;
+        z-index: -1;
+
+        @include _768 {
+            margin-top: 0;
+            max-height: 100%;
+        }
+    }
+
+    /* .glazing-at-low-prices__info */
+
+    &__info {
+        background-color: $orange;
+        padding: 1.9rem 0 2.1rem;
+        margin-top: auto;
+
+        @include _768 {
+            background-color: transparent;
+            padding: 0;
+            max-width: 29.6rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include _1200 {
+            max-width: 37.3rem;
+            width: 100%;
+        }
+    }
+
+    /* .glazing-at-low-prices__info-text */
+
+    &__info-text {
+        font-size: 1.8rem;
+        font-weight: 700;
+        max-width: 13em;
+        margin-left: 1.1em;
+        line-height: 1.15em;
+
+        @include _768 {
+            display: block;
+            margin-bottom: 0.6em;
+            margin-left: 0;
+            font-weight: 700;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.3em;
+            line-height: 1.25em;
+            margin-top: 2.7em;
+        }
+
+        span {
+            text-transform: uppercase;
+
+            @include _768 {
+                text-transform: initial;
+                display: block;
+            }
+        }
+
+        &--orange {
+            max-width: 10em;
+            margin-top: 0.5em;
+
+            @include _768 {
+                margin: 0;
+            }
+        }
+    }
+
+    /* .glazing-at-low-prices__box-price */
+
+    &__box-price {
+        color: #fff;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        position: relative;
+        max-width: 33.4rem;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -0.3em;
+            display: block;
+            width: auto;
+            left: 50%;
+            right: 50%;
+            margin: 0 auto;
+            border: solid transparent;
+            border-bottom-color: #f26422;
+            border-top-color: transparent;
+            border-width: 0.55em;
+            transform: translate(-50%, -100%) scaleX(12.5);
+            font-size: 6rem;
+            z-index: 1;
+
+            @include _768 {
+                top: 50%;
+                left: initial;
+                right: 0%;
+                transform: translate(50%, -50%) scaleY(1.7) rotate(45deg);
+                font-size: 1rem;
+                z-index: -1;
+                width: 5.2em;
+                height: 5.2em;
+                background: #f26422;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 4.9rem;
+            width: 0.1em;
+            background-color: #fff;
+
+            @include _768 {
+                height: 4rem;
+                left: 8.5em;
+                top: 1em;
+            }
+
+            @include _1200 {
+                left: 9.8em;
+            }
+        }
+
+        @include _768 {
+            background-color: $orange;
+            padding: 0.9em;
+            margin-top: 1.5em;
+            filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+            margin-top: auto;
+            margin-bottom: 0.3em;
+        }
+
+        @include _1200 {
+            margin-left: 0;
+        }
+    }
+
+    /* .glazing-at-low-prices__price-all */
+
+    &__price-all {
+        display: block;
+        margin-bottom: 0.9em;
+        font-size: 1.6rem;
+        color: #fff;
+
+        @include _768 {
+            font-size: 1.3rem;
+            margin: 0.4em 0 0.9em;
+        }
+    }
+
+    /* .glazing-at-low-prices__price */
+
+    &__price {
+        color: #fff;
+        font-size: 1.8rem;
+
+        @include _768 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    /* .glazing-at-low-prices__number-old */
+
+    &__number-old {
+        margin-top: 0.5em;
+        font-size: 2.4rem;
+        color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        display: block;
+
+        &::after {
+            margin-left: 0.5em;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.12em;
+            background-color: #ffe600;
+            -webkit-transform: rotate(10deg);
+            transform: rotate(12deg);
+            left: -0.1em;
+            bottom: 0.5em;
+            opacity: 0.8;
+        }
+
+        @include _768 {
+            font-size: 2rem;
+            margin-top: 0.2em;
+        }
+    }
+
+    /* .glazing-at-low-prices__number-new */
+
+    &__number-new {
+        font-size: 3rem;
+        color: $yellow;
+        display: block;
+
+        &::after {
+            margin-left: 0.5em;
+        }
+
+        @include _768 {
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+    }
+
+    /* .glazing-at-low-prices__btn */
+
+    &__btn {
+        background-color: #fff;
+        color: $orange;
+
+        @include _768 {
+            max-width: 26.8rem;
+        }
+    }
+
+    .active-tab {
+        display: flex !important;
+    }
+
+    .tab-item {
+        display: none;
+    }
+}

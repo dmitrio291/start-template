@@ -1,0 +1,68 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.our-dream {
+
+    /* .our-dream__wrapper */
+    background-color: $orange;
+
+    @include _1200 {
+        background-color: transparent;
+    }
+
+    &__wrapper {
+        @include _1200 {
+            background-color: $orange;
+        }
+    }
+
+    /* .our-dream__inner */
+
+    &__inner {
+        @include _1200 {
+            padding: 2.8rem 5rem;
+            align-items: center;
+        }
+    }
+
+    /* .our-dream__icon */
+
+    &__icon {
+        display: none;
+
+        @include _768 {
+            display: block;
+            max-width: 9.6rem;
+            height: 9.6rem;
+        }
+
+        @include _1200 {
+            max-width: 13.4rem;
+            height: 13.4rem;
+        }
+    }
+
+    /* .our-dream__text */
+
+    &__text {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 2.4rem;
+        line-height: 1.2;
+
+        @include _768 {
+            max-width: 55.1rem;
+            font-size: 3rem;
+            line-height: 1.1;
+        }
+
+        @include _1200 {
+            max-width: 66.3rem;
+        }
+    }
+}

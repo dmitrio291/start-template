@@ -1,0 +1,275 @@
+@import '../../base/all/var';
+
+.popular-types-kitchens {
+    &__inner--helper,
+    &__top  {
+        display: none;
+    }
+
+    background-color: #F9F9F9;
+
+    &__slider,
+    &__box,
+    &__button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__slider {
+        max-width: 34.5rem;
+        padding-top: 0.9rem;
+        padding-bottom: 4rem;
+        padding-left: 0.8rem;
+    }
+
+    &__slide {
+        background-color: $white;
+    }
+
+    &__title,
+    &__catalog {
+        font-size: 1.4rem;
+    }
+
+    &__title {
+        margin-bottom: 1.2rem;
+    }
+
+    &__link,
+    &__catalog,
+    &__image {
+        display: block;
+    }
+
+    &__catalog,
+    &__line {
+        position: relative;
+    }   
+
+    &__catalog::after,
+    &__line::before {
+        content: '';
+        position: absolute;
+    }
+
+    &__catalog {
+        margin-bottom: 2rem;
+        padding: 1rem 2rem;
+        background-color: $orange;
+        color: $white;
+        text-decoration: none;
+        text-align: center;
+
+        &::after {
+            top: 39%;
+            transform: rotate(45deg);
+            right: 6rem;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-top: 0.2rem solid $white;
+            border-right: 0.2rem solid $white;
+            border-radius: 0.1rem;
+        }
+    }
+
+    &__link {
+        padding-bottom: 2.5rem;
+        text-decoration: none;
+        transition: box-shadow 0.2s;
+
+        &:hover {
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+
+            .popular-types-kitchens__button {
+                background-color: $orange;
+                color: $white;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 21.8rem;
+        object-fit: cover;
+        margin-bottom: 2.4rem;
+    }
+
+    &__box,
+    &__button {
+        max-width: 25.5rem;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+        line-height: 1.3;
+    }
+
+    &__name,
+    &__price {
+        font-size: 1.8rem;
+    }
+
+    &__name {
+        color: $black;
+    }
+
+    &__text {
+        color: #969693;
+        font-size: 1.2rem;
+    }
+
+    &__line {
+        &::before {
+            top: 0.4rem;
+            right: 0;
+            width: 100%;
+            height: 0.1rem;
+            background-color: #969693;
+            transform-origin: top left;
+            transform: rotate(6deg);
+        }
+    }
+
+    &__prices {
+        text-align: right;
+    }
+
+    &__button {
+        background-color: transparent;
+        color: $orange;
+        border: 0.1rem solid $orange;
+        font-weight: 700;
+        transition: background-color 0.2s, 
+                    color 0.2s;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+
+        &-bullet {
+            width: 1rem;
+            height: 1rem;
+            opacity: 1;
+            background-color: #D5D5D5;
+
+            &-active {
+                background-color: $orange;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__inner--helper,
+        &__top {
+            display: block;
+        }
+
+        &__inner {
+            margin-bottom: 2.8rem;
+        }
+
+        &__top {
+            max-width: 69.5rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            .popular-types-kitchens {
+                &__title,
+                &__catalog {
+                    display: block;
+                }
+
+                &__title {
+                    font-size: 1.8rem;
+                }
+
+                &__catalog {
+                    margin-bottom: 2.1rem;
+
+                    &::after {
+                        display: none;
+                        // top: 41%;
+                        // right: 21.2rem;
+                    }
+                }
+            }
+        }
+
+        &__after {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 28%;
+                transform: rotate(45deg);
+                right: -1.3rem;
+                width: 0.6rem;
+                height: 0.6rem;
+                border-top: 0.2rem solid $white;
+                border-right: 0.2rem solid $white;
+                border-radius: 0.1rem;
+            }
+        }
+
+        &__slider {
+            padding-bottom: 4.4rem;
+            max-width: 70.8rem;
+        }
+
+        &__title,
+        &__catalog {
+            display: none;
+        }
+
+        &__box,
+        &__button {
+            max-width: 27.1rem;
+        }
+
+        &__button {
+            min-height: 3.5rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__inner {
+            margin-bottom: 1.6rem;
+        }
+
+        &__top {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.8rem;
+            max-width: 94.5rem;
+            border-bottom: 0.1rem solid #E5E5E5;;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -0.1rem;
+                left: 0;
+                width: 10rem;
+                height: 0.1rem;
+                background-color: $orange;
+            }
+
+            .popular-types-kitchens {
+                &__catalog {
+                    min-width: 38.3rem;
+                    margin-bottom: 1.2rem;
+                }
+            }
+        }
+
+        &__slider {
+            padding-bottom: 1.4rem;
+            max-width: 96rem;
+        }
+    }
+}

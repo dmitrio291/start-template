@@ -1,0 +1,50 @@
+.factory-windows {
+    display: none;
+
+    @media (min-width: 1220px) {
+
+        display: block;
+
+        .container {
+            width: calc(100% - 8rem);
+            max-width: 114rem;
+        }
+
+        .title {
+            max-width: 18.6em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0.863em;
+            text-transform: uppercase;
+        }
+
+        &__box {
+            max-width: 57em;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__left {
+            max-width: 34em;
+        }
+
+        &__right {
+            img {
+                display: block;
+                max-width: 21.7em;
+            }
+        }
+
+        &__text {
+            font-size: 1.125em;
+
+            &:first-child {
+                margin-bottom: 0.938em;
+            }
+        }
+
+    }
+
+}

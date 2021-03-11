@@ -1,0 +1,338 @@
+@import "../../base/all/var";
+
+.choose-own-color {
+    position: relative;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    overflow: hidden;
+
+    .container {
+        max-width: 114rem;
+    }
+
+    &.active {
+        background: url('/wp-content/themes/twentytwenty-child/img/choose-own-small-bg1.jpg') no-repeat top 4.6em right -1em/23em;
+    }
+
+    &__box,
+    &__content {
+        position: relative;
+    } 
+
+    &__box,
+    &__content {
+        z-index: 1;
+    }
+
+    &__accessory-box {
+        position: absolute;
+        top: 16.6em;
+        right: -2.6em;
+        width: 10em;
+        height: 18em;
+        background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-bg7.png');
+        background-size: 9.5em;
+        background-repeat: no-repeat;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    .title,
+    &__icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        max-width: 12em;
+        margin-bottom: 1.5em;
+    }
+
+    &__box {
+        margin-bottom: 2.250em;
+    }
+
+    &__content,
+    &__inner {
+        display: flex;
+    }
+
+    &__content {
+        margin-bottom: 0.750em;
+        align-items: flex-end;
+    }
+
+    &__text {
+        margin-right: 0.313em;
+        color: $orange;
+        font-weight: 900;
+    }
+
+    &__line,
+    &__circle {
+        background-color: $orange;
+    }
+
+    &__line {
+        position: relative;
+        height: 0.125em;
+        transform: translateY(-0.3em);
+        flex-grow: 1;
+
+        &--accessory {
+            margin-right: 4em;
+        }
+    }
+
+    &__circle,
+    &__circle:after {
+        position: absolute;
+        border-radius: 50%;
+    }   
+
+    &__circle {
+        top: -0.3em;
+        right: 0;
+        width: 0.688em;
+        height: 0.688em;
+
+        &:after {
+            content: '';
+            top: -7px;
+            bottom: -7px;
+            left: -7px;
+            right: -7px;
+            background-color: rgba(242, 100, 34, 0.3);
+        }
+    }
+
+    &__icon {
+        display: block;
+        margin-bottom: 0.438em;
+        width: 4em;
+        height: 4em;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        border: 0.188em solid transparent;
+        background-size: cover;
+
+        &--1 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon1.png');
+        }
+
+        &--2 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon2.png');
+        }
+
+        &--3 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon3.png');
+        }
+
+        &--4 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon4.png');
+        }
+
+        &--5 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon5.png');
+        }
+
+        &--6 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon6.png');
+        }
+
+        &--7 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon7.png');
+        }
+
+        &--8 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon8.png');
+        }
+
+        &--9 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon9.png');
+        }
+
+        &--10 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon10.png');
+        }
+
+        &--11 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon11.png');
+        }
+
+        &--12 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-color-icon12.png');
+        }
+    }
+
+    &__inner {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 15.750em;
+
+        &--frame .choose-own-color__label.active .choose-own-color__icon,
+        &--accessory .choose-own-color__label.active .choose-own-color__icon {
+            border: 0.188em solid #FFC93C;
+        }
+
+    }
+
+    &__label {
+        margin-bottom: 0.719em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__title {
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #333333;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 4.5rem;
+
+        &__accessory-box {
+            width: 6.6em;
+            height: 12.2em;
+            top: 11.8em;
+            right: 8.9em;
+            background-size: 6.5em;
+        }
+
+        &.active {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-middle-bg1.jpg');
+            background-size: 43em;
+            background-position: top 4.9em right -1.5em;
+        }
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        .title {
+            max-width: none;
+        }
+
+        &__box {
+            margin-bottom: 2.5em;
+        }
+
+        &__content {
+            margin-bottom: 1.625em;
+        }
+
+        &__inner {
+            max-width: 30em;
+        }
+
+        &__text {
+            margin-right: 0.625em;
+            font-size: 1.125em;
+            font-weight: 700;
+        }
+
+        &__line {
+            &--frame {
+                margin-right: 8em;
+            }
+
+            &--accessory {
+                margin-right: 12em;
+            }
+        }
+
+        &__icon {
+            margin-bottom: 0.688em;
+            width: 3.625em;
+            height: 3.625em;
+        }
+
+        &__title {
+            font-size: 0.875em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 6.5rem;
+
+        .container {
+            position: relative;
+            max-width: 96rem;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 3em;
+                height: 100%;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1.739933) 52%);
+            }
+        }
+
+        &.active {
+            background-image: none;
+        }
+
+        &__accessory-box {
+            width: 8.6em;
+            height: 16.2em;
+            top: 12.3em;
+            right: 14.9em;
+            background-size: 8.2em;
+        }
+
+        &__container {
+            padding-bottom: 1em;
+            position: relative;
+            &.active {
+                background-image: url('/wp-content/themes/twentytwenty-child/img/choose-own-big-bg1.jpg');
+                background-repeat: no-repeat;
+                background-size: 90em;
+                background-position: top 4.5em right -7.8em;
+            }            
+        }
+
+        .title {
+            margin-bottom: 1.1em;
+        }
+
+        &__box {
+            margin-bottom: 2.156em;
+        }
+
+        &__content {
+            margin-bottom: 3.281em;
+        }
+
+        &__text {
+            margin-right: 0.925em;
+        }
+
+        &__line {
+            &--frame {
+                margin-right: 18em;
+            }
+
+            &--accessory {
+                margin-right: 22em;
+            }
+        }
+
+        &__inner {
+            max-width: 33.688em;
+        }
+
+        &__icon {
+            width: 4.063em;
+            height: 4.063em;
+        }
+
+        &__title {
+            font-size: 1em;
+        }
+    }
+}

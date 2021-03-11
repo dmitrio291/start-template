@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/style.css">
+</head>
+
+<body>
+
+    <section class="questions-for-accurate-calculation">
+        <!--frontend Паша-->
+        <link rel="stylesheet"
+            href="/wp-content/themes/twentytwenty-child/css/module/ceiling/questions-for-accurate-calculation.css">
+
+        <div class="container">
+
+            <form action="#">
+
+                <div class="questions-for-accurate-calculation__wrapper indent container-wrapper">
+
+                    <h2 class="questions-for-accurate-calculation__title fw9 t-24-30-40 center">РАССЧИТАЙТЕ СТОИМОСТЬ РЕМОНТА</h2>
+                    <p class="questions-for-accurate-calculation__subtitle t-16-18-18 center">Пройдите онлайн тест,
+                        чтобы узнать стоимость заказа:</p>
+
+                    <div class="swiper-container questions-for-accurate-calculation__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide questions-for-accurate-calculation__inner calculation-form ">
+
+                                <p class="calculation-form__title fw7 t-16-18-18 center">1. В какое помещение вам нужен ремонт?
+                                </p>
+
+                                <div class="calculation-form__box dfsb t-16-18-18 ">
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="premises-apartment" name="premises">
+                                        <label class="calculation-form__text calculation-form__label"
+                                            for="premises-apartment">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/ceiling/sprite.svg#premises-apartment">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            Квартира
+                                        </label>
+                                    </div>
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="premises-private-house" name="premises">
+                                        <label class="calculation-form__text calculation-form__label"
+                                            for="premises-private-house">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/ceiling/sprite.svg#premises-private-house">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            Частный дом
+                                        </label>
+                                    </div>
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="premises-office" name="premises">
+                                        <label class="calculation-form__text calculation-form__label"
+                                            for="premises-office">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/ceiling/sprite.svg#premises-office">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            Офис
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide questions-for-accurate-calculation__inner calculation-form">
+
+                                <p class="calculation-form__title fw7 t-16-18-18 center">2. Какой вид ремонта требуется?</p>
+
+                                <div class="calculation-form__box dfsb t-16-18-18">
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="ceiling-view-s" name="ceiling-view">
+                                        <label class="calculation-form__text calculation-form__label"
+                                            for="ceiling-view-s">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/repair/sprite.svg#roll">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            косметический
+                                        </label>
+                                    </div>
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="ceiling-view-m" name="ceiling-view">
+                                        <label class="calculation-form__text calculation-form__label"
+                                            for="ceiling-view-m">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/repair/sprite.svg#blocks">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            капитальный
+                                        </label>
+                                    </div>
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="ceiling-view-l" name="ceiling-view">
+                                        <label class="calculation-form__text calculation-form__label"
+                                            for="ceiling-view-l">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/repair/sprite.svg#home-key">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            “под ключ”
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide questions-for-accurate-calculation__inner calculation-form">
+
+                                <p class="calculation-form__title fw7 t-16-18-18 center">3. Какой нужен потолок?</p>
+
+                                <div class="calculation-form__box dfsb t-16-18-18">
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="square-s" name="square">
+                                        <label class="calculation-form__text calculation-form__label" for="square-s">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/repair/sprite.svg#q-15">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            до 15 м2
+                                        </label>
+                                    </div>
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="square-m" name="square">
+                                        <label class="calculation-form__text calculation-form__label" for="square-m">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/repair/sprite.svg#q-15-35">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            от 15 м2 до 35 м2
+                                        </label>
+                                    </div>
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="square-l" name="square">
+                                        <label class="calculation-form__text calculation-form__label" for="square-l">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/repair/sprite.svg#q-35">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            от 35 м2
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide questions-for-accurate-calculation__inner calculation-form">
+
+                                <p class="calculation-form__title fw7 t-16-18-18 center">4. Как быстро вы хотите приступить к ремонту?</p>
+
+                                <div class="calculation-form__box dfsb t-16-18-18 calculation-form__box">
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="when-s" name="when">
+                                        <label class="calculation-form__text calculation-form__label" for="when-s">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/ceiling/sprite.svg#when-s">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            чем быстрее,
+                                            <span class="db">тем лучше</span>
+
+                                        </label>
+                                    </div>
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="when-m" name="when">
+                                        <label class="calculation-form__text calculation-form__label" for="when-m">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/ceiling/sprite.svg#when-m">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            через неделю
+                                        </label>
+                                    </div>
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="when-l" name="when">
+                                        <label class="calculation-form__text calculation-form__label" for="when-l">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/ceiling/sprite.svg#when-l">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            через месяц
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide questions-for-accurate-calculation__inner calculation-form">
+
+                                <p class="calculation-form__title fw7 t-16-18-18 center">5. На какой бюджет вы рассчитываете?</p>
+
+                                <div class="calculation-form__box dfsb t-16-18-18 calculation-form__box">
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="price-s" name="price">
+                                        <label class="calculation-form__text calculation-form__label" for="price-s">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/repair/sprite.svg#25k">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            до 25 000 ₽
+                                        </label>
+                                    </div>
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="price-m" name="price">
+                                        <label class="calculation-form__text calculation-form__label" for="price-m">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/repair/sprite.svg#allk">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            от 25 000 ₽
+                                            <span class="db">до 50 000 ₽</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="calculation-form__list-item">
+                                        <input type="radio" id="price-l" name="price">
+                                        <label class="calculation-form__text calculation-form__label" for="price-l">
+                                            <span class="calculation-form__circl">
+                                                <svg class="calculation-form__icon">
+                                                    <use
+                                                        xlink:href="/wp-content/themes/twentytwenty-child/img/repair/sprite.svg#50k">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            более 50 000 ₽
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide questions-for-accurate-calculation__inner calculation-form">
+
+                                <p class="calculation-form__title fw7 t-16-18-18 center">Менеджер приступил к расчету
+                                    стоимости
+                                </p>
+                                <p class="calculation-form__subtitle center t-16-18-18">Наши специалисты уже начали
+                                    готовить
+                                    для
+                                    Вас индивидуальное предложение, оставьте свой телефон и мы перезвоним Вам.</p>
+
+                                <input class="calculation-form__input center phone-user phone-mask" type="tel"
+                                    placeholder="мой телефон">
+                                <button class="calculation-form__btn button all-send">получить предложение</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions-for-accurate-calculation__box-btn dfsb fw7 t-16-18-18">
+                        <div
+                            class="questions-for-accurate-calculation__btn questions-for-accurate-calculation__btn--prev">
+                            Назад
+                        </div>
+                        <div
+                            class="questions-for-accurate-calculation__btn questions-for-accurate-calculation__btn--next">
+                            Далее
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+
+<script src="/wp-content/themes/twentytwenty-child/libs/swiper/swiper-bundle.min.js"></script>
+<script src="/wp-content/themes/twentytwenty-child/js/only-js-without-jquery.js"></script>
+
+</html>

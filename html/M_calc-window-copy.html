@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap">
+    <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/style.css">
+</head>
+
+<body>
+    <form action="#">
+
+        <section class="calc-window calc-window-one pos-fix">
+            <!--frontend Паша-->
+            <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/module/calc/calc-window.css">
+
+            <div class="container">
+
+                <div class="calc-window__wrapper indent flex-row">
+
+                    <!-- 
+                        Тайтл в мовильной версии есть только в первом окне
+                        title-none этот класс отключит его только для мобильной версии
+                     -->
+
+                    <h2 class="calc-window__title title">РАССЧИТАЙТЕ ТОЧНУЮ СТОИМОСТЬ ОКОН <span
+                            class="calc-window__title-block">ЗА 3 МИНУТЫ</span></h2>
+
+                    <!-- первое окно -->
+
+                    <!-- 
+                        надо будет в первом окне кнопке прописать
+                        margin-left: auto;
+                        чтоб она к правой стороне прижалась
+                        т.к. других кнопок не будет ее не будет без этого свойства прижимать
+                     -->
+
+                    <div class="calc-window__slide-one">
+
+                        <p class="calc-window__text">Выберите - куда вам нужны окна</p>
+
+
+                        <div class="calc-window__list flex-row">
+                            <div class="calc-window__list-item">
+                                <input type="radio" id="window" name="window">
+                                <label for="window" class="calc-window__list-text calc-window__list-label">
+                                    <span class="calc-window__list-circl">
+                                        <svg class="calc-window__icon">
+                                            <use
+                                                xlink:href="/wp-content/themes/twentytwenty-child/img/ceiling/sprite.svg#premises-apartment">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                    Квартира
+                                </label>
+                            </div>
+                            <div class="calc-window__list-item">
+                                <input type="radio" id="window1" name="window">
+                                <label for="window1" class="calc-window__list-text calc-window__list-label">
+                                    <span class="calc-window__list-circl">
+                                        <svg class="calc-window__icon">
+                                            <use
+                                                xlink:href="/wp-content/themes/twentytwenty-child/img/ceiling/sprite.svg#premises-private-house">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                    Частный дом</label>
+                            </div>
+                            <div class="calc-window__list-item">
+                                <input type="radio" id="window2" name="window">
+                                <label for="window2" class="calc-window__list-text calc-window__list-label">
+                                    <span class="calc-window__list-circl">
+                                        <svg class="calc-window__icon">
+                                            <use
+                                                xlink:href="/wp-content/themes/twentytwenty-child/img/ceiling/sprite.svg#premises-office">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                    Офис</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-window__buttons flex-row ">
+                        <div class="calc-window__btn calc-window__btn--prew none">Назад</div>
+                        <div class="calc-window__btn-box none">
+                            <div data-tooltip="отмена" class="calc-window__box-icon">
+                                <svg class="icon icon__box-del">
+                                    <use xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#plus"></use>
+                                </svg>
+                            </div>
+                            <div data-tooltip="применить" class="calc-window__box-icon">
+                                <svg class="icon icon__box-check">
+                                    <use xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="calc-window__btn calc-window__btn--next" style="margin-left: auto;">Далее</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </form>
+
+
+
+
+    <div class='modal' id='modal'>
+        <div class='content'>
+            <a class='close-modal' data-modal="#modal" href="#"></a>
+            <p class="modal-text text-m"><span class="bold">Подоконник</span> — в дополнение к окну вы можете заказать
+                подоконник ПВХ.</p>
+            <p class="modal-text text-m"><span class="bold">Откосы</span> — обрамляют оконный проем. Препятствует
+                образованию конденсата на окнах,
+                поддерживает оптимальный уровень тепла в помещении.</p>
+            <p class="modal-text text-m"><span class="bold">Тёплые откосы</span> — cэндвич-панели для откосов отличаются
+                слоеной структурой. Между двумя
+                стенками толщиной
+                в 1 мм находится вспененный материал.</p>
+            <p class="modal-text text-m"><span class="bold">Штукатурные откосы</span> — оконная классика. Очень долго
+                это был самый распространённый способ
+                оформления окна.</p>
+            <p class="modal-text text-m"><span class="bold">Гипсокартонные откосы</span> — для утепления гипсокартонных
+                откосов, под плиту кладут
+                утеплительный материал.</p>
+            <p class="modal-text text-m"><span class="bold">Отливы</span> — это «козырек», который устанавливается с
+                внешней стороны окна для того чтобы по
+                нему стекала дождевая вода и тающий снег. Он защищает основание окна от лишней влаги.</p>
+        </div>
+    </div>
+
+    <div class='modal' id='modal-1'>
+        <div class='content'>
+            <a class='close-modal' data-modal="#modal-1" href="#"></a>
+            <p class="modal-text text-m"><span class="bold">Глухая створка</span> — створка не открывается.</p>
+            <p class="modal-text text-m"><span class="bold">Поворотная створка</span> — створка открывается только в
+                горизонтальной плоскости на петлях, как дверь.</p>
+            <p class="modal-text text-m"><span class="bold">Поворотно-откидная створка</span> — створка открывается и в
+                горизонтальной плоскости, и в вертикальной «режим
+                проветривания».</p>
+            <p class="modal-text text-m"><span class="bold">Москитная сетка</span> — в зависимости от вида, защищает
+                окно от попадания с улицы насекомых, пыльцы, пыли.</p>
+            <p class="modal-text text-m"><span class="bold">Детский замок</span> — блокирует поворотное положение
+                створки, оставляя доступным откидной режим проветривания. Ручка с замком в закрытом положении полностью
+                исключает любой вид открывания створки, наглухо запирая окно.</p>
+        </div>
+    </div>
+
+    <div class='modal' id='modal-2'>
+        <div class='content'>
+            <a class='close-modal' data-modal="#modal-2" href="#"></a>
+            <p class="text modal-title">Удалить окно?</p>
+            <a class='modal-btn bold' data-modal="#modal-2" href="#">нет</a>
+            <a class='modal-btn bold' href="#">да</a>
+        </div>
+    </div>
+
+    <div class='modal' id='modal-3'>
+        <div class='content'>
+            <a class='close-modal' data-modal="#modal-3" href="#"></a>
+            <p class="modal-text text-m"><span class="bold">В пределах МКАД</span>— стоимость доставки 3636p</p>
+            <p class="modal-text text-m"><span class="bold">Московская область</span>— доставка за пределы МКАД 30 p/км
+                (прибавляется к основной сумме доставки).</p>
+            <p class="modal-text text-m"><span class="bold">Льготная зона доставки</span>— 40 км. от производства в п.
+                Дорохово.</p>
+            <p class="modal-text text-m"><span class="bold">Самовывоз</span>— вы можете забрать окна из удобного вам
+                офиса.</p>
+        </div>
+    </div>
+
+
+    <script src="/wp-content/themes/twentytwenty-child/libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/wp-content/themes/twentytwenty-child/js/calc.js"></script>
+
+</body>
+
+</html>

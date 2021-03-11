@@ -1,0 +1,160 @@
+@import '../../base/all/var';
+
+.types-stretch-ceilings {
+    .title {
+        margin-bottom: 2.7rem;
+        line-height: 1.2;
+    }
+
+    &__list,
+    &__link-btn {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 34.5rem;
+    }
+
+    &__item {
+        min-width: 16.5rem;
+        margin-bottom: 1.4rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+        background-color: $white;
+
+        &:nth-child(7),
+        &:nth-child(8) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link,
+    &__link-btn {
+        display: block;
+    }
+
+    &__link {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        text-decoration: none;
+
+        &:hover {
+            .types-stretch-ceilings__link-btn {
+                background-color: $orange;
+                color: $white;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    &__image {
+        margin-bottom: 0.4rem;
+        max-width: 16.5rem;
+    }
+
+    &__price {
+        margin-bottom: 0.5rem;
+        min-height: 2.4rem;
+        padding: 0.4rem 0.5rem;
+        text-align: center;
+        white-space: nowrap;
+
+        sup {
+            font-size: 0.8rem;
+        }
+    }
+
+    &__link-btn {
+        padding: 0.4rem 0;
+        max-width: 14.7rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 0.2rem;
+        border: 0.1rem solid $orange;
+        line-height: 1;
+        transition: background-color 0.3s, 
+                    color 0.3s;
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 2.6rem;
+        }
+
+        &__list {
+            max-width: 70.7rem;
+            justify-content: start;
+            column-gap: 1.5rem;
+        }
+
+        &__item {
+            min-width: 22.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__link {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+
+        &__title,
+        &__price {
+            font-size: 1.8rem;
+        }   
+
+        &__title {
+            margin-bottom: 1.7rem;
+        }
+
+        &__image {
+            margin-bottom: 0.8rem;
+            max-width: 22.5rem;
+        }
+
+        &__price {
+            margin-bottom: 0.3rem;
+            min-height: 3.4rem;
+
+            sup {
+                font-size: 1rem;
+            }
+        }
+        
+        &__link-btn {
+            padding: 0.6rem 0;
+            max-width: 20.1rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 3rem;
+        }
+
+        &__list {
+            max-width: 96rem;
+            column-gap: 2rem;
+        }
+
+        &__item {
+            margin-bottom: 2rem;
+
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

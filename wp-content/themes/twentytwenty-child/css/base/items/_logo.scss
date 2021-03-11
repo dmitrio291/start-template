@@ -1,0 +1,127 @@
+.logo-windows,
+.logo-balconies {
+    display: block;
+    text-decoration: none;
+}
+
+.logo-windows__text,
+.logo-balconies__text {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.logo-windows__text--big,
+.logo-balconies__text--big {
+    font-weight: 600;
+}
+
+// Логотип в хедере "Пластиковые окна цена"
+.logo-windows {
+    max-width: 19em;
+
+    &__text {
+        display: block;
+
+        &--big {
+            margin-bottom: 0.5em;
+            padding: 0.1em 0.8em;
+            font-size: 2em;
+            line-height: 1.3em;
+            border: 0.2em solid #FFDE30;
+            border-top-left-radius: 0.85em;
+            border-bottom-right-radius: 0.85em;
+            transform: skew(-5deg);
+          }
+
+          &--small {
+            font-size: 1.1em;
+          }
+    }    
+}
+
+// Логотип в хедере "Остекление балконов" 
+.logo-balconies {
+    max-width: 15em;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 0.4em;
+    }
+
+    &__logo {
+        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -20.500em -12.063em;
+        width: 2.875em;
+        height: 2.875em;
+    }
+
+    &__text {
+
+        &--big {
+            max-width: 8em;
+            font-size: 1.5em;
+        }
+
+        &--small {
+            font-size: 0.7em;
+            font-weight: 700;
+        }
+    }
+}
+
+// Логотип Заводские окна
+.logo-factory-windows {
+    display: block;
+    max-width: 8.5em;
+    text-decoration: none;
+
+    &__box {
+        display: flex;
+        margin-bottom: 0.125em;
+    }
+
+    &__text-small,
+    &__title {
+        color: #969593;
+    }
+
+    &__text-small,
+    &__text-big,
+    &__title {
+        display: block;
+        letter-spacing: 0.03em;
+    }
+
+    &__text {
+        &-small,
+        &-big {
+            font-family: Verdana, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &-small {
+            font-size: 0.500em;
+            margin-bottom: 0.1em;
+        }
+
+        &-big {
+            font-size: 1.125em;
+            color: $orange;
+        }
+    }
+
+    &__title {
+        font-size: 0.416em;
+    }
+
+    &__image {
+        width: 1.9em;
+        height: 1.738em;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='29' height='27' viewBox='0 0 29 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='16.2188' y1='8.93462' x2='0.995939' y2='8.93462' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='2.74609' y1='7.67828' x2='2.74609' y2='25.4489' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='20.1484' y1='25.2243' x2='0.997156' y2='25.2243' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='21.0062' x2='18.9492' y2='26.9298' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='10.5391' y1='6.19736' x2='10.5391' y2='0.767436' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='8.85156' y1='2.47289' x2='28.4939' y2='2.47289' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='26.8047' y1='0.767464' x2='26.8047' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='9.34375' y1='18.269' x2='28.004' y2='18.269' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='10.6016' y1='11.6273' x2='10.6016' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='1.26113' x2='18.9492' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+    }
+}

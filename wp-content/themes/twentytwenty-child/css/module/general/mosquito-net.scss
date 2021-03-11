@@ -1,0 +1,180 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.mosquito-net {
+    background-color: #e9e9e9;
+
+    /* .mosquito-net__title */
+
+    &__title {
+        text-align: center;
+        max-width: 10.6em;
+        margin: 0 auto;
+        line-height: 1.2em;
+        margin-bottom: 0.5em;
+
+        @include _768 {
+            max-width: 100%;
+            margin-bottom: 0.95em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.85em;
+        }
+    }
+
+    /* .mosquito-net__suptitle */
+
+    &__suptitle {
+        text-align: center;
+        margin-bottom: 0.5em;
+
+        @include _768 {
+            margin-bottom: 1.75em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.7em;
+        }
+    }
+
+    /* .mosquito-net__slider */
+
+    &__slider {
+        margin-bottom: 1.8rem;
+        .pagination-box {
+            position: absolute;
+            width: 100%;
+            bottom: -1.2em;
+            text-align: center;
+
+            @include _768 {
+                bottom: -2.5em;
+            }
+        }
+
+        .owl-stage-outer {
+            filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.25));
+        }
+
+        .pagination {
+            background-color: #fff;
+
+            &.active {
+                background-color: #17a1e3;
+            }
+        }
+        @include _768 {
+            max-width: 63rem;
+            margin: 0 auto 3.5em;
+        }
+
+        @include _1200 {
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+
+    /* .mosquito-net__item */
+
+    &__item {
+        max-width: 30rem;
+        height: 26.8rem;
+        margin: 0 auto 1em;
+        background-color: #fff;
+        border-radius: 0.6rem;
+        padding: 0.6em;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20rem;
+            height: 9.3rem;
+            bottom: -2.1em;
+            left: 9.7em;
+            background: linear-gradient(267.73deg, #00d0fe 10.58%, #4f9bf5 82.47%);
+            border-radius: 15em/7em;
+
+            @include _768 {
+                transform: rotate(-5deg);
+                bottom: -1.5em;
+                left: 8.8em;
+            }
+        }
+
+        @include _768 {
+            max-width: 30.4rem;
+            height: 31rem;
+        }
+
+        @include _1200 {
+            margin: 0 auto;
+        }
+    }
+
+    /* .mosquito-net__img */
+
+    &__img {
+        display: block;
+        max-width: 28rem;
+        width: 100%;
+        height: 15rem;
+        margin: 0 auto 0.8em;
+        border-radius: 0.6rem;
+        object-fit: cover;
+
+        @include _768 {
+            height: 17.1rem;
+        }
+
+        @include _1200 {
+            max-width: 33rem;
+        }
+    }
+
+    /* .mosquito-net__item-text */
+
+    &__item-text {
+        font-weight: 900;
+        max-width: 11em;
+        line-height: 1.4em;
+        margin-left: 0.2em;
+
+        @include _768 {
+            font-weight: 700;
+            line-height: 1.3em;
+            padding-left: 0.4em;
+            max-width: 100%;
+        }
+
+        @include _1200 {
+            margin-left: 0.4em;
+        }
+    }
+
+    /* .mosquito-net__item-price */
+
+    &__item-price {
+        font-size: 4rem;
+        color: #fff;
+        display: block;
+        position: absolute;
+        bottom: 0.1em;
+        right: 0.3em;
+        z-index: 1;
+
+        @include _768 {
+            bottom: 0.15em;
+            right: 0em;
+            width: 3.5em;
+            text-align: center;
+        }
+    }
+}

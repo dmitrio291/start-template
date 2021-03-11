@@ -1,0 +1,234 @@
+.installment {
+    .title {
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        font-size: 3.2rem;
+        margin-bottom: 0.5em;
+    }
+
+    &-numbers {
+        max-width: 29.6rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+
+        span {
+            font-size: 9rem;
+            font-weight: 700;
+        }
+
+        &__item {
+            position: relative;
+        }
+
+        &__item:first-child,
+        &__item:nth-child(2) {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                width: 4.5rem;
+                height: 0.3rem;
+                background-color: #000000;
+                border-radius: 5px;
+            }
+        }
+
+        &__item:first-child {
+            width: 15rem;
+            &::before {
+                left: 52%;
+            }
+        }
+
+        &__item:nth-child(2) {
+            width: 10rem;
+            &::before {
+                left: 64%;
+            }
+        }
+
+    }
+
+    &-list {
+        &__item {
+            margin-bottom: 1.167em;
+        }
+
+        h4,
+        p {
+            font-size: 1.6rem;
+        }
+
+        h4 {
+            margin-bottom: 0.278em;
+        }
+    }
+
+    &--repair {
+        .installment {
+            &-numbers__item {
+                &:first-child {
+                    width: 11rem;
+
+                    &:before {
+                        left: 53%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    &:before {
+                        left: 58%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        &-numbers {
+            max-width: 63.6rem;
+
+            span {
+                font-size: 18rem;
+            }
+
+            &__item {
+                &:first-child {
+                    width: 28rem;
+
+                    &::before {
+                        left: 55%;
+                        width: 8.1rem;
+                        height: 0.4rem;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 19rem;
+
+                    &::before {
+                        left: 65%;
+                        width: 8.1rem;
+                        height: 0.4rem;
+                    }
+                }
+            }
+        }
+
+        &-list {
+            h4,
+            p {
+                font-size: 1.125em;
+            }
+            
+            h4 {
+                margin-bottom: 0.625em;
+            }
+        }
+
+        &--repair {
+            .container {
+                width: calc(100% - 6rem);
+            }
+
+            .installment {
+                &-numbers__item {
+                    &:first-child {
+                        width: 21rem;
+                    }
+
+                    &:nth-child(2) {
+                        width: 20rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            font-size: 4rem;
+        }
+
+        &-numbers {
+            max-width: 101.6rem;
+
+            span {
+                font-size: 23.1rem;
+            }
+
+            &__item {
+                &:first-child:before,
+                &:nth-child(2):before {
+                    width: 15.7rem;
+                }
+                
+                &:first-child {
+                    width: 44rem;
+
+                    &::before {
+                        left: 47%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 36rem;
+
+                    &::before {
+                        left: 52%;
+                    }
+                }
+            }
+        }
+
+        &-list {
+            display: flex;
+
+            span {
+                display: none;
+            }
+
+            &__item {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-right: 1.250em;
+                }
+
+                &:nth-child(1) {
+                    max-width: 20em;
+                }
+
+                &:nth-child(3) {
+                    max-width: 19em;
+                }
+            }
+        }
+
+        &--repair {
+            .installment {
+                &-numbers__item {
+                    &:first-child {
+                        width: 33rem;
+
+                        &:before {
+                            left: 46%;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        width: 32rem;
+
+                        &:before {
+                            left: 49%;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+}

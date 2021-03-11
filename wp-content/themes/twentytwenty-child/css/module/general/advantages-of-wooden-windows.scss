@@ -1,0 +1,105 @@
+@import "../../base/all/var";
+
+.advantages-of-wooden-windows {
+    background-color: #F2F2F2;
+
+    .container {
+        width: calc(100% - 3rem);
+    }
+
+    .title {
+        margin-bottom: 0.876em;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 22em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item {
+        flex-basis: 10.498em;
+        margin-bottom: 0.836em;
+        text-align: center;
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        display: inline-block;
+        margin-bottom: 0.3em;
+        width: 8.750em;
+        height: 8.750em;
+    }
+    
+    &__text {
+        position: relative;
+        max-width: 11.4em;
+        padding: 0.8em 1em;
+        font-size: 0.875em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 1.176em;
+        }
+
+        &__list {
+            max-width: 32.6em;
+        }
+
+        &__item {
+            flex-basis: 16.298em;
+            margin-bottom: 2.336em;
+        }
+
+        &__img {
+            width: 13.125em;
+            height: 13.125em;
+            margin-bottom: 0.4em;
+            filter: drop-shadow(0 0 0.625em rgba(0, 0, 0, 0.25));
+        }
+
+        &__text {
+            max-width: 13.82em;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1em;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+
+            &:before {
+                top: -24%;
+                border-style: solid;
+                border-width:0 10px 15px 10px;
+            }
+
+            .block {
+                display: block;
+            }
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 0.875em;
+        }
+
+        &__list {
+            max-width: 70.6em;
+        }
+
+        &__item {
+            margin-bottom: 0;
+            flex-basis: 14.298em;
+        }
+    }
+}

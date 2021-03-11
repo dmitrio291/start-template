@@ -1,0 +1,227 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.work-examples {
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .work-examples__title */
+
+    &__title {
+        margin-bottom: 2.8rem;
+
+        @include _1200 {
+            line-height: 1.25;
+            margin-bottom: 3.1rem;
+        }
+    }
+
+    /* .work-examples__page */
+
+    &__page {
+        margin-bottom: 2.5rem;
+
+        @include _768 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        @include _1200 {
+            gap: 1.9rem;
+        }
+    }
+
+    /* .work-examples__box-img */
+
+    &__box-img {
+        width: 100%;
+        max-width: 100%;
+        height: 21.1rem;
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include _768 {
+            max-width: 22.6rem;
+            height: 13.8rem;
+            margin-bottom: 0;
+        }
+
+        @include _1200 {
+            max-width: 30.7rem;
+            height: 18.8rem;
+        }
+    }
+
+    /* .work-examples__box-pagination */
+
+    &__box-pagination {
+        display: none;
+
+        @include _768 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @include _1200 {
+            max-width: 69rem;
+            margin: 0 auto;
+        }
+    }
+
+    /* .work-examples__btn */
+    &__btn,
+    &__pagination-list {
+        @include _768 {
+            color: #979797;
+            font-weight: 700;
+        }
+    }
+
+    &__btn,
+    &__pagination-link {
+        @include _768 {
+            transition: all 0.3s;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    &__btn {
+
+        @include _768 {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+        }
+    }
+
+    /* .work-examples__pagination-list */
+
+    &__pagination-list {
+
+        @include _768 {
+            display: flex;
+        }
+    }
+
+    /* .work-examples__pagination-link */
+
+    &__pagination-link {
+
+        @include _768 {
+            color: inherit;
+            text-decoration: none;
+            margin: 0 0.65rem;
+
+            &.active {
+                color: $orange;
+            }
+        }
+    }
+
+    /* .work-examples__next-page */
+
+    &__next-page {
+        font-weight: 700;
+
+        @include _768 {
+            display: none;
+        }
+    }
+
+    &--kitchens {
+        img {
+            margin-bottom: 1rem;
+            display: block;
+            height: auto;
+
+            @include _768 {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .work-examples {
+            &__page {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+
+                @include _1200 {
+                    gap: 2rem;
+                }
+            }
+
+            &__box {
+                &-img {
+                    height: auto;
+                    margin-bottom: 0;
+                    padding: 1.5rem 1rem;
+                    flex-basis: 16.5rem;
+                    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
+
+                    &:nth-child(11),
+                    &:nth-child(12) {
+                        display: none;
+                    }
+
+                    @include _768 {
+                        flex-basis: 22.6rem;
+                        padding-left: 3rem;
+                        padding-right: 3rem;
+
+                        &:nth-child(10) {
+                            display: none;
+                        }
+                    }
+
+                    @include _1200 {
+                        flex-basis: 22.5rem;
+
+                        &:nth-child(10),
+                        &:nth-child(11),
+                        &:nth-child(12) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &__text {
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+
+                .block {
+                    display: block;
+                }
+
+                @include _768 {
+                    margin-bottom: 1.2rem;
+                    font-size: 1.4rem;
+                }
+            }
+
+            &__price {
+                @include _768 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

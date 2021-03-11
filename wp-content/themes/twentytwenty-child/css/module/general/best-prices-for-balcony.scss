@@ -1,0 +1,42 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.best-prices {
+    background: #f9f9f9;
+
+    /* .best-prices__title */
+
+    &__title {
+        margin-bottom: 0.4em;
+        line-height: 1.2em;
+
+        span {
+            display: block;
+        }
+
+        @include _768 {
+            margin-bottom: 0.8em;
+            line-height: 1.1em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.85em;
+            line-height: 1.2em;
+        }
+    }
+
+    /* .best-prices__text */
+
+    &__text {
+        line-height: 1.13em;
+
+        @include _768 {
+            line-height: 1.25;
+        }
+    }
+}

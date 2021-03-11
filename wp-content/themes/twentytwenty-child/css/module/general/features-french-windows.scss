@@ -1,0 +1,293 @@
+.features-french-windows {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+
+    .title,
+    .text,
+    &__image-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        max-width: 14.9em;
+        margin-bottom: 1.1625em;
+        line-height: 1.2;
+    }
+
+    .text {
+        max-width: 21.3em;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+
+        &-box {
+            margin-bottom: 1.3625em;
+            max-width: 21.5625em;
+        }
+    }
+
+    .button {
+        max-width: 24.650em;
+    }
+
+    @media (min-width: 600px) {
+        .title {
+            max-width: 18em
+        }
+
+        .text {
+            max-width: none;
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+
+        .title {
+            margin-bottom: 0.8625em;
+        }
+
+        &__box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 46.1em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title {
+            grid-row: 1 / 2;
+            grid-column: span 2;
+        }
+
+        &__image {
+            &-box {
+                grid-row: 2 / 3;
+                grid-column: 2 / 3;
+            }
+        }
+
+        &__content {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+
+        .text {
+            max-width: 19em;
+            line-height: 1.25;
+        }
+
+        .button {
+            grid-row: 3 / 3;
+            grid-column: span 2;
+            max-width: 24.13em;
+            margin-top: 0.8em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        &__box {
+            grid-template-columns: 34.25em 24.0625em;
+            grid-template-rows: 8em 11.5em;
+            grid-column-gap: 1.25em;
+            max-width: 60.1em;
+        }
+
+        .text {
+            max-width: 31em;
+            margin-bottom: 0;
+        }
+
+        &__image {
+            &-box {
+                max-width: 24.5625em;
+                margin-bottom: 0;
+            }
+        }
+
+        .button {
+            grid-row: 3 / 3;
+            grid-column: span 1;
+            margin: 0;
+        }
+    }
+
+    // .container {
+    //     width: calc(100% - 3rem);
+    // }
+
+    // .title {
+    //     margin-bottom: 0.9em;
+    //     line-height: 1.2;
+    //     span {
+    //         white-space: nowrap;
+    //     }
+    // }
+
+    // &__image {
+    //     width: 100%;
+
+    //     &-box {
+    //         position: relative;
+    //         margin-bottom: 0.7em;
+    //         margin-left: -4.3%;
+    //         margin-right: -4.3%;
+
+    //         &:before {
+    //             content: '';
+    //             position: absolute;
+    //             bottom: 0;
+    //             left: 0;
+    //             width: 100%;
+    //             height: 40%;
+    //             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 90.1%);
+    //         }
+    //     }
+    // }
+
+    // &__content {
+    //     text-align: center;
+    // }
+
+    // .text {
+    //     letter-spacing: 0.007em;
+    // }
+    
+    // .button {
+    //     width: 100%;
+    //     max-width: 33.5rem;
+    //     &:before {
+    //         content: 'вызвать замерщика';
+    //     }
+    // }
+
+    // @media (min-width: 768px) {
+    //     .container {
+    //         width: calc(100% - 5rem);
+    //     }
+
+    //     .text {
+    //         text-align: center;
+    //     }
+
+    //     &__image {
+    //         &-box {
+    //             max-width: 50em;
+    //             margin-left: auto;
+    //             margin-right: auto;
+    //             margin-bottom: 1.7em;
+    //             text-align: center;
+
+    //             &:before {
+    //                 height: 100%;
+    //                 width: 100%;
+    //                 background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%);
+    //             }
+    //         }
+    //     }
+
+    //     .button {
+    //         display: none;
+    //     }
+    // }
+
+    // @media (min-width: 1200px) {
+    //     padding-top: 0;
+    //     padding-bottom: 0;
+
+    //     .container {
+    //         width: calc(100% - 8rem);
+    //         margin-right: 0;
+    //     }
+
+    //     &__box {
+    //         display: grid;
+    //         grid-template-columns: 50% 50%;
+    //     }
+
+    //     .title {
+    //         margin-top: 1.288em;
+    //         margin-bottom: 0.9em;
+    //         font-size: 2.8rem;
+    //     }
+
+    //     .title,
+    //     .text {
+    //         text-align: left;
+    //     }
+
+    //     .text {
+    //         margin-bottom: 1.763em;
+    //         max-width: 95%;
+    //     }
+
+    //     &__image {
+    //         &-box {
+    //             margin-bottom: 0;
+    //             margin-left: 0;
+    //             margin-right: 0;
+    //             max-width: none;
+    //             grid-row: 1 / 4;
+    //             grid-column: 2 / 2;
+
+    //             &:before {
+    //                 background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 15%);
+    //             }
+    //         }
+    //     }
+
+    //     .button {
+    //         max-width: 37.5rem;
+    //         margin-bottom: 1.288em;
+
+    //         display: block;
+    //         &:before {
+    //             content: 'заказать выезд замерщика';
+    //         }
+    //     }
+    // }
+
+    // @media (min-width: 1400px) {
+    //     .container {
+    //         max-width: 154rem;
+    //     }
+
+    //     .title {
+    //         margin-bottom: 0.6em;
+    //         font-size: 3rem;
+    //     }
+
+    //     .text {
+    //         font-size: 2.4rem;
+    //         line-height: 1.21;
+    //     }
+
+    //     .button {
+    //         max-width: 44.5rem;
+    //         padding-top: 0.771em;
+    //         padding-bottom: 0.771em;
+    //     }
+
+    //     &__image {
+    //         &-box {
+    //             &:before {
+    //                 background: linear-gradient(90deg, white 6%, rgba(255, 255, 255, 0) 27%);
+    //             }
+    //         }
+    //     }
+    // }
+
+    // @media (min-width: 1400px) {
+    //     .title {
+    //         font-size: 4rem;
+    //     }
+    // }
+ }

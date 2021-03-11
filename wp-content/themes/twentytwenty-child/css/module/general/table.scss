@@ -1,0 +1,173 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.table {
+    /* .table__wrapper */
+
+    &__wrapper {
+        padding-top: 1rem;
+    }
+
+    /* .table__title */
+
+    &__title {
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+
+        @include _768 {
+            line-height: 0.8;
+        }
+
+        @include _1200 {
+            line-height: 1;
+        }
+    }
+
+    /* .table__subtitle */
+
+    &__subtitle {
+        text-transform: uppercase;
+        line-height: 1.25;
+        margin-bottom: 2.3rem;
+
+        @include _768 {
+            margin-bottom: 2.7rem;
+        }
+    }
+
+    /* .table__inner */
+
+    &__inner {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    /* .table__item */
+
+    &__item {
+        display: flex;
+        font-size: 1.2rem;
+
+        &:nth-child(odd) {
+            background-color: $lightGray;
+        }
+
+        span {
+            border-right: 1px solid #e8e8e8;
+            width: 100%;
+            padding: 0.75rem 0.5rem 0.75rem 1rem;
+
+            &:first-child {
+                max-width: 15.7rem;
+
+                @include _768 {
+                    max-width: 30.8rem;
+                }
+
+                @include _1200 {
+                    max-width: 44.4rem;
+                    padding-left: 3.7rem;
+                }
+            }
+
+            &:nth-child(2) {
+                max-width: 11.4rem;
+
+                @include _768 {
+                    max-width: 20.1rem;
+                }
+
+                @include _1200 {
+                    max-width: 28.2rem;
+                    padding-left: 2rem;
+                }
+            }
+
+            &:last-child {
+                max-width: 7.4rem;
+                border: none;
+
+                @include _768 {
+                    font-size: 1.8rem;
+                    max-width: 19.9rem;
+                    text-align: center;
+                    padding: 1.2rem;
+                }
+
+                @include _1200 {
+                    font-size: 1.8em;
+                    max-width: 22.7rem;
+                }
+            }
+
+            @include _768 {
+                font-size: 1.6rem;
+                padding: 1.2rem 1rem 1.1rem 2.5rem;
+            }
+
+            @include _1200 {
+                font-size: 1.8rem;
+                padding: 1.7rem 1rem 1.3rem 2.5rem;
+            }
+        }
+
+        /* .table__item--title */
+
+        &.table__item--title {
+            text-align: left;
+            text-transform: uppercase;
+            background-color: $yellow;
+
+            span {
+                padding: 0.85rem 1rem;
+
+                &:first-child {
+
+                    @include _1200 {
+                        padding-left: 3.7rem;
+                    }
+                }
+
+                &:nth-child(2) {
+
+                    @include _1200 {
+                        padding-left: 2rem;
+                    }
+                }
+
+                &:last-child {
+                    @include _768 {
+                        font-size: 1.6rem;
+                    }
+
+                    @include _1200 {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                @include _768 {
+                    padding: 1.75rem 1rem;
+                }
+
+                @include _1200 {
+                    font-size: 1.8rem;
+                }
+            }
+
+            @include _768 {
+                text-align: center;
+            }
+
+            @include _1200 {
+                text-align: left;
+            }
+        }
+    }
+}

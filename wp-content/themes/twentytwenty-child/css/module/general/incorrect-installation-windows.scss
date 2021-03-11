@@ -1,0 +1,186 @@
+@import '../../base/all/var';
+
+.incorrect-installation-windows {
+    .container {
+        width: 100%;
+    }
+
+    .title,
+    &__year,
+    &__image,
+    &__item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        max-width: 15em;
+        margin-bottom: 1.238em;
+        line-height: 1.14;
+    }
+
+    &__list {
+        max-width: 23.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item {
+        margin-bottom: 2em;
+
+        &:nth-child(3) {
+            .incorrect-installation-windows {
+                &__year {
+                    max-width: 16.602em;
+                }
+            }
+        }
+    }
+
+    &__year {
+        position: relative;
+        max-width: 17.302em;
+        padding-top: 0.325em;
+        padding-bottom: 0.325em;
+        margin-bottom: 1.1em;
+        text-align: center;
+        border: 0.125em solid $orange; 
+        border-radius: 0.35em;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -0.44em;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            width: 1.3rem;
+            height: 1.3rem;
+            border-right: 0.15em solid $orange;
+            border-bottom: 0.15em solid $orange;
+            background-color: $white;
+        }
+    }
+
+    &__image,
+    &__text span {
+        display: block;
+    }
+
+    &__image {
+        max-width: 17.275em;
+        margin-bottom: 1.681em;
+
+        &--width {
+            max-width: 18.613em;
+            margin-bottom: 1.3em;
+            margin-left: 1.4em;
+        }
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            max-width: 23em;
+            margin-bottom: 1.138em;
+        }
+
+        &__list,
+        &__item:nth-child(3) .incorrect-installation-windows__text {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 40.1em;
+        }
+
+        &__item {
+            flex-basis: 19.471em;
+
+            &:nth-child(3) {
+                max-width: 23.6em;
+
+                .incorrect-installation-windows {
+                    &__text {
+                        max-width: 17em;
+                    }
+
+                    &__year {
+                        max-width: 16.871em;
+                        margin-left: 3.4em;
+                    }
+                }
+            }
+        }
+
+        &__year,
+        &__text {
+            font-size: 1.125em;
+        }
+
+        &__year {
+            max-width: 15.071em;
+            margin-bottom: 1em;
+            font-weight: 700;
+        }
+
+        &__image {
+            max-width: 16.750em;
+            margin-bottom: 0.9375em;
+
+            &--width {
+                max-width: 21.325em;
+                margin-right: 3em;
+            }
+        }
+
+        .inline {
+            display: inline;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        .title {
+            max-width: 26em;
+        }
+
+        &__list {
+            max-width: none;
+        }
+
+        &__item {
+            flex-basis: 18.171em;
+
+            &:nth-child(3) {
+                .incorrect-installation-windows {
+                    &__year {
+                        max-width: 14.871em;
+                        margin-left: 3.2em;
+                    }
+                }
+            }
+        }
+
+        &__image {
+            max-width: 15.75em;
+
+            &--width {
+                max-width: 18.938em;
+                margin-bottom: 0.681em;
+            }
+        }
+
+        &__year {
+            max-width: 14.071em;
+        }
+    }
+}

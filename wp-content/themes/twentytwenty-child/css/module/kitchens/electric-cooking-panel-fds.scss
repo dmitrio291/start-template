@@ -1,0 +1,322 @@
+@import '../../base/all/var';
+
+.electric-cooking-panel-fds-65-30 {
+    .title {
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+        line-height: 1.22;
+    }
+
+    &__title {
+        margin-bottom: 1.6rem;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    &__img,
+    &__price-button,
+    &__technical-specifications,
+    &__slider,
+    &__button-all {
+        max-width: 34.5rem;
+    }
+
+    &__img,
+    &__price-button,
+    &__slider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__img {
+        display: block;
+        margin-bottom: 3.3rem;
+    }
+
+    &__price-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.8rem;
+    }
+
+    &__price {
+        font-size: 2.4rem;
+    }
+
+    &__button {
+        margin: 0;
+        max-width: 16.5rem;
+    }
+
+    &__description {
+        line-height: 1.2;
+    }
+
+    &__about {
+        margin-bottom: 2.5rem;
+    }
+
+    &__technical-specifications {
+        margin-bottom: 4.8rem;
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2.1rem;
+        }
+    }
+
+    &__slider {
+        padding: 1.1rem 0.6rem 4rem;
+        margin-bottom: 2.3rem;
+
+        img {
+            margin-bottom: 1rem;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__slide {
+        padding: 1.5rem 1rem;
+        box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.4);
+
+        &-text {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+
+        &-bullets {
+            .swiper-pagination {
+                &-bullet {
+                    margin: 0 0.6rem;
+                }
+            }
+        }
+
+        &-bullet {
+            width: 1rem;
+            height: 1rem;
+            opacity: 1;
+            background-color: #D0D0D0;
+
+            &-active {
+                background-color: $orange;
+            }
+        }
+    }
+
+    &__prev::after,
+    &__next::after {
+        display: none;
+    }
+
+    &__prev,
+    &__next {
+        top: 102%;
+        width: 7.3rem;
+        height: 1.6rem;
+        background-repeat: no-repeat;
+    }
+
+    &__prev {
+        left: 7rem;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='74' height='17' viewBox='0 0 74 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.29309 9.76657C0.902567 9.37605 0.902571 8.74288 1.2931 8.35236L7.65705 1.9884C8.04758 1.59787 8.68074 1.59787 9.07127 1.9884C9.46179 2.37892 9.46179 3.01209 9.07127 3.40261L3.41441 9.05947L9.07126 14.7163C9.46179 15.1068 9.46179 15.74 9.07127 16.1305C8.68074 16.5211 8.04758 16.5211 7.65705 16.1305L1.29309 9.76657ZM73.0002 10.0595L2.0002 10.0595L2.0002 8.05947L73.0002 8.05947L73.0002 10.0595Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+    }
+
+    &__next {
+        right: 7rem;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='72' height='16' viewBox='0 0 72 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M71.7069 8.76657C72.0974 8.37605 72.0974 7.74288 71.7069 7.35236L65.3429 0.988398C64.9524 0.597874 64.3193 0.597874 63.9287 0.988398C63.5382 1.37892 63.5382 2.01209 63.9287 2.40261L69.5856 8.05947L63.9287 13.7163C63.5382 14.1068 63.5382 14.74 63.9287 15.1305C64.3193 15.5211 64.9524 15.5211 65.3429 15.1305L71.7069 8.76657ZM-0.000187921 9.05947L70.9998 9.05947L70.9998 7.05947L-0.000188106 7.05947L-0.000187921 9.05947Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 6.1rem);
+        }
+
+        .title {
+            margin-bottom: 1.9rem;
+        }
+
+        &__box {
+            display: grid;
+            grid-template: 
+                'img price-box'
+                'img description'
+                'specifications specifications';
+            column-gap: 1.7rem;
+        }
+
+        &__img,
+        &__price-button {
+            margin: 0;
+        }
+
+        &__img {
+            grid-area: img;
+            margin-top: 0.9rem;
+            max-width: 22.6rem;
+        }
+
+        &__price-button,
+        &__technical-specifications {
+            max-width: none;
+        }
+
+        &__price-button {
+            grid-area: price-box;
+            margin-bottom: 2.7rem;
+        }
+
+        &__price {
+            font-size: 3rem;
+        }
+
+        &__about {
+            grid-area: description;
+            margin-bottom: 3.2rem;
+        }
+
+        &__technical-specifications {
+            grid-area: specifications;
+            margin-bottom: 4.5rem;
+
+
+            &-box {
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 13.3rem;
+            }
+
+            &-item {
+                flex-basis: 28.7rem;
+
+                &:first-child {
+                    order: 1;
+                }
+
+                &:nth-child(2) {
+                    order: 3;
+                }
+
+                &:nth-child(3) {
+                    order: 2;
+                }
+
+                &:last-child {
+                    order: 4;
+                }
+            }
+        }
+
+        &__slider {
+            margin-bottom: 2.8rem;
+            max-width: 74.5rem;
+
+            img {
+                margin-bottom: 1.4rem;
+                height: 14.1rem;
+            }
+        }
+
+        &__slide {
+            padding: 1.5rem 3rem;
+
+            &-text {
+                font-size: 1.4rem;
+                line-height: 1.3;
+            }
+
+            &-price {
+                font-size: 2rem;
+            }
+        }
+
+        &__prev {
+            left: 25rem;
+        }
+
+        &__next {
+            right: 25rem;
+        }
+
+        &__button {
+            max-width: 20rem;
+
+            &-all {
+                max-width: 30.6rem;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 2.3rem;
+        }
+
+        &__box {
+            column-gap: 1.8rem;
+        }
+
+        &__img {
+            max-width: 30.7rem;
+        }
+
+        &__price-button {
+            margin-bottom: 3.4rem;
+        }
+
+        &__price {
+            font-size: 4rem;
+        }
+
+        &__about {
+            margin-bottom: 4.8rem;
+        }
+
+        &__title,
+        &__description,
+        &__technical-specifications-item {
+            font-size: 1.8rem;
+        }
+
+        &__description {
+            line-height: 1.23;
+        }
+
+        &__technical-specifications {
+            margin-bottom: 3.9rem;
+
+            &-box {
+                column-gap: 18.4rem;
+                margin-top: 2.3rem;
+            }
+
+            &-item {
+                flex-basis: 38.8rem;
+                margin-bottom: 2.3rem;
+            }
+        }
+
+        &__slider {
+            margin-bottom: 1.9rem;
+            padding-bottom: 1rem;
+            max-width: 96rem;
+
+            img {
+                margin-bottom: 0.9rem;
+            }
+        }
+
+        &__prev,
+        &__next {
+            display: none;
+        }
+    }
+}
