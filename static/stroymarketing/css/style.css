@@ -615,15 +615,19 @@ a {
 }
 
 .companies-box__list {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 374px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .companies-box__item {
     position: relative;
     margin-bottom: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .companies-box__item:last-child {
@@ -743,6 +747,18 @@ a {
     margin-bottom: 17px;
 }
 
+.working-scheme-advantages__text--medium {
+    font-weight: 500;
+}
+
+.working-scheme-advantages__text--show {
+    display: block;
+}
+
+.working-scheme-advantages__text-box {
+    display: none;
+}
+
 .working-scheme-advantages__list-item {
     margin-bottom: 15px;
 }
@@ -782,6 +798,10 @@ a {
 
 .working-scheme-advantages__content .green {
     font-weight: 400;
+}
+
+.working-scheme-advantages__more-details {
+    cursor: pointer;
 }
 
 .working-scheme-advantages__more-details::before {
@@ -1162,7 +1182,6 @@ a {
 /* trial-period */
 .trial-period {
     padding-top: 70px;
-    overflow: hidden;
 }
 
 .trial-period__title {
@@ -1324,6 +1343,7 @@ a {
     margin-bottom: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
+    background-color: #ffffff;
 }
 
 .attracting-customers-item--margin-bottom {
@@ -1477,6 +1497,7 @@ a {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     padding: 20px;
+    background-color: #ffffff;
 }
 
 .solving-problems-slider__box::before {
@@ -1788,6 +1809,18 @@ a {
     }
 }
 
+@media (min-width: 500px) {
+    .companies-box__list {
+        max-width: 440px;
+    }
+}
+
+@media (min-width: 600px) {
+    .companies-box__list {
+        max-width: 540px;
+    }
+}
+
 @media (min-width: 768px) {
     .section-padding {
         padding: 70px 40px;
@@ -2055,26 +2088,35 @@ a {
         margin-right: 3px;
     }
 
+    .companies-box__list {
+        justify-content: normal;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 688px;
+    }
+
     .companies-box__item {
-        margin-left: 10px;
-        margin-right: 10px;
         margin-bottom: 25px;
     }
 
     .companies-box__item:first-child {
         order: 1;
+        margin-right: 31px;
     }
 
     .companies-box__item:nth-child(2) {
         order: 3;
+        margin-right: 27px;
     }
 
     .companies-box__item:nth-child(3) {
         order: 2;
+        margin-right: 32px;
     }
 
     .companies-box__item:nth-child(4) {
         order: 4;
+        margin-right: 22px;
     }
 
     .companies-box__item:nth-child(5) {
@@ -2083,6 +2125,7 @@ a {
 
     .companies-box__item:nth-child(6) {
         order: 6;
+        margin-right: 29px;
     }
 
     .companies-box__item:nth-child(7) {
@@ -2091,10 +2134,12 @@ a {
 
     .companies-box__item:nth-child(8) {
         order: 10;
+        margin-right: 31px;
     }
 
     .companies-box__item:nth-child(9) {
         order: 11;
+        margin-right: 27px;
     }
 
     .companies-box__item:nth-child(10) {
@@ -2103,11 +2148,13 @@ a {
 
     .companies-box__item:nth-child(11) {
         order: 8;
+        margin-right: 26px;
     }
 
     .companies-box__item:last-child {
         display: block;
         order: 7;
+        margin-right: 28px;
     }
 
     .companies-box__img {
@@ -2894,13 +2941,6 @@ a {
         top: -5.3%;
     }
     /* competitors */
-
-    /* trial-period */
-    .trial-period-slider {
-        width: 100vw;
-    }
-    /* trial-period */
-
     /* about-us */
     .about-us-box__slide::before {
         top: 2px;
@@ -3226,12 +3266,38 @@ a {
         margin-right: 6px;
     }
 
+    .companies-box__list {
+        max-width: 1073px;
+    }
+
     .companies-box__item {
         margin-bottom: 35px;
     }
 
+    .companies-box__item:first-child {
+        margin-right: 33px;
+    }
+
+    .companies-box__item:nth-child(2) {
+        margin-right: 35px;
+    }
+
+    .companies-box__item:nth-child(4) {
+        margin-right: 31px;
+    }
+
     .companies-box__item:nth-child(5) {
         order: 11;
+        margin-right: 26px;
+    }
+
+    .companies-box__item:nth-child(6) {
+        margin-right: 0;
+    }
+
+    .companies-box__item:nth-child(7) {
+        order: 5;
+        margin-right: 30px;
     }
 
     .companies-box__item:nth-child(8) {
@@ -3268,7 +3334,7 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        column-gap: 103px;
+        column-gap: 102px;
     }
 
     .working-scheme-advantages__item:nth-child(odd) {
@@ -3298,7 +3364,15 @@ a {
         display: inline-block;
     }
 
+    .working-scheme-advantages__text--padding-right {
+        padding-right: 5px;
+    }
+
     .working-scheme-advantages__text--none {
+        display: none;
+    }
+
+    .working-scheme-advantages__text--show {
         display: none;
     }
 
@@ -3559,11 +3633,26 @@ a {
     }
     /* cost */
 
-    /* trial-period */
+    /* trial-period */    
     .trial-period {
         padding-top: 90px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .trial-period .container {
+        max-width: none;
+    }
+
+    .trial-period__title-box {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .trial-period__title-inner {
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .trial-period__title {
@@ -3577,7 +3666,7 @@ a {
             'trial-period-slider__img trial-period-slider__title'
             'trial-period-slider__img trial-period-slider__text'
             'trial-period-slider__img trial-period-slider__button';
-        grid-column-gap: 80px;
+        grid-column-gap: 60px;
         align-items: center;
         min-height: 361px;
         padding: 53px 22px 50px 70px;
@@ -3596,7 +3685,7 @@ a {
 
     .trial-period-slider__text {
         grid-area: trial-period-slider__text;
-        margin-bottom: 35px;
+        margin-bottom: 17px;
     }
 
     .trial-period-slider__button {
@@ -3611,10 +3700,16 @@ a {
     }
 
     .trial-period-slider__nav {
+        display: flex;
         width: 50px;
         height: 50px;
+        top: 49%;
         box-shadow: 0 0 10px rgb(0 0 0 / 25%);
         background-color: #ffffff;        
+    }
+
+    .trial-period-slider__nav.swiper-button-disabled {
+        display: none;
     }
 
     .trial-period-slider__nav::after  {
@@ -3624,9 +3719,11 @@ a {
     }
 
     .trial-period-slider__nav--next {
-        display: flex;
-        top: 49%;
-        left: 79%;
+        right: 9%;
+    }
+
+    .trial-period-slider__nav--prev {
+        left: 9%;
     }
     /* trial-period */
     
@@ -3829,9 +3926,32 @@ a {
         right: 30.5%;
     }
 
-    .companies-box__item {
-        margin-left: 13px;
-        margin-right: 13px;
+    .companies-box__list {
+        max-width: none;
+    }
+
+    .companies-box__item:last-child {
+        margin-right: 0;
+    }
+
+    .companies-box__item:nth-child(5) {
+        margin-right: 32px;
+    }
+
+    .companies-box__item:nth-child(6) {
+        margin-right: 26px;
+    }
+
+    .companies-box__item:nth-child(8) {
+        margin-right: 33px;
+    }
+
+    .companies-box__item:nth-child(9) {
+        margin-right: 31px;
+    }
+
+    .companies-box__item:nth-child(11) {
+        margin-right: 36px;
     }
     /* companies */
 
@@ -3929,9 +4049,17 @@ a {
         width: 90px;
     }
 
-    .trial-period-slider__nav--next {
-        left: 76%;
+    /* trial-period */
+    .trial-period-slider__nav--prev {
+        left: 9.7%;
     }
+
+    .trial-period-slider__nav--next {
+        right: 9.7%;
+    }
+    /* trial-period */
+
+
     /* competitors */
 
     /* contacts */
@@ -3959,8 +4087,16 @@ a {
         margin-bottom: 35px;
     }
 
+    .trial-period-slider__slide {
+        grid-column-gap: 80px;
+    }
+
+    .trial-period-slider__nav--prev {
+        left: 10%;
+    }
+
     .trial-period-slider__nav--next {
-        left: 71%;
+        right: 10%;
     }
     /* trial-period */
 }
@@ -3972,7 +4108,11 @@ a {
         grid-column-gap: 128px;
     }
 
+    .trial-period-slider__nav--prev {
+        left: 18.1%;
+    }
+
     .trial-period-slider__nav--next {
-        left: 63.7%;
+        right: 18.1%;
     }
 }

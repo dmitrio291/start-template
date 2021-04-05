@@ -3,12 +3,17 @@
 document.addEventListener('DOMContentLoaded', () =>  {
     const toggle = document.getElementById('jsToggle'),
         menuOverlay = document.getElementById('jsMenuOverlay'),
+        workingSchemeAdvantagesOne = document.getElementById('workingSchemeAdvantagesOne'),
+        workingSchemeAdvantagesTwo = document.getElementById('workingSchemeAdvantagesTwo'),
+        workingSchemeAdvantagesHidden = document.querySelector('.working-scheme-advantages__text--none'),
+        workingSchemeAdvantagesTextBox = document.querySelector('.working-scheme-advantages__text-box'),
         aboutSlider = document.querySelector('.about-box__slider'),
         companiesSlider = document.querySelector('.companies-box__slider'),
         portfolioButton = document.querySelector('.portfolio__button'),
         trialPeriodSlider = document.querySelector('.trial-period-slider'),
         aboutUsSlider = document.querySelector('.about-us-box__slider'),
-        solvingProblemsSlider = document.querySelector('.solving-problems-slider');
+        solvingProblemsSlider = document.querySelector('.solving-problems-slider'),
+        links = document.querySelectorAll('a[href*="#"]');
 
     if (toggle) {
         toggle.addEventListener('click', () => {
@@ -21,6 +26,20 @@ document.addEventListener('DOMContentLoaded', () =>  {
             document.body.classList.remove('hide-scroll');
             toggle.classList.remove('active');
             menuOverlay.classList.remove('active');
+        });
+    }
+
+    if (workingSchemeAdvantagesOne) {
+        workingSchemeAdvantagesOne.addEventListener('click', function() {
+            workingSchemeAdvantagesHidden.classList.toggle('working-scheme-advantages__text--none');
+            (this.textContent === 'Подробнее') ? this.textContent = 'Cвернуть' : this.textContent = 'Подробнее';
+        });
+    }
+
+    if (workingSchemeAdvantagesTwo) {
+        workingSchemeAdvantagesTwo.addEventListener('click', function() {
+            workingSchemeAdvantagesTextBox.classList.toggle('working-scheme-advantages__text-box');
+            (this.textContent === 'Подробнее') ? this.textContent = 'Cвернуть' : this.textContent = 'Подробнее';
         });
     }
 
@@ -98,14 +117,24 @@ document.addEventListener('DOMContentLoaded', () =>  {
                     slidesPerView: 1.25,
                     spaceBetween: 20
                 },
+                1200: {
+                    slidesPerView: 1.25,
+                    centeredSlides: true,
+                    loop: false
+                },
                 1400: {
-                    slidesPerView: 1.3,
+                    centeredSlides: true,
+                    loop: false
                 },
                 1600: {
-                    slidesPerView: 1.4,
+                    slidesPerView: 1.35,
+                    centeredSlides: true,
+                    loop: false
                 },
                 1800: {
-                    slidesPerView: 1.52
+                    slidesPerView: 1.60,
+                    centeredSlides: true,
+                    loop: false
                 }
             }
         });
@@ -146,5 +175,23 @@ document.addEventListener('DOMContentLoaded', () =>  {
         }
     }
 
-   
+    if (links) {
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                let href = this.getAttribute('href').substring(1);
+    
+                const scrollTarget = document.getElementById(href),
+                    topOffset = 0,
+                    elementPosition = scrollTarget.getBoundingClientRect().top,
+                    offsetPosition = elementPosition - topOffset;
+    
+                window.scrollBy({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    }   
 });
