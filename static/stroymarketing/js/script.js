@@ -29,18 +29,19 @@ document.addEventListener('DOMContentLoaded', () =>  {
         });
     }
 
-    if (workingSchemeAdvantagesOne) {
-        workingSchemeAdvantagesOne.addEventListener('click', function() {
-            workingSchemeAdvantagesHidden.classList.toggle('working-scheme-advantages__text--none');
+    const workingSchemeAdvantagesShow = (itemHandler, item, itemToggleClass) => {
+        itemHandler.addEventListener('click', function() {
+            item.classList.toggle(itemToggleClass);
             (this.textContent === 'Подробнее') ? this.textContent = 'Cвернуть' : this.textContent = 'Подробнее';
         });
+    };
+
+    if (workingSchemeAdvantagesOne) {
+        workingSchemeAdvantagesShow(workingSchemeAdvantagesOne, workingSchemeAdvantagesHidden, 'working-scheme-advantages__text--none');
     }
 
     if (workingSchemeAdvantagesTwo) {
-        workingSchemeAdvantagesTwo.addEventListener('click', function() {
-            workingSchemeAdvantagesTextBox.classList.toggle('working-scheme-advantages__text-box');
-            (this.textContent === 'Подробнее') ? this.textContent = 'Cвернуть' : this.textContent = 'Подробнее';
-        });
+        workingSchemeAdvantagesShow(workingSchemeAdvantagesTwo, workingSchemeAdvantagesTextBox, 'working-scheme-advantages__text-box');
     }
 
     if (aboutSlider) {
