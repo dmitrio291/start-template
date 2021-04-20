@@ -60,6 +60,18 @@
 
 @font-face {
     font-display: swap;
+	font-family: "Core Sans N";
+	src: url("../fonts/CoreSansN/CoreSansN-75ExtraBold.eot");
+	src: url("../fonts/CoreSansN/CoreSansN-75ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/CoreSansN/CoreSansN-75ExtraBold.woff") format("woff"),
+        url("../fonts/CoreSansN/CoreSansN-75ExtraBold.woff2") format("woff2"),
+		url("../fonts/CoreSansN/CoreSansN-75ExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 800;
+}
+
+@font-face {
+    font-display: swap;
 	font-family: "Segoe Script";
 	src: url("../fonts/SegoeScript/SegoeScript.eot");
 	src: url("../fonts/SegoeScript/SegoeScript.eot?#iefix") format("embedded-opentype"),
@@ -628,6 +640,10 @@ a {
 .companies-box__item {
     position: relative;
     margin-bottom: 16px;
+}
+
+.companies-box__item:nth-child(11) {
+    margin-bottom: 0;
 }
 
 .companies-box__item:last-child {
@@ -1278,6 +1294,10 @@ a {
 /* trial-period */
 
 /* company-director */
+.company-director--background {
+    background-color: #F9F9F9;
+}
+
 .company-director-box__img {
     display: block;
     margin-left: auto;
@@ -1627,6 +1647,7 @@ a {
 .contacts-form {
     padding: 30px 20px;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
 }
 
 .contacts-form__box:first-of-type {
@@ -1780,6 +1801,779 @@ a {
 }
 /* footer */
 
+/* about page */
+
+/* about-advertising */
+.about-advertising {
+    padding-top: 45px;
+    padding-bottom: 25px;
+    background-color: #F7F6F6;
+}
+
+.about-advertising__title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+}
+
+.advantages-advertising-box__description {
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.advantages-advertising {
+    margin-bottom: 25px;
+}
+
+.advantages-advertising__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.advantages-advertising__item {
+    position: relative;
+    padding-left: 33px;
+}
+
+.advantages-advertising__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #19BB4F;
+    border-radius: 1px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='17' height='12' viewBox='0 0 17 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.7857 1.12237C16.7484 1.2298 16.7219 1.34357 16.6682 1.44242C16.6124 1.54277 16.5428 1.63481 16.4615 1.71584C13.881 4.31662 11.2992 6.91641 8.71623 9.5152C8.05475 10.181 7.39365 10.847 6.73291 11.5131C6.70638 11.5394 6.68146 11.5673 6.65831 11.5966C6.27392 12.0912 5.59913 12.1384 5.15525 11.697C4.53828 11.0834 3.92281 10.4679 3.30883 9.85054C2.33389 8.87511 1.35796 7.90005 0.381034 6.92536C0.191916 6.73774 0.0570712 6.52922 0 6.26998V5.99021C0.00684862 5.97719 0.0125283 5.96358 0.0169722 5.94956C0.102579 5.56498 0.328253 5.30088 0.70593 5.18861C1.08361 5.07633 1.41913 5.17462 1.69852 5.45084C2.07154 5.82031 2.44138 6.19313 2.81253 6.56466L5.79105 9.54467C5.8084 9.56202 5.82742 9.57787 5.85372 9.60062C5.9645 9.48872 6.07324 9.37812 6.18234 9.26827L13.0339 2.37104C13.7171 1.6832 14.4004 0.995488 15.0838 0.307898C15.5687 -0.176089 16.3414 -0.0759342 16.6609 0.513056C16.7189 0.620297 16.7448 0.744884 16.7857 0.861451V1.12237Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages-advertising__text {
+    line-height: 1.4;
+}
+
+.advantages-advertising__link {
+    text-decoration: underline;
+}
+
+.advantages-advertising__link--block {
+    display: block;
+}
+
+.advantages-advertising-box__image {
+    margin-left: -20px;
+}
+/* about-advertising */
+
+/* companies--about-page */
+.companies-box--about-page {
+    padding-bottom: 0;
+}
+/* companies--about-page */
+
+/* services */
+.services-list__item:not(:last-child) {
+    margin-bottom: 44px;
+}
+
+.services-list__title {
+    margin-bottom: 13px;
+    line-height: 1.3;
+}
+
+.services-list__text {
+    line-height: 1.4;
+}
+/* services */
+
+/* tariff-plans */
+.tarif-plans-tabs,
+.tariff-plans__wrapper {
+    padding-left: 20px;
+}
+
+.tarif-plans-tabs,
+.dropdown__button {
+    background-color: #FFFFFF;
+}
+
+.tarif-plans-tabs {
+    margin-bottom: 45px;
+    border-bottom: 1px solid #A7A8B1;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.tarif-plans-tabs__list,
+.tariff-plans-content__about,
+.tariff-plans-content__about-list {
+    overflow-x: auto;
+}
+
+.tarif-plans-tabs__list,
+.tariff-plans-content__box,
+.tariff-plans-content__about-list,
+.tariff-plans-content__about-content {
+    display: flex;
+}
+
+.tarif-plans-tabs__list {
+    white-space: nowrap;
+}
+
+.tarif-plans-tabs__list::-webkit-scrollbar {
+    height: 0.1px;
+}
+
+.tariff-plans-tabs__tab,
+.dropdown__button,
+.dropdown__item {
+    cursor: pointer;
+}
+
+.tariff-plans-tabs__tab {
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+.tariff-plans-tabs__tab.active {
+    font-weight: 600;
+    border-bottom: 1px solid #262626;
+}
+
+.tariff-plans-tabs__tab + .tariff-plans-tabs__tab {
+    margin-left: 30px;
+}
+
+.tariff-plans__wrapper {
+    padding-bottom: 67px;
+}
+
+.tariff-plans-content {
+    display: none;
+}
+
+.tariff-plans-content--padding-right {
+    padding-right: 20px;
+}
+
+.tariff-plans-content.active {
+    display: block;
+}
+
+.tariff-plans-content__title {
+    margin-bottom: 37px;
+}
+
+.tariff-plans-content__description {
+    margin-bottom: 30px;
+    padding-right: 20px;
+    line-height: 1.4;
+}
+
+.tariff-plans-content__text {
+    font-size: 11px;
+    line-height: 1.25;
+}
+
+.tariff-plans-content__text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.tariff-plans-content__text-red {
+    color: #FF0000;
+}
+
+.tariff-plans-content__block-text,
+.tariff-plans-content__about-square {
+    display: block;
+}
+
+.tariff-plans-content__box {
+    column-gap: 12px;
+}
+
+.tariff-plans-content__sidebar {
+    margin-top: 197px;
+    min-width: 160px;
+    max-width: 160px;
+}
+
+.dropdown {
+    position: relative;
+    min-height: 106px;
+}
+
+.dropdown__button,
+.dropdown__item {
+    color: #A7A8B1;
+}
+
+.dropdown__button,
+.tariff-plans-content__about-square {
+    position: relative;
+}
+
+.dropdown__button,
+.tariff-plans-content__about-square {
+    border-radius: 3px;
+}
+
+.dropdown__button {
+    width: 100%;
+    padding: 11.5px;
+    border: 1px solid #19BB4F;
+    text-align: left;
+    outline: none;
+}
+
+.dropdown__button.active::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.dropdown__item {
+    padding: 7px 12px;
+}
+
+.dropdown__button::before,
+.tariff-plans-content__about-square::before,
+.contextual-advertising-list__item::before {
+    content: '';
+    position: absolute;
+}
+
+.dropdown__button::before {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 9px;
+    height: 4px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 1L5.5 5L1 1' stroke='%23A7A8B1' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.dropdown__list {
+    position: absolute;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: #FBFBFB;
+    transition: max-height 0.3s,
+                opacity 1s;
+}
+
+.dropdown__list.active {
+    max-height: 113px;
+    opacity: 1;
+    overflow-y: auto;
+}
+
+.dropdown__input-hidden {
+    display: none;
+}
+
+.tariff-plans-content__about-box,
+.tariff-plans-content__about-square {
+    background-color: #19BB4F;
+}
+
+.tariff-plans-content__about-box,
+.tariff-plans-content__about-list {
+    text-align: center;
+}
+
+.tariff-plans-content__about-box {
+    padding-top: 11px;
+    padding-bottom: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tariff-plans-content__about-list {
+    background-color: #E7F6E7;
+}
+
+.tariff-plans-content__about-item {
+    min-width: 180px;
+    padding: 17px 17px 42px 20px;
+}
+
+.tariff-plans-content__about--helper .tariff-plans-content__about-item {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.tariff-plans-content__about-item {
+    border-left: 0.5px solid #ffffff;
+}
+
+.tariff-plans-content__about-content {
+    flex-direction: column;
+    min-height: 228px;
+    margin-bottom: 49px;
+}
+
+.tariff-plans-content__about-title {
+    margin-bottom: 18px;
+}
+
+.tariff-plans-content__about-payment,
+.tariff-plans-content__about-button  {
+    font-size: 9px;
+}
+
+.tariff-plans-content__about-description {
+    min-height: 91px;
+    font-size: 10px;
+}
+
+.tariff-plans-content__about-description,
+.contextual-advertising-content__title {
+    font-weight: 300;
+}
+
+.tariff-plans-content__about-price-box {
+    min-height: 69px;
+}
+
+.tariff-plans-content__about-price {
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.tariff-plans-content__about-ruble {
+    font-size: 16px;
+}
+
+.tariff-plans-content__about-payment {
+    margin-bottom: 25px;
+    color: #909DA5;
+}
+
+.tariff-plans-content__about-button {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: auto;
+}
+
+.tariff-plans-content__about-square {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.tariff-plans-content__about-square--margin-bottom {
+    margin-bottom: 35px;
+}
+
+.tariff-plans-content__about-square::before,
+.contextual-advertising-list__item::before {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tariff-plans-content__about-square::before {
+    top: -2px;
+    right: -7px;
+    width: 26px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='26' height='19' viewBox='0 0 26 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26 1.73849C25.9422 1.90489 25.9012 2.08112 25.818 2.23423C25.7316 2.38967 25.6239 2.53222 25.4979 2.65774C21.5008 6.6862 17.5019 10.7131 13.5009 14.7385C12.4763 15.7698 11.4523 16.8014 10.4289 17.8331C10.3878 17.8738 10.3492 17.9171 10.3133 17.9625C9.71793 18.7286 8.67273 18.8017 7.98518 18.1179C7.02953 17.1675 6.0762 16.2141 5.12518 15.2579C3.61506 13.747 2.1034 12.2367 0.5902 10.727C0.297267 10.4364 0.0884 10.1134 0 9.71183V9.27849C0.0106081 9.25832 0.0194056 9.23725 0.0262889 9.21552C0.158889 8.61983 0.508444 8.21076 1.09344 8.03685C1.67844 7.86294 2.19816 8.01518 2.63091 8.44303C3.20869 9.01532 3.78156 9.59281 4.35644 10.1683L8.97 14.7841C8.99687 14.811 9.02633 14.8356 9.06707 14.8708C9.23867 14.6975 9.40709 14.5262 9.57609 14.356L20.1887 3.6726C21.247 2.60718 22.3054 1.54195 23.3639 0.476916C24.115 -0.272751 25.3119 -0.117618 25.8067 0.794693C25.8966 0.960805 25.9367 1.15378 26 1.33434V1.73849Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-size: 23px;
+}
+
+.tariff-plans-content__about-text {
+    font-size: 11px;
+}
+
+.tariff-plans-content__about-text--margin-1 {
+    margin-bottom: 59px;
+}
+
+.tariff-plans-content__about-text--margin-2 {
+    margin-bottom: 72px; 
+}
+
+.tariff-plans-content__about-text--margin-3 {
+    margin-bottom: 57px; 
+}
+
+.tariff-plans-content__about-text--margin-4 {
+    margin-bottom: 39px; 
+}
+
+.tariff-plans-content__about-text--margin-5 {
+    margin-bottom: 45px; 
+}
+
+.tariff-plans-content__about-text--margin-6 {
+    margin-bottom: 51px; 
+}
+
+.tariff-plans-content__about-text--margin-7 {
+    margin-bottom: 66px; 
+}
+
+.tariff-plans-content__about-text--margin-8 {
+    margin-bottom: 64px; 
+}
+
+.tariff-plans-content__about-text--margin-9 {
+    margin-bottom: 64px; 
+}
+
+.tariff-plans-content__about-text--margin-10 {
+    margin-bottom: 75px; 
+}
+
+.tariff-plans-content__subtitle {
+    margin-bottom: 33px;
+    font-size: 16px;
+}
+
+.contextual-advertising {
+    margin-bottom: 42px;
+}
+
+.contextual-advertising-list__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.contextual-advertising-list__item {
+    position: relative;
+    padding-left: 29px;
+}
+
+.contextual-advertising-list__item::before {
+    top: 4px;
+    left: -1px;
+    width: 17px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='17' height='12' viewBox='0 0 17 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.7857 1.12237C16.7484 1.2298 16.7219 1.34357 16.6682 1.44242C16.6124 1.54277 16.5428 1.63481 16.4615 1.71584C13.881 4.31662 11.2992 6.91641 8.71623 9.5152C8.05475 10.181 7.39364 10.847 6.73291 11.5131C6.70638 11.5394 6.68146 11.5673 6.65831 11.5966C6.27392 12.0912 5.59913 12.1384 5.15525 11.697C4.53828 11.0834 3.92281 10.4679 3.30883 9.85054C2.33389 8.87511 1.35796 7.90005 0.381034 6.92536C0.191916 6.73774 0.0570712 6.52922 0 6.26998V5.99021C0.00684862 5.97719 0.0125283 5.96358 0.0169722 5.94956C0.102579 5.56498 0.328253 5.30088 0.70593 5.18861C1.08361 5.07633 1.41913 5.17462 1.69852 5.45084C2.07154 5.82031 2.44138 6.19313 2.81253 6.56466L5.79105 9.54467C5.8084 9.56201 5.82742 9.57787 5.85372 9.60062C5.9645 9.48872 6.07324 9.37812 6.18234 9.26827L13.0339 2.37104C13.7171 1.6832 14.4004 0.995488 15.0838 0.307898C15.5687 -0.176089 16.3414 -0.0759342 16.6609 0.513056C16.7189 0.620297 16.7448 0.744884 16.7857 0.861451V1.12237Z' fill='%2319BB4F'/%3E%3C/svg%3E%0A");
+    background-size: 13px;
+}
+
+.contextual-advertising-list__text--semibold,
+.contextual-advertising-content__text,
+.contextual-advertising-content__price {
+    font-weight: 500;
+}
+
+.contextual-advertising-list__text--semibold {
+    margin-bottom: 11px;
+}
+
+.contextual-advertising-list__text {
+    line-height: 1.4;
+}
+
+.contextual-advertising-list__text-small {
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+
+.contextual-advertising-content__title {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.contextual-advertising-content__text {
+    margin-bottom: 10px;
+}
+
+.contextual-advertising-content__price {
+    font-size: 23px;
+}
+
+.contextual-advertising-list__inner-item:not(:last-child) {
+    margin-bottom: 1.4px;
+}
+/* tariff-plans */
+
+/* statistics */
+.statistics__text,
+.statistics__text .green {
+    font-weight: 400;
+}
+
+.statistics__text {
+    padding-right: 12px;
+    line-height: 1.4;
+}
+
+.statistics__image {
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+}
+/* statistics */
+
+/* achieve-results */
+.achieve-results__title,
+.achieve-results-slider {
+    margin-left: 20px;
+}
+
+.achieve-results__title {
+    margin-bottom: 42px;
+}
+
+.achieve-results-slider__slide {
+    padding: 8px 20px 49px;
+    min-height: 578px;
+}
+
+.achieve-results-slider__slide--gray {
+    background-color: #F9F9F9;
+}
+
+.achieve-results-slider__slide--blue {
+    background-color: #E8F4FE;
+}
+
+.achieve-results-slider__slide--pink {
+    background-color: #F9E0E7;
+}
+
+.achieve-results-slider__slide--brown {
+    background-color: #F6ECE3;
+}
+
+.achieve-results-slider__slide--violet {
+    background-color: #EEE3F4;
+}
+
+.achieve-results-slider__slide--green {
+    background-color: #E7F6E7;
+}
+
+.achieve-results-slider__slide--yellow {
+    background-color: #FCF2D5;
+}
+
+.achieve-results-slider__slide--dark-blue {
+    background-color: #DCE1F4;
+}
+
+.achieve-results-slider__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 310px;
+    margin-bottom: 38px;
+}
+
+.achieve-results-slider__number,
+.achieve-results-slider__image {
+    display: block;
+}
+
+.achieve-results-slider__number {
+    margin-bottom: 13px;
+    font-size: 40px;
+    font-family: 'Core Sans N', sans-serif;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.achieve-results-slider__title {
+    margin-bottom: 13px;
+}
+
+.achieve-results-slider__text {
+    margin-bottom: 16px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.achieve-results-slider__text--before,
+.achieve-results-slider__image-box {
+    position: relative;
+}
+
+.achieve-results-slider__text--before {
+    padding-left: 24px;
+    padding-right: 25px;
+    margin-bottom: 45px;
+}
+
+.achieve-results-slider__text--before::before,
+.achieve-results-slider__circle {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.achieve-results-slider__text--before::before {
+    content: '';
+    top: 2px;
+    left: -1px;
+    width: 17px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='17' height='12' viewBox='0 0 17 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.7857 1.12237C16.7484 1.2298 16.7219 1.34357 16.6682 1.44242C16.6124 1.54277 16.5428 1.63481 16.4615 1.71584C13.881 4.31662 11.2992 6.91641 8.71623 9.5152C8.05475 10.181 7.39365 10.847 6.73291 11.5131C6.70638 11.5394 6.68146 11.5673 6.65831 11.5966C6.27392 12.0912 5.59913 12.1384 5.15525 11.697C4.53828 11.0834 3.92281 10.4679 3.30883 9.85054C2.33389 8.87511 1.35796 7.90005 0.381034 6.92536C0.191916 6.73774 0.0570712 6.52922 0 6.26998V5.99021C0.00684862 5.97719 0.0125283 5.96358 0.0169722 5.94956C0.102579 5.56498 0.328253 5.30088 0.70593 5.18861C1.08361 5.07633 1.41913 5.17462 1.69852 5.45084C2.07154 5.82031 2.44138 6.19313 2.81253 6.56466L5.79105 9.54467C5.8084 9.56202 5.82742 9.57787 5.85372 9.60062C5.9645 9.48872 6.07324 9.37812 6.18234 9.26827L13.0339 2.37104C13.7171 1.6832 14.4004 0.995488 15.0838 0.307898C15.5687 -0.176089 16.3414 -0.0759342 16.6609 0.513056C16.7189 0.620297 16.7448 0.744884 16.7857 0.861451V1.12237Z' fill='%2319BB4F'/%3E%3C/svg%3E%0A");
+    background-size: 14px;
+}
+
+.achieve-results-slider__image-box {
+    max-width: 234px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.achieve-results-slider__button {
+    margin-top: auto;
+}
+
+.achieve-results-slider__image {
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.achieve-results-slider__circle {
+    top: 13px;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4.9783C0 5.21376 0.168186 5.38194 0.403646 5.38194H1.74913C1.95095 5.38194 2.15278 5.21376 2.15278 4.9783V2.15278H4.9783C5.18012 2.15278 5.38194 1.98459 5.38194 1.74913V0.403646C5.38194 0.201823 5.18012 0 4.9783 0H0.807292C0.336372 0 0 0.370009 0 0.807292V4.9783ZM9.6875 0.403646V1.74913C9.6875 1.98459 9.85569 2.15278 10.0911 2.15278H12.9167V4.9783C12.9167 5.21376 13.0849 5.38194 13.3203 5.38194H14.6658C14.8676 5.38194 15.0694 5.21376 15.0694 4.9783V0.807292C15.0694 0.370009 14.6994 0 14.2622 0H10.0911C9.85569 0 9.6875 0.201823 9.6875 0.403646ZM14.6658 9.6875H13.3203C13.0849 9.6875 12.9167 9.88932 12.9167 10.0911V12.9167H10.0911C9.85569 12.9167 9.6875 13.1185 9.6875 13.3203V14.6658C9.6875 14.9013 9.85569 15.0694 10.0911 15.0694H14.2622C14.6994 15.0694 15.0694 14.7331 15.0694 14.2622V10.0911C15.0694 9.88932 14.8676 9.6875 14.6658 9.6875ZM5.38194 14.6658V13.3203C5.38194 13.1185 5.18012 12.9167 4.9783 12.9167H2.15278V10.0911C2.15278 9.88932 1.95095 9.6875 1.74913 9.6875H0.403646C0.168186 9.6875 0 9.88932 0 10.0911V14.2622C0 14.7331 0.336372 15.0694 0.807292 15.0694H4.9783C5.18012 15.0694 5.38194 14.9013 5.38194 14.6658Z' fill='%2319BB4F'/%3E%3C/svg%3E%0A");
+    background-size: 10px;
+    cursor: pointer;
+}
+
+.achieve-results-slider__nav {
+    display: none;
+}
+/* achieve-results */
+
+/* description */
+.description.line::before {
+    left: 20px;
+    right: 20px;
+    width: auto;
+}
+
+.description-box__title {
+    margin-bottom: 30px;
+}
+
+.description-box__text {
+    margin-bottom: 45px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.description .button--dark {
+    margin-bottom: 15px;
+}
+/* description */
+
+/* answer-questions */
+.answer-questions {
+    background-color: #E7F6E7;
+}
+
+.answer-questions__title {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.answer-questions__text {
+    margin-bottom: 46px;
+    line-height: 1.4;
+}
+/* answer-questions */
+
+/* about page */
+
+/* modal */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.popup,
+.popup__wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    overflow: auto;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, 
+                visibility 0.5s;
+}
+
+.popup.active {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__wrapper {
+    display: table;
+}
+
+.popup__inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.popup__inner--contacts,
+.popup__inner--statistic {
+    padding: 119px 20px;
+}
+
+.popup__btn-close {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.popup__btn-close::before,
+.popup__btn-close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-color: #000000;
+    height: 20px;
+    width: 3px;
+}
+
+.popup__btn-close::before {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.popup__btn-close::after {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.popup__content--statistic {
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* modal */
+
 @media (max-width: 374px) {
     .button {
         padding-left: 18px;
@@ -1807,6 +2601,11 @@ a {
     .contacts-form__input {
         flex-basis: 100%;
     }
+
+    .advantages-advertising-box__image {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 @media (min-width: 500px) {
@@ -1818,6 +2617,12 @@ a {
 @media (min-width: 600px) {
     .companies-box__list {
         max-width: 540px;
+    }
+
+    .companies-box__item:nth-child(8),
+    .companies-box__item:nth-child(9),
+    .companies-box__item:nth-child(10) {
+        margin-bottom: 0;
     }
 }
 
@@ -2121,6 +2926,7 @@ a {
 
     .companies-box__item:nth-child(5) {
         order: 12;
+        margin-bottom: 0;
     }
 
     .companies-box__item:nth-child(6) {
@@ -2925,6 +3731,405 @@ a {
         font-size: 18px;
     }
     /* footer */
+
+    /* about page */
+
+    /* about-advertising */
+    .about-advertising__title {
+        margin-bottom: 10px;
+        letter-spacing: 0;
+    }
+
+    .advantages-advertising-box {
+        display: grid;
+        grid-template-columns: 1fr 318px;
+    }
+
+    .advantages-advertising-box__description {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        margin-bottom: 38px;
+        font-size: 20px;
+        line-height: 1.1;
+    }
+
+    .about-advertising {
+        padding: 40px 40px 20px;
+    }
+
+    .advantages-advertising {
+        margin-bottom: 0;
+    }
+
+    .advantages-advertising__item {
+        padding-left: 38px;
+    }
+
+    .advantages-advertising-box__image {
+        display: block;
+        margin-left: auto;
+        transform: translate(-32px, -3px);
+    }
+    /* about-advertising */
+
+    /* services */
+    .services-list__item:not(:last-child) {
+        margin-bottom: 45px;
+    }
+
+    .services-list__title {
+        margin-bottom: 15px;
+    }
+
+    .services-list__text {
+        font-size: 16px;
+    }
+    /* services */
+
+    /* tariff-plans */
+    .tarif-plans-tabs, 
+    .tariff-plans__wrapper {
+        padding-left: 40px;
+    }
+
+    .tariff-plans-tabs__tab,
+    .tariff-plans-content__description {
+        font-size: 16px;
+    }
+
+    .tariff-plans-tabs__tab + .tariff-plans-tabs__tab {
+        margin-left: 55px;
+    }
+
+    .tariff-plans__wrapper {
+        padding-bottom: 70px;
+    }
+
+    .tariff-plans-content__box {
+        column-gap: 20px;
+    }
+
+    .tariff-plans-content__sidebar {
+        margin-top: 194px;
+        min-width: 216px;
+    }
+
+    .tariff-plans-content__about--helper {
+        min-width: 492px;
+    }
+
+    .dropdown {
+        min-height: 115px;
+    }
+
+    .dropdown__item {
+        padding: 9px 12px;
+    }
+
+    .tariff-plans-content--padding-right {
+        padding-right: 40px;
+    }
+
+    .tariff-plans-content__sidebar {
+        min-width: 215px;
+        max-width: 215px;
+    }
+
+    .tariff-plans-content__about-content {
+        margin-bottom: 45px;
+    }
+
+    .tariff-plans-content__about-square {
+        width: 24px;
+        height: 24px;
+    }
+
+    .tariff-plans-content__about-square::before {
+        top: 0;
+        right: -5px;
+        background-size: 25px;
+    }
+
+    .tariff-plans-content__about-square--margin-bottom {
+        margin-bottom: 50px;
+    }
+
+    .tariff-plans-content__text,
+    .tariff-plans-content__about-text {
+        font-size: 14px;
+    }
+
+    .tariff-plans-content__text {
+        line-height: 1.21;
+    }
+
+    .tariff-plans-content__text:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .tariff-plans-content__text.tariff-plans-content__text--margin-bottom {
+        margin-bottom: 20px;
+    }
+
+    .tariff-plans-content__about-item {
+        min-width: 194px;
+        padding: 17px 15px 82px 15px;
+    }
+
+    .tariff-plans-content__about-title {
+        font-size: 18px;
+    }
+
+    .tariff-plans-content__about-text--margin-1 {
+        margin-bottom: 75px;
+    }
+
+    .tariff-plans-content__about-text--margin-2 {
+        margin-bottom: 92px;
+    }
+
+    .tariff-plans-content__about-text--margin-3 {
+        margin-bottom: 76px;
+    }
+
+    .tariff-plans-content__about-text--margin-4 {
+        margin-bottom: 52px;
+    }
+
+    .tariff-plans-content__about-text--margin-5 {
+        margin-bottom: 60px;
+    }
+
+    .tariff-plans-content__about-text--margin-6 {
+        margin-bottom: 68px;
+    }
+
+    .tariff-plans-content__about-text--margin-7 {
+        margin-bottom: 84px;
+    }
+
+    .tariff-plans-content__about-text--margin-8 {
+        margin-bottom: 76px;
+    }
+
+    .tariff-plans-content__about-text--margin-9 {
+        margin-bottom: 75px;
+    }
+
+    .tariff-plans-content__about-text--margin-10 {
+        margin-bottom: 98px;
+    }
+
+    .tariff-plans-content__about-button {
+        max-width: 143px;
+    }
+
+    .tariff-plans-content__block {
+        display: block;
+    }
+
+    .tariff-plans-content__subtitle {
+        margin-bottom: 37px;
+        font-size: 20px;
+    }
+
+    .contextual-advertising-list__text,
+    .contextual-advertising-list__inner-item,
+    .contextual-advertising-content__text {
+        font-size: 16px;
+    }
+
+    .contextual-advertising-content__title {
+        margin-bottom: 18px;
+        font-size: 25px;
+    }
+
+    .contextual-advertising-content__price {
+        font-size: 30px;
+    }
+
+    .contextual-advertising-list__item::before {
+        background-size: 16px;
+    }
+
+    .contextual-advertising-list__text {
+        line-height: 1.5;
+    }
+
+    .contextual-advertising-list__text--semibold {
+        margin-bottom: 18px;
+    }
+
+    .contextual-advertising-list__text-small {
+        margin-bottom: 21px;
+        font-size: 12px;
+    }
+
+    .contextual-advertising-list__text--margin-bottom  {
+        margin-bottom: 4px;
+    }
+
+    .contextual-advertising-list__inner-item:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    .contextual-advertising-list__item:not(:last-child) {
+        margin-bottom: 27px;
+    }
+
+    .contextual-advertising-list__item::before {
+        top: 7px;
+    }
+    /* tariff-plans */
+
+    /* statistics */
+    .statistics__text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    /* statistics */
+
+    /* achieve-results */
+    .achieve-results {
+        padding-left: 40px;
+    }
+
+    .achieve-results__title,
+    .achieve-results-slider {
+        margin-left: 0;
+    }
+
+    .achieve-results__title {
+        margin-bottom: 40px;
+    }
+
+    .achieve-results-slider__number {
+        font-size: 80px;
+        text-align: right;
+    }
+
+    .achieve-results-slider__text,
+    .achieve-results-slider__button  {
+        font-size: 16px;
+    }
+
+    .achieve-results-slider__button {
+        padding-top: 16.5px;
+        padding-bottom: 16.5px;
+        max-width: 280px;
+    }
+
+    .achieve-results-slider__image-box {
+        max-width: 452px;
+    }
+
+    .achieve-results-slider__slide {
+        padding: 6px 28px 40px 59px;
+        min-height: 784px;
+    }
+
+    .achieve-results-slider__content {
+        margin-bottom: 51px;
+        min-height: 343px;
+    }
+
+    .achieve-results-slider__number {
+        margin-bottom: 0;
+        line-height: 1.1;
+    }
+
+    .achieve-results-slider__title {
+        margin-bottom: 20px;
+    }
+
+    .achieve-results-slider__text {
+        margin-bottom: 18px;
+        letter-spacing: 0.30px;
+    }
+
+    .achieve-results-slider__text--before {
+        padding-left: 26px;
+    }
+
+    .achieve-results-slider__text--before::before {
+        background-size: 17px;
+        top: 5px;
+    }
+
+    .achieve-results-slider__circle {
+        width: 31px;
+        height: 31px;
+        background-size: 15px;
+    }
+    /* achieve-results */
+
+    /* description */
+    .description.line::before {
+        left: 40px;
+        right: 40px;
+    }
+
+    .description-box__text,
+    .description .button {
+        font-size: 16px;
+    }
+
+    .description-box__text {
+        line-height: 1.6;
+    }
+
+    .description-box__buttons {
+        display: flex;
+        justify-content: space-between;
+        max-width: 688px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .description .button--dark {
+        margin-bottom: 0;
+    }
+
+    .description .button {
+        padding-top: 16.5px;
+        padding-bottom: 16.5px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* description */
+
+    /* answer-questions */
+    .answer-questions__text,
+    .answer-questions__button {
+        font-size: 16px;
+    }
+
+    .answer-questions__button {
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 16.5px;
+        padding-bottom: 16.5px;
+        max-width: 280px;
+    }
+    /* answer-questions */
+
+    /* modal */
+    .popup__inner--contacts {
+        padding-left: 144px;
+        padding-right: 144px;
+    }
+
+    .popup__btn-close {
+        top: 30px;
+        right: 30px;
+    }
+
+    .popup__content--statistic {
+        max-width: 570px;
+    }
+    /* modal */
+
+    /* about page */
 }
 
 @media (min-width: 960px) {
@@ -2964,6 +4169,21 @@ a {
         height: 10px;
     }
     /* abiut-us */
+
+    /* about page */
+
+    /* tariff-plans */
+    .tariff-plans__wrapper {
+        padding-bottom: 90px;
+    }
+
+    .tariff-plans-content__about-item {
+        padding: 20px 50px 87px 51px;
+        min-width: 245px;
+    }
+    /* tariff-plans */
+
+    /* about page */
 }
 
 @media (min-width: 1200px) {
@@ -3310,6 +4530,10 @@ a {
 
     .companies-box__item:nth-child(10) {
         order: 12;
+    }
+
+    .companies-box__item:last-child {
+        margin-bottom: 0;
     }
 
     .companies-box__img {
@@ -3893,6 +5117,365 @@ a {
         padding-bottom: 35px;
     }
     /* footer */
+
+    /* about page */
+
+    /* about-advertising */
+    .about-advertising__title {
+        max-width: 767px;
+        margin-bottom: 23px;
+    }
+
+    .advantages-advertising-box {
+        grid-template-columns: 1fr 611px;
+    }
+
+    .advantages-advertising-box__description {
+        grid-column: 1 / 2;
+        margin-bottom: 20px;
+    }
+
+    .advantages-advertising__item::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .advantages-advertising__text {
+        font-size: 16px;
+    }
+
+    .advantages-advertising-box__image-box {
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+    }
+
+    .advantages-advertising-box__image {
+        max-width: 700px;
+        transform: translateX(-76px);
+    }
+
+    .advantages-advertising__link {
+        display: block;
+    }
+    /* about-advertising */
+
+    /* services */
+    .services-list {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    .services-list__item {
+        flex-basis: 35%;
+    }
+
+    .services-list__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .services-list__title {
+        font-size: 23px;
+    }
+
+    .services-list__title--width {
+        max-width: 270px;
+    }
+
+    .services-list__text {
+        line-height: 1.44;
+    }
+
+    .services-list__text-block {
+        display: block;
+    }
+
+    .services-list__text--padding-right {
+        padding-right: 21px;
+    }
+    /* services */
+
+    /* tariff-plans */
+    .tarif-plans-tabs, 
+    .tariff-plans__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tarif-plans-tabs {
+        margin-bottom: 50px;
+    }
+
+    .tariff-plans-content__sidebar {
+        min-width: 187px;
+        max-width: 187px;
+    }
+
+    .tariff-plans-content__block-text {
+        margin-top: 14px;
+    }
+
+    .tarif-plans-tabs__list {
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tariff-plans-content__description {
+        margin-bottom: 46px;
+    }
+
+    .tariff-plans-content__about {
+        min-width: 900px;
+    }
+
+    .tariff-plans-content__about-item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tariff-plans-content__about-content {
+        margin-bottom: 56px;
+    }
+
+    .tariff-plans-content__about-square--margin-bottom {
+        margin-bottom: 63px;
+    }
+
+    .tariff-plans-content__about-text--margin-1 {
+        margin-bottom: 93px;
+    }
+
+    .tariff-plans-content__about-text--margin-2 {
+        margin-bottom: 106px;
+    }
+
+    .tariff-plans-content__about-text--margin-3 {
+        margin-bottom: 90px;
+    }
+
+    .tariff-plans-content__about-text--margin-8 {
+        margin-bottom: 95px;
+    }
+
+    .tariff-plans-content__about-text--margin-9 {
+        margin-bottom: 94px;
+    }
+
+    .tariff-plans-content__about-text--margin-10 {
+        margin-bottom: 105px;
+    }
+
+    .tariff-plans-content__about-description {
+        font-size: 12px;
+    }
+
+    .tariff-plans-content__about-button {
+        font-size: 9px;
+        max-width: 143px;
+    }
+
+    .contextual-advertising {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contextual-advertising-list {
+        flex-basis: 50%;
+    }
+
+    .contextual-advertising-list:first-child {
+        padding-right: 34px;
+        border-right: 1px solid #909DA5;
+    }
+
+    .contextual-advertising-list:last-child {
+        padding-left: 33px;
+    }
+
+    .tariff-plans-content__block {
+        display: inline;
+    }
+
+    .tariff-plans-content__subtitle {
+        margin-bottom: 34px;
+    }
+
+    .contextual-advertising-content__title {
+        font-size: 30px;
+    }
+
+    .contextual-advertising-content__price {
+        font-size: 35px;
+    }
+    /* tariff-plans */
+
+    /* statistics */
+    .statistics__text {
+        padding-right: 0;
+    }
+
+    .statistics__image {
+        margin-top: 54px;
+    }
+    /* statistics */
+
+    /* achieve-results */
+    .achieve-results  {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .achieve-results .container {
+        max-width: none;
+    } 
+
+    .achieve-results__title-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .achieve-results__title-inner {
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .achieve-results-slider__text {
+        letter-spacing: 0.27px;
+    }
+
+    .achieve-results-slider__slide {
+        padding: 16px 25px 55px 60px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        column-gap: 60px;
+        min-height: 447px;
+    }
+
+    .achieve-results-slider__content {
+        margin-bottom: 0;
+        min-height: auto;
+    }
+
+    .achieve-results-slider__button {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .achieve-results-slider__number {
+        text-align: left;
+    }
+
+    .achieve-results-slider__image-box {
+        max-width: none;
+        min-width: 410px
+    }
+
+    .achieve-results-slider__nav {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+        color: #B4B4B4;
+    }
+
+    .achieve-results-slider__nav.swiper-button-disabled {
+        display: none;
+    }
+
+    .achieve-results-slider__nav::after {
+        font-size: 30px;
+    }
+
+    .achieve-results-slider__nav--prev {
+        left: 8%;
+    }
+
+    .achieve-results-slider__nav--next {
+        right: 8%;
+    }
+    /* achieve-results */
+
+    /* description */
+    .description.line::before {
+        left: 20px;
+        right: 20px;
+    }
+
+    .description-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description-box__title {
+        margin-bottom: 0;
+    }
+
+    .description-box__word {
+        display: block;
+    }
+
+    .description-box__content {
+        flex-basis: 581px;
+    }
+
+    .description-box__text {
+        margin-bottom: 39px;
+    }
+
+    .description-box__text--padding-right {
+        padding-right: 2px;
+    }
+
+    .description-box__text--padding-right-helper {
+        padding-right: 1.3px;
+    }
+
+    .description-box__buttons {
+        max-width: none;
+    }
+
+    .description .button--dark {
+        max-width: 317px;
+    }
+
+    .description .button--light {
+        max-width: 243px;
+    }
+    /* description */
+
+    /* answer-questions */
+    .answer-questions__text {
+        margin-bottom: 32px;
+    }
+    /* answer-questions */
+
+    /* about page */
+
+    /* modal */
+    .popup__content--form {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .popup__btn-close {
+        top: 60px;
+        right: 10%;
+    }
+
+    .popup__content--statistic {
+        max-width: 980px;
+    }
+
+    .popup__image-statictics {
+        max-width: 900px;
+    }
+    /* modal */
 }
 
 @media (min-width: 1400px) {
@@ -4079,6 +5662,81 @@ a {
         width: 70.6%;
     }
     /* contacts */
+
+
+    /* about page */
+    
+    /* tariff-plans */
+    .tariff-plans-content__sidebar {
+        margin-top: 191px;
+        min-width: 180px;
+    }
+
+   .tariff-plans-content__about, 
+   .tariff-plans-content__about-list {
+        overflow-x: visible;   
+    }
+
+    .tariff-plans-content__about {
+        min-width: auto;
+    }
+
+    .tariff-plans-content__about-content {
+        margin-bottom: 63px;
+    }
+
+    .tariff-plans-content__about--helper .tariff-plans-content__about-item {
+        padding-left: 32px;
+        padding-right: 32px;        
+    }
+
+    .tariff-plans-content__about-square--margin-bottom {
+        margin-bottom: 64px;
+    }
+
+    .tariff-plans-content__about-text--margin-1 {
+        margin-bottom: 92px;
+    }
+
+    .tariff-plans-content__about-text--margin-2 {
+        margin-bottom: 108px;
+    }
+
+    .tariff-plans-content__about-text--margin-3 {
+        margin-bottom: 84px;
+    }
+
+    .tariff-plans-content__about-text--margin-7 {
+        margin-bottom: 100px;
+    }
+
+    .tariff-plans-content__about-text--margin-8 {
+        margin-bottom: 100px;
+    }
+
+    .tariff-plans-content__about-text--margin-9 {
+        margin-bottom: 92px;
+    }
+
+    .tariff-plans-content__about-text--margin-10 {
+        margin-bottom: 113px;
+    }
+
+    .tariff-plans-content__block-text {
+        margin-top: 16px;
+    }
+
+    .dropdown {
+        min-height: 125px;
+    }
+
+    .dropdown__item {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    /* tariff-plans */
+
+    /* about page */
 }
 
 @media (min-width: 1600px) {
@@ -4099,9 +5757,71 @@ a {
         right: 10%;
     }
     /* trial-period */
+
+    /* about page */
+
+    /* about-advertising */
+    .advantages-advertising-box {
+        grid-template-columns: 1fr 549px;
+    }
+
+    .advantages-advertising-box__description {
+        font-size: 23px;
+    }
+
+    .advantages-advertising-box__image {
+        transform: translateX(-85px);
+    }
+    /* about-advertising */
+
+    /* achieve-results */
+    .achieve-results__title {
+        margin-bottom: 54px;
+    }
+
+    .achieve-results-slider__slide {
+        min-height: 533px;
+    }
+
+    .achieve-results-slider__content {
+        min-height: 435px;
+    }
+
+    .achieve-results-slider__number {
+        margin-bottom: 42px;
+        font-size: 100px;
+    }
+
+    .achieve-results-slider__title {
+        font-size: 35px;
+    }
+
+    .achieve-results-slider__image-box {
+        min-width: 582px;
+    }
+
+    .achieve-results-slider__image {
+        transform: translateY(11px);
+    }
+
+    .achieve-results-slider__circle {
+        top: 23px;
+        right: 12px;
+    }
+    .achieve-results-slider__nav--prev {
+        left: 9%;
+    }
+
+    .achieve-results-slider__nav--next {
+        right: 9%;
+    }
+    /* achieve-results */
+
+    /* about page */
 }
 
 @media (min-width: 1800px) {
+    /* trial-period */
     .trial-period-slider__slide {
         padding-right: 120px;
         padding-left: 102px;
@@ -4115,4 +5835,54 @@ a {
     .trial-period-slider__nav--next {
         right: 18.1%;
     }
+    /* trial-period */
+
+    /* about-advertising */
+    .about-advertising {
+        padding-bottom: 40px;
+    }
+
+    .about-advertising__title {
+        margin-bottom: 25px;
+    }
+
+    .advantages-advertising-box {
+        grid-template-columns: 1fr 520px;
+    }
+
+    .advantages-advertising-box__description {
+        margin-bottom: 0;
+        line-height: 1.3;
+        letter-spacing: 0.30px;
+    }
+
+    .advantages-advertising {
+        margin-top: -27px;
+    }
+
+    .advantages-advertising__item {
+        padding-left: 41px;
+    }
+
+    .advantages-advertising__item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .advantages-advertising-box__image {
+        max-width: none;
+        transform: translate(-115px, -4px);
+    }
+    /* about-advertising */
+
+    /* achieve-results */
+    .achieve-results-slider__nav--prev {
+        left: 18%;
+    }
+
+    .achieve-results-slider__nav--next {
+        right: 18%;
+    }   
+    /* achieve-results */
+
+    /* about page */
 }

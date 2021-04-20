@@ -13,7 +13,13 @@ document.addEventListener('DOMContentLoaded', () =>  {
         trialPeriodSlider = document.querySelector('.trial-period-slider'),
         aboutUsSlider = document.querySelector('.about-us-box__slider'),
         solvingProblemsSlider = document.querySelector('.solving-problems-slider'),
-        links = document.querySelectorAll('a[href*="#"]');
+        links = document.querySelectorAll('a[href*="#"].button'),
+        dropdown = document.querySelectorAll('.dropdown'),
+        tariffPlansTabs = document.querySelectorAll('.tariff-plans-tabs__tab'),
+        tariffPlansContentTabs = document.querySelectorAll('.tariff-plans-content'),
+        achieveTesultsSlider = document.querySelector('.achieve-results-slider'),
+        popupButtons = document.querySelectorAll('*[data-popup-btn]'),
+        popups = document.querySelectorAll('.popup');
 
     if (toggle) {
         toggle.addEventListener('click', () => {
@@ -195,4 +201,131 @@ document.addEventListener('DOMContentLoaded', () =>  {
             });
         });
     }   
+
+    if (dropdown) {
+        dropdown.forEach((dropDownWrapper) => {
+            const dropdownBtn = dropDownWrapper.querySelector('.dropdown__button'),
+                dropdownList = dropDownWrapper.querySelector('.dropdown__list'),
+                dropDownListItems = dropDownWrapper.querySelectorAll('.dropdown__item'),
+                dropDownInput = dropDownWrapper.querySelectorAll('.dropdown__input-hidden');
+
+            dropdownBtn.addEventListener('click', function() {
+                dropdownList.classList.toggle('active');
+                this.classList.toggle('active');
+            });
+
+            dropDownListItems.forEach((listItem) => {
+                listItem.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    dropdownBtn.textContent = this.textContent;
+                    dropDownInput.value = this.dataset.value;
+                    dropdownList.classList.remove('active');
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                if (e.target !== dropdownBtn) {
+                    dropdownBtn.classList.remove('active');
+                    dropdownList.classList.remove('active');
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Tab' || e.key === 'Escape') {
+                    dropdownBtn.classList.remove('active');
+                    dropdownList.classList.remove('active');
+                }
+            });
+        });
+    }
+
+    if (tariffPlansTabs && tariffPlansContentTabs) {
+        tariffPlansTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                tariffPlansTabs.forEach(tab => tab.classList.remove('active'));
+                this.classList.add('active');
+                let id = tab.dataset.id;
+
+                tariffPlansContentTabs.forEach((content => {
+                    content.classList.remove('active');
+                }));
+
+                document.querySelector(`#${id}`).classList.add('active');
+            });
+        });
+    }
+
+    if (achieveTesultsSlider) {
+        const achieveTesultsSliderSwiper = new Swiper(achieveTesultsSlider, {
+            slidesPerView: 1.27,
+            spaceBetween: 15,
+            loop: true,
+            navigation: {
+                nextEl: '.achieve-results-slider__nav--next',
+                prevEl: '.achieve-results-slider__nav--prev'
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 20 
+                },
+                1200: {
+                    slidesPerView: 1.25,
+                    centeredSlides: true,
+                    loop: false,
+                    spaceBetween: 25 
+                },
+                1600: {
+                    slidesPerView: 1.25,
+                    centeredSlides: true,
+                    loop: false
+                },
+                1800: {
+                    slidesPerView: 1.60,
+                    centeredSlides: true,
+                    loop: false
+                }
+            }
+        });
+    }
+
+    const closePopup = () => {
+        popups.forEach(popup => {
+            popup.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        document.removeEventListener('keydown', escapeHandler);
+    };
+
+    const escapeHandler = event => { if (event.code === 'Escape') closePopup(); };
+
+    if (popupButtons && popups) {
+        popupButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                document.addEventListener('keydown', escapeHandler);
+
+                let dataName = button.getAttribute('data-popup-btn'),
+                    popup = document.querySelector(`[data-popup="${dataName}"]`),
+                    close = popup.querySelector('.popup__btn-close');
+               
+                popup.classList.add('active');
+                document.body.style.overflow = 'hidden';
+
+                close.addEventListener('click', () => {
+                    popup.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        });
+
+        popups.forEach(popup => {
+            popup.addEventListener('click', event => {
+                const target = event.target;
+                if (target.classList.contains('popup__inner')) {
+                    popup.classList.remove('active');
+                    document.body.style.overflow = '';
+                };
+            });
+        });
+    };
 });
