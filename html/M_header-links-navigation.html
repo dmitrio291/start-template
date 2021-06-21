@@ -20,12 +20,11 @@
 
         <div class="container">
 
-            <div class="header-links-navigation__box">
-                <div class="header-links-navigation__item plastic-windows">
-                    <input class="header-links-navigation__input" type="checkbox" name="links-navigation-1" id="links-navigation-checkbox-1">
-                    <label class="header-links-navigation__title before" for="links-navigation-checkbox-1">
+            <ul class="header-links-navigation__box reset">
+                <li class="header-links-navigation__item plastic-windows">
+                    <button type="button" class="header-links-navigation__title header-links-navigation__button before">
                         <a class="header-links-navigation__title-link active" href="#">Пластиковые окна</a>
-                    </label>
+                    </button>
 
                     <ul class="header-links-navigation__content reset">
                         <li class="header-links-navigation__content-item">
@@ -41,25 +40,21 @@
                             <a class="header-links-navigation__link" href="#">Цены на окна</a>
                         </li>                        
                     </ul>                    
-                </div>
+                </li>
 
-                <div class="header-links-navigation__item warm-aluminum">
-                    <div class="header-links-navigation__title">
-                        <a class="header-links-navigation__title-link margin-left" href="#">Теплый алюминий</a>
-                    </div>                    
-                </div>
+                <li class="header-links-navigation__item warm-aluminum">
+                    <a class="header-links-navigation__title header-links-navigation__title-link padding-left" href="#">Теплый алюминий</a>
+                </li>
 
-                <div class="header-links-navigation__item front-doors">
-                    <div class="header-links-navigation__title">
-                        <a class="header-links-navigation__title-link margin-left" href="#">Входные двери</a>
-                    </div> 
-                </div>
+                <li class="header-links-navigation__item front-doors">
+                    <a class="header-links-navigation__title header-links-navigation__title-link padding-left" href="#">Входные двери</a>
+                </li>
 
-                <div class="header-links-navigation__item windows-to-the-house">
-                    <input class="header-links-navigation__input" type="checkbox" name="header-links-navigation-2" id="links-navigation-checkbox-2">
-                    <label class="header-links-navigation__title before" for="links-navigation-checkbox-2">
+                <li class="header-links-navigation__item windows-to-the-house">
+                    <!-- <input class="header-links-navigation__input" type="checkbox" name="header-links-navigation-2" id="links-navigation-checkbox-2"> -->
+                    <button type="button" class="header-links-navigation__title header-links-navigation__button before" for="links-navigation-checkbox-2">
                         <a class="header-links-navigation__title-link" href="#">Окна в дом</a>
-                    </label>      
+                    </button>      
 
                     <ul class="header-links-navigation__content reset">
                         <li class="header-links-navigation__content-item">
@@ -69,14 +64,12 @@
                             <a class="header-links-navigation__link" href="#">Остекление веранды</a>
                         </li>
                     </ul>
-                </div>
+                </li>
 
-                <div class="header-links-navigation__item wooden-windows">
-                    <input class="header-links-navigation__input" type="checkbox" name="header-links-navigation" id="links-navigation-checkbox-3">
-
-                    <label class="header-links-navigation__title before" for="links-navigation-checkbox-3">
+                <li class="header-links-navigation__item wooden-windows">
+                    <button type="button" class="header-links-navigation__title header-links-navigation__button before">
                         <a class="header-links-navigation__title-link" href="#">Деревянные окна</a>
-                    </label>
+                    </button>
                     
                     <ul class="header-links-navigation__content reset">
                         <li class="header-links-navigation__content-item">
@@ -89,13 +82,12 @@
                             <a class="header-links-navigation__link" href="#">Окна из дуба</a>
                         </li>
                     </ul>
-                </div>
+                </li>
 
-                <div class="header-links-navigation__item glazing-of-balconies">
-                    <input class="header-links-navigation__input" type="checkbox" name="header-links-navigation" id="links-navigation-checkbox-4">
-                    <label class="header-links-navigation__title before" for="links-navigation-checkbox-4">
+                <li class="header-links-navigation__item glazing-of-balconies">
+                    <button type="button" class="header-links-navigation__title header-links-navigation__button before">
                         <a class="header-links-navigation__title-link" href="#">Остекление балконов</a>
-                    </label>
+                    </button>
                     
                     <ul class="header-links-navigation__content reset">
                         <li class="header-links-navigation__content-item">
@@ -123,13 +115,12 @@
                             <a class="header-links-navigation__link" href="#">Цены на балконы</a>
                         </li>
                     </ul>
-                </div>
+                </li>
 
-                <div class="header-links-navigation__item contacts">
-                    <input class="header-links-navigation__input" type="checkbox" name="header-links-navigation" id="links-navigation-checkbox-7">
-                    <label class="header-links-navigation__title before border-bottom-none" for="links-navigation-checkbox-7">
+                <li class="header-links-navigation__item contacts">
+                    <button type="button" class="header-links-navigation__title header-links-navigation__button before border-bottom-none">
                         <a class="header-links-navigation__title-link" href="#">Контакты</a>
-                    </label>
+                    </button>
 
                     <ul class="header-links-navigation__content reset">
                         <li class="header-links-navigation__content-item">
@@ -145,9 +136,9 @@
                             <a class="header-links-navigation__link" href="#">Отзывы</a>
                         </li>
                     </ul>
-                </div>
+                </li>
 
-                <div class="header-links-navigation__footer">
+                <li class="header-links-navigation__footer">
                     <button class="button">Бесплатный замер</button>
                     <div class="header-links-navigation__footer-links">
                         <a class="header-links-navigation__footer-link orange" href="#">Калькулятор окон</a>
@@ -158,13 +149,13 @@
                         <a class="header-links-navigation__footer-link orange" href="#">Калькулятор балконов</a>
                         <a class="header-links-navigation__footer-link orange" href="#">Работа в компании</a>
                     </div>
-                </div>
+                </li>
 
-            </div>
+            </ul>
 
         </div>
 
     </div>
-
+    <script src="../wp-content/themes/twentytwenty-child/js/only-js-without-jquery.js"></script>
 </body>
 </html>

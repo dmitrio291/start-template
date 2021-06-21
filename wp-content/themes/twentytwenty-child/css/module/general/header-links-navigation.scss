@@ -1,592 +1,515 @@
-@import '../../base/all/var';
-
-#global-custom-menu:checked ~ .wrap-geo{
-    .header-links-navigation{
-        display: block;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: auto;
-        z-index: 3;
-        height: calc(100vh - 47px);
-        @media (min-width: 768px){
-            height: calc(100vh - 60px); 
-        }
-
+#global-custom-menu:checked ~ .wrap-geo .header-links-navigation {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    z-index: 3;
+    height: calc(100vh - 47px);
+  }
+  
+  @media (min-width: 768px) {
+    #global-custom-menu:checked ~ .wrap-geo .header-links-navigation {
+      height: calc(100vh - 60px);
     }
-    .menu-custom::before{
-        background-image: url("data:image/svg+xml,%3Csvg width='18' height='17' viewBox='0 0 18 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.10669 6.00244L15.4011 0.288327L17.9189 2.57397L11.6245 8.28809L17.9189 14.0022L15.4011 16.2878L9.10669 10.5737L2.81224 16.2878L0.294454 14.0022L6.58891 8.28809L0.294454 2.57397L2.81224 0.288326L9.10669 6.00244Z' fill='%23F26422'/%3E%3C/svg%3E");
-        height: 1.45em;
-        margin-bottom: .5em;
+  }
+  
+  #global-custom-menu:checked ~ .wrap-geo .menu-custom::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='17' viewBox='0 0 18 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.10669 6.00244L15.4011 0.288327L17.9189 2.57397L11.6245 8.28809L17.9189 14.0022L15.4011 16.2878L9.10669 10.5737L2.81224 16.2878L0.294454 14.0022L6.58891 8.28809L0.294454 2.57397L2.81224 0.288326L9.10669 6.00244Z' fill='%23F26422'/%3E%3C/svg%3E");
+    height: 1.45em;
+    margin-bottom: .5em;
+  }
+  
+  #global-custom-menu:checked ~ .wrap-geo .before-text, #global-custom-menu:checked ~ .wrap-geo .header-navigation-wrapper {
+    display: none;
+  }
+  
+  /*.stickytop ~ .wrap-geo{
+      #site-header{
+  
+          display: flex;
+          align-items: flex-end;
+          
+  
+          @media (min-width: 768px){
+              height: 91px;
+              transform: translateY(-20%);
+          }
+          @media (min-width: 810px){
+              height: 110px;
+              transform: translateY(-35%);
+          }
+      }
+  }
+  
+  #global-custom-menu:checked ~ .wrap-geo,
+  .stickytop ~ .wrap-geo{
+  
+      #site-header{
+          box-shadow: 0 0 0 .1em #C9C9C9;
+          .header-inner{
+              padding-top: 1rem;
+              padding-bottom: 1rem;
+          }
+      }
+      
+      @media (min-width: 810px){
+          .wrap-text-btn.block-temp-1 .btn{
+              font-size: .9rem;
+          }
+          .wrap-text-btn.block-temp-1 > span {
+              font-size: .7rem;
+          }
+          .header-titles-wrapper{
+              font-size: 1.1rem;
+          }
+          .header-contact {
+              font-size: 2rem;
+          }
+          #site-header .header-inner {
+              max-width: 114rem;
+          }
+      }
+  }*/
+  #global-custom-menu:checked ~ .wrap-geo #site-header,
+  .stickytop ~ .wrap-geo #site-header {
+    -webkit-box-shadow: 0 0 0 .1em #C9C9C9;
+            box-shadow: 0 0 0 .1em #C9C9C9;
+  }
+  
+  @media (max-width: 767px) {
+    #global-custom-menu:checked ~ .wrap-geo #site-header {
+      top: 0;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      z-index: 4;
     }
-    .before-text, .header-navigation-wrapper{
-        display: none;
+    #global-custom-menu:checked ~ .wrap-geo .header-links-navigation .container {
+      padding-top: 100px;
     }
-
-    
-} 
-
-/*.stickytop ~ .wrap-geo{
-    #site-header{
-
-        display: flex;
-        align-items: flex-end;
-        
-
-        @media (min-width: 768px){
-            height: 91px;
-            transform: translateY(-20%);
-        }
-        @media (min-width: 810px){
-            height: 110px;
-            transform: translateY(-35%);
-        }
+    #global-custom-menu:checked ~ .wrap-geo .header-links-navigation {
+      height: 100vh !important;
     }
-}
-
-#global-custom-menu:checked ~ .wrap-geo,
-.stickytop ~ .wrap-geo{
-
-    #site-header{
-        box-shadow: 0 0 0 .1em #C9C9C9;
-        .header-inner{
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-    }
-    
-    @media (min-width: 810px){
-        .wrap-text-btn.block-temp-1 .btn{
-            font-size: .9rem;
-        }
-        .wrap-text-btn.block-temp-1 > span {
-            font-size: .7rem;
-        }
-        .header-titles-wrapper{
-            font-size: 1.1rem;
-        }
-        .header-contact {
-            font-size: 2rem;
-        }
-        #site-header .header-inner {
-            max-width: 114rem;
-        }
-    }
-}*/
-
-
-#global-custom-menu:checked ~ .wrap-geo,
-.stickytop ~ .wrap-geo{
-
-    #site-header{
-        box-shadow: 0 0 0 .1em #C9C9C9;
-    }  
-}
-
-@media (max-width: 767px) {
-	#global-custom-menu:checked ~ .wrap-geo #site-header {
-		top: 0;
-		position: fixed;
-		left: 0;
-		width: 100%;
-		z-index: 4;
-	}
-	#global-custom-menu:checked ~ .wrap-geo .header-links-navigation .container {
-		padding-top: 100px;
-	}
-	#global-custom-menu:checked ~ .wrap-geo .header-links-navigation {
-		height: 100vh!important;
-	}
-}
-
-
-.header-links-navigation {
+  }
+  
+  .header-links-navigation {
     position: relative;
     padding-top: 1.5rem;
-    background-image: linear-gradient(179.96deg, rgba(255, 255, 255, 0) -1.08%, rgba(255, 255, 255, 0.81) 16.38%), url('/wp-content/themes/twentytwenty-child/img/header-navigation-middle-image.jpg');
+    background-image: linear-gradient(179.96deg, rgba(255, 255, 255, 0) -1.08%, rgba(255, 255, 255, 0.81) 16.38%), url("/wp-content/themes/twentytwenty-child/img/header-navigation-middle-image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: none;
-
-    &-tabs {
-        position: relative;
-        padding: 0.8rem 3rem;
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 4.5rem;
-            bottom: 0;
-            width: 0;
-            height: 0;
-            border-bottom: 0.4rem solid #d2eeff;
-            border-left: 0.5rem solid transparent;
-            border-right: 0.6rem solid transparent;
-            background-color: transparent;
-        }
-
-        &__tab {
-            position: relative;
-            color: $orange;
-            font-size: 1.4rem;
-
-            & + & {
-                margin-left: 2.2rem;
-            }
-
-            &.active {
-                color: #3A3A3A;
-                &::after {
-                    display: none;
-                }
-            }
-
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: 0.2rem;
-                left: 0;
-                width: 100%;
-                height: 0.1rem;
-                background-color: $orange;
-            }
-        }
+  }
+  
+  .header-links-navigation-tabs {
+    position: relative;
+    padding: 0.8rem 3rem;
+  }
+  
+  .header-links-navigation-tabs::after {
+    content: '';
+    position: absolute;
+    left: 4.5rem;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 0.4rem solid #d2eeff;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    background-color: transparent;
+  }
+  
+  .header-links-navigation-tabs__tab {
+    position: relative;
+    color: #F26422;
+    font-size: 1.4rem;
+  }
+  
+  .header-links-navigation-tabs__tab + .header-links-navigation-tabs__tab {
+    margin-left: 2.2rem;
+  }
+  
+  .header-links-navigation-tabs__tab.active {
+    color: #3A3A3A;
+  }
+  
+  .header-links-navigation-tabs__tab.active::after {
+    display: none;
+  }
+  
+  .header-links-navigation-tabs__tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #F26422;
+  }
+  
+  .header-links-navigation__box {
+    position: relative;
+  }
+  
+  .header-links-navigation__box-kitchens {
+    position: relative;
+  }
+  
+  .header-links-navigation__box-kitchens .header-links-navigation__footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .header-links-navigation__box-kitchens .header-links-navigation__item.contacts .header-links-navigation__content {
+    display: none;
+  }
+  
+  .header-links-navigation__box-ceilings {
+    position: relative;
+  }
+  
+  .header-links-navigation__box-ceilings .prices .header-links-navigation__title,
+  .header-links-navigation__box-ceilings .video .header-links-navigation__title,
+  .header-links-navigation__box-ceilings .contacts-ceilins .header-links-navigation__title,
+  .header-links-navigation__box-ceilings .stocks-ceilins .header-links-navigation__title,
+  .header-links-navigation__box-ceilings .installment-ceilings .header-links-navigation__title,
+  .header-links-navigation__box-ceilings .reviews-ceilings .header-links-navigation__title {
+    padding-left: 0.8em;
+    font-weight: 400;
+  }
+  
+  .header-links-navigation__title-link, .header-links-navigation__link {
+    text-decoration: none;
+    color: #3A3A3A;
+  }
+  
+  @media (max-width: 959px) {
+    .header-links-navigation__title-link:hover, .header-links-navigation__title-link:focus {
+      color: #000;
+      text-decoration: underline;
     }
-
-    &__box {
-        position: relative;
-
-        &-kitchens {
-            position: relative;
-
-            .header-links-navigation {
-                &__footer {
-                    align-items: center;
-                }
-
-                &__item {
-                    &.contacts {
-                        .header-links-navigation__content {
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
-
-        &-ceilings {
-            position: relative;
-
-            .prices,
-            .video,
-            .contacts-ceilins,
-            .stocks-ceilins,
-            .installment-ceilings,
-            .reviews-ceilings {
-                .header-links-navigation {
-                    &__title {
-                        padding-left: 0.8em;
-                        font-weight: 400;
-                    }
-                }
-            }
-        }
+  }
+  
+  .header-links-navigation__title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.6em;
+    cursor: pointer;
+    border: none;
+    border-bottom: 0.1em solid #C9C9C9;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "ALS Schlange sans", sans-serif;
+    background-color: transparent;
+  }
+  
+  .header-links-navigation__title.before:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 1.063em;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5016 4.98964L12.5146 4.98964L12.5146 6.98549L7.69496 6.98549L7.69496 11.9751H5.68976L5.68976 6.98549H0.676759L0.676759 4.98964H5.4964L5.4964 0L7.5016 0L7.5016 4.98964Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .header-links-navigation__title.before:hover, .header-links-navigation__title.before:focus {
+    border-bottom-color: #F26422;
+  }
+  
+  .header-links-navigation__title.border-bottom-none {
+    border-bottom: none;
+  }
+  
+  .header-links-navigation__title-link.padding-left {
+    padding-left: 2.7em;
+  }
+  
+  .header-links-navigation__content {
+    display: none;
+  }
+  
+  .header-links-navigation__title.active {
+    border-bottom: none;
+  }
+  
+  .header-links-navigation__title.active:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.53185 3.64126L9.07658 0.0965331L10.4879 1.50782L7.07986 4.91581L10.6081 8.44402L9.19018 9.86191L5.66197 6.3337L2.11725 9.87843L0.705965 8.46715L4.11396 5.05915L0.585758 1.53094L2.00365 0.113051L5.53185 3.64126Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+  }
+  
+  .header-links-navigation__content.active {
+    display: block;
+  }
+  
+  .header-links-navigation__content {
+    padding-left: 3.3em;
+  }
+  
+  .header-links-navigation__content-item {
+    margin-bottom: 0.3em;
+  }
+  
+  .header-links-navigation__footer {
+    margin-top: 3em;
+  }
+  
+  .header-links-navigation__footer-links {
+    display: none;
+  }
+  
+  .header-links-navigation .button {
+    max-width: 34.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .header-links-navigation__box-ceilings .header-links-navigation__footer {
+      margin-left: 1.5rem;
+      max-width: 43em;
     }
-
-    &__title-link,
-    &__link {
-        text-decoration: none;
-        color: #3A3A3A;
+    .header-links-navigation__box-ceilings .header-links-navigation__footer-links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      max-width: 30.4rem;
     }
-    &__title-link{
-        &:hover, &:focus{
-            @media (max-width: 959px) {
-                color: #000;
-                text-decoration: underline;
-            }
-        }
+    .header-links-navigation__box-ceilings .header-links-navigation__footer-link:first-child {
+      margin-bottom: 0.6rem;
     }
-
-    &__title {
-        display: flex;
-        align-items: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 0.6em;
-        cursor: pointer;
-        border-bottom: 0.1em solid #C9C9C9;
-        font-size: 1.8rem;
-        font-weight: 700;
-        font-family: "ALS Schlange sans", sans-serif;
-
-        &.before {
-            &:before {
-                content: '';
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                margin-right: 1.063em;
-                background-image: url("data:image/svg+xml,%0A%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5016 4.98964L12.5146 4.98964L12.5146 6.98549L7.69496 6.98549L7.69496 11.9751H5.68976L5.68976 6.98549H0.676759L0.676759 4.98964H5.4964L5.4964 0L7.5016 0L7.5016 4.98964Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            &:hover, &:focus{
-                &{
-                    border-bottom-color: #F26422;
-                }
-            }
-        }
-
-        &.border-bottom-none {
-            border-bottom: none;
-        }
-
-        &-link {
-            &.margin-left {
-                margin-left: 2em;
-            }
-        }
-        
+    .header-links-navigation__footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      max-width: 47em;
     }
-
-    &__input,
-    &__content {
-        display: none;
+    .header-links-navigation__footer-links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      max-width: 16.4rem;
     }
-
-    &__input:checked + &__title {
-
-        border-bottom: 0.1em solid transparent;
-
-        &:before {
-            background-image: url("data:image/svg+xml,%0A%3Csvg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.53185 3.64126L9.07658 0.0965331L10.4879 1.50782L7.07986 4.91581L10.6081 8.44402L9.19018 9.86191L5.66197 6.3337L2.11725 9.87843L0.705965 8.46715L4.11396 5.05915L0.585758 1.53094L2.00365 0.113051L5.53185 3.64126Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
-        }
-
+    .header-links-navigation__footer-link {
+      letter-spacing: 0.03em;
     }
-
-    &__input:checked ~ &__content {
-        display: block
+    .header-links-navigation .button {
+      font-size: 1.4rem;
+      margin: 0;
     }
-
-    &__content {
-        padding-left: 3.3em;
-        
-        &-item {
-            margin-bottom: 0.3em;
-        }
+  }
+  
+  @media (min-width: 960px) {
+    .header-links-navigation {
+      padding-top: 6rem;
     }
-
-    &__footer {
-        margin-top: 3em;
-
-        &-links {
-            display: none;
-        }
+    .header-links-navigation-tabs {
+      display: none;
     }
-
-    .button {
-        max-width: 34.5rem;
+    .header-links-navigation .container {
+      width: calc(100% - 8rem);
     }
-
-    @media (min-width: 768px) {
-        &__box {
-            &-ceilings {
-                .header-links-navigation {
-                    &__footer {
-                        margin-left: 1.5rem;
-                        max-width: 43em;
-
-                        &-links {
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                            max-width: 30.4rem;
-                        }
-
-                        &-link:first-child {
-                            margin-bottom: 0.6rem;
-                        }
-                    }
-                }
-            }
-        }
-
-        &__footer {
-            display: flex;
-            justify-content: space-between;
-            max-width: 47em;
-
-            &-links {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                max-width: 16.4rem;
-            }
-
-            &-link {
-                letter-spacing: 0.03em;
-            }
-        }
-
-        .button {
-            font-size: 1.4rem;
-            margin: 0;
-        }
-
+    .header-links-navigation__box {
+      display: -ms-grid;
+      display: grid;
+      grid-template: 'plastic-windows windows-to-the-house glazing-of-balconies contacts' 9.5rem
+   'plastic-windows wooden-windows glazing-of-balconies contacts' 4.3rem
+   'warm-aluminum wooden-windows glazing-of-balconies .'
+   'front-doors wooden-windows glazing-of-balconies .' 6rem
+   'navigation-footer navigation-footer navigation-footer navigation-footer';
+      max-width: 55em;
+      margin-right: auto;
+      margin-left: auto;
     }
-
-    @media (min-width: 960px) {
-        padding-top: 6rem;
-
-        &-tabs {
-            display: none;
-        }
-
-        .container {
-            width: calc(100% - 8rem);
-        }
-
-        &__box {
-            display: grid;
-            grid-template: 
-            'plastic-windows windows-to-the-house glazing-of-balconies contacts' 9.5rem
-            'plastic-windows wooden-windows glazing-of-balconies contacts' 4.3rem
-            'warm-aluminum wooden-windows glazing-of-balconies .'
-            'front-doors wooden-windows glazing-of-balconies .' 6rem
-            'navigation-footer navigation-footer navigation-footer navigation-footer';
-            max-width: 55em;
-            margin-right: auto;
-            margin-left: auto;
-
-            &-kitchens {
-                display: grid;
-                grid-template: 
-                'kitchens-to-order home-appliances contacts'
-                'kitchens-to-order kitchen-sinks kitchen-sinks'
-                'navigation-footer navigation-footer navigation-footer';
-                max-width: 55em;
-                margin-right: auto;
-                margin-left: auto;
-
-                .header-links-navigation {
-                    &__item {
-                        &.contacts {
-                            .header-links-navigation__content {
-                                display: block;
-                            }
-                        }
-                    }
-                }
-            }
-
-            &-ceilings {
-                display: grid;
-                grid-template: 
-                'stretch-ceilings material room-type additional'
-                'navigation-footer navigation-footer navigation-footer navigation-footer';
-                
-                .header-links-navigation {
-                    &__footer {
-                        align-items: flex-end;
-                        justify-content: space-between;
-                        margin-top: 0;
-                        margin-left: 0;
-                        max-width: none;
-
-                        &-links {
-                            flex-direction: column;
-                            text-align: right;
-
-                            &:last-of-type {
-                                margin-left: 0;
-                                margin-right: 6.3em;
-                            }
-                        }
-
-                        &-link {
-                            &:first-child {
-                                order: 3;
-                                margin-bottom: 0;
-                            }
-
-                            &:nth-child(2) {
-                                margin-top: 1rem;
-                                margin-bottom: 1rem;
-                                order: 2
-                            }
-
-                            &:last-child {
-                                order: 1;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        &__item {
-            &.plastic-windows {
-                grid-area: plastic-windows;
-            }
-
-            &.warm-aluminum {
-                grid-area: warm-aluminum;
-            }
-
-            &.front-doors {
-                grid-area: front-doors; 
-            }
-
-            &.windows-to-the-house {
-                grid-area: windows-to-the-house;
-            }
-
-            &.wooden-windows {
-                grid-area: wooden-windows;
-            }
-
-            &.glazing-of-balconies {
-                grid-area: glazing-of-balconies;
-            }
-
-            &.contacts {
-                grid-area: contacts;
-            }
-
-            &.kitchens-to-order {
-                grid-area: kitchens-to-order;
-            }
-
-            &.home-appliances {
-                grid-area: home-appliances;
-            }
-
-            &.kitchen-sinks {
-                grid-area: kitchen-sinks;
-            }
-
-            &.stretch-ceilings {
-                grid-area: stretch-ceilings;
-            }
-
-            &.material {
-                grid-area: material;
-            }
-
-            &.room-type {
-                grid-area: room-type;
-            }
-
-            &.additional {
-                grid-area: additional;
-            }
-
-            &.reviews,
-            &.stocks,
-            &.installment,
-            &.guarantees,
-            &.prices,
-            &.video,
-            &.contacts-ceilins,
-            &.stocks-ceilins,
-            &.installment-ceilings,
-            &.reviews-ceilings {
-                display: none;
-            }            
-        }
-
-        &__input:checked + &__title {
-            border-bottom: none;
-        } 
-
-        &__title {
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 0;
-            border-bottom: none;
-            margin-bottom: 0.8em;
-
-            &.before {
-                &:before {
-                    display: none;
-                }
-            }
-
-            &-link {            
-                &.active {
-                    color: $orange;
-                }
-                
-                &.margin-left {
-                    margin-left: 0;
-                }
-            }
-        }
-        
-        &__link{
-            &.active {
-                color: $orange;
-            }
-        }
-
-        &__content {
-            display: block;
-            padding-left: 0;
-        }
-
-        &__footer {
-            grid-area: navigation-footer; 
-            max-width: none;
-            justify-content: normal;
-
-            &-links {
-                max-width: none;
-
-                &:first-of-type {
-                    margin-left: auto;
-                }
-
-                &:last-of-type {
-                    margin-left: 2em;
-                    margin-right: 4.3em;
-                }
-            }
-        }
-
-        .button {
-            max-width: 30.4rem;
-        }
-
+    .header-links-navigation__box-kitchens {
+      display: -ms-grid;
+      display: grid;
+      grid-template: 'kitchens-to-order home-appliances contacts'
+   'kitchens-to-order kitchen-sinks kitchen-sinks'
+   'navigation-footer navigation-footer navigation-footer';
+      max-width: 55em;
+      margin-right: auto;
+      margin-left: auto;
     }
-
-    @media (min-width: 1200px) {
-        background-image: linear-gradient(179.96deg, rgba(255, 255, 255, 0) -1.08%, rgba(255, 255, 255, 0.81) 16.38%), url('/wp-content/themes/twentytwenty-child/img/header-navigation-big-image.jpg');
-
-
-        &__box {
-            max-width: 60em;
-
-            &-ceilings {
-                .header-links-navigation {
-                    &__footer {
-                        &-links {
-                            &:last-of-type {
-                                margin-right: 7.3em;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        &__footer {
-            &-links:last-of-type {
-                margin-right: 6.8em;
-            }
-        }
+    .header-links-navigation__box-kitchens .header-links-navigation__item.contacts .header-links-navigation__content {
+      display: block;
     }
-
-}
+    .header-links-navigation__box-ceilings {
+      display: -ms-grid;
+      display: grid;
+      grid-template: 'stretch-ceilings material room-type additional'
+   'navigation-footer navigation-footer navigation-footer navigation-footer';
+    }
+    .header-links-navigation__box-ceilings .header-links-navigation__footer {
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 0;
+      margin-left: 0;
+      max-width: none;
+    }
+    .header-links-navigation__box-ceilings .header-links-navigation__footer-links {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: right;
+    }
+    .header-links-navigation__box-ceilings .header-links-navigation__footer-links:last-of-type {
+      margin-left: 0;
+      margin-right: 6.3em;
+    }
+    .header-links-navigation__box-ceilings .header-links-navigation__footer-link:first-child {
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3;
+      margin-bottom: 0;
+    }
+    .header-links-navigation__box-ceilings .header-links-navigation__footer-link:nth-child(2) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+    }
+    .header-links-navigation__box-ceilings .header-links-navigation__footer-link:last-child {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+    }
+    .header-links-navigation__item.plastic-windows {
+      grid-area: plastic-windows;
+    }
+    .header-links-navigation__item.warm-aluminum {
+      grid-area: warm-aluminum;
+    }
+    .header-links-navigation__item.front-doors {
+      grid-area: front-doors;
+    }
+    .header-links-navigation__item.windows-to-the-house {
+      grid-area: windows-to-the-house;
+    }
+    .header-links-navigation__item.wooden-windows {
+      grid-area: wooden-windows;
+    }
+    .header-links-navigation__item.glazing-of-balconies {
+      grid-area: glazing-of-balconies;
+    }
+    .header-links-navigation__item.contacts {
+      grid-area: contacts;
+    }
+    .header-links-navigation__item.kitchens-to-order {
+      grid-area: kitchens-to-order;
+    }
+    .header-links-navigation__item.home-appliances {
+      grid-area: home-appliances;
+    }
+    .header-links-navigation__item.kitchen-sinks {
+      grid-area: kitchen-sinks;
+    }
+    .header-links-navigation__item.stretch-ceilings {
+      grid-area: stretch-ceilings;
+    }
+    .header-links-navigation__item.material {
+      grid-area: material;
+    }
+    .header-links-navigation__item.room-type {
+      grid-area: room-type;
+    }
+    .header-links-navigation__item.additional {
+      grid-area: additional;
+    }
+    .header-links-navigation__item.reviews, .header-links-navigation__item.stocks, .header-links-navigation__item.installment, .header-links-navigation__item.guarantees, .header-links-navigation__item.prices, .header-links-navigation__item.video, .header-links-navigation__item.contacts-ceilins, .header-links-navigation__item.stocks-ceilins, .header-links-navigation__item.installment-ceilings, .header-links-navigation__item.reviews-ceilings {
+      display: none;
+    }
+    .header-links-navigation__input:checked + .header-links-navigation__title {
+      border-bottom: none;
+    }
+    .header-links-navigation__title {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      border-bottom: none;
+      margin-bottom: 0.8em;
+    }
+    .header-links-navigation__title.before:before {
+      display: none;
+    }
+    .header-links-navigation__title-link.active {
+      color: #F26422;
+    }
+    .header-links-navigation__title-link.padding-left {
+      padding-left: 0;
+    }
+    .header-links-navigation__link.active {
+      color: #F26422;
+    }
+    .header-links-navigation__content {
+      display: block;
+      padding-left: 0;
+    }
+    .header-links-navigation__footer {
+      grid-area: navigation-footer;
+      max-width: none;
+      -webkit-box-pack: normal;
+          -ms-flex-pack: normal;
+              justify-content: normal;
+    }
+    .header-links-navigation__footer-links {
+      max-width: none;
+    }
+    .header-links-navigation__footer-links:first-of-type {
+      margin-left: auto;
+    }
+    .header-links-navigation__footer-links:last-of-type {
+      margin-left: 2em;
+      margin-right: 4.3em;
+    }
+    .header-links-navigation .button {
+      max-width: 30.4rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .header-links-navigation {
+      background-image: linear-gradient(179.96deg, rgba(255, 255, 255, 0) -1.08%, rgba(255, 255, 255, 0.81) 16.38%), url("/wp-content/themes/twentytwenty-child/img/header-navigation-big-image.jpg");
+    }
+    .header-links-navigation__box {
+      max-width: 60em;
+    }
+    .header-links-navigation__box-ceilings .header-links-navigation__footer-links:last-of-type {
+      margin-right: 7.3em;
+    }
+    .header-links-navigation__footer-links:last-of-type {
+      margin-right: 6.8em;
+    }
+  }
+  /*# sourceMappingURL=header-links-navigation.css.map */

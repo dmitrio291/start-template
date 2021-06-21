@@ -653,6 +653,21 @@ if (galleryWorksSlider) {
     });
 }
 
+// Скрипт для блока header-links-navigation
+const headerLinksNavigationBox = document.querySelector('.header-links-navigation__box'),
+    headerLinksNavigationTitle = document.querySelectorAll('.header-links-navigation__title'); 
+
+if (headerLinksNavigationBox) {
+    headerLinksNavigationBox.addEventListener('click', ({target}) => {
+        if (target.classList.contains('header-links-navigation__button')) {
+            if (window.matchMedia("(max-width: 959px)").matches) {
+                target.classList.toggle('active');
+                target.nextElementSibling.classList.toggle('active');
+            }            
+        }
+    });
+}
+
 
 
 
