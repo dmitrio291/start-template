@@ -233,7 +233,7 @@
     border-bottom: none;
   }
   
-  .header-links-navigation__title-link.padding-left {
+  .header-links-navigation__link.padding-left {
     padding-left: 2.7em;
   }
   
@@ -334,6 +334,10 @@
     .header-links-navigation .container {
       width: calc(100% - 8rem);
     }
+    .header-links-navigation__box,
+    .header-links-navigation__footer {
+      max-width: 55em;
+    }
     .header-links-navigation__box {
       display: -ms-grid;
       display: grid;
@@ -342,7 +346,6 @@
    'warm-aluminum wooden-windows glazing-of-balconies .'
    'front-doors wooden-windows glazing-of-balconies .' 6rem
    'navigation-footer navigation-footer navigation-footer navigation-footer';
-      max-width: 55em;
       margin-right: auto;
       margin-left: auto;
     }
@@ -466,7 +469,7 @@
     .header-links-navigation__title-link.active {
       color: #F26422;
     }
-    .header-links-navigation__title-link.padding-left {
+    .header-links-navigation__link.padding-left {
       padding-left: 0;
     }
     .header-links-navigation__link.active {
@@ -478,10 +481,8 @@
     }
     .header-links-navigation__footer {
       grid-area: navigation-footer;
-      max-width: none;
-      -webkit-box-pack: normal;
-          -ms-flex-pack: normal;
-              justify-content: normal;
+      margin-left: auto;
+      margin-right: auto;
     }
     .header-links-navigation__footer-links {
       max-width: none;
@@ -502,7 +503,8 @@
     .header-links-navigation {
       background-image: linear-gradient(179.96deg, rgba(255, 255, 255, 0) -1.08%, rgba(255, 255, 255, 0.81) 16.38%), url("/wp-content/themes/twentytwenty-child/img/header-navigation-big-image.jpg");
     }
-    .header-links-navigation__box {
+    .header-links-navigation__box,
+    .header-links-navigation__footer {
       max-width: 60em;
     }
     .header-links-navigation__box-ceilings .header-links-navigation__footer-links:last-of-type {
