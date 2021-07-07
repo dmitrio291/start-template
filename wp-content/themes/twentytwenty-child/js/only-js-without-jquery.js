@@ -653,7 +653,7 @@ if (galleryWorksSlider) {
     });
 }
 
-// Скрипт для блока header-links-navigation
+// Скрипт для блока header-links-navigation на открытие и закрытие спойлера
 const headerLinksNavigationBox = document.querySelector('.header-links-navigation__box'),
     headerLinksNavigationTitle = document.querySelectorAll('.header-links-navigation__title'); 
 
@@ -667,6 +667,64 @@ if (headerLinksNavigationBox) {
         }
     });
 }
+
+// Скрипт таймера для блока stone-sink-as-gift-popup
+const stoneSinkAsGiftDate = new Date('jun 29 2021 00:00:00'),
+    stoneSinkAsGiftDays = document.getElementById('days'),
+    stoneSinkAsGiftHours = document.getElementById('hours'),
+    stoneSinkAsGiftMinutes = document.getElementById('minutes'),
+    stoneSinkAsGiftSeconds = document.getElementById('seconds');
+
+function counts() {
+    let now = new Date();
+    let gap = stoneSinkAsGiftDate - now;
+
+    let days = Math.floor(gap / 1000 / 60 / 60 / 24);
+    let hours = Math.floor(gap / 1000 / 60 / 60) % 24;
+    let minutes = Math.floor(gap / 1000 / 60) % 60;
+    let seconds = Math.floor(gap / 1000) % 60;
+
+    if (gap < 0) {
+        days = days + 7;
+        hours = hours + 24;
+        minutes = minutes + 60;
+        seconds = seconds + 60;
+    }
+
+    if (days < 10) {
+        document.getElementById('days').innerText = '0' + days;
+    } else {
+        document.getElementById('days').innerText = days;
+    }
+
+    if (hours < 10) {
+        document.getElementById('hours').innerText = '0' + hours;
+    } else {
+        document.getElementById('hours').innerText = hours;
+    }
+
+    if (minutes < 10) {
+        document.getElementById('minutes').innerText = '0' + minutes;
+    } else {
+        document.getElementById('minutes').innerText = minutes;
+    }
+
+    if (seconds < 10) {
+        document.getElementById('seconds').innerText = '0' + seconds;
+    } else {
+        document.getElementById('seconds').innerText = seconds;
+    }
+}
+
+if (stoneSinkAsGiftDays && 
+    stoneSinkAsGiftHours && 
+    stoneSinkAsGiftMinutes && 
+    stoneSinkAsGiftSeconds) {
+    counts();
+    setInterval(counts, 1000);
+}
+
+
 
 
 
