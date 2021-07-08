@@ -341,11 +341,16 @@
     .header-links-navigation__box {
       display: -ms-grid;
       display: grid;
-      grid-template: 'plastic-windows windows-to-the-house glazing-of-balconies contacts' 9.5rem
-   'plastic-windows wooden-windows glazing-of-balconies contacts' 4.3rem
-   'warm-aluminum wooden-windows glazing-of-balconies .'
-   'front-doors wooden-windows glazing-of-balconies .' 6rem
-   'navigation-footer navigation-footer navigation-footer navigation-footer';
+  //     grid-template: 'plastic-windows windows-to-the-house glazing-of-balconies contacts' 9.5rem
+  //  'plastic-windows wooden-windows glazing-of-balconies contacts' 4.3rem
+  //  'warm-aluminum wooden-windows glazing-of-balconies .'
+  //  'front-doors wooden-windows glazing-of-balconies .' 6rem
+  //  'navigation-footer navigation-footer navigation-footer navigation-footer';
+      grid-template:
+        'plastic-windows windows-to-the-house contacts' 9.5rem
+        'plastic-windows wooden-windows contacts' 4.3rem
+        'warm-aluminum wooden-windows.'
+        'front-doors wooden-windows.' 6rem;
       margin-right: auto;
       margin-left: auto;
     }
