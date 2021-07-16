@@ -532,17 +532,18 @@ if(electricCookingPanelFds6530) {
 }
 
 // Скрипт для блока popular-types-kitchens
-const popularCornerKitchens = document.querySelector('.popular-types-kitchens__corner-slider'),
-    popularStraightKitchens = document.querySelector('.popular-types-kitchens__straight-slider'),
-    popularSmallKitchens = document.querySelector('.popular-types-kitchens__small-slider'),
-    popularKitchensWithBarCounter = document.querySelector('.popular-types-kitchens__bar-counter-slider'),
-    popularInexpensiveKitchens = document.querySelector('.popular-types-kitchens__inexpensive-slider'),
-    popularKitchensInPvcFilm = document.querySelector('.popular-types-kitchens__pvc-film-slider'),
-    popularKitchensInHplPlastic = document.querySelector('.popular-types-kitchens__HPL-plastic-slider'), 
-    popularKitchensInVeneerAndMassive = document.querySelector('.popular-types-kitchens__veneer-massive-slider'),
-    popularKitchensInNewBuildings = document.querySelector('.popular-types-kitchens__new-buildings-slider'),
-    popularKitchensInFiveStoryBuilding = document.querySelector('.popular-types-kitchens__five-story-slider'),
-    popularKitchensInNineStoryBuilding = document.querySelector('.popular-types-kitchens__nine-story-slider');
+const popularTypesKitchensSlider = document.querySelectorAll('.popular-types-kitchens__slider'); 
+    // popularCornerKitchens = document.querySelector('.popular-types-kitchens__corner-slider'),
+    // popularStraightKitchens = document.querySelector('.popular-types-kitchens__straight-slider'),
+    // popularSmallKitchens = document.querySelector('.popular-types-kitchens__small-slider'),
+    // popularKitchensWithBarCounter = document.querySelector('.popular-types-kitchens__bar-counter-slider'),
+    // popularInexpensiveKitchens = document.querySelector('.popular-types-kitchens__inexpensive-slider'),
+    // popularKitchensInPvcFilm = document.querySelector('.popular-types-kitchens__pvc-film-slider'),
+    // popularKitchensInHplPlastic = document.querySelector('.popular-types-kitchens__HPL-plastic-slider'), 
+    // popularKitchensInVeneerAndMassive = document.querySelector('.popular-types-kitchens__veneer-massive-slider'),
+    // popularKitchensInNewBuildings = document.querySelector('.popular-types-kitchens__new-buildings-slider'),
+    // popularKitchensInFiveStoryBuilding = document.querySelector('.popular-types-kitchens__five-story-slider'),
+    // popularKitchensInNineStoryBuilding = document.querySelector('.popular-types-kitchens__nine-story-slider');
 
 const popularTypesKitchensInitializingSlider = (slider) => {
     if(slider) {
@@ -570,17 +571,19 @@ const popularTypesKitchensInitializingSlider = (slider) => {
     }
 }
 
-popularTypesKitchensInitializingSlider(popularCornerKitchens);
-popularTypesKitchensInitializingSlider(popularStraightKitchens);
-popularTypesKitchensInitializingSlider(popularSmallKitchens);
-popularTypesKitchensInitializingSlider(popularKitchensWithBarCounter);
-popularTypesKitchensInitializingSlider(popularInexpensiveKitchens);
-popularTypesKitchensInitializingSlider(popularKitchensInPvcFilm);
-popularTypesKitchensInitializingSlider(popularKitchensInHplPlastic);
-popularTypesKitchensInitializingSlider(popularKitchensInVeneerAndMassive);
-popularTypesKitchensInitializingSlider(popularKitchensInNewBuildings);
-popularTypesKitchensInitializingSlider(popularKitchensInFiveStoryBuilding);
-popularTypesKitchensInitializingSlider(popularKitchensInNineStoryBuilding);
+popularTypesKitchensSlider.forEach(slider => popularTypesKitchensInitializingSlider(slider));
+
+// popularTypesKitchensInitializingSlider(popularCornerKitchens);
+// popularTypesKitchensInitializingSlider(popularStraightKitchens);
+// popularTypesKitchensInitializingSlider(popularSmallKitchens);
+// popularTypesKitchensInitializingSlider(popularKitchensWithBarCounter);
+// popularTypesKitchensInitializingSlider(popularInexpensiveKitchens);
+// popularTypesKitchensInitializingSlider(popularKitchensInPvcFilm);
+// popularTypesKitchensInitializingSlider(popularKitchensInHplPlastic);
+// popularTypesKitchensInitializingSlider(popularKitchensInVeneerAndMassive);
+// popularTypesKitchensInitializingSlider(popularKitchensInNewBuildings);
+// popularTypesKitchensInitializingSlider(popularKitchensInFiveStoryBuilding);
+// popularTypesKitchensInitializingSlider(popularKitchensInNineStoryBuilding);
 
 // Скрипт для блока gallery-works
 const galleryWorksFilterContainer = document.querySelector('.gallery-works__tabs'),
